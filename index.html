@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HEC – Happy English Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Detect language and redirect if necessary -->
+  <script src="assets/language.js"></script>
+  <!-- Bootstrap CSS and icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <link href="assets/styles.css" rel="stylesheet">
+</head>
+<body data-page="home">
+  <!-- Navigation bar (embedded directly) -->
+  <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-badge">HEC</span><span class="fw-bold">Happy English Club</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Programs</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="courses/mars.html">Mars — Look Starter</a></li>
+              <li><a class="dropdown-item" href="courses/venus.html">Venus — Look 1</a></li>
+              <li><a class="dropdown-item" href="courses/neptune.html">Neptune — Look 2</a></li>
+              <li><a class="dropdown-item" href="courses/jupiter.html">Jupiter — Discover 1</a></li>
+              <li><a class="dropdown-item" href="courses/sky1.html">SKY 1 — Discover 3</a></li>
+              <li><a class="dropdown-item" href="courses/sanrio.html">Sanrio Grade 6 — Writing</a></li>
+              <li><a class="dropdown-item" href="courses/mercury.html">Mercury — Cambridge Math</a></li>
+              <li><a class="dropdown-item" href="courses/sun.html">Sun — IELTS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="reading-club.html">Reading Club</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions &amp; Fees</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2 align-items-center">
+          <a class="btn btn-primary" href="admissions.html">Enroll now</a>
+          <a class="btn login-btn" href="https://english.synergylifelineconsulting.com/">Log in / Đăng nhập</a>
+          <a class="nav-link lang-toggle" href="#" role="button">VN</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <header class="hero py-5">
+    <div class="container">
+      <h1 class="fw-bold">Small classes. Clear progress.</h1>
+      <p class="lead">Evidence‑based instruction, INTASC‑aligned planning, and 21st‑century skills in every lesson.</p>
+      <div class="d-flex gap-2 mt-2">
+        <a class="btn btn-primary" href="courses/mars.html">Start with foundations</a>
+        <a class="btn login-btn" href="https://english.synergylifelineconsulting.com/">Log in / Đăng nhập</a>
+      </div>
+    </div>
+  </header>
+
+
+<!-- Image Carousel (10s interval) -->
+<section class="py-4">
+  <div class="container">
+    <div id="homeCarousel" class="carousel slide rounded-4 overflow-hidden shadow-sm"
+         data-bs-ride="carousel" data-bs-interval="10000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/hec-site/assets/pictures/Blue and Pink Abstract Modern Welcome Back To School Banner.png" alt="Classroom learning placeholder">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Learn with purpose</h5>
+            <p>Clear goals and checkpoints every week.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/hec-site/assets/pictures/Blue Illustration International Children's Book day Cover Banner.png" alt="Student presentation placeholder">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Present with confidence</h5>
+            <p>Frequent practice with friendly feedback.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/hec-site/assets/pictures/Purple and Yellow Shapes Middle School Back to School Banner.png" alt="Project work placeholder">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Projects that matter</h5>
+            <p>Real topics, real audiences, real progress.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev" aria-label="Previous">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next" aria-label="Next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>
+<!-- END Carousel -->
+
+
+  <!-- Course listings -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h4 mb-3">Explore our courses</h2>
+      <div class="grid-cards">
+        <!-- Mars card -->
+        <div class="card-shadow">
+          <div class="d-flex justify-content-between">
+            <h3 class="h6 fw-bold mb-1">Mars</h3>
+            <span class="badge badge-hot">Filling fast</span>
+          </div>
+          <div class="small-muted mb-2">Nat Geo Look Starter</div>
+          <div class="small mb-1"><i class="bi bi-clock"></i> 19:30–21:00 • 90′</div>
+          <div class="small mb-2"><i class="bi bi-people"></i> 11/12 • left 1</div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="fw-semibold">210.000₫/session</div>
+            <a class="btn btn-sm btn-primary" href="courses/mars.html">View</a>
+          </div>
+        </div>
+        <!-- Venus card -->
+        <div class="card-shadow">
+          <div class="d-flex justify-content-between">
+            <h3 class="h6 fw-bold mb-1">Venus</h3>
+            <span class="badge badge-open">Open</span>
+          </div>
+          <div class="small-muted mb-2">Nat Geo Look 1</div>
+          <div class="small mb-1"><i class="bi bi-clock"></i> 17:30–19:00 • 90′</div>
+          <div class="small mb-2"><i class="bi bi-people"></i> 5/12 • left 7</div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="fw-semibold">210.000₫/session</div>
+            <a class="btn btn-sm btn-primary" href="courses/venus.html">View</a>
+          </div>
+        </div>
+        <!-- Neptune card -->
+        <div class="card-shadow">
+          <div class="d-flex justify-content-between">
+            <h3 class="h6 fw-bold mb-1">Neptune</h3>
+            <span class="badge badge-open">Open</span>
+          </div>
+          <div class="small-muted mb-2">Nat Geo Look 2</div>
+          <div class="small mb-1"><i class="bi bi-clock"></i> 17:30–19:00 • 90′</div>
+          <div class="small mb-2"><i class="bi bi-people"></i> 5/12 • left 7</div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="fw-semibold">210.000₫/session</div>
+            <a class="btn btn-sm btn-primary" href="courses/neptune.html">View</a>
+          </div>
+        </div>
+        <!-- Jupiter card -->
+        <div class="card-shadow">
+          <div class="d-flex justify-content-between">
+            <h3 class="h6 fw-bold mb-1">Jupiter</h3>
+            <span class="badge badge-limited">Limited</span>
+          </div>
+          <div class="small-muted mb-2">Oxford Discover 1</div>
+          <div class="small mb-1"><i class="bi bi-clock"></i> 19:30–21:00 • 90′</div>
+          <div class="small mb-2"><i class="bi bi-people"></i> 7/12 • left 5</div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="fw-semibold">210.000₫/session</div>
+            <a class="btn btn-sm btn-primary" href="courses/jupiter.html">View</a>
+          </div>
+        </div>
+        <!-- SKY 1 card -->
+        <div class="card-shadow">
+          <div class="d-flex justify-content-between">
+            <h3 class="h6 fw-bold mb-1">SKY 1</h3>
+            <span class="badge badge-hot">Filling fast</span>
+          </div>
+          <div class="small-muted mb-2">Oxford Discover 3</div>
+          <div class="small mb-1"><i class="bi bi-clock"></i> Tue 17:30–19:00 • Sat 16:15–17:45 • 90′</div>
+          <div class="small mb-2"><i class="bi bi-people"></i> 10/12 • left 2</div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="fw-semibold">210.000₫/session</div>
+            <a class="btn btn-sm btn-primary" href="courses/sky1.html">View</a>
+          </div>
+        </div>
+        <!-- Sanrio card -->
+        <div class="card-shadow">
+          <div class="d-flex justify-content-between">
+            <h3 class="h6 fw-bold mb-1">Sanrio Grade 6</h3>
+            <span class="badge badge-open">Open</span>
+          </div>
+          <div class="small-muted mb-2">Grammar &amp; Writing G6</div>
+          <div class="small mb-1"><i class="bi bi-clock"></i> Mon 19:00–21:00 • Thu 19:30–21:00 • 90′</div>
+          <div class="small mb-2"><i class="bi bi-people"></i> 6/12 • left 6</div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="fw-semibold">210.000₫/session</div>
+            <a class="btn btn-sm btn-primary" href="courses/sanrio.html">View</a>
+          </div>
+        </div>
+        <!-- Mercury card -->
+        <div class="card-shadow">
+          <div class="d-flex justify-content-between">
+            <h3 class="h6 fw-bold mb-1">Mercury (Math)</h3>
+            <span class="badge badge-open">Open</span>
+          </div>
+          <div class="small-muted mb-2">Cambridge Math</div>
+          <div class="small mb-1"><i class="bi bi-clock"></i> 16:30–18:00 • 90′</div>
+          <div class="small mb-2"><i class="bi bi-people"></i> 5/12 • left 7</div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="fw-semibold">210.000₫/session</div>
+            <a class="btn btn-sm btn-primary" href="courses/mercury.html">View</a>
+          </div>
+        </div>
+        <!-- Sun card -->
+        <div class="card-shadow">
+          <div class="d-flex justify-content-between">
+            <h3 class="h6 fw-bold mb-1">Sun (IELTS)</h3>
+            <span class="badge badge-limited">Limited</span>
+          </div>
+          <div class="small-muted mb-2">Cambridge + British Council blend</div>
+          <div class="small mb-1"><i class="bi bi-clock"></i> 19:15–21:15 • 120′</div>
+          <div class="small mb-2"><i class="bi bi-people"></i> 8/12 • left 4</div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="fw-semibold">260.000₫/session</div>
+            <a class="btn btn-sm btn-primary" href="courses/sun.html">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <div class="d-flex align-items-center gap-2">
+        <span class="brand-badge">HEC</span><span>Happy English Club</span>
+      </div>
+      <div class="small">© <span id="year"></span> HEC Hanoi</div>
+      <div class="d-flex gap-3">
+        <a class="nav-root-link" data-href="admissions.html" href="admissions.html">Admissions</a>
+        <a class="nav-root-link" data-href="contact.html" href="contact.html">Contact</a>
+        <a href="https://english.synergylifelineconsulting.com/">Log in</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/includes.js"></script>
+</body>
+</html>
