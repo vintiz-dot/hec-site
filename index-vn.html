@@ -4,14 +4,16 @@
   <meta charset="utf-8">
   <title>HEC – Happy English Club</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Ngôn ngữ: tự động phát hiện và chuyển hướng -->
+  <!-- Tự phát hiện ngôn ngữ -->
   <script src="assets/language.js"></script>
+  <!-- Bootstrap & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- CSS của bạn -->
   <link href="assets/styles.css" rel="stylesheet">
 </head>
 <body data-page="home">
-  <!-- Thanh điều hướng (nhúng trực tiếp) -->
+  <!-- Navbar include -->
   <nav class="navbar navbar-expand-lg bg-white sticky-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="index-vn.html">
@@ -43,188 +45,392 @@
         <div class="d-flex gap-2 align-items-center">
           <a class="btn btn-primary" href="admissions-vn.html">Đăng ký ngay</a>
           <a class="btn login-btn" href="https://english.synergylifelineconsulting.com/">Đăng nhập</a>
-          <a class="nav-link lang-toggle" href="#" role="button">EN</a>
+          <a class="nav-link lang-toggle" href="/hec-site/index-vn.html" role="button">EN</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Phần giới thiệu -->
-  <header class="hero py-5">
+
+  <!-- HERO -->
+  <header id="home" class="hero py-5">
     <div class="container">
-      <h1 class="fw-bold">Lớp học nhỏ. Tiến bộ rõ ràng.</h1>
-      <p class="lead">Giảng dạy dựa trên bằng chứng, kế hoạch phù hợp INTASC và kỹ năng thế kỷ 21 trong từng bài học.</p>
-      <div class="d-flex gap-2 mt-2">
-        <a class="btn btn-primary" href="courses/mars-vn.html">Bắt đầu với nền tảng</a>
-        <a class="btn login-btn" href="https://english.synergylifelineconsulting.com/">Đăng nhập</a>
+      <div class="row align-items-center g-4">
+        <div class="col-lg-5">
+          <h1 class="display-5 fw-bold">Lớp nhỏ. Tự tin tiếng Anh.</h1>
+          <p class="lead mb-4">
+            Học phí theo từng buổi minh bạch. <strong>CLB Đọc miễn phí</strong> diễn ra Thứ Bảy hằng tuần 14:00–16:00.
+          </p>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="#programs" class="btn btn-primary btn-lg">Xem chương trình</a>
+            <a href="#reading-club" class="btn btn-outline-primary btn-lg">Tham gia CLB Đọc</a>
+          </div>
+          <div class="row row-cols-3 g-3 mt-4">
+            <div class="col"><div class="p-3 text-center border rounded-4 bg-white"><div class="h4 mb-0">≤12</div><small>HS / lớp</small></div></div>
+            <div class="col"><div class="p-3 text-center border rounded-4 bg-white"><div class="h4 mb-0">90′</div><small>chuẩn mỗi buổi</small></div></div>
+            <div class="col"><div class="p-3 text-center border rounded-4 bg-white"><div class="h4 mb-0">Th7</div><small>CLB Đọc</small></div></div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <!-- Carousel hình (giữ nguyên, 10s) -->
+          <div id="homeCarousel" class="carousel slide rounded-4 overflow-hidden shadow-sm"
+               data-bs-ride="carousel" data-bs-interval="10000" aria-label="HEC highlights">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="/hec-site/assets/pictures/ok/Wedding photo college (Banner (Landscape)).png" alt="Classroom learning">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Learn with purpose</h5>
+                  <p>Clear goals and checkpoints every week.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/hec-site/assets/pictures/ok/White Photo Collage Bengaluru Banner.png" alt="Student presentation">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Present with confidence</h5>
+                  <p>Frequent practice with friendly feedback.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/hec-site/assets/pictures/ok/Beige Vintage Paper Family Photo Collage Video.svg" alt="Student presentation">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Present with confidence</h5>
+                  <p>Frequent practice with friendly feedback.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/hec-site/assets/pictures/Purple and Yellow Shapes Middle School Back to School Banner.png" alt="Student presentation">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Present with confidence</h5>
+                  <p>Frequent practice with friendly feedback.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/hec-site/assets/pictures/ok/Beige Elegant Photo Collage Exclusive Home Decor Etsy Banner.png" alt="Project work">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Projects that matter</h5>
+                  <p>Real topics, real audiences, real progress.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/hec-site/assets/pictures/Blue and Pink Abstract Modern Welcome Back To School Banner.png" alt="Lớp học">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Projects that matter</h5>
+                  <p>Real topics, real audiences, real progress.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev" aria-label="Previous">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next" aria-label="Next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </header>
-<!-- Carousel (10s interval) -->
-<section class="py-4">
-  <div class="container">
-    <div id="homeCarouselVN" class="carousel slide rounded-4 overflow-hidden shadow-sm"
-         data-bs-ride="carousel" data-bs-interval="10000">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#homeCarouselVN" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Trang 1"></button>
-        <button type="button" data-bs-target="#homeCarouselVN" data-bs-slide-to="1" aria-label="Trang 2"></button>
-        <button type="button" data-bs-target="#homeCarouselVN" data-bs-slide-to="2" aria-label="Trang 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="/hec-site/assets/pictures/Blue and Pink Abstract Modern Welcome Back To School Banner.png" alt="Học tập trong lớp (mẫu)">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Học có mục tiêu</h5>
-            <p>Mục tiêu rõ ràng và mốc kiểm tra hằng tuần.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="/hec-site/assets/pictures/Blue Illustration International Children's Book day Cover Banner.png" alt="Thuyết trình của học sinh (mẫu)">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Tự tin thuyết trình</h5>
-            <p>Luyện tập thường xuyên với phản hồi tích cực.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="/hec-site/assets/pictures/Purple and Yellow Shapes Middle School Back to School Banner.png" alt="Dự án học tập (mẫu)">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Dự án có ý nghĩa</h5>
-            <p>Chủ đề thực tế, khán giả thực, tiến bộ thực.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarouselVN" data-bs-slide="prev" aria-label="Trước">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#homeCarouselVN" data-bs-slide="next" aria-label="Sau">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
-    </div>
-  </div>
-</section>
-<!-- END Carousel -->
-  <!-- Danh sách khóa học -->
-  <section class="py-5">
+
+  <!-- CHƯƠNG TRÌNH -->
+  <section id="programs" class="py-5">
     <div class="container">
       <h2 class="h4 mb-3">Khám phá các khóa học</h2>
       <div class="grid-cards">
-        <!-- Mars card -->
+        <!-- Mars -->
         <div class="card-shadow">
           <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">Mars</h3>
-            <span class="badge badge-hot">Sắp đầy</span>
+            <h3 class="h6 fw-bold mb-1">Mars</h3><span class="badge badge-hot">Filling fast</span>
           </div>
           <div class="small-muted mb-2">Nat Geo Look Starter</div>
           <div class="small mb-1"><i class="bi bi-clock"></i> 19:30–21:00 • 90′</div>
           <div class="small mb-2"><i class="bi bi-people"></i> 11/12 • còn 1</div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="fw-semibold">210.000₫/buổi</div>
-            <a class="btn btn-sm btn-primary" href="courses/mars-vn.html">Xem</a>
+            <a class="btn btn-sm btn-primary" href="courses/mars.html">Xem</a>
           </div>
         </div>
-        <!-- Venus card -->
+        <!-- Venus -->
         <div class="card-shadow">
           <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">Venus</h3>
-            <span class="badge badge-open">Còn chỗ</span>
+            <h3 class="h6 fw-bold mb-1">Venus</h3><span class="badge badge-open">Open</span>
           </div>
           <div class="small-muted mb-2">Nat Geo Look 1</div>
           <div class="small mb-1"><i class="bi bi-clock"></i> 17:30–19:00 • 90′</div>
           <div class="small mb-2"><i class="bi bi-people"></i> 5/12 • còn 7</div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="fw-semibold">210.000₫/buổi</div>
-            <a class="btn btn-sm btn-primary" href="courses/venus-vn.html">Xem</a>
+            <a class="btn btn-sm btn-primary" href="courses/venus.html">Xem</a>
           </div>
         </div>
-        <!-- Neptune card -->
+        <!-- Neptune -->
         <div class="card-shadow">
           <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">Neptune</h3>
-            <span class="badge badge-open">Còn chỗ</span>
+            <h3 class="h6 fw-bold mb-1">Neptune</h3><span class="badge badge-open">Open</span>
           </div>
           <div class="small-muted mb-2">Nat Geo Look 2</div>
           <div class="small mb-1"><i class="bi bi-clock"></i> 17:30–19:00 • 90′</div>
           <div class="small mb-2"><i class="bi bi-people"></i> 5/12 • còn 7</div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="fw-semibold">210.000₫/buổi</div>
-            <a class="btn btn-sm btn-primary" href="courses/neptune-vn.html">Xem</a>
+            <a class="btn btn-sm btn-primary" href="courses/neptune.html">Xem</a>
           </div>
         </div>
-        <!-- Jupiter card -->
+        <!-- Jupiter -->
         <div class="card-shadow">
           <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">Jupiter</h3>
-            <span class="badge badge-limited">Có hạn</span>
+            <h3 class="h6 fw-bold mb-1">Jupiter</h3><span class="badge badge-limited">Limited</span>
           </div>
           <div class="small-muted mb-2">Oxford Discover 1</div>
           <div class="small mb-1"><i class="bi bi-clock"></i> 19:30–21:00 • 90′</div>
           <div class="small mb-2"><i class="bi bi-people"></i> 7/12 • còn 5</div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="fw-semibold">210.000₫/buổi</div>
-            <a class="btn btn-sm btn-primary" href="courses/jupiter-vn.html">Xem</a>
+            <a class="btn btn-sm btn-primary" href="courses/jupiter.html">Xem</a>
           </div>
         </div>
-        <!-- SKY 1 card -->
+        <!-- SKY 1 -->
         <div class="card-shadow">
           <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">SKY 1</h3>
-            <span class="badge badge-hot">Sắp đầy</span>
+            <h3 class="h6 fw-bold mb-1">SKY 1</h3><span class="badge badge-hot">Filling fast</span>
           </div>
           <div class="small-muted mb-2">Oxford Discover 3</div>
-          <div class="small mb-1"><i class="bi bi-clock"></i> Thứ Ba 17:30–19:00 • Thứ Bảy 16:15–17:45 • 90′</div>
+          <div class="small mb-1"><i class="bi bi-clock"></i> Tue 17:30–19:00 • Sat 16:15–17:45 • 90′</div>
           <div class="small mb-2"><i class="bi bi-people"></i> 10/12 • còn 2</div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="fw-semibold">210.000₫/buổi</div>
-            <a class="btn btn-sm btn-primary" href="courses/sky1-vn.html">Xem</a>
+            <a class="btn btn-sm btn-primary" href="courses/sky1.html">Xem</a>
           </div>
         </div>
-        <!-- Sanrio card -->
+        <!-- Sanrio -->
         <div class="card-shadow">
           <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">Sanrio Grade 6</h3>
-            <span class="badge badge-open">Còn chỗ</span>
+            <h3 class="h6 fw-bold mb-1">Sanrio Grade 6</h3><span class="badge badge-open">Open</span>
           </div>
-          <div class="small-muted mb-2">Grammar &amp; Writing G6</div>
-          <div class="small mb-1"><i class="bi bi-clock"></i> Thứ Hai 19:00–21:00 • Thứ Năm 19:30–21:00 • 90′</div>
+          <div class="small-muted mb-2">Grammar & Writing G6</div>
+          <div class="small mb-1"><i class="bi bi-clock"></i> Mon 19:00–21:00 • Thu 19:30–21:00 • 90′</div>
           <div class="small mb-2"><i class="bi bi-people"></i> 6/12 • còn 6</div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="fw-semibold">210.000₫/buổi</div>
-            <a class="btn btn-sm btn-primary" href="courses/sanrio-vn.html">Xem</a>
+            <a class="btn btn-sm btn-primary" href="courses/sanrio.html">Xem</a>
           </div>
         </div>
-        <!-- Mercury card -->
+        <!-- Mercury -->
         <div class="card-shadow">
           <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">Mercury (Math)</h3>
-            <span class="badge badge-open">Còn chỗ</span>
+            <h3 class="h6 fw-bold mb-1">Mercury (Math)</h3><span class="badge badge-open">Open</span>
           </div>
           <div class="small-muted mb-2">Cambridge Math</div>
           <div class="small mb-1"><i class="bi bi-clock"></i> 16:30–18:00 • 90′</div>
           <div class="small mb-2"><i class="bi bi-people"></i> 5/12 • còn 7</div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="fw-semibold">210.000₫/buổi</div>
-            <a class="btn btn-sm btn-primary" href="courses/mercury-vn.html">Xem</a>
+            <a class="btn btn-sm btn-primary" href="courses/mercury.html">Xem</a>
           </div>
         </div>
-        <!-- Sun card -->
+        <!-- Sun -->
         <div class="card-shadow">
           <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">Sun (IELTS)</h3>
-            <span class="badge badge-limited">Có hạn</span>
+            <h3 class="h6 fw-bold mb-1">Sun (IELTS)</h3><span class="badge badge-limited">Limited</span>
           </div>
           <div class="small-muted mb-2">Cambridge + British Council blend</div>
           <div class="small mb-1"><i class="bi bi-clock"></i> 19:15–21:15 • 120′</div>
           <div class="small mb-2"><i class="bi bi-people"></i> 8/12 • còn 4</div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="fw-semibold">260.000₫/buổi</div>
-            <a class="btn btn-sm btn-primary" href="courses/sun-vn.html">Xem</a>
+            <a class="btn btn-sm btn-primary" href="courses/sun.html">Xem</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Chân trang -->
+  <!-- CLB ĐỌC MIỄN PHÍ (tập trung chuyển đổi) -->
+  <section id="reading-club" class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="badge bg-success-subtle text-success border">Miễn phí</span>
+            <span class="badge bg-warning-subtle text-warning border">Phù hợp gia đình</span>
+            <span class="badge bg-primary-subtle text-primary border">Tự do tham gia</span>
+          </div>
+          <h2 class="section-title">CLB Đọc — Thứ Bảy hằng tuần, 14:00–16:00</h2>
+          <p class="mb-2"><i class="bi bi-geo-alt"></i> Số 25, ngõ 242 Láng, Đống Đa, Hà Nội</p>
+          <ul class="mb-3">
+            <li><strong>Hình thành thói quen đọc:</strong> Tự chọn sách, không khí nhẹ nhàng, khích lệ tích cực.</li>
+            <li><strong>Tăng trưởng ngôn ngữ:</strong> Trò chơi từ vựng, thảo luận nhóm, thuyết trình ngắn.</li>
+            <li><strong>Tự tin & cộng đồng:</strong> Chia sẻ thoải mái cùng bạn bè và giáo viên hướng dẫn.</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary btn-lg" href="#contact"><i class="bi bi-calendar-check"></i> Giữ chỗ miễn phí</a>
+            <a class="btn btn-outline-primary btn-lg" href="reading-club-vn.html"><i class="bi bi-journal-text"></i> Xem lịch hoạt động</a>
+          </div>
+          <div class="small-muted mt-2">
+            Số chỗ có hạn; RSVP giúp chúng tôi chuẩn bị sách và nhóm phù hợp.
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <img class="img-fluid rounded-4 shadow" alt="Học sinh cùng đọc sách"
+               src="/hec-site/assets/pictures/ok/Blue and White Modern Book Club Instagram Post.svg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LỜI CHỨNG THỰC -->
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-4">Phụ huynh nói gì?</h2>
+      <div id="testimonialCarouselVN" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000" aria-label="Lời chứng thực phụ huynh">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="p-4 border rounded-4 bg-white shadow-sm">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://picsum.photos/seed/parentA/64/64" class="rounded-circle me-3" alt="Parent avatar">
+                <div>
+                  <strong>Chị Linh (lớp 4)</strong><br>
+                  <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                </div>
+              </div>
+              <p class="mb-0">“Sau 1 tháng, con chủ động đọc hơn và trình bày ý rõ ràng. CLB Đọc miễn phí tạo khác biệt lớn.”</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="p-4 border rounded-4 bg-white shadow-sm">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://picsum.photos/seed/parentB/64/64" class="rounded-circle me-3" alt="Parent avatar">
+                <div>
+                  <strong>Anh Minh (lớp 6)</strong><br>
+                  <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></span>
+                </div>
+              </div>
+              <p class="mb-0">“Mục tiêu rõ ràng, lớp ít học sinh, giáo viên lắng nghe. Con thích đọc non-fiction và thuyết trình tự tin hơn.”</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="p-4 border rounded-4 bg-white shadow-sm">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://picsum.photos/seed/parentC/64/64" class="rounded-circle me-3" alt="Parent avatar">
+                <div>
+                  <strong>Chị Hoa (lớp 2)</strong><br>
+                  <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                </div>
+              </div>
+              <p class="mb-0">“Phonics và luyện lưu loát dễ thực hành ở nhà. Chiều Thứ Bảy tới CLB Đọc thành thói quen của con.”</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarouselVN" data-bs-slide="prev" aria-label="Trước">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarouselVN" data-bs-slide="next" aria-label="Sau">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TUYỂN SINH & HỌC PHÍ -->
+  <section id="admissions" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Tuyển sinh & Học phí</h2>
+      <ol class="mb-4">
+        <li>Gửi form liên hệ.</li>
+        <li>Kiểm tra xếp lớp miễn phí.</li>
+        <li>Xếp lớp phù hợp.</li>
+        <li>Rà soát tuần đầu.</li>
+      </ol>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="p-4 rounded-4 border">
+            <h5>Học phí</h5>
+            <ul class="mb-0">
+              <li>Lớp tiêu chuẩn: <strong>210.000₫ / buổi</strong> (90′).</li>
+              <li>Lớp IELTS Sun: <strong>260.000₫ / buổi</strong> (120′).</li>
+              <li>Tính tiền theo số buổi thực học trong tháng.</li>
+              <li>Hiện không thu phí sách.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-4 rounded-4 border">
+            <h5>Ưu đãi</h5>
+            <ul class="mb-0">
+              <li>Giảm <strong>5%</strong> cho anh/chị em (áp dụng mức thấp hơn).</li>
+              <li>Thưởng giới thiệu: tích lũy đến <strong>95%</strong> sau khi gia đình được giới thiệu đóng tháng đầu.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 d-flex gap-2 flex-wrap">
+        <a class="btn btn-primary" href="#contact">Đăng ký ngay</a>
+        <a class="btn btn-outline-primary" href="#contact">Đặt lịch xếp lớp</a>
+        <a class="btn login-btn" href="https://english.synergylifelineconsulting.com/">Đăng nhập</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIÊN HỆ -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title mb-3">Liên hệ</h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="p-4 rounded-4 bg-white border h-100">
+            <div class="mb-2"><i class="bi bi-telephone"></i> 0975679889</div>
+            <div class="mb-2"><i class="bi bi-geo-alt"></i> Số 25, ngõ 242 Láng, quận Đống Đa, Hà Nội</div>
+            <div class="mb-3">
+              <a class="me-3" href="#"><i class="bi bi-facebook"></i> Facebook</a>
+              <a href="#"><i class="bi bi-chat-dots"></i> Zalo</a>
+            </div>
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6"><input class="form-control" placeholder="Tên học sinh"></div>
+                <div class="col-md-6"><input class="form-control" placeholder="Khối lớp"></div>
+                <div class="col-md-6"><input class="form-control" placeholder="Tên phụ huynh"></div>
+                <div class="col-md-6"><input class="form-control" placeholder="Điện thoại *" required></div>
+                <div class="col-md-6"><input class="form-control" placeholder="Zalo (tuỳ chọn)"></div>
+                <div class="col-md-6">
+                  <select class="form-select">
+                    <option selected>Chương trình</option>
+                    <option>Look Starter – Mars</option>
+                    <option>Look 1 – Venus</option>
+                    <option>Look 2 – Neptune</option>
+                    <option>Discover 1 – Jupiter</option>
+                    <option>Discover 3 – SKY 1</option>
+                    <option>Grammar & Writing – Sanrio G6</option>
+                    <option>Cambridge Math – Mercury</option>
+                    <option>IELTS – Sun Class</option>
+                    <option>CLB Đọc (Thứ Bảy 14:00–16:00)</option>
+                  </select>
+                </div>
+                <div class="col-12"><textarea class="form-control" rows="3" placeholder="Lời nhắn"></textarea></div>
+                <div class="col-12 d-flex gap-2">
+                  <button type="submit" class="btn btn-primary">Gửi đăng ký</button>
+                  <a class="btn login-btn" href="https://english.synergylifelineconsulting.com/">Đăng nhập</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <iframe class="rounded-4 border w-100" height="380" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=21.0216,105.8000&hl=vi&z=15&output=embed" title="Bản đồ"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer py-4">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
       <div class="d-flex align-items-center gap-2">
@@ -232,8 +438,8 @@
       </div>
       <div class="small">© <span id="year"></span> HEC Hanoi</div>
       <div class="d-flex gap-3">
-        <a class="nav-root-link" data-href="admissions.html" href="admissions-vn.html">Tuyển sinh</a>
-        <a class="nav-root-link" data-href="contact.html" href="contact-vn.html">Liên hệ</a>
+        <a href="#admissions">Tuyển sinh</a>
+        <a href="#programs">Chương trình</a>
         <a href="https://english.synergylifelineconsulting.com/">Đăng nhập</a>
       </div>
     </div>
@@ -241,5 +447,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/includes.js"></script>
+  <script>
+    document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
+  </script>
 </body>
 </html>

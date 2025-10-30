@@ -9,18 +9,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/styles.css" rel="stylesheet">
 </head>
-<body>
+<body data-page="reading-club">
   <!-- Thanh điều hướng (nhúng trực tiếp) -->
   <nav class="navbar navbar-expand-lg bg-white sticky-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="index-vn.html">
         <span class="brand-badge">HEC</span><span class="fw-bold">Happy English Club</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavVN" aria-controls="mainNavVN" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div id="nav" class="collapse navbar-collapse">
-        <ul class="navbar-nav mx-auto">
+      <div id="mainNavVN" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
           <li class="nav-item"><a class="nav-link" href="index-vn.html">Trang chủ</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Chương trình</a>
@@ -28,59 +28,181 @@
               <li><a class="dropdown-item" href="courses/mars-vn.html">Mars — Look Starter</a></li>
               <li><a class="dropdown-item" href="courses/venus-vn.html">Venus — Look 1</a></li>
               <li><a class="dropdown-item" href="courses/neptune-vn.html">Neptune — Look 2</a></li>
-              <li><a class="dropdown-item" href="courses/jupiter-vn.html">Jupiter — Discover 1</a></li>
-              <li><a class="dropdown-item" href="courses/sky1-vn.html">SKY 1 — Discover 3</a></li>
-              <li><a class="dropdown-item" href="courses/sanrio-vn.html">Sanrio Grade 6 — Writing</a></li>
-              <li><a class="dropdown-item" href="courses/mercury-vn.html">Mercury — Cambridge Math</a></li>
+              <li><a class="dropdown-item" href="courses/jupiter-vn.html">Jupiter — OD1</a></li>
+              <li><a class="dropdown-item" href="courses/sky1-vn.html">SKY 1 — OD3</a></li>
+              <li><a class="dropdown-item" href="courses/sanrio-vn.html">Sanrio — Viết G6</a></li>
+              <li><a class="dropdown-item" href="courses/mercury-vn.html">Mercury — Toán</a></li>
               <li><a class="dropdown-item" href="courses/sun-vn.html">Sun — IELTS</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="reading-club-vn.html">Câu lạc bộ đọc</a></li>
-          <li class="nav-item"><a class="nav-link" href="admissions-vn.html">Tuyển sinh &amp; học phí</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="reading-club-vn.html">Câu lạc bộ đọc</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions-vn.html">Tuyển sinh & học phí</a></li>
           <li class="nav-item"><a class="nav-link" href="contact-vn.html">Liên hệ</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-sm btn-primary" href="contact-vn.html">Đặt lịch đánh giá</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-sm login-btn" href="https://english.synergylifelineconsulting.com/">Đăng nhập</a></li>
+          <li class="nav-item ms-lg-2"><button class="btn btn-sm btn-outline-secondary lang-toggle" data-other-lang="en">EN</button></li>
         </ul>
-        <div class="d-flex gap-2 align-items-center">
-          <a class="btn btn-primary" href="admissions-vn.html">Đăng ký ngay</a>
-          <a class="btn login-btn" href="https://english.synergylifelineconsulting.com/">Đăng nhập</a>
-          <a class="nav-link lang-toggle" href="#" role="button">EN</a>
-        </div>
       </div>
     </div>
   </nav>
-  <header class="py-5 hero">
-    <div class="container">
-      <h1 class="fw-bold">Câu lạc bộ đọc — Miễn phí mỗi Thứ Bảy</h1>
-      <p class="lead">14:00–16:00 • Số&nbsp;25, Ngõ&nbsp;242&nbsp;Láng, Đống Đa, Hà Nội</p>
+
+<header class="py-5 hero">
+  <div class="container">
+    <h1 class="fw-bold">Câu lạc bộ đọc</h1>
+    <p class="lead">Xây nền giải mã, lưu loát, từ vựng và hiểu sâu qua các quy trình dạy học tường minh, hấp dẫn.</p>
+    <div class="d-flex flex-wrap gap-2 mt-2">
+      <span class="badge bg-light text-dark border"><i class="bi bi-book"></i> Dạy tường minh</span>
+      <span class="badge bg-light text-dark border"><i class="bi bi-lightbulb"></i> Mô hình chiến lược</span>
+      <span class="badge bg-light text-dark border"><i class="bi bi-graph-up"></i> Tăng trưởng đo được</span>
     </div>
-  </header>
-  <main class="py-4">
-    <div class="container">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-6">
-          <ul>
-            <li>Chọn sách hoặc mang theo. Ghi chép vào nhật ký đọc.</li>
-            <li>Trò chơi từ vựng và vòng thảo luận.</li>
-            <li>Giới thiệu sách ngắn để rèn kỹ năng thuyết trình.</li>
+  </div>
+</header>
+<section class="py-4">
+  <div class="container">
+    <div id="homeCarousel" class="carousel slide rounded-4 overflow-hidden shadow-sm"
+         data-bs-ride="carousel" data-bs-interval="10000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/hec-site/assets/pictures/Blue and Pink Abstract Modern Welcome Back To School Banner.png" alt="Classroom learning placeholder">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Learn with purpose</h5>
+            <p>Clear goals and checkpoints every week.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/hec-site/assets/pictures/Blue Illustration International Children's Book day Cover Banner.png" alt="Student presentation placeholder">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Present with confidence</h5>
+            <p>Frequent practice with friendly feedback.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/hec-site/assets/pictures/Purple and Yellow Shapes Middle School Back to School Banner.png" alt="Project work placeholder">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Projects that matter</h5>
+            <p>Real topics, real audiences, real progress.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev" aria-label="Previous">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next" aria-label="Next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>
+<main class="py-4">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <!-- Vì sao đọc quan trọng -->
+        <div class="p-3 border rounded-3 mb-3">
+          <h5>Tầm quan trọng của việc đọc</h5>
+          <ul class="mb-0">
+            <li><strong>Tiếp cận tri thức:</strong> Đọc mở rộng nền tảng kiến thức—nhiên liệu cho hiểu bài ở mọi môn học.</li>
+            <li><strong>Từ vựng & ngôn ngữ:</strong> Đọc nhiều giúp tăng tốc từ vựng, cú pháp và ngôn ngữ học thuật.</li>
+            <li><strong>Tư duy:</strong> Văn bản rèn suy luận, lập luận, phân tích cấu trúc và đánh giá nguồn tin.</li>
+            <li><strong>Thành tích:</strong> Năng lực đọc mạnh kéo theo kết quả học tập & thi cử ở tất cả môn.</li>
+            <li><strong>Lâu dài:</strong> Thói quen đọc gắn với viết tốt hơn, đồng cảm hơn, và tự học bền vững.</li>
           </ul>
-          <a class="btn btn-primary" href="contact-vn.html">Đặt chỗ</a>
         </div>
-        <div class="col-lg-6">
-          <img class="img-fluid rounded-4 shadow" alt="Đọc sách"
-               src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&amp;w=1200&amp;auto=format&amp;fit=crop">
+
+        <!-- Dạy đọc tường minh -->
+        <div class="p-3 border rounded-3 mb-3">
+          <h5>Chúng tôi dạy đọc như thế nào (tường minh)</h5>
+          <ul class="mb-2">
+            <li><strong>Thầy làm → Cùng làm → Con tự làm:</strong> Nêu mẫu (think-aloud), luyện có hướng dẫn, rồi tự thực hành.</li>
+            <li><strong>Nền tảng (K–G2):</strong> Nhận thức âm vị hằng ngày, phonics hệ thống, văn bản decodable để giải mã chính xác.</li>
+            <li><strong>Lưu loát:</strong> Nhịp ngắt cụm & ngữ điệu với đo WCPM 1 phút, đọc vang/đồng ca, và đọc lặp.</li>
+            <li><strong>Từ vựng & hình thái học:</strong> Từ thông dụng, tiền tố–gốc–hậu tố, và cách dùng trong ngữ cảnh.</li>
+            <li><strong>Chiến lược hiểu:</strong> Dự đoán–hỏi–làm rõ–tóm tắt, tín hiệu cấu trúc văn bản, ý chính, suy luận.</li>
+            <li><strong>Dạng câu hỏi:</strong> Hiển nhiên, suy luận, đánh giá (QAR: Right There/Think & Search/Author & Me).</li>
+            <li><strong>ESL scaffolds:</strong> Hình ảnh, khung câu, đối thoại cặp, hỗ trợ song ngữ, kích hoạt kiến thức nền.</li>
+          </ul>
+          <div class="small-muted">Bài học ngắn, có trọng tâm; luyện tập có hướng dẫn; phản hồi ngay để kiến thức bám chắc.</div>
+        </div>
+
+        <!-- Dạy hiểu bài tường minh -->
+        <div class="p-3 border rounded-3 mb-3">
+          <h5>Chúng tôi dạy hiểu bài như thế nào</h5>
+          <ol class="mb-2">
+            <li><strong>Kích hoạt & dẫn nhập:</strong> Xây bối cảnh; xem trước cấu trúc; giới thiệu từ khóa.</li>
+            <li><strong>Nêu mẫu:</strong> Think-aloud 1 chiến lược (vd: tìm ý chính qua headings & topic sentences).</li>
+            <li><strong>Luyện có hướng dẫn:</strong> Dùng bộ tổ chức đồ họa, câu hỏi phụ thuộc văn bản.</li>
+            <li><strong>Nhịp lưu loát:</strong> Đọc theo cụm để giải phóng tải nhận thức cho ý nghĩa.</li>
+            <li><strong>Đọc & viết độc lập:</strong> Ghi chú/đánh dấu/viết GIST 10–15 từ.</li>
+            <li><strong>Thảo luận & đánh giá:</strong> Chia sẻ bằng chứng, điều chỉnh suy luận, kết nối văn bản.</li>
+            <li><strong>Đánh giá & dạy bù:</strong> Vé ra khỏi lớp; dạy bù nhanh khi cần.</li>
+          </ol>
+        </div>
+
+        <!-- Lịch trình CLB -->
+        <div class="p-3 border rounded-3 mb-3">
+          <h5>Nhịp CLB (mỗi buổi)</h5>
+          <ol class="mb-0">
+            <li><strong>Khởi động (5′):</strong> Âm vị / hình thái học.</li>
+            <li><strong>Mini-lesson (10′):</strong> 1 kỹ năng tường minh (vd: so sánh/đối chiếu).</li>
+            <li><strong>Đọc có hướng dẫn (20′):</strong> Nhóm trình độ; tập trung giải mã/lưu loát/hiểu.</li>
+            <li><strong>Đo lưu loát (5′):</strong> WCPM 1 phút; luyện nhịp điệu.</li>
+            <li><strong>Trạm từ vựng (10′):</strong> Hình thái + vận dụng.</li>
+            <li><strong>Nhiệm vụ hiểu (10′):</strong> Organizer + câu hỏi phụ thuộc văn bản; viết ngắn (GIST/SWBST).</li>
+            <li><strong>Đọc tự chọn (5′):</strong> Văn bản theo sở thích để tăng “thể tích đọc”.</li>
+            <li><strong>Vé ra (3′):</strong> Kiểm tra nhanh; bước tiếp theo.</li>
+          </ol>
+        </div>
+
+        <!-- Đánh giá & Theo dõi -->
+        <div class="p-3 border rounded-3 mb-3">
+          <h5>Đánh giá & theo dõi tiến bộ</h5>
+          <ul class="mb-0">
+            <li><strong>Giải mã:</strong> Kiểm tra mẫu vần; độ chính xác với decodables.</li>
+            <li><strong>Lưu loát:</strong> Biểu đồ WCPM; ghi chú ngắt cụm & ngữ điệu.</li>
+            <li><strong>Hiểu bài:</strong> MAZE/cloze, bài viết đáp án, rubric tóm tắt.</li>
+            <li><strong>Báo cáo gia đình:</strong> 2 tuần/lần kèm gợi ý luyện ở nhà và mục tiêu tiếp theo.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CTA / Thông tin -->
+      <div class="col-lg-4">
+        <div class="p-3 callout rounded-3 course-cta">
+          <h5 class="mb-2">Lịch & học phí</h5>
+          <div class="mb-2"><i class="bi bi-clock"></i> Thứ Bảy • 2:00pm – 04:00pm • 120′</div>
+          <div class="mb-2"><i class="bi bi-people"></i> 12~15 học sinh/nhóm</div>
+          <div class="mb-2"><i class="bi bi-cash-coin"></i> 0₫/buổi <span class="small-muted"></span></div>
+          <a class="btn btn-primary mb-2" href="contact-vn.html">Đặt lịch đánh giá</a>
+          <a class="btn btn-outline-primary mb-2" href="admissions-vn.html">Xem tuyển sinh & học phí</a>
+          <hr>
+          <div class="small-muted">
+            <strong>Phù hợp với ai?</strong> HS đang xây giải mã/lưu loát (G1–G3) và HS phát triển hiểu học thuật (G4–G7).
+          </div>
         </div>
       </div>
     </div>
-  </main>
-  <footer class="footer py-4">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center gap-2">
-        <span class="brand-badge">HEC</span><span>Happy English Club</span>
-      </div>
-      <div class="small">© <span id="year"></span> HEC Hanoi</div>
+  </div>
+</main>
+
+<footer class="footer py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+    <div class="d-flex align-items-center gap-2">
+      <span class="brand-badge">HEC</span><span>Happy English Club</span>
+    </div>
+    <div class="small">© <span id="year"></span> HEC Hanoi</div>
+    <div class="d-flex gap-3">
+      <a href="admissions-vn.html">Tuyển sinh</a>
+      <a href="contact-vn.html">Liên hệ</a>
       <a href="https://english.synergylifelineconsulting.com/">Đăng nhập</a>
     </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/includes.js"></script>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/includes.js"></script>
 </body>
 </html>
