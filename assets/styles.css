@@ -116,4 +116,131 @@ body {
     .section-title{font-weight:800}
     .login-btn{border:2px solid var(--brand);color:var(--brand);font-weight:700}
     .login-btn:hover{background:var(--brand);color:#fff}
-  
+
+/* --------------------------------------------------------------------
+   Liquid Glass UI Overrides
+   --------------------------------------------------------------------
+   This section customizes the entire site to adopt a "Liquid Glass" aesthetic.
+   The design uses semi-transparent backgrounds, blurred backdrops, and soft
+   shadows to achieve a frosted glass effect similar to Apple's iOS 26 Liquid
+   Glass UI【16595077899870†screenshot】. These overrides target Bootstrap classes and
+   existing components so that the HTML does not need to change. If Bootstrap
+   gains native support for Liquid Glass in the future, these overrides
+   gracefully coexist by using CSS variables and !important declarations.
+*/
+
+:root {
+  /* Variables controlling the glass appearance */
+  /* Glass surfaces are slightly more translucent for a stronger frosted effect. */
+  --glass-bg: rgba(255, 255, 255, 0.2);
+  --glass-blur: blur(20px);
+  --glass-border: rgba(255, 255, 255, 0.4);
+}
+
+/* Give the page a soft, luminous background reminiscent of frosted glass. The
+   backdrop-filter on body sets the overall blur layer; this pairs nicely with
+   individual glass cards below. */
+body {
+  /* A gentle blue-to-white gradient underlies the glass panels. Adjust the
+     opacity and colours for a more pronounced Liquid Glass look. */
+  background: linear-gradient(135deg,
+    rgba(37, 99, 235, 0.2) 0%,
+    rgba(255, 255, 255, 0.6) 100%), #ffffff;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+
+/* Apply glass panels to primary containers and interactive sections. The
+   !important flag ensures these styles override Bootstrap's defaults. */
+.navbar,
+.navbar.bg-white,
+.card-shadow,
+.callout,
+.stat,
+.program-card,
+.schedule-item,
+.footer,
+.bg-white,
+.bg-light,
+.card,
+.hero {
+  background: var(--glass-bg) !important;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure text remains legible on translucent panels by darkening it slightly. */
+.navbar a,
+.navbar-brand,
+.nav-link,
+.hero .display-5,
+.hero .lead,
+.card-shadow,
+.card-shadow .fw-semibold,
+.card-shadow .small,
+.card-shadow .small-muted,
+.stat,
+.callout,
+.program-card,
+.schedule-item,
+.footer {
+  color: #0c2243;
+}
+
+/* Buttons retain their brand color but adopt transparency and blur. When
+   hovered, they become fully opaque for emphasis. */
+.btn-primary,
+.btn-outline-primary,
+.btn.login-btn {
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+
+.btn-primary {
+  background-color: rgba(37, 99, 235, 0.7);
+  border-color: rgba(37, 99, 235, 0.7);
+}
+.btn-primary:hover {
+  background-color: rgba(37, 99, 235, 1);
+  border-color: rgba(37, 99, 235, 1);
+}
+.btn-outline-primary {
+  color: rgba(37, 99, 235, 0.8);
+  border-color: rgba(37, 99, 235, 0.5);
+}
+.btn-outline-primary:hover {
+  color: #ffffff;
+  background-color: rgba(37, 99, 235, 0.9);
+  border-color: rgba(37, 99, 235, 0.9);
+}
+.btn.login-btn {
+  border-color: rgba(37, 99, 235, 0.8);
+  color: rgba(37, 99, 235, 0.8);
+}
+.btn.login-btn:hover {
+  background-color: rgba(37, 99, 235, 0.9);
+  color: #ffffff;
+}
+
+/* Badges now float gently over the glass panels with subtle borders. */
+.badge-hot,
+.badge-open,
+.badge-limited,
+.status-open,
+.status-limited,
+.status-hot,
+.status-full {
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+}
+
+/* Override Bootstrap elements that specify solid colors to ensure transparency
+   works across the UI. */
+.navbar.bg-white,
+.bg-white,
+.bg-light {
+  background-color: var(--glass-bg) !important;
+}
