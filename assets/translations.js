@@ -101,16 +101,16 @@ const HEC_TRANSLATIONS = {
   "test.title":        { en: "What Parents Say",    vi: "Phụ huynh nói gì?" },
   "test.t1Name":       { en: "Ms. Linh",            vi: "Chị Linh" },
   "test.t1Grade":      { en: "Grade 4 Parent",      vi: "Phụ huynh lớp 4" },
-  "test.t1Quote":      { en: ""After just one month, my daughter reads more willingly and explains her ideas with clarity. The free Reading Club made a big difference."",
-                         vi: ""Sau 1 tháng, con chủ động đọc hơn và trình bày ý tưởng rõ ràng. CLB Đọc miễn phí tạo ra sự khác biệt lớn."" },
+  "test.t1Quote":      { en: "\"After just one month, my daughter reads more willingly and explains her ideas with clarity. The free Reading Club made a big difference.\"",
+                         vi: "\"Sau 1 tháng, con chủ động đọc hơn và trình bày ý tưởng rõ ràng. CLB Đọc miễn phí tạo ra sự khác biệt lớn.\"" },
   "test.t2Name":       { en: "Mr. Minh",            vi: "Anh Minh" },
   "test.t2Grade":      { en: "Grade 6 Parent",      vi: "Phụ huynh lớp 6" },
-  "test.t2Quote":      { en: ""Clear goals, small classes, and coaches who really listen. My son now enjoys non-fiction and presents with confidence."",
-                         vi: ""Mục tiêu rõ ràng, lớp ít học sinh, giáo viên thật sự lắng nghe. Con thích đọc non-fiction và thuyết trình tự tin hơn."" },
+  "test.t2Quote":      { en: "\"Clear goals, small classes, and coaches who really listen. My son now enjoys non-fiction and presents with confidence.\"",
+                         vi: "\"Mục tiêu rõ ràng, lớp ít học sinh, giáo viên thật sự lắng nghe. Con thích đọc non-fiction và thuyết trình tự tin hơn.\"" },
   "test.t3Name":       { en: "Ms. Hoa",             vi: "Chị Hoa" },
   "test.t3Grade":      { en: "Grade 2 Parent",      vi: "Phụ huynh lớp 2" },
-  "test.t3Quote":      { en: ""The phonics and fluency routines are simple to practice at home. Saturday Reading Club has become our favorite weekly habit."",
-                         vi: ""Phonics và luyện đọc trôi chảy dễ thực hành ở nhà. Chiều Thứ Bảy tới CLB Đọc thành thói quen yêu thích của con."" },
+  "test.t3Quote":      { en: "\"The phonics and fluency routines are simple to practice at home. Saturday Reading Club has become our favorite weekly habit.\"",
+                         vi: "\"Phonics và luyện đọc trôi chảy dễ thực hành ở nhà. Chiều Thứ Bảy tới CLB Đọc thành thói quen yêu thích của con.\"" },
 
   /* ─── Methodology ─────────────────────────────────────────── */
   "method.title":      { en: "How We Teach",         vi: "Phương pháp giảng dạy" },
@@ -186,10 +186,139 @@ const HEC_TRANSLATIONS = {
   "cont.message":      { en: "Message (optional)",    vi: "Lời nhắn (tuỳ chọn)" },
   "cont.submit":       { en: "Submit Enrollment",     vi: "Gửi đăng ký" },
 
+  /* ─── Summer Camp NAV & HERO ────────────────────────────────────── */
+  "nav.summerCamp":    { en: "Summer Camp",           vi: "Trại Hè" },
+  "camp.badgeNew":     { en: "Summer 2026",           vi: "Mùa Hè 2026" },
+  "camp.badgeDates":   { en: "June – August",         vi: "Tháng 6 – 8" },
+  "camp.badgeTime":    { en: "08:00 – 16:00",         vi: "08:00 – 16:00" },
+  "camp.heroTitle":    { en: "Every Minute Matters.", vi: "Từng Phút Đều Vô Giá." },
+  "camp.heroSub":      { en: "Don't let two months of summer erase a year of progress. While others fall behind, your child will step ahead.", 
+                         vi: "Đừng để 2 tháng hè xóa sạch 1 năm nỗ lực. Trong khi các bạn khác tụt hậu, con bạn sẽ bứt phá." },
+  "camp.pill1":        { en: "Future-Proof Skills",   vi: "Kỹ năng Tương lai" },
+  "camp.pill2":        { en: "Critical Thinking",     vi: "Tư duy Phản biện" },
+  "camp.pill3":        { en: "Active English Leadership", vi: "Lãnh đạo Tiếng Anh Chủ động" },
+  "camp.ctaPrimary":   { en: "Register for Summer Camp", vi: "Đăng ký Trại Hè" },
+  "camp.ctaSecondary": { en: "View Full Timetable",   vi: "Xem Thời Khóa Biểu" },
+
+  /* ─── Summer Camp HIGHLIGHTS ──────────────────────────────── */
+  "camp.h1Title":      { en: "Full English Immersion", vi: "Đắm chìm trong Tiếng Anh" },
+  "camp.h1Desc":       { en: "Project-based English from 8:30–10:30 every day. Students use English to investigate, debate, and present — not just memorize.",
+                         vi: "Tiếng Anh học qua dự án từ 8:30–10:30 mỗi ngày. Học sinh dùng Tiếng Anh để điều tra, phản biện và thuyết trình — không chỉ học thuộc lòng." },
+  "camp.h2Title":      { en: "STEAM & Engineering",    vi: "Khoa học Kỹ thuật STEAM" },
+  "camp.h2Desc":       { en: "Hands-on robotics, coding, and physical prototyping. Students build, test, fail, and iterate — real engineering thinking.",
+                         vi: "Thực hành robotics, lập trình và tạo mô hình thực tế. Học sinh xây dựng, thử nghiệm, thất bại và lặp lại — tư duy kỹ sư thực thụ." },
+  "camp.h3Title":      { en: "Creative Arts & Dance",  vi: "Nghệ thuật & Nhảy múa" },
+  "camp.h3Desc":       { en: "Afternoon arts, crafts, and dynamic dance classes fuel creativity and self-expression through multiple modalities.",
+                         vi: "Lớp thủ công nghệ thuật và khiêu vũ sôi động buổi chiều nuôi dưỡng sự sáng tạo và thể hiện bản thân qua nhiều hình thức." },
+  "camp.h4Title":      { en: "Mindfulness & Wellbeing",vi: "Chánh niệm & Thể chất" },
+  "camp.h4Desc":       { en: "Every day starts with emotional check-ins. Supervised nap time, hydration breaks, and nutritious lunch included.",
+                         vi: "Bắt đầu mỗi ngày với kiểm tra cảm xúc. Bao gồm kiểm soát giấc ngủ trưa, giờ uống nước và bữa trưa dinh dưỡng." },
+
+  /* ─── Summer Camp TIMETABLE ───────────────────────────────── */
+  "camp.ttTitle":      { en: "Weekly Timetable",      vi: "Thời khóa biểu tuần" },
+  "camp.ttSub":        { en: "A purposeful day packed with active learning, creative exploration, and structured play — all in English.",
+                         vi: "Một ngày ý nghĩa ngập tràn học tập chủ động, khám phá sáng tạo và vui chơi có cấu trúc — hoàn toàn bằng Tiếng Anh." },
+  "camp.thTime":       { en: "Time",                  vi: "Thời gian" },
+  "camp.thMon":        { en: "Monday<br><small>The Hook (Explore)</small>", vi: "Thứ 2<br><small>Gợi mở (Khám phá)</small>" },
+  "camp.thTue":        { en: "Tuesday<br><small>Research & Build</small>", vi: "Thứ 3<br><small>Nghiên cứu & Chế tạo</small>" },
+  "camp.thWed":        { en: "Wednesday<br><small>Global Problem Solving</small>", vi: "Thứ 4<br><small>Giải quyết Vấn đề Toàn cầu</small>" },
+  "camp.thThu":        { en: "Thursday<br><small>Test & Connect</small>", vi: "Thứ 5<br><small>Thử nghiệm & Kết nối</small>" },
+  "camp.thFri":        { en: "Friday<br><small>The Grand Showcase</small>", vi: "Thứ 6<br><small>Triển lãm Dự án</small>" },
+
+  /* 8:00 */
+  "camp.mindTitle":    { en: "Mindfulness & Resilience", vi: "Chánh niệm & Kiên cường" },
+  "camp.mindDesc":     { en: "A calm brain learns faster. Daily emotional check-ins.", vi: "Não bộ bình tĩnh học nhanh hơn. Kiểm tra cảm xúc hàng ngày." },
+
+  /* 8:30 */
+  "camp.eng1Title":    { en: "Active English (PBL)",  vi: "Tiếng Anh (Dự án)" },
+  "camp.eng1Desc":     { en: "Project Intro. Using English to ask big questions.", vi: "Giới thiệu Dự án. Dùng Tiếng Anh để đặt câu hỏi lớn." },
+  "camp.eng2Title":    { en: "Active English (PBL)",  vi: "Tiếng Anh (Dự án)" },
+  "camp.eng2Desc":     { en: "Role-play and vocabulary building for real-world use.", vi: "Đóng vai và xây dựng từ vựng thực tế." },
+  "camp.eng3Title":    { en: "Active English (PBL)",  vi: "Tiếng Anh (Dự án)" },
+  "camp.eng3Desc":     { en: "Interactive read-alouds and reading comprehension.", vi: "Đọc tương tác và rèn luyện đọc hiểu." },
+  "camp.eng4Title":    { en: "Active English (PBL)",  vi: "Tiếng Anh (Dự án)" },
+  "camp.eng4Desc":     { en: "Debates and presentation preparation.", vi: "Tranh biện và chuẩn bị thuyết trình." },
+  "camp.eng5Title":    { en: "Active English (PBL)",  vi: "Tiếng Anh (Dự án)" },
+  "camp.eng5Desc":     { en: "Final project reflections and confident speaking.", vi: "Đúc kết dự án và tự tin thuyết trình." },
+
+  /* 10:30 */
+  "camp.break1":       { en: "Brain Break & Hydration", vi: "Giải lao & Uống nước" },
+
+  /* 10:40 */
+  "camp.st1Title":     { en: "Hands-on Engineering",  vi: "Kỹ thuật Thực hành" },
+  "camp.st1Desc":      { en: "Blueprinting and designing physical solutions.", vi: "Lên bản vẽ và thiết kế giải pháp thực tế." },
+  "camp.st2Title":     { en: "Robotics",              vi: "Lắp ráp Robot" },
+  "camp.st2Desc":      { en: "Building functional, moving robots.", vi: "Lắp ráp robot có chức năng chuyển động." },
+  "camp.st3Title":     { en: "Hands-on Engineering",  vi: "Kỹ thuật Thực hành" },
+  "camp.st3Desc":      { en: "Creating physical prototypes.", vi: "Tạo nguyên mẫu vật lý." },
+  "camp.st4Title":     { en: "Robotics & Testing",    vi: "Thử nghiệm Robot" },
+  "camp.st4Desc":      { en: "Fixing and improving designs.", vi: "Sửa chữa và cải tiến thiết kế." },
+  "camp.st5Title":     { en: "Engineering Challenge", vi: "Thử thách Kỹ thuật" },
+  "camp.st5Desc":      { en: "Final stress-test of weekly builds.", vi: "Kiểm tra độ bền dự án cuối tuần." },
+
+  /* 11:40 */
+  "camp.lunchTitle":   { en: "Nutritious Lunch",      vi: "Bữa trưa Dinh dưỡng" },
+  "camp.lunchDesc":    { en: "Fueling active minds.", vi: "Nạp năng lượng cho trí tuệ" },
+
+  /* 12:00 */
+  "camp.napTitle":     { en: "Deep Brain Recharge (Supervised Nap)", vi: "Nạp năng lượng Não bộ (Ngủ trưa)" },
+  "camp.napDesc":      { en: "Crucial for memory consolidation, physical growth, and afternoon focus.", 
+                         vi: "Vô cùng quan trọng để củng cố trí nhớ, phát triển thể chất và sự tập trung." },
+
+  /* 13:45 */
+  "camp.break2":       { en: "Wake Up, Stretch & Afternoon Snack", vi: "Thức dậy, Vươn vai & Ăn nhẹ" },
+
+  /* 14:00 */
+  "camp.art1Title":    { en: "Creative Arts",         vi: "Nghệ thuật Sáng tạo" },
+  "camp.art1Desc":     { en: "Arts & crafts tied to the weekly theme.", vi: "Thủ công gắn liền với chủ đề tuần." },
+  "camp.art2Title":    { en: "Creative Arts",         vi: "Nghệ thuật Sáng tạo" },
+  "camp.art2Desc":     { en: "Fine motor skill development through art.", vi: "Phát triển vận động tinh qua nghệ thuật." },
+  "camp.art3Title":    { en: "Creative Arts",         vi: "Nghệ thuật Sáng tạo" },
+  "camp.art3Desc":     { en: "Bringing imagination into reality.", vi: "Biến trí tưởng tượng thành hiện thực." },
+  "camp.art4Title":    { en: "Creative Arts",         vi: "Nghệ thuật Sáng tạo" },
+  "camp.art4Desc":     { en: "Finishing touches on physical projects.", vi: "Hoàn thiện các dự án thực tế." },
+  "camp.danceTitle":   { en: "Dynamic Dance Class",   vi: "Lớp Nhảy Năng động" },
+  "camp.danceDesc":    { en: "End of week energy release and coordination.", vi: "Giải phóng năng lượng và điều hòa cơ thể cuối tuần." },
+
+  /* 15:00 */
+  "camp.break3":       { en: "Brain Break & Hydration", vi: "Giải lao & Uống nước" },
+
+  /* 15:10 */
+  "camp.pm1Title":     { en: "Global Empathy",        vi: "Thấu cảm Toàn cầu" },
+  "camp.pm1Desc":      { en: "Social studies & world cultures.", vi: "Kiến thức xã hội & văn hóa thế giới." },
+  "camp.pm2Title":     { en: "Future Coding",         vi: "Lập trình Tương lai" },
+  "camp.pm2Desc":      { en: "Learning the language of the future.", vi: "Học ngôn ngữ của kỷ nguyên mới." },
+  "camp.pm3Title":     { en: "Tech & Logic",          vi: "Công nghệ & Logic" },
+  "camp.pm3Desc":      { en: "Advanced logic puzzles to sharpen the mind.", vi: "Câu đố logic nâng cao rèn luyện trí não." },
+  "camp.pm4Title":     { en: "Digital Mastery",       vi: "Làm chủ Kỹ thuật số" },
+  "camp.pm4Desc":      { en: "App logic & finalizing digital portfolios.", vi: "Logic ứng dụng & hoàn thiện hồ sơ dự án." },
+  "camp.pm5Title":     { en: "Project Showcase",      vi: "Triển lãm Dự án" },
+  "camp.pm5Desc":      { en: "Recording video portfolios for parents.", vi: "Quay video dự án gửi phụ huynh." },
+
+  /* 16:00 */
+  "camp.pickup":       { en: "16:00 – Pickup",        vi: "16:00 – Đón về" },
+  "camp.fp1Title":     { en: "Strategic Play",        vi: "Trò chơi Chiến Thuật" },
+  "camp.fp1Desc":      { en: "English Board Games (Scrabble, UNO).", vi: "Board Game Tiếng Anh." },
+  "camp.fp2Title":     { en: "Unstructured Maker",    vi: "Chế tạo Tự do" },
+  "camp.fp2Desc":      { en: "Free-build LEGO & Magnatiles.", vi: "Lắp ráp LEGO & Magnatiles." },
+  "camp.fp3Title":     { en: "Audio Immersion",       vi: "Đắm chìm Âm thanh" },
+  "camp.fp3Desc":      { en: "English audiobook listening station.", vi: "Trạm đọc sách và nghe sách nói." },
+  "camp.fp4Title":     { en: "Mindful Art",           vi: "Nghệ thuật Chánh niệm" },
+  "camp.fp4Desc":      { en: "Thematic coloring and journaling.", vi: "Tô màu và viết sổ tay." },
+  "camp.fp5Title":     { en: "Community Puzzles",     vi: "Câu đố Cộng đồng" },
+  "camp.fp5Desc":      { en: "Large floor puzzles & camp wrap-up.", vi: "Chơi xếp ghép hình lớn và kết thúc." },
+
+  /* CAMP CTA */
+  "camp.ctaHeadline":  { en: "Don't Let Summer Slide Steal Your Child's Progress",
+                         vi: "Đừng Để Rơi Rụng Kiến Thức Mùa Hè" },
+  "camp.ctaSub":       { en: "Spots are limited to 12 per group. Register now to lock in your child's place in Hanoi's most immersive English STEAM camp.",
+                         vi: "Sĩ số giới hạn 12 học sinh mỗi lớp. Đăng ký ngay để giữ chỗ tại trại hè tiếng Anh STEAM hàng đầu Hà Nội." },
+  "camp.ctaBtn":       { en: "Register Now",          vi: "Đăng ký ngay" },
+
   /* ─── Footer ──────────────────────────────────────────────── */
   "foot.tagline":      { en: "Small classes. Big confidence.",
                          vi: "Lớp nhỏ. Tự tin lớn." },
   "foot.quickLinks":   { en: "Quick Links",           vi: "Liên kết nhanh" },
   "foot.connect":      { en: "Connect",               vi: "Kết nối" },
-  "foot.rights":       { en: "All rights reserved.",   vi: "Bảo lưu mọi quyền." },
+  "foot.rights":       { en: "All rights reserved.",   vi: "Bảo lưu mọi quyền." }
 };

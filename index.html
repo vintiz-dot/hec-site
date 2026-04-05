@@ -22,43 +22,7 @@
 <!-- ═══════════════════════════════════════════════════════════════
      NAVBAR
      ═══════════════════════════════════════════════════════════════ -->
-<nav id="main-nav" class="navbar navbar-expand-lg sticky-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-      <span class="brand-badge">HEC</span>
-      <span class="fw-bold" style="font-family:var(--font-display)">Happy English Club</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="nav" class="collapse navbar-collapse">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link" href="#home" data-i18n="nav.home">Home</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-i18n="nav.programs">Programs</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="courses/mars.html">Mars — Look Starter</a></li>
-            <li><a class="dropdown-item" href="courses/venus.html">Venus — Look 1</a></li>
-            <li><a class="dropdown-item" href="courses/neptune.html">Neptune — Look 2</a></li>
-            <li><a class="dropdown-item" href="courses/jupiter.html">Jupiter — Discover 1</a></li>
-            <li><a class="dropdown-item" href="courses/sky1.html">SKY 1 — Discover 3</a></li>
-            <li><a class="dropdown-item" href="courses/sanrio.html">Sanrio G6 — Writing</a></li>
-            <li><a class="dropdown-item" href="courses/mercury.html">Mercury — Cambridge Math</a></li>
-            <li><a class="dropdown-item" href="courses/sun.html">Sun — IELTS</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#reading-club" data-i18n="nav.readingClub">Reading Club</a></li>
-        <li class="nav-item"><a class="nav-link" href="#admissions" data-i18n="nav.admissions">Admissions &amp; Fees</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
-      </ul>
-      <div class="d-flex gap-2 align-items-center">
-        <a class="btn btn-primary" href="#contact" data-i18n="nav.enrollNow">Enroll Now</a>
-        <a class="btn login-btn" href="https://english.synergylifelineconsulting.com/" data-i18n="nav.login">Log in</a>
-        <a class="lang-toggle" href="#" role="button" aria-label="Switch language">VN</a>
-      </div>
-    </div>
-  </div>
-</nav>
+<div id="nav-placeholder"></div>
 
 <!-- ═══════════════════════════════════════════════════════════════
      HERO
@@ -612,6 +576,42 @@
 </section>
 
 <!-- ═══════════════════════════════════════════════════════════════
+     SUMMER CAMP SPOTLIGHT
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="py-5" style="background: linear-gradient(to bottom, #ffffff, #f8fafc);">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 reveal">
+        <span class="badge-status badge-hot mb-3"><i class="bi bi-fire"></i> <span data-i18n="camp.badgeNew">Summer 2026</span></span>
+        <h2 class="display-5 fw-bold mb-3" style="color:var(--hec-dark)" data-i18n="camp.heroTitle">Every Minute Matters.</h2>
+        <p class="lead mb-4" style="color:var(--hec-text)" data-i18n="camp.heroSub">Don't let two months of summer erase a year of progress. While others fall behind, your child will step ahead.</p>
+        
+        <ul class="list-unstyled mb-4">
+          <li class="mb-2"><i class="bi bi-translate text-primary me-2"></i> <strong data-i18n="camp.h1Title">Full English Immersion</strong></li>
+          <li class="mb-2"><i class="bi bi-gear-wide-connected text-success me-2"></i> <strong data-i18n="camp.h2Title">STEAM &amp; Engineering</strong></li>
+          <li class="mb-2"><i class="bi bi-heart-pulse text-danger me-2"></i> <strong data-i18n="camp.h4Title">Mindfulness &amp; Wellbeing</strong></li>
+        </ul>
+        
+        <div class="d-flex gap-3">
+          <a href="summer-camp.html" class="btn btn-primary" data-i18n="camp.ctaSecondary">View Full Timetable</a>
+        </div>
+      </div>
+      <div class="col-lg-6 reveal reveal-delay-2">
+        <div class="position-relative">
+          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1000" alt="Summer Camp" class="img-fluid rounded-4 shadow-lg" style="border: 4px solid white;">
+          <div class="position-absolute bottom-0 start-0 translate-middle-y ms-n4 d-none d-md-block">
+            <div class="bg-white p-3 rounded-3 shadow-lg text-center" style="border-left: 4px solid var(--hec-gold)">
+              <div class="fw-bold fs-4 text-primary" data-i18n="camp.badgeDates">June &ndash; August</div>
+              <div class="small text-muted" data-i18n="camp.badgeTime">08:00 – 16:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
      SCARCITY CTA — Urgency Driver
      ═══════════════════════════════════════════════════════════════ -->
 <section class="scarcity-section" aria-label="Enrollment urgency">
@@ -700,6 +700,7 @@
                   <option>Cambridge Math – Mercury</option>
                   <option>IELTS – Sun Class</option>
                   <option>Reading Club (Saturday 14:00–16:00)</option>
+                  <option>Summer Camp 2026</option>
                 </select>
               </div>
               <div class="col-12">
@@ -728,46 +729,7 @@
 <!-- ═══════════════════════════════════════════════════════════════
      FOOTER
      ═══════════════════════════════════════════════════════════════ -->
-<footer class="footer">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-4 footer-brand">
-        <div class="d-flex align-items-center gap-2 mb-3">
-          <span class="brand-badge">HEC</span>
-          <span class="text-white fw-bold" style="font-family:var(--font-display)">Happy English Club</span>
-        </div>
-        <p class="small mb-0" data-i18n="foot.tagline">Small classes. Big confidence.</p>
-      </div>
-      <div class="col-6 col-lg-2">
-        <h6 data-i18n="foot.quickLinks">Quick Links</h6>
-        <ul class="list-unstyled mb-0">
-          <li class="mb-1"><a href="#programs" data-i18n="nav.programs">Programs</a></li>
-          <li class="mb-1"><a href="#reading-club" data-i18n="nav.readingClub">Reading Club</a></li>
-          <li class="mb-1"><a href="#admissions" data-i18n="nav.admissions">Admissions & Fees</a></li>
-          <li class="mb-1"><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2">
-        <h6 data-i18n="foot.connect">Connect</h6>
-        <ul class="list-unstyled mb-0">
-          <li class="mb-1"><a href="#"><i class="bi bi-facebook me-1"></i> Facebook</a></li>
-          <li class="mb-1"><a href="#"><i class="bi bi-chat-dots me-1"></i> Zalo</a></li>
-          <li class="mb-1"><a href="tel:0975679889"><i class="bi bi-telephone me-1"></i> 0975 679 889</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-4">
-        <h6 data-i18n="nav.contact">Contact</h6>
-        <p class="small mb-1"><i class="bi bi-geo-alt me-1"></i> <span data-i18n="cont.address">No. 25, Alley 242 Láng Street, Đống Đa District, Hanoi</span></p>
-        <p class="small mb-0">
-          <a href="https://english.synergylifelineconsulting.com/" class="text-decoration-underline" data-i18n="nav.login">Log in</a>
-        </p>
-      </div>
-    </div>
-    <div class="footer-bottom text-center">
-      © <span id="year"></span> HEC — Happy English Club Hanoi. <span data-i18n="foot.rights">All rights reserved.</span>
-    </div>
-  </div>
-</footer>
+<div id="footer-placeholder"></div>
 
 <!-- ── Scripts ──────────────────────────────────────────────────── -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

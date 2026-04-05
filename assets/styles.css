@@ -1156,3 +1156,195 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--radius-lg);
   overflow: hidden;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   SUMMER CAMP STYLES
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Camp Hero */
+.camp-hero {
+  padding: 100px 0 60px;
+  background: linear-gradient(135deg, var(--hec-blue-soft), #ffffff);
+  border-bottom: 1px solid rgba(37,99,235,0.1);
+  overflow: hidden;
+}
+
+.camp-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: white;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--hec-blue);
+  box-shadow: 0 4px 15px rgba(37,99,235,0.05);
+  border: 1px solid rgba(37,99,235,0.1);
+  transition: transform 0.2s ease;
+}
+.camp-pill:hover { transform: translateY(-2px); }
+.camp-pill i { color: var(--hec-gold); }
+
+/* Badges */
+.badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.badge-hot {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid rgba(220,38,38,0.2);
+}
+.badge-open {
+  background: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid rgba(22,163,74,0.2);
+}
+
+/* Timetable */
+.camp-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.05);
+  background: white;
+  padding: 1px; /* border offset */
+}
+.camp-table {
+  width: 100%;
+  min-width: 900px; /* force scroll on mobile */
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.95rem;
+}
+.camp-table th {
+  background: var(--hec-dark);
+  color: white;
+  padding: 1.2rem 1rem;
+  font-weight: 700;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.camp-table th small {
+  display: block;
+  font-weight: 400;
+  color: rgba(255,255,255,0.7);
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+}
+.camp-table th.tt-time {
+  width: 110px;
+  background: #111827; 
+}
+.camp-table th.tt-friday {
+  background: linear-gradient(135deg, var(--hec-dark), #1e1b4b);
+}
+
+.camp-table td {
+  padding: 1rem;
+  vertical-align: top;
+  border-right: 1px solid #f1f5f9;
+  border-bottom: 1px solid #f1f5f9;
+}
+.camp-table td.tt-time {
+  font-weight: 700;
+  color: var(--hec-text);
+  background: #f8fafc;
+  vertical-align: middle;
+  text-align: center;
+  border-right: 1px solid #e2e8f0;
+}
+.camp-table td.tt-time-sm {
+  font-weight: 600;
+  color: var(--hec-text);
+  background: #f8fafc;
+  font-size: 0.8rem;
+  text-align: center;
+  border-right: 1px solid #e2e8f0;
+}
+
+/* Blocks */
+.tt-block {
+  border-radius: 8px;
+  margin: -0.2rem;
+  padding: 0.8rem;
+  height: calc(100% + 0.4rem);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  z-index: 1;
+}
+.tt-block:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.tt-emoji {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+.tt-block strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: #1e293b;
+  line-height: 1.2;
+}
+.tt-block small {
+  color: #475569;
+  line-height: 1.4;
+  display: block;
+}
+
+/* Colors */
+.tt-mindful { background: #fef08a; border-left: 4px solid #eab308; } /* Yellow */
+.tt-english { background: #e0e7ff; border-left: 4px solid #6366f1; } /* Indigo */
+.tt-steam   { background: #dcfce7; border-left: 4px solid #22c55e; } /* Green */
+.tt-lunch   { background: #fed7aa; border-left: 4px solid #f97316; } /* Orange */
+.tt-rest    { background: #f1f5f9; border-left: 4px solid #94a3b8; } /* Slate */
+.tt-art     { background: #fae8ff; border-left: 4px solid #d946ef; } /* Fuchsia */
+.tt-dance   { background: #ffe4e6; border-left: 4px solid #f43f5e; } /* Rose */
+.tt-code    { background: #ccfbf1; border-left: 4px solid #14b8a6; } /* Teal */
+.tt-global  { background: #e0f2fe; border-left: 4px solid #0ea5e9; } /* Sky */
+.tt-showcase{ background: #fef9c3; border-left: 4px solid #eab308; } /* Yellow */
+.tt-play    { background: #f3e8ff; border-left: 4px solid #a855f7; } /* Purple */
+
+.tt-break-row td {
+  background: #f8fafc;
+  padding: 0.5rem;
+}
+.tt-break {
+  text-align: center;
+  color: #64748b;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Special Star Block for Friday PM */
+.tt-showcase-star {
+  background: linear-gradient(135deg, #fef9c3, #fde047);
+  box-shadow: inset 0 0 0 1px rgba(234,179,8,0.3);
+}
+.tt-showcase-star .tt-star {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.2rem;
+  animation: pulseStar 2s infinite ease-in-out;
+}
+
+@keyframes pulseStar {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}

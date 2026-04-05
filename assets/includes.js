@@ -11,14 +11,41 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ── Language toggle ──────────────────────────────────────── */
-  document.querySelectorAll('.lang-toggle').forEach(btn => {
-    btn.addEventListener('click', e => {
-      e.preventDefault();
-      if (typeof HEC_I18N !== 'undefined') {
-        HEC_I18N.toggle();
-      }
+  /* ── Load Partials ────────────────────────────────────────── */
+  const loadPartials = async () => {
+    const navPh = document.getElementById('nav-placeholder');
+    const footPh = document.getElementById('footer-placeholder');
+
+    if (navPh) {
+      try {
+        const response = await fetch('assets/partials/navbar.html');
+        if (response.ok) navPh.innerHTML = await response.text();
+      } catch (err) { console.error('Error loading navbar', err); }
+    }
+
+    if (footPh) {
+      try {
+        const response = await fetch('assets/partials/footer.html');
+        if (response.ok) footPh.innerHTML = await response.text();
+      } catch (err) { console.error('Error loading footer', err); }
+    }
+  };
+
+  loadPartials().then(() => {
+    /* ── Language toggle ──────────────────────────────────────── */
+    document.querySelectorAll('.lang-toggle').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        if (typeof HEC_I18N !== 'undefined') {
+          HEC_I18N.toggle();
+        }
+      });
     });
+
+    // Make sure dynamically loaded data-i18n tags get processed immediately
+    if (typeof HEC_I18N !== 'undefined') {
+      HEC_I18N.apply();
+    }
   });
 
   /* ── Scroll reveal ────────────────────────────────────────── */
