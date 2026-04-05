@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanoi Happy English Center - Mock Test</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+            color: #e2e8f0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* Ambient glowing background elements */
+        .ambient-glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, rgba(0,0,0,0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            animation: pulse-glow 10s infinite alternate ease-in-out;
+        }
+        
+        .glow-1 { top: -200px; left: -200px; }
+        .glow-2 { bottom: -200px; right: -200px; background: radial-gradient(circle, rgba(168,85,247,0.15) 0%, rgba(0,0,0,0) 70%); }
+
+        @keyframes pulse-glow {
+            0% { transform: scale(1); opacity: 0.5; }
+            100% { transform: scale(1.2); opacity: 1; }
+        }
+
+        /* Idle Floating Animation for numbers */
+        @keyframes idleFloat {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .idle-float {
+            animation: idleFloat 4s ease-in-out infinite;
+        }
+        
+        /* Stagger the floating animation for different numbers */
+        .idle-float:nth-child(even) { animation-delay: 1s; animation-duration: 5s; }
+        .idle-float:nth-child(3n) { animation-delay: 2s; animation-duration: 4.5s; }
+
+        /* Milky Way Animation */
+        @keyframes milkyWayOut {
+            0% { 
+                transform: scale(1) translateY(0) rotate(0deg); 
+                opacity: 1; 
+                filter: blur(0px);
+            }
+            50% {
+                opacity: 0.8;
+                filter: blur(2px);
+            }
+            100% { 
+                transform: scale(0.1) translateY(-500px) translateX(200px) rotate(360deg); 
+                opacity: 0; 
+                filter: blur(10px);
+            }
+        }
+        .milky-way-anim {
+            animation: milkyWayOut 2.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+            pointer-events: none;
+        }
+
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        // The exact questions generated previously
+        const questionSets = [
+            {
+                id: 1,
+                title: "Set 1: Daily Life and Routines",
+                part1: [
+                    "What time do you usually wake up on a weekday?",
+                    "What is the first thing you do in the morning?",
+                    "Do you prefer the morning or the evening? Why?"
+                ],
+                part2: {
+                    task: "Describe a typical busy day in Hanoi.",
+                    bullets: [
+                        "Where you go",
+                        "How you travel around the city",
+                        "What activities take up most of your time",
+                        "And explain how you manage your time on a busy day."
+                    ],
+                    scaffold: "Focus on practical steps. First I do this, then I do that..."
+                },
+                part3: [
+                    { q: "Do you think people in Vietnam have a good balance between work and free time?", hint: "Think about stress levels and family time." },
+                    { q: "If you could design a new daily schedule for schools that would make students less tired, what would it look like?", hint: "Create/Synthesize" }
+                ]
+            },
+            {
+                id: 2,
+                title: "Set 2: House and Home",
+                part1: [
+                    "Do you live in a house or an apartment?",
+                    "Which room in your home is your favorite?",
+                    "What can you see from the window of your room?"
+                ],
+                part2: {
+                    task: "Describe how you would organize a small apartment to make it comfortable.",
+                    bullets: [
+                        "What furniture you would choose",
+                        "Where you would put everything",
+                        "How you would decorate it",
+                        "And explain why these choices save space."
+                    ],
+                    scaffold: "Think about multi-purpose items, like a bed with drawers."
+                },
+                part3: [
+                    { q: "What are the advantages and disadvantages of living in a modern high-rise building compared to a traditional house in the countryside?", hint: "Compare noise, space, and convenience." },
+                    { q: "Imagine you are an architect designing a 'smart home' for the future. What two new technological features would you invent for it?", hint: "Create/Synthesize" }
+                ]
+            },
+            {
+                id: 3,
+                title: "Set 3: Leisure and Entertainment",
+                part1: [
+                    "What do you usually do on weekends?",
+                    "Do you prefer spending time with friends or family on your days off?",
+                    "Are there many parks or entertainment places near your home?"
+                ],
+                part2: {
+                    task: "Describe a local festival or cultural event you have attended in Vietnam (e.g., Tet or Mid-Autumn Festival).",
+                    bullets: [
+                        "When and where it happened",
+                        "What people were doing",
+                        "What you did there",
+                        "And explain why this event is important to the community."
+                    ],
+                    scaffold: "Describe the colors, sounds, and specific activities you saw."
+                },
+                part3: [
+                    { q: "Do you think young people today spend too much time on digital entertainment (like smartphones) instead of traditional activities?", hint: "Think about health and social skills." },
+                    { q: "Propose a completely new weekend activity or club that you think would be very popular with teenagers in your city.", hint: "Create/Synthesize" }
+                ]
+            },
+            {
+                id: 4,
+                title: "Set 4: Travel and Transport",
+                part1: [
+                    "How do you usually travel to school or work?",
+                    "Is traffic a problem in your city?",
+                    "Have you ever traveled by airplane?"
+                ],
+                part2: {
+                    task: "Plan a perfect short holiday to a destination in Vietnam (like Da Nang or Sapa).",
+                    bullets: [
+                        "Where you would go",
+                        "How you would travel there",
+                        "What you would pack",
+                        "And explain how you would organize the itinerary for the first day."
+                    ],
+                    scaffold: "List the steps in order: booking tickets, packing, arriving."
+                },
+                part3: [
+                    { q: "How has the increase in motorbikes and cars affected the environment in major cities?", hint: "Discuss air quality and noise." },
+                    { q: "Design a new, environmentally friendly public transportation system for a crowded city. How would it work?", hint: "Create/Synthesize" }
+                ]
+            },
+            {
+                id: 5,
+                title: "Set 5: Food and Culture",
+                part1: [
+                    "What is your favorite Vietnamese dish?",
+                    "Do you know how to cook?",
+                    "How often do you eat out at a restaurant or street food stall?"
+                ],
+                part2: {
+                    task: "Describe the process of preparing a meal you know well.",
+                    bullets: [
+                        "What the meal is",
+                        "What ingredients you need",
+                        "The steps to cook it",
+                        "And explain why you enjoy this particular dish."
+                    ],
+                    scaffold: "Use sequence words: First, next, after that, finally."
+                },
+                part3: [
+                    { q: "Why do you think international fast-food chains are becoming so popular with young people, and is this a positive trend?", hint: "Contrast convenience with health." },
+                    { q: "If you had to create a healthy lunch menu for all primary schools in your country, what specific foods would you include and exclude?", hint: "Create/Synthesize" }
+                ]
+            },
+            {
+                id: 6,
+                title: "Set 6: Education and Learning",
+                part1: [
+                    "What was your favorite subject in high school?",
+                    "Do you prefer studying alone or in a group?",
+                    "Do you use the internet for your studies?"
+                ],
+                part2: {
+                    task: "Describe a practical skill you learned outside of the classroom (e.g., swimming, coding, playing an instrument).",
+                    bullets: [
+                        "What the skill is",
+                        "Who taught you",
+                        "How you practiced it",
+                        "And explain how you apply this skill in your life now."
+                    ],
+                    scaffold: "Focus on the method of learning and the practical result."
+                },
+                part3: [
+                    { q: "Some people believe that passing exams is the only way to measure a student's intelligence. Do you agree?", hint: "Think about creativity and practical life skills." },
+                    { q: "If you could build the perfect classroom for the year 2050, what equipment and rules would you put inside it?", hint: "Create/Synthesize" }
+                ]
+            },
+            {
+                id: 7,
+                title: "Set 7: Work and Careers",
+                part1: [
+                    "What kind of job would you like to have in the future?",
+                    "Is it easy to find a job in your city?",
+                    "Do you think English is important for getting a good job?"
+                ],
+                part2: {
+                    task: "Describe the skills needed to be successful in a profession you admire (e.g., a teacher, doctor, or engineer).",
+                    bullets: [
+                        "What the profession is",
+                        "What daily tasks they perform",
+                        "What specific skills they need",
+                        "And explain how someone can develop those skills."
+                    ],
+                    scaffold: "Break down the job into technical skills and personality traits."
+                },
+                part3: [
+                    { q: "Many manual jobs are now being done by robots and AI. Assess the positive and negative impacts of this on society.", hint: "Compare efficiency with unemployment." },
+                    { q: "Invent a completely new job title that does not exist today but will be necessary in 20 years. Describe what that person will do.", hint: "Create/Synthesize" }
+                ]
+            },
+            {
+                id: 8,
+                title: "Set 8: Health and Fitness",
+                part1: [
+                    "What do you do to stay healthy?",
+                    "Do you like playing sports?",
+                    "Is it easy to buy fresh fruit and vegetables near you?"
+                ],
+                part2: {
+                    task: "Describe a popular physical activity people do in your city (like early morning exercise in the park).",
+                    bullets: [
+                        "What the activity is",
+                        "Where and when people do it",
+                        "Who usually participates",
+                        "And explain why this activity is good for them."
+                    ],
+                    scaffold: "Detail the physical movements and the social aspect of the activity."
+                },
+                part3: [
+                    { q: "Whose responsibility is it to keep citizens healthy: the government or the individuals themselves? Defend your answer.", hint: "Think about hospitals vs. personal diet choices." },
+                    { q: "Design a community health campaign to encourage teenagers to sleep more and exercise regularly. What steps would you take to promote it?", hint: "Create/Synthesize" }
+                ]
+            },
+            {
+                id: 9,
+                title: "Set 9: Shopping and Money",
+                part1: [
+                    "Do you enjoy shopping?",
+                    "Do you prefer shopping in traditional local markets or large shopping malls?",
+                    "Have you ever bought anything online?"
+                ],
+                part2: {
+                    task: "Describe a time you bargained for an item in a market.",
+                    bullets: [
+                        "What you were buying",
+                        "Where you were",
+                        "How you negotiated the price",
+                        "And explain how you felt after the purchase."
+                    ],
+                    scaffold: "Explain the communication process and the final outcome."
+                },
+                part3: [
+                    { q: "Evaluate the impact of online shopping on traditional street shops. Is online shopping destroying local businesses?", hint: "Contrast convenience with community economics." },
+                    { q: "Propose an entirely new way for people to buy groceries that produces absolutely zero plastic waste.", hint: "Create/Synthesize" }
+                ]
+            },
+            {
+                id: 10,
+                title: "Set 10: The Environment",
+                part1: [
+                    "What is the weather like in your city today?",
+                    "Do you prefer hot weather or cold weather?",
+                    "Do you ever recycle paper or plastic at home?"
+                ],
+                part2: {
+                    task: "Describe a specific environmental problem you have noticed in your city (like air pollution or flooding).",
+                    bullets: [
+                        "What the problem is",
+                        "When it usually happens",
+                        "How it affects the daily lives of people",
+                        "And explain what you think causes it."
+                    ],
+                    scaffold: "Connect cause and effect. E.g., Heavy rain causes flooded streets, which causes traffic."
+                },
+                part3: [
+                    { q: "Some people think individuals cannot do anything to stop climate change and only large companies can fix it. How far do you agree?", hint: "Compare small daily habits to factory emissions." },
+                    { q: "Outline a step-by-step action plan that your school or workplace could implement next month to cut its electricity and water usage in half.", hint: "Create/Synthesize" }
+                ]
+            }
+        ];
+
+        function App() {
+            // States: 'landing', 'grid', 'test', 'shutdown'
+            const [view, setView] = useState('landing');
+            const [completed, setCompleted] = useState([]);
+            const [animatingOut, setAnimatingOut] = useState(null);
+            const [currentTestId, setCurrentTestId] = useState(null);
+            const [currentTestPart, setCurrentTestPart] = useState(1);
+
+            const handleStart = () => setView('grid');
+
+            const handleNumberClick = (id) => {
+                if (completed.includes(id) || animatingOut === id) return;
+                setCurrentTestId(id);
+                setCurrentTestPart(1);
+                setView('test');
+            };
+
+            const handleNextPart = () => {
+                if (currentTestPart < 3) {
+                    setCurrentTestPart(prev => prev + 1);
+                } else {
+                    handleFinishTest();
+                }
+            };
+
+            const handleFinishTest = () => {
+                setView('grid');
+                setAnimatingOut(currentTestId);
+                
+                // Wait for the milky way animation to finish
+                setTimeout(() => {
+                    const newCompleted = [...completed, currentTestId];
+                    setCompleted(newCompleted);
+                    setAnimatingOut(null);
+                    setCurrentTestId(null);
+                    
+                    if (newCompleted.length === questionSets.length) {
+                        setView('shutdown');
+                    }
+                }, 2500); // 2.5s matches CSS animation
+            };
+
+            return (
+                <div className="relative w-full h-full flex items-center justify-center overflow-hidden z-10">
+                    <div className="ambient-glow glow-1"></div>
+                    <div className="ambient-glow glow-2"></div>
+
+                    {view === 'landing' && <Landing onStart={handleStart} />}
+                    {view === 'grid' && (
+                        <NumberGrid 
+                            completed={completed} 
+                            animatingOut={animatingOut} 
+                            onSelect={handleNumberClick} 
+                        />
+                    )}
+                    {view === 'test' && currentTestId && (
+                        <TestView 
+                            test={questionSets.find(t => t.id === currentTestId)}
+                            part={currentTestPart}
+                            onNext={handleNextPart}
+                        />
+                    )}
+                    {view === 'shutdown' && <ShutdownScreen />}
+                </div>
+            );
+        }
+
+        function Landing({ onStart }) {
+            return (
+                <div className="glass-panel p-12 rounded-3xl text-center max-w-xl mx-4 fade-in z-20">
+                    <h2 className="text-indigo-300 font-semibold tracking-widest uppercase text-sm mb-2">
+                        Hanoi Happy English Center
+                    </h2>
+                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+                        Mock Practice <br/> Speaking Test
+                    </h1>
+                    <div className="w-16 h-1 bg-indigo-500 mx-auto my-6 rounded-full"></div>
+                    <p className="text-xl text-slate-300 mb-2">Sun Class</p>
+                    <p className="text-slate-400 mb-8">With Teacher Victor</p>
+                    
+                    <div className="text-2xl mb-8 font-light flex items-center justify-center gap-2">
+                        Welcome <span className="text-3xl">😏</span>
+                    </div>
+
+                    <button 
+                        onClick={onStart}
+                        className="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(99,102,241,0.5)] focus:outline-none"
+                    >
+                        Begin Test
+                    </button>
+                </div>
+            );
+        }
+
+        function NumberGrid({ completed, animatingOut, onSelect }) {
+            const numbers = Array.from({length: 10}, (_, i) => i + 1);
+
+            return (
+                <div className="z-20 p-8">
+                    <h2 className="text-center text-2xl font-light mb-12 text-slate-300 fade-in">
+                        Select a Topic Number
+                    </h2>
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-10 max-w-4xl mx-auto">
+                        {numbers.map(num => {
+                            const isCompleted = completed.includes(num);
+                            const isAnimating = animatingOut === num;
+                            
+                            if (isCompleted && !isAnimating) return <div key={num} className="w-20 h-20"></div>; // Empty placeholder
+
+                            return (
+                                <div key={num} className="flex justify-center items-center h-24">
+                                    <button
+                                        onClick={() => onSelect(num)}
+                                        disabled={isCompleted || isAnimating}
+                                        className={`
+                                            w-20 h-20 rounded-2xl flex items-center justify-center text-3xl font-bold
+                                            transition-all duration-300 glass-panel hover:bg-white/20
+                                            ${isAnimating ? 'milky-way-anim' : 'idle-float hover:scale-110 hover:shadow-[0_0_25px_rgba(168,85,247,0.4)]'}
+                                            ${isCompleted ? 'opacity-0 cursor-default' : 'text-white cursor-pointer'}
+                                        `}
+                                    >
+                                        {num}
+                                    </button>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+            );
+        }
+
+        function TestView({ test, part, onNext }) {
+            // Re-trigger fade-in animation when part changes
+            const [animKey, setAnimKey] = useState(0);
+            useEffect(() => { setAnimKey(prev => prev + 1); }, [part]);
+
+            return (
+                <div className="z-20 w-full max-w-3xl px-6 flex flex-col h-[80vh]">
+                    {/* Header */}
+                    <div className="text-center mb-8 fade-in">
+                        <span className="bg-indigo-900/50 text-indigo-200 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider">
+                            {test.title}
+                        </span>
+                    </div>
+
+                    {/* Content Area */}
+                    <div key={animKey} className="glass-panel rounded-3xl p-8 md:p-12 flex-grow overflow-y-auto fade-in flex flex-col">
+                        <h2 className="text-2xl font-bold text-white mb-6 border-b border-white/10 pb-4">
+                            Part {part}: {part === 1 ? 'Introduction & Interview' : part === 2 ? 'Long Turn' : 'Two-Way Discussion'}
+                        </h2>
+
+                        <div className="flex-grow">
+                            {part === 1 && (
+                                <div className="space-y-6">
+                                    <p className="text-slate-400 italic mb-4">The examiner asks the candidate about themselves, their home, work or studies and other familiar topics.</p>
+                                    <ul className="space-y-4">
+                                        {test.part1.map((q, i) => (
+                                            <li key={i} className="text-lg text-slate-100 flex items-start">
+                                                <span className="text-indigo-400 mr-3 mt-1">●</span>
+                                                {q}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+
+                            {part === 2 && (
+                                <div className="space-y-6">
+                                    <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+                                        <p className="font-semibold text-lg text-white mb-4">{test.part2.task}</p>
+                                        <p className="text-slate-300 mb-2">You should say:</p>
+                                        <ul className="list-disc list-inside text-slate-300 space-y-2 mb-6 ml-2">
+                                            {test.part2.bullets.map((b, i) => <li key={i}>{b}</li>)}
+                                        </ul>
+                                    </div>
+                                    <div className="bg-indigo-900/30 border border-indigo-500/30 rounded-lg p-4 flex items-start gap-3">
+                                        <span className="text-indigo-400 mt-0.5">💡</span>
+                                        <div>
+                                            <p className="text-indigo-200 font-semibold text-sm mb-1">Scaffold / Hint</p>
+                                            <p className="text-indigo-100/80 text-sm">{test.part2.scaffold}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+
+                            {part === 3 && (
+                                <div className="space-y-8">
+                                    <p className="text-slate-400 italic mb-4">The examiner asks further questions connected to the topic of Part 2. These questions give the candidate an opportunity to discuss more abstract issues and ideas.</p>
+                                    {test.part3.map((item, i) => (
+                                        <div key={i} className="bg-white/5 rounded-xl p-5">
+                                            <p className="text-lg text-slate-100 mb-3">{item.q}</p>
+                                            <div className="text-sm text-indigo-300/80 pl-4 border-l-2 border-indigo-500/50">
+                                                <span className="font-semibold">Guide:</span> {item.hint}
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+
+                        {/* Footer Action */}
+                        <div className="mt-8 flex justify-end pt-4 border-t border-white/10">
+                            <button 
+                                onClick={onNext}
+                                className="bg-white text-indigo-900 hover:bg-slate-200 font-semibold py-3 px-8 rounded-full transition-colors focus:outline-none"
+                            >
+                                {part === 3 ? 'Finish Topic' : `Go to Part ${part + 1}`}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        function ShutdownScreen() {
+            return (
+                <div className="glass-panel p-12 rounded-3xl text-center max-w-xl mx-4 fade-in z-20">
+                    <div className="text-5xl mb-6">🌌</div>
+                    <h1 className="text-3xl font-bold text-white mb-4">Test Complete</h1>
+                    <p className="text-lg text-slate-300 mb-8">
+                        Outstanding work! You have successfully completed all parts of the mock speaking test.
+                    </p>
+                    <p className="text-sm text-slate-400 italic">
+                        Shutting down session...
+                    </p>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
