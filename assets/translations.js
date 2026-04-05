@@ -315,6 +315,7 @@ const HEC_TRANSLATIONS = {
   "camp.ctaSub":       { en: "Spots are limited to 12 per group. Register now to lock in your child's place in Hanoi's most immersive English STEAM camp.",
                          vi: "Sĩ số giới hạn 12 học sinh mỗi lớp. Đăng ký ngay để giữ chỗ tại trại hè tiếng Anh STEAM hàng đầu Hà Nội." },
   "camp.ctaBtn":       { en: "Register Now",          vi: "Đăng ký ngay" },
+  "camp.selectTimetable": { en: "Select Timetable / Chọn Thời khoá biểu", vi: "Chọn Thời khoá biểu / Select Timetable" },
   "camp.downloadHero": { en: "Secure Your Child's Advantage & Download Timetable", 
                          vi: "Đảm Bảo Lợi Thế Cho Con & Tải Thời Khóa Biểu" },
   "camp.downloadCTA":  { en: "Claim Your Child's Spot & Download Timetable (PDF)", 

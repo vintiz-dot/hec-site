@@ -107,8 +107,19 @@
      TIMETABLE
      ═══════════════════════════════════════════════════════════════ -->
 <section id="timetable" class="py-5">
+  <div class="container mb-4 text-center">
+    <h3 class="fw-bold mb-4" data-i18n="camp.selectTimetable">Select Timetable / Chọn Thời khoá biểu</h3>
+    <ul class="nav nav-pills justify-content-center gap-3" id="timetable-pills" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active fw-bold px-4 rounded-pill shadow-sm" id="g12-tab" data-bs-toggle="pill" type="button" role="tab" onclick="document.getElementById('iframe-timetable').src='summer-camp-timetable-g12.html';" style="border: 1px solid var(--primary-color);">Grades 1-2</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link fw-bold px-4 rounded-pill shadow-sm" id="g35-tab" data-bs-toggle="pill" type="button" role="tab" onclick="document.getElementById('iframe-timetable').src='summer-camp-timetable.html';" style="border: 1px solid var(--primary-color);">Grades 3-5</button>
+      </li>
+    </ul>
+  </div>
   <div class="container">
-    <iframe id="iframe-timetable" src="summer-camp-timetable.html" width="100%" height="1500px" style="border:none;" scrolling="no" title="HEC Summer Camp Bilingual Timetable"></iframe>
+    <iframe id="iframe-timetable" src="summer-camp-timetable-g12.html" width="100%" height="1500px" style="border:none;" scrolling="no" title="HEC Summer Camp Bilingual Timetable"></iframe>
     <script>
       // Adjust iframe height seamlessly
       document.getElementById('iframe-timetable').onload = function() {
@@ -127,7 +138,7 @@
     <p class="reveal" data-i18n="camp.ctaSub">Spots are limited to 12 per group. Register now to lock in your child's place in Hanoi's most immersive English STEAM camp.</p>
     <div class="d-flex gap-3 justify-content-center flex-wrap reveal">
       <a href="index.html#contact" class="btn btn-gold btn-lg" data-i18n="camp.ctaBtn"><i class="bi bi-send me-1"></i> Register Now</a>
-      <a href="hec-bilingual-timetable.html" target="_blank" download class="btn btn-primary btn-lg" style="box-shadow: 0 4px 15px rgba(37,99,235,0.3);" data-i18n="camp.downloadCTA"><i class="bi bi-file-earmark-pdf me-1"></i> Claim Your Child's Spot & Download Timetable (PDF)</a>
+      <a href="#timetable" class="btn btn-primary btn-lg" style="box-shadow: 0 4px 15px rgba(37,99,235,0.3);" data-i18n="camp.downloadCTA"><i class="bi bi-file-earmark-pdf me-1"></i> Claim Your Child's Spot & Download Timetable (PDF)</a>
       <a href="tel:0975679889" class="btn btn-outline-light btn-lg"><i class="bi bi-telephone me-1"></i> 0975 679 889</a>
     </div>
   </div>
