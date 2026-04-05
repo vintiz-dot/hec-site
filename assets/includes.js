@@ -1,78 +1,114 @@
-document.addEventListener('DOMContentLoaded', async () => {
-  const nodes = document.querySelectorAll('[data-include]');
-  await Promise.all([...nodes].map(async el => {
-    const src = el.getAttribute('data-include');
-    try {
-      const res = await fetch(src, {cache:'no-cache'});
-      if (!res.ok) throw new Error(src);
-      el.innerHTML = await res.text();
-      if (src.includes('nav.html') && window.bootstrap) {
-        document.querySelectorAll('[data-bs-toggle="dropdown"]').forEach(t => new bootstrap.Dropdown(t));
-      }
-    } catch (e) { el.outerHTML = `<!-- include failed: ${src} -->`; }
-  }));
-});
-
-
-
-/*
- * includes.js
+/**
+ * includes.js — Runtime utilities for HEC
  *
- * This script controls the language toggle and updates the copyright year
- * in the footer. Navigation markup is embedded directly into each HTML
- * document so there is no need to fetch external partials. The
- * language toggle reads a stored preference from localStorage and
- * displays the opposite language (EN/VN) so users know which version
- * they can switch to. Clicking the toggle flips the preference and
- * redirects the user to the appropriate file (adding or removing the
- * `-vn` suffix as needed).
+ * Responsibilities:
+ *  1. Bind the language toggle to HEC_I18N.toggle()
+ *  2. Scroll-reveal observer for .reveal elements
+ *  3. Navbar scroll shadow
+ *  4. Countdown timer for the scarcity section
+ *  5. Copyright year
  */
 
-// Set the toggle text based on the current language. The toggle always
-// shows the target language (EN when viewing Vietnamese, VN when viewing
-// English). If no language is stored, default to English.
-function updateLangToggle() {
-  const lang = localStorage.getItem('language') || 'en';
-  const toggle = document.querySelector('.lang-toggle');
-  if (toggle) {
-    toggle.textContent = lang === 'en' ? 'VN' : 'EN';
-  }
-}
+document.addEventListener('DOMContentLoaded', () => {
 
-// Bind a click handler to the language toggle. When clicked, the handler
-// flips the language preference in localStorage and navigates to the
-// corresponding version of the current page. The page names follow the
-// convention `<basename>.html` for English and `<basename>-vn.html` for
-// Vietnamese. For example, clicking the toggle on `mars.html` will
-// navigate to `mars-vn.html`, and vice versa.
-function bindLangToggle() {
-  const toggle = document.querySelector('.lang-toggle');
-  if (!toggle) return;
-  toggle.addEventListener('click', function (event) {
-    event.preventDefault();
-    const currentLang = localStorage.getItem('language') || 'en';
-    const newLang = currentLang === 'en' ? 'vn' : 'en';
-    localStorage.setItem('language', newLang);
-    const path = window.location.pathname;
-    const filename = path.substring(path.lastIndexOf('/') + 1);
-    const match = filename.match(/^(.*?)(-vn)?(\.[^.]+)$/);
-    if (match) {
-      const base = match[1];
-      const ext = match[3];
-      const newName = newLang === 'vn' ? `${base}-vn${ext}` : `${base}${ext}`;
-      const newPath = path.replace(filename, newName);
-      window.location.replace(newPath);
+  /* ── Language toggle ──────────────────────────────────────── */
+  document.querySelectorAll('.lang-toggle').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      if (typeof HEC_I18N !== 'undefined') {
+        HEC_I18N.toggle();
+      }
+    });
+  });
+
+  /* ── Scroll reveal ────────────────────────────────────────── */
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length && 'IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(el => observer.observe(el));
+  } else {
+    // Fallback: just show everything
+    revealEls.forEach(el => el.classList.add('visible'));
+  }
+
+  /* ── Navbar scroll effect ─────────────────────────────────── */
+  const navbar = document.querySelector('.navbar');
+  if (navbar) {
+    const onScroll = () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 30);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  /* ── Countdown timer ──────────────────────────────────────── */
+  const countdownEl = document.getElementById('countdown');
+  if (countdownEl) {
+    // Target: May 15, 2026 (configurable)
+    const target = new Date('2026-05-15T23:59:59+07:00').getTime();
+
+    function updateCountdown() {
+      const now = Date.now();
+      const diff = Math.max(0, target - now);
+
+      const days    = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      const daysEl    = document.getElementById('cd-days');
+      const hoursEl   = document.getElementById('cd-hours');
+      const minutesEl = document.getElementById('cd-minutes');
+      const secondsEl = document.getElementById('cd-seconds');
+
+      if (daysEl)    daysEl.textContent = String(days).padStart(2, '0');
+      if (hoursEl)   hoursEl.textContent = String(hours).padStart(2, '0');
+      if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
+      if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  }
+
+  /* ── Seat bar animation ───────────────────────────────────── */
+  document.querySelectorAll('.seat-bar-fill').forEach(bar => {
+    const pct = bar.getAttribute('data-fill');
+    if (pct) {
+      // Trigger after a brief delay for visual effect
+      setTimeout(() => { bar.style.width = pct + '%'; }, 300);
     }
   });
-}
 
-// When the document is ready, update the language toggle text, bind the
-// toggle click handler, and update the copyright year in the footer.
-document.addEventListener('DOMContentLoaded', () => {
-  updateLangToggle();
-  bindLangToggle();
+  /* ── Copyright year ───────────────────────────────────────── */
   const yearEl = document.getElementById('year');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
+  /* ── Smooth scroll for anchor links ───────────────────────── */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Close mobile nav if open
+        const navCollapse = document.getElementById('nav');
+        if (navCollapse && navCollapse.classList.contains('show')) {
+          const toggler = document.querySelector('.navbar-toggler');
+          if (toggler) toggler.click();
+        }
+      }
+    });
+  });
+
 });

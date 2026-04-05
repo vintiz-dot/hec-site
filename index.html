@@ -2,451 +2,778 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>HEC – Happy English Club</title>
+  <title>HEC – Happy English Club | Small Classes, Big Confidence | Hanoi</title>
+  <meta name="description" content="Happy English Club (HEC) in Hanoi — US-licensed teacher, Oxford & Cambridge curriculum, ≤12 students per class, transparent per-session fees, and a free Saturday Reading Club. Enroll now for Summer 2026.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Detect language (auto) -->
-  <script src="assets/language.js"></script>
-  <!-- Bootstrap CSS and icons -->
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="HEC – Happy English Club | Hanoi">
+  <meta property="og:description" content="Small classes, big confidence. International curriculum, US-licensed teacher, transparent fees.">
+  <meta property="og:type" content="website">
+
+  <!-- Bootstrap 5 CSS & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- Your styles -->
+
+  <!-- Custom Design System -->
   <link href="assets/styles.css" rel="stylesheet">
 </head>
 <body data-page="home">
-  <!-- Partial navbar include (unchanged) -->
-  <nav class="navbar navbar-expand-lg bg-white sticky-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-        <span class="brand-badge">HEC</span><span class="fw-bold">Happy English Club</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="nav" class="collapse navbar-collapse">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Programs</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="courses/mars.html">Mars — Look Starter</a></li>
-              <li><a class="dropdown-item" href="courses/venus.html">Venus — Look 1</a></li>
-              <li><a class="dropdown-item" href="courses/neptune.html">Neptune — Look 2</a></li>
-              <li><a class="dropdown-item" href="courses/jupiter.html">Jupiter — Discover 1</a></li>
-              <li><a class="dropdown-item" href="courses/sky1.html">SKY 1 — Discover 3</a></li>
-              <li><a class="dropdown-item" href="courses/sanrio.html">Sanrio Grade 6 — Writing</a></li>
-              <li><a class="dropdown-item" href="courses/mercury.html">Mercury — Cambridge Math</a></li>
-              <li><a class="dropdown-item" href="courses/sun.html">Sun — IELTS</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="reading-club.html">Reading Club</a></li>
-          <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions &amp; Fees</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-        <div class="d-flex gap-2 align-items-center">
-          <a class="btn btn-primary" href="admissions.html">Enroll now</a>
-          <a class="btn login-btn" href="https://english.synergylifelineconsulting.com/">Log in / Đăng nhập</a>
-          <a class="nav-link lang-toggle" href="#" role="button">VN</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- HERO -->
-  <header id="home" class="hero py-5">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-5">
-          <h1 class="display-5 fw-bold">Small classes. Confident English.</h1>
-          <p class="lead mb-4">
-            Transparent per-session fees. Weekly <strong>free Reading Club</strong> every Saturday 14:00–16:00.
-          </p>
-          <div class="d-flex gap-2 flex-wrap">
-            <a href="#programs" class="btn btn-primary btn-lg">Explore programs</a>
-            <a href="#reading-club" class="btn btn-outline-primary btn-lg">Join Reading Club</a>
-          </div>
-          <div class="row row-cols-3 g-3 mt-4">
-            <div class="col"><div class="p-3 text-center border rounded-4 bg-white"><div class="h4 mb-0">≤12</div><small>students / class</small></div></div>
-            <div class="col"><div class="p-3 text-center border rounded-4 bg-white"><div class="h4 mb-0">90′</div><small>standard lesson</small></div></div>
-            <div class="col"><div class="p-3 text-center border rounded-4 bg-white"><div class="h4 mb-0">Sat</div><small>Reading Club</small></div></div>
-          </div>
-        </div>
-        <div class="col-lg-7">
-          <!-- Image Carousel (retained, 10s interval) -->
-          <div id="homeCarousel" class="carousel slide rounded-4 overflow-hidden shadow-sm"
-               data-bs-ride="carousel" data-bs-interval="10000" aria-label="HEC highlights">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-              <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="/hec-site/assets/pictures/ok/Wedding photo college (Banner (Landscape)).png" alt="Classroom learning">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Learn with purpose</h5>
-                  <p>Clear goals and checkpoints every week.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="/hec-site/assets/pictures/ok/White Photo Collage Bengaluru Banner.png" alt="Student presentation">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Present with confidence</h5>
-                  <p>Frequent practice with friendly feedback.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="/hec-site/assets/pictures/ok/Beige Vintage Paper Family Photo Collage Video.svg" alt="Student presentation">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Present with confidence</h5>
-                  <p>Frequent practice with friendly feedback.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="/hec-site/assets/pictures/Purple and Yellow Shapes Middle School Back to School Banner.png" alt="Student presentation">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Present with confidence</h5>
-                  <p>Frequent practice with friendly feedback.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="/hec-site/assets/pictures/ok/Beige Elegant Photo Collage Exclusive Home Decor Etsy Banner.png" alt="Project work">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Projects that matter</h5>
-                  <p>Real topics, real audiences, real progress.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="/hec-site/assets/pictures/Blue and Pink Abstract Modern Welcome Back To School Banner.png" alt="Lớp học">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Projects that matter</h5>
-                  <p>Real topics, real audiences, real progress.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev" aria-label="Previous">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next" aria-label="Next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
 
-  <!-- PROGRAMS (unchanged structure) -->
-  <section id="programs" class="py-5">
-    <div class="container">
-      <h2 class="h4 mb-3">Explore our courses</h2>
-      <div class="grid-cards">
-        <!-- Mars -->
-        <div class="card-shadow">
-          <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">Mars</h3><span class="badge badge-hot">Filling fast</span>
-          </div>
-          <div class="small-muted mb-2">Nat Geo Look Starter</div>
-          <div class="small mb-1"><i class="bi bi-clock"></i> 19:30–21:00 • 90′</div>
-          <div class="small mb-2"><i class="bi bi-people"></i> 11/12 • left 1</div>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="fw-semibold">210.000₫/session</div>
-            <a class="btn btn-sm btn-primary" href="courses/mars.html">View</a>
-          </div>
-        </div>
-        <!-- Venus -->
-        <div class="card-shadow">
-          <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">Venus</h3><span class="badge badge-open">Open</span>
-          </div>
-          <div class="small-muted mb-2">Nat Geo Look 1</div>
-          <div class="small mb-1"><i class="bi bi-clock"></i> 17:30–19:00 • 90′</div>
-          <div class="small mb-2"><i class="bi bi-people"></i> 5/12 • left 7</div>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="fw-semibold">210.000₫/session</div>
-            <a class="btn btn-sm btn-primary" href="courses/venus.html">View</a>
-          </div>
-        </div>
-        <!-- Neptune -->
-        <div class="card-shadow">
-          <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">Neptune</h3><span class="badge badge-open">Open</span>
-          </div>
-          <div class="small-muted mb-2">Nat Geo Look 2</div>
-          <div class="small mb-1"><i class="bi bi-clock"></i> 17:30–19:00 • 90′</div>
-          <div class="small mb-2"><i class="bi bi-people"></i> 5/12 • left 7</div>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="fw-semibold">210.000₫/session</div>
-            <a class="btn btn-sm btn-primary" href="courses/neptune.html">View</a>
-          </div>
-        </div>
-        <!-- Jupiter -->
-        <div class="card-shadow">
-          <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">Jupiter</h3><span class="badge badge-limited">Limited</span>
-          </div>
-          <div class="small-muted mb-2">Oxford Discover 1</div>
-          <div class="small mb-1"><i class="bi bi-clock"></i> 19:30–21:00 • 90′</div>
-          <div class="small mb-2"><i class="bi bi-people"></i> 7/12 • left 5</div>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="fw-semibold">210.000₫/session</div>
-            <a class="btn btn-sm btn-primary" href="courses/jupiter.html">View</a>
-          </div>
-        </div>
-        <!-- SKY 1 -->
-        <div class="card-shadow">
-          <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">SKY 1</h3><span class="badge badge-hot">Filling fast</span>
-          </div>
-          <div class="small-muted mb-2">Oxford Discover 3</div>
-          <div class="small mb-1"><i class="bi bi-clock"></i> Tue 17:30–19:00 • Sat 16:15–17:45 • 90′</div>
-          <div class="small mb-2"><i class="bi bi-people"></i> 10/12 • left 2</div>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="fw-semibold">210.000₫/session</div>
-            <a class="btn btn-sm btn-primary" href="courses/sky1.html">View</a>
-          </div>
-        </div>
-        <!-- Sanrio -->
-        <div class="card-shadow">
-          <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">Sanrio Grade 6</h3><span class="badge badge-open">Open</span>
-          </div>
-          <div class="small-muted mb-2">Grammar & Writing G6</div>
-          <div class="small mb-1"><i class="bi bi-clock"></i> Mon 19:00–21:00 • Thu 19:30–21:00 • 90′</div>
-          <div class="small mb-2"><i class="bi bi-people"></i> 6/12 • left 6</div>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="fw-semibold">210.000₫/session</div>
-            <a class="btn btn-sm btn-primary" href="courses/sanrio.html">View</a>
-          </div>
-        </div>
-        <!-- Mercury -->
-        <div class="card-shadow">
-          <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">Mercury (Math)</h3><span class="badge badge-open">Open</span>
-          </div>
-          <div class="small-muted mb-2">Cambridge Math</div>
-          <div class="small mb-1"><i class="bi bi-clock"></i> 16:30–18:00 • 90′</div>
-          <div class="small mb-2"><i class="bi bi-people"></i> 5/12 • left 7</div>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="fw-semibold">210.000₫/session</div>
-            <a class="btn btn-sm btn-primary" href="courses/mercury.html">View</a>
-          </div>
-        </div>
-        <!-- Sun -->
-        <div class="card-shadow">
-          <div class="d-flex justify-content-between">
-            <h3 class="h6 fw-bold mb-1">Sun (IELTS)</h3><span class="badge badge-limited">Limited</span>
-          </div>
-          <div class="small-muted mb-2">Cambridge + British Council blend</div>
-          <div class="small mb-1"><i class="bi bi-clock"></i> 19:15–21:15 • 120′</div>
-          <div class="small mb-2"><i class="bi bi-people"></i> 8/12 • left 4</div>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="fw-semibold">260.000₫/session</div>
-            <a class="btn btn-sm btn-primary" href="courses/sun.html">View</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FREE READING CLUB (conversion-focused) -->
-  <section id="reading-club" class="py-5 bg-light">
-    <div class="container">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-7">
-          <div class="d-flex align-items-center gap-2 mb-2">
-            <span class="badge bg-success-subtle text-success border">Free</span>
-            <span class="badge bg-warning-subtle text-warning border">Family-friendly</span>
-            <span class="badge bg-primary-subtle text-primary border">Drop-in welcome</span>
-          </div>
-          <h2 class="section-title">Reading Club — Every Saturday, 14:00–16:00</h2>
-          <p class="mb-2"><i class="bi bi-geo-alt"></i> No. 25, Alley 242 Láng, Đống Đa, Hà Nội</p>
-          <ul class="mb-3">
-            <li><strong>Build a reading habit:</strong> Choice books, calm atmosphere, and encouragement.</li>
-            <li><strong>Language growth:</strong> Vocabulary games, discussion circles, and mini-presentations.</li>
-            <li><strong>Confidence & community:</strong> Low-pressure sharing with peers and coaches.</li>
+<!-- ═══════════════════════════════════════════════════════════════
+     NAVBAR
+     ═══════════════════════════════════════════════════════════════ -->
+<nav id="main-nav" class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <span class="brand-badge">HEC</span>
+      <span class="fw-bold" style="font-family:var(--font-display)">Happy English Club</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#home" data-i18n="nav.home">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-i18n="nav.programs">Programs</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="courses/mars.html">Mars — Look Starter</a></li>
+            <li><a class="dropdown-item" href="courses/venus.html">Venus — Look 1</a></li>
+            <li><a class="dropdown-item" href="courses/neptune.html">Neptune — Look 2</a></li>
+            <li><a class="dropdown-item" href="courses/jupiter.html">Jupiter — Discover 1</a></li>
+            <li><a class="dropdown-item" href="courses/sky1.html">SKY 1 — Discover 3</a></li>
+            <li><a class="dropdown-item" href="courses/sanrio.html">Sanrio G6 — Writing</a></li>
+            <li><a class="dropdown-item" href="courses/mercury.html">Mercury — Cambridge Math</a></li>
+            <li><a class="dropdown-item" href="courses/sun.html">Sun — IELTS</a></li>
           </ul>
-          <div class="d-flex flex-wrap gap-2">
-            <a class="btn btn-primary btn-lg" href="#contact"><i class="bi bi-calendar-check"></i> Reserve free seat</a>
-            <a class="btn btn-outline-primary btn-lg" href="reading-club.html"><i class="bi bi-journal-text"></i> See routine & tips</a>
-          </div>
-          <div class="small-muted mt-2">
-            Seats are limited; RSVP helps us prepare the right books and small groups.
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <img class="img-fluid rounded-4 shadow" alt="Students reading together"
-               src="/hec-site/assets/pictures/ok/book club.png">
-        </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#reading-club" data-i18n="nav.readingClub">Reading Club</a></li>
+        <li class="nav-item"><a class="nav-link" href="#admissions" data-i18n="nav.admissions">Admissions &amp; Fees</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="d-flex gap-2 align-items-center">
+        <a class="btn btn-primary" href="#contact" data-i18n="nav.enrollNow">Enroll Now</a>
+        <a class="btn login-btn" href="https://english.synergylifelineconsulting.com/" data-i18n="nav.login">Log in</a>
+        <a class="lang-toggle" href="#" role="button" aria-label="Switch language">VN</a>
       </div>
     </div>
-  </section>
+  </div>
+</nav>
 
-  <!-- TESTIMONIALS -->
-  <section id="testimonials" class="py-5">
-    <div class="container">
-      <h2 class="section-title mb-4">What parents say</h2>
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000" aria-label="Parent testimonials">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="p-4 border rounded-4 bg-white shadow-sm">
-              <div class="d-flex align-items-center mb-3">
-                <img src="https://picsum.photos/seed/parent1/64/64" class="rounded-circle me-3" alt="Parent avatar">
-                <div>
-                  <strong>Ms. Linh (Grade 4)</strong><br>
-                  <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
-                </div>
-              </div>
-              <p class="mb-0">“After a month, my daughter reads more willingly and explains her ideas better. The free Reading Club made a big difference.”</p>
+<!-- ═══════════════════════════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════════════════════════ -->
+<header id="home" class="hero">
+  <div class="container">
+    <div class="row align-items-center g-4 g-lg-5">
+      <!-- Left: Copy -->
+      <div class="col-lg-6">
+        <div class="tag-row mb-3">
+          <span class="badge-status badge-free"><i class="bi bi-patch-check-fill"></i> US Licensed Teacher</span>
+          <span class="badge-status badge-open"><i class="bi bi-book"></i> Cambridge & Oxford</span>
+        </div>
+
+        <h1 class="display-4 mb-3" data-i18n="hero.headline">Where Small Classes Build<br>Big Confidence</h1>
+
+        <p class="lead mb-4" data-i18n="hero.subheadline">US-licensed teacher • International curriculum • Transparent per-session fees • Free Saturday Reading Club</p>
+
+        <div class="d-flex gap-3 flex-wrap mb-4">
+          <a href="#contact" class="btn btn-gold btn-lg" data-i18n="hero.ctaPrimary">
+            Book a Free Trial Class
+          </a>
+          <a href="#programs" class="btn btn-outline-primary btn-lg" data-i18n="hero.ctaSecondary">
+            Explore Programs
+          </a>
+        </div>
+
+        <!-- Stat pills -->
+        <div class="row g-3">
+          <div class="col-4">
+            <div class="hero-stat">
+              <div class="stat-value" data-i18n="hero.stat1Value">≤12</div>
+              <div class="stat-label" data-i18n="hero.stat1Label">students per class</div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="p-4 border rounded-4 bg-white shadow-sm">
-              <div class="d-flex align-items-center mb-3">
-                <img src="https://picsum.photos/seed/parent2/64/64" class="rounded-circle me-3" alt="Parent avatar">
-                <div>
-                  <strong>Mr. Minh (Grade 6)</strong><br>
-                  <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></span>
-                </div>
-              </div>
-              <p class="mb-0">“Clear goals, small classes, and coaches who really listen. My son now enjoys non-fiction and presents with confidence.”</p>
+          <div class="col-4">
+            <div class="hero-stat">
+              <div class="stat-value" data-i18n="hero.stat2Value">90′</div>
+              <div class="stat-label" data-i18n="hero.stat2Label">each session</div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="p-4 border rounded-4 bg-white shadow-sm">
-              <div class="d-flex align-items-center mb-3">
-                <img src="https://picsum.photos/seed/parent3/64/64" class="rounded-circle me-3" alt="Parent avatar">
-                <div>
-                  <strong>Ms. Hoa (Grade 2)</strong><br>
-                  <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
-                </div>
-              </div>
-              <p class="mb-0">“Phonics and fluency routines are simple to practice at home. The Saturday club is our favorite weekly habit.”</p>
+          <div class="col-4">
+            <div class="hero-stat">
+              <div class="stat-value" data-i18n="hero.stat3Value">Free</div>
+              <div class="stat-label" data-i18n="hero.stat3Label">Saturday Reading Club</div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
       </div>
-    </div>
-  </section>
 
-  <!-- ADMISSIONS & FEES -->
-  <section id="admissions" class="py-5">
-    <div class="container">
-      <h2 class="section-title mb-3">Admissions & Fees</h2>
-      <ol class="mb-4">
-        <li>Submit the form.</li>
-        <li>Free placement test.</li>
-        <li>Class matching.</li>
-        <li>First-week check-in.</li>
-      </ol>
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="p-4 rounded-4 border">
-            <h5>Pricing</h5>
-            <ul class="mb-0">
-              <li>Standard classes: <strong>210,000₫ per session</strong> (90′).</li>
-              <li>IELTS Sun Class: <strong>260,000₫ per session</strong> (120′).</li>
-              <li>Monthly charge = sessions actually held.</li>
-              <li>No book fees now.</li>
-            </ul>
+      <!-- Right: Carousel -->
+      <div class="col-lg-6">
+        <div id="homeCarousel" class="carousel slide rounded-4 overflow-hidden shadow"
+             data-bs-ride="carousel" data-bs-interval="8000" aria-label="HEC highlights">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
           </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="p-4 rounded-4 border">
-            <h5>Discounts</h5>
-            <ul class="mb-0">
-              <li>Sibling: <strong>5%</strong> for the second child (lower fee applies).</li>
-              <li>Referral bonus: up to <strong>95%</strong> credit after the referred family pays the first month.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="mt-4 d-flex gap-2 flex-wrap">
-        <a class="btn btn-primary" href="#contact">Enroll now</a>
-        <a class="btn btn-outline-primary" href="#contact">Book placement</a>
-        <a class="btn login-btn" href="https://english.synergylifelineconsulting.com/">Log in / Đăng nhập</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title mb-3">Contact</h2>
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="p-4 rounded-4 bg-white border h-100">
-            <div class="mb-2"><i class="bi bi-telephone"></i> 0975679889</div>
-            <div class="mb-2"><i class="bi bi-geo-alt"></i> No. 25, Alley 242 Láng Street, Đống Đa District, Hanoi</div>
-            <div class="mb-3">
-              <a class="me-3" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i> Facebook</a>
-              <a href="#" aria-label="Zalo"><i class="bi bi-chat-dots"></i> Zalo</a>
-            </div>
-            <form>
-              <div class="row g-3">
-                <div class="col-md-6"><input class="form-control" placeholder="Student name"></div>
-                <div class="col-md-6"><input class="form-control" placeholder="Grade"></div>
-                <div class="col-md-6"><input class="form-control" placeholder="Parent name"></div>
-                <div class="col-md-6"><input class="form-control" placeholder="Phone *" required></div>
-                <div class="col-md-6"><input class="form-control" placeholder="Zalo (optional)"></div>
-                <div class="col-md-6">
-                  <select class="form-select">
-                    <option selected>Program</option>
-                    <option>Look Starter – Mars</option>
-                    <option>Look 1 – Venus</option>
-                    <option>Look 2 – Neptune</option>
-                    <option>Discover 1 – Jupiter</option>
-                    <option>Discover 3 – SKY 1</option>
-                    <option>Grammar & Writing – Sanrio G6</option>
-                    <option>Cambridge Math – Mercury</option>
-                    <option>IELTS – Sun Class</option>
-                    <option>Reading Club (Saturday 14:00–16:00)</option>
-                  </select>
-                </div>
-                <div class="col-12"><textarea class="form-control" rows="3" placeholder="Message"></textarea></div>
-                <div class="col-12 d-flex gap-2">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                  <a class="btn login-btn" href="https://english.synergylifelineconsulting.com/">Log in / Đăng nhập</a>
-                </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="assets/pictures/ok/Wedding photo college (Banner (Landscape)).png" alt="HEC classroom learning">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Learn with purpose</h5>
+                <p>Clear goals and checkpoints every week.</p>
               </div>
-            </form>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/pictures/ok/White Photo Collage Bengaluru Banner.png" alt="Student presentation">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Present with confidence</h5>
+                <p>Frequent practice with friendly feedback.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/pictures/ok/Beige Vintage Paper Family Photo Collage Video.svg" alt="Student projects">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Projects that matter</h5>
+                <p>Real topics, real audiences, real progress.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/pictures/ok/Beige Elegant Photo Collage Exclusive Home Decor Etsy Banner.png" alt="Community events">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Community-driven growth</h5>
+                <p>Learning thrives in a supportive environment.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/pictures/Blue and Pink Abstract Modern Welcome Back To School Banner.png" alt="Back to school">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Welcome to HEC</h5>
+                <p>Where every child finds their voice.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev" aria-label="Previous">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next" aria-label="Next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     AUTHORITY — "Why Parents Trust HEC"
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="authority" class="authority-section">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <h2 class="section-title" data-i18n="auth.title">Why Parents in Hanoi Trust HEC</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+        <div class="authority-card">
+          <div class="authority-icon blue"><i class="bi bi-award"></i></div>
+          <h4 data-i18n="auth.badge1">US Licensed Teacher</h4>
+          <p data-i18n="auth.badge1Desc">Certified by the State of New Jersey, USA — bringing global best practices to every lesson.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+        <div class="authority-card">
+          <div class="authority-icon gold"><i class="bi bi-book"></i></div>
+          <h4 data-i18n="auth.badge2">Cambridge & Oxford Curriculum</h4>
+          <p data-i18n="auth.badge2Desc">Oxford Discover, National Geographic Look, and Cambridge Math — world-class resources for every level.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+        <div class="authority-card">
+          <div class="authority-icon green"><i class="bi bi-diagram-3"></i></div>
+          <h4 data-i18n="auth.badge3">Project-Based Learning</h4>
+          <p data-i18n="auth.badge3Desc">Students solve real problems, present ideas, and build portfolios — not just memorize textbooks.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-4">
+        <div class="authority-card">
+          <div class="authority-icon rose"><i class="bi bi-lightbulb"></i></div>
+          <h4 data-i18n="auth.badge4">Inquiry-Based Approach</h4>
+          <p data-i18n="auth.badge4Desc">Every class starts with a Big Question. Students investigate, discuss, and discover answers together.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PROGRAMS
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="programs" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <h2 class="section-title" data-i18n="prog.title">Our Programs</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="section-subtitle mx-auto" data-i18n="prog.subtitle">Small classes, big results. Each program uses internationally recognized textbooks with structured learning goals.</p>
+    </div>
+
+    <div class="grid-cards" id="programGrid">
+      <!-- Mars -->
+      <div class="program-card reveal reveal-delay-1">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>Mars</h3>
+          <span class="badge-status badge-hot" data-i18n="prog.fillingFast">Filling fast</span>
+        </div>
+        <div class="curriculum mb-2">Nat Geo Look Starter</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i>Wed &amp; Fri</div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i>19:30–21:00 • 90′</div>
+        <div class="seat-bar"><div class="seat-bar-fill hot" data-fill="92" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>11</strong>/12 enrolled</span>
+          <span class="text-danger fw-semibold">1 <span data-i18n="prog.seatsLeft">seats left</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price">210,000₫<span class="small text-muted" data-i18n="prog.perSession">/session</span></div>
+          <a href="courses/mars.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">View Details</a>
+        </div>
+      </div>
+
+      <!-- Venus -->
+      <div class="program-card reveal reveal-delay-2">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>Venus</h3>
+          <span class="badge-status badge-open" data-i18n="prog.open">Open</span>
+        </div>
+        <div class="curriculum mb-2">Nat Geo Look 1</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i>Mon &amp; Thu</div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i>17:30–19:00 • 90′</div>
+        <div class="seat-bar"><div class="seat-bar-fill open" data-fill="42" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>5</strong>/12 enrolled</span>
+          <span class="text-success fw-semibold">7 <span data-i18n="prog.seatsLeft">seats left</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price">210,000₫<span class="small text-muted" data-i18n="prog.perSession">/session</span></div>
+          <a href="courses/venus.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">View Details</a>
+        </div>
+      </div>
+
+      <!-- Neptune -->
+      <div class="program-card reveal reveal-delay-3">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>Neptune</h3>
+          <span class="badge-status badge-open" data-i18n="prog.open">Open</span>
+        </div>
+        <div class="curriculum mb-2">Nat Geo Look 2</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i>Wed &amp; Fri</div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i>17:30–19:00 • 90′</div>
+        <div class="seat-bar"><div class="seat-bar-fill open" data-fill="42" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>5</strong>/12 enrolled</span>
+          <span class="text-success fw-semibold">7 <span data-i18n="prog.seatsLeft">seats left</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price">210,000₫<span class="small text-muted" data-i18n="prog.perSession">/session</span></div>
+          <a href="courses/neptune.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">View Details</a>
+        </div>
+      </div>
+
+      <!-- Jupiter -->
+      <div class="program-card reveal reveal-delay-4">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>Jupiter</h3>
+          <span class="badge-status badge-limited" data-i18n="prog.limited">Limited</span>
+        </div>
+        <div class="curriculum mb-2">Oxford Discover 1</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i>Tue &amp; Thu</div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i>19:30–21:00 • 90′</div>
+        <div class="seat-bar"><div class="seat-bar-fill limited" data-fill="58" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>7</strong>/12 enrolled</span>
+          <span class="text-warning fw-semibold">5 <span data-i18n="prog.seatsLeft">seats left</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price">210,000₫<span class="small text-muted" data-i18n="prog.perSession">/session</span></div>
+          <a href="courses/jupiter.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">View Details</a>
+        </div>
+      </div>
+
+      <!-- SKY 1 -->
+      <div class="program-card reveal reveal-delay-1">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>SKY 1</h3>
+          <span class="badge-status badge-hot" data-i18n="prog.fillingFast">Filling fast</span>
+        </div>
+        <div class="curriculum mb-2">Oxford Discover 3</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i>Tue • Sat</div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i>Tue 17:30–19:00 • Sat 16:15–17:45</div>
+        <div class="seat-bar"><div class="seat-bar-fill hot" data-fill="83" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>10</strong>/12 enrolled</span>
+          <span class="text-danger fw-semibold">2 <span data-i18n="prog.seatsLeft">seats left</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price">210,000₫<span class="small text-muted" data-i18n="prog.perSession">/session</span></div>
+          <a href="courses/sky1.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">View Details</a>
+        </div>
+      </div>
+
+      <!-- Sanrio Grade 6 -->
+      <div class="program-card reveal reveal-delay-2">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>Sanrio G6</h3>
+          <span class="badge-status badge-open" data-i18n="prog.open">Open</span>
+        </div>
+        <div class="curriculum mb-2">Grammar &amp; Writing G6</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i>Mon • Thu</div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i>Mon 19:00–21:00 • Thu 19:30–21:00</div>
+        <div class="seat-bar"><div class="seat-bar-fill open" data-fill="50" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>6</strong>/12 enrolled</span>
+          <span class="text-success fw-semibold">6 <span data-i18n="prog.seatsLeft">seats left</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price">210,000₫<span class="small text-muted" data-i18n="prog.perSession">/session</span></div>
+          <a href="courses/sanrio.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">View Details</a>
+        </div>
+      </div>
+
+      <!-- Mercury (Math) -->
+      <div class="program-card reveal reveal-delay-3">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>Mercury</h3>
+          <span class="badge-status badge-open" data-i18n="prog.open">Open</span>
+        </div>
+        <div class="curriculum mb-2">Cambridge Math</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i>Sunday</div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i>16:30–18:00 • 90′</div>
+        <div class="seat-bar"><div class="seat-bar-fill open" data-fill="42" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>5</strong>/12 enrolled</span>
+          <span class="text-success fw-semibold">7 <span data-i18n="prog.seatsLeft">seats left</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price">210,000₫<span class="small text-muted" data-i18n="prog.perSession">/session</span></div>
+          <a href="courses/mercury.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">View Details</a>
+        </div>
+      </div>
+
+      <!-- Sun (IELTS) -->
+      <div class="program-card reveal reveal-delay-4">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>Sun <span class="small text-muted">(IELTS)</span></h3>
+          <span class="badge-status badge-limited" data-i18n="prog.limited">Limited</span>
+        </div>
+        <div class="curriculum mb-2">Cambridge + British Council blend</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i>Sunday</div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i>19:15–21:15 • 120′</div>
+        <div class="seat-bar"><div class="seat-bar-fill limited" data-fill="67" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>8</strong>/12 enrolled</span>
+          <span class="text-warning fw-semibold">4 <span data-i18n="prog.seatsLeft">seats left</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price">260,000₫<span class="small text-muted" data-i18n="prog.perSession">/session</span></div>
+          <a href="courses/sun.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     READING CLUB
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="reading-club" class="reading-club-section">
+  <div class="container">
+    <div class="row g-4 g-lg-5 align-items-center">
+      <div class="col-lg-7 reveal">
+        <div class="tag-row">
+          <span class="badge-status badge-free" data-i18n="rc.free"><i class="bi bi-gift"></i> Free</span>
+          <span class="badge-status badge-open" data-i18n="rc.badge2">Family-friendly</span>
+          <span class="badge-status" style="background:var(--hec-blue-soft);color:var(--hec-blue);border:1px solid rgba(37,99,235,0.2)" data-i18n="rc.badge3">Drop-in welcome</span>
+        </div>
+        <h2 class="section-title mt-2" data-i18n="rc.title">Saturday Reading Club</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle mb-4" data-i18n="rc.subtitle">Every Saturday, 14:00–16:00 • Completely free • All ages welcome</p>
+
+        <div class="mb-2">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-geo-alt"></i></div>
+            <span data-i18n="rc.location">No. 25, Alley 242 Láng, Đống Đa, Hanoi</span>
           </div>
         </div>
-        <div class="col-lg-6">
-          <iframe class="rounded-4 border w-100" height="380" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                  src="https://www.google.com/maps?q=21.0216,105.8000&hl=en&z=15&output=embed" title="Map"></iframe>
+
+        <div class="rc-feature">
+          <div class="rc-feature-icon"><i class="bi bi-book-half"></i></div>
+          <div>
+            <h5 data-i18n="rc.point1Title">Build a reading habit</h5>
+            <p data-i18n="rc.point1Desc">Choose from our shelf or bring your own. Calm atmosphere with encouragement.</p>
+          </div>
+        </div>
+        <div class="rc-feature">
+          <div class="rc-feature-icon" style="background:var(--hec-gold-soft);color:var(--hec-gold)"><i class="bi bi-chat-square-text"></i></div>
+          <div>
+            <h5 data-i18n="rc.point2Title">Language growth</h5>
+            <p data-i18n="rc.point2Desc">Vocabulary games, discussion circles, and mini-presentations every week.</p>
+          </div>
+        </div>
+        <div class="rc-feature">
+          <div class="rc-feature-icon" style="background:var(--hec-emerald-soft);color:var(--hec-emerald)"><i class="bi bi-people"></i></div>
+          <div>
+            <h5 data-i18n="rc.point3Title">Confidence & community</h5>
+            <p data-i18n="rc.point3Desc">Low-pressure sharing with peers and coaches in a supportive environment.</p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2 mt-3">
+          <a class="btn btn-gold btn-lg" href="#contact" data-i18n="rc.cta"><i class="bi bi-calendar-check"></i> Reserve Your Free Seat</a>
+        </div>
+        <div class="small-muted mt-2" data-i18n="rc.note">Seats are limited — RSVP helps us prepare the right books and small groups.</div>
+      </div>
+      <div class="col-lg-5 reveal reveal-delay-2">
+        <img class="img-fluid rounded-4 shadow" alt="Students reading together at HEC Reading Club"
+             src="assets/pictures/ok/book club.png" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     TESTIMONIALS
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <h2 class="section-title" data-i18n="test.title">What Parents Say</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal reveal-delay-1">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <blockquote data-i18n="test.t1Quote">"After just one month, my daughter reads more willingly and explains her ideas with clarity. The free Reading Club made a big difference."</blockquote>
+          <div class="author">
+            <img src="https://picsum.photos/seed/hecparent1/96/96" alt="Parent photo" class="author-avatar" loading="lazy">
+            <div>
+              <div class="author-name" data-i18n="test.t1Name">Ms. Linh</div>
+              <div class="author-grade" data-i18n="test.t1Grade">Grade 4 Parent</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-2">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+          </div>
+          <blockquote data-i18n="test.t2Quote">"Clear goals, small classes, and coaches who really listen. My son now enjoys non-fiction and presents with confidence."</blockquote>
+          <div class="author">
+            <img src="https://picsum.photos/seed/hecparent2/96/96" alt="Parent photo" class="author-avatar" loading="lazy">
+            <div>
+              <div class="author-name" data-i18n="test.t2Name">Mr. Minh</div>
+              <div class="author-grade" data-i18n="test.t2Grade">Grade 6 Parent</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-3">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <blockquote data-i18n="test.t3Quote">"The phonics and fluency routines are simple to practice at home. Saturday Reading Club has become our favorite weekly habit."</blockquote>
+          <div class="author">
+            <img src="https://picsum.photos/seed/hecparent3/96/96" alt="Parent photo" class="author-avatar" loading="lazy">
+            <div>
+              <div class="author-name" data-i18n="test.t3Name">Ms. Hoa</div>
+              <div class="author-grade" data-i18n="test.t3Grade">Grade 2 Parent</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="footer py-4">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-      <div class="d-flex align-items-center gap-2">
-        <span class="brand-badge">HEC</span><span>Happy English Club</span>
+<!-- ═══════════════════════════════════════════════════════════════
+     METHODOLOGY — "How We Teach"
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="methodology" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <h2 class="section-title" data-i18n="method.title">How We Teach</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="section-subtitle mx-auto" data-i18n="method.subtitle">Every lesson is designed with purpose — not just coverage, but mastery.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-1">
+        <div class="method-card">
+          <div class="method-icon"><i class="bi bi-bullseye"></i></div>
+          <h4 data-i18n="method.m1Title">Structured Goals</h4>
+          <p data-i18n="method.m1Desc">Weekly learning targets with visible progress checkpoints for parents and students.</p>
+        </div>
       </div>
-      <div class="small">© <span id="year"></span> HEC Hanoi</div>
-      <div class="d-flex gap-3">
-        <a href="#admissions">Admissions</a>
-        <a href="#programs">Programs</a>
-        <a href="https://english.synergylifelineconsulting.com/">Log in</a>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-2">
+        <div class="method-card">
+          <div class="method-icon" style="background:var(--hec-gold-soft);color:var(--hec-gold)"><i class="bi bi-megaphone"></i></div>
+          <h4 data-i18n="method.m2Title">Active Learning</h4>
+          <p data-i18n="method.m2Desc">Discussions, presentations, and collaborative projects — students talk more than the teacher.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-3">
+        <div class="method-card">
+          <div class="method-icon" style="background:var(--hec-emerald-soft);color:var(--hec-emerald)"><i class="bi bi-clipboard-data"></i></div>
+          <h4 data-i18n="method.m3Title">Formative Assessment</h4>
+          <p data-i18n="method.m3Desc">Continuous feedback loops, not just end-of-term exams. We catch gaps early.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-4">
+        <div class="method-card">
+          <div class="method-icon" style="background:var(--hec-rose-soft);color:var(--hec-rose)"><i class="bi bi-person-hearts"></i></div>
+          <h4 data-i18n="method.m4Title">Parent Partnership</h4>
+          <p data-i18n="method.m4Desc">Monthly progress reports, Zalo updates, and open-door classroom visits.</p>
+        </div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/includes.js"></script>
-  <script>
-    document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
-  </script>
+<!-- ═══════════════════════════════════════════════════════════════
+     ADMISSIONS & FEES
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="admissions" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4 reveal">
+      <h2 class="section-title" data-i18n="adm.title">Simple Enrollment Process</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="admission-timeline reveal">
+      <div class="timeline-step">
+        <div class="step-number">1</div>
+        <h5 data-i18n="adm.step1">Submit Form</h5>
+        <p data-i18n="adm.step1Desc">Fill in basic details below — takes 30 seconds.</p>
+      </div>
+      <div class="timeline-step">
+        <div class="step-number">2</div>
+        <h5 data-i18n="adm.step2">Free Placement</h5>
+        <p data-i18n="adm.step2Desc">A quick assessment to find the perfect class level.</p>
+      </div>
+      <div class="timeline-step">
+        <div class="step-number">3</div>
+        <h5 data-i18n="adm.step3">Start Learning</h5>
+        <p data-i18n="adm.step3Desc">Join your class with a first-week check-in from the teacher.</p>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="row g-4 reveal">
+      <div class="col-lg-6">
+        <div class="pricing-card">
+          <h5><i class="bi bi-tag me-2" style="color:var(--hec-blue)"></i> <span data-i18n="adm.pricingTitle">Transparent Pricing</span></h5>
+          <div class="pricing-item">
+            <span class="label" data-i18n="adm.price1">Standard classes</span>
+            <span class="amount" data-i18n="adm.price1Detail">210,000₫ / session (90 min)</span>
+          </div>
+          <div class="pricing-item">
+            <span class="label" data-i18n="adm.price2">IELTS Sun Class</span>
+            <span class="amount" data-i18n="adm.price2Detail">260,000₫ / session (120 min)</span>
+          </div>
+          <div class="mt-3 small-muted">
+            <i class="bi bi-check-circle me-1 text-success"></i> <span data-i18n="adm.price3">Monthly billing = sessions actually held. No hidden fees.</span><br>
+            <i class="bi bi-check-circle me-1 text-success"></i> <span data-i18n="adm.noBookFee">No book fees charged currently.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="pricing-card">
+          <h5><i class="bi bi-gift me-2" style="color:var(--hec-gold)"></i> <span data-i18n="adm.discountTitle">Discounts</span></h5>
+          <div class="d-flex align-items-start gap-2 mb-3">
+            <i class="bi bi-people-fill text-primary mt-1"></i>
+            <span data-i18n="adm.discount1">Sibling discount: 5% off for the second child.</span>
+          </div>
+          <div class="d-flex align-items-start gap-2">
+            <i class="bi bi-megaphone-fill text-primary mt-1"></i>
+            <span data-i18n="adm.discount2">Referral bonus: Up to 95% credit when a referred family enrolls.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCARCITY CTA — Urgency Driver
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="scarcity-section" aria-label="Enrollment urgency">
+  <div class="container position-relative">
+    <h2 class="mb-3 reveal" data-i18n="scar.headline">Summer 2026 Sessions Are Filling Up</h2>
+    <p class="reveal" data-i18n="scar.subline">Only a few seats remain in our most popular programs. Secure your child's spot before enrollment closes.</p>
+
+    <div class="countdown reveal" id="countdown">
+      <div class="countdown-unit">
+        <div class="number" id="cd-days">00</div>
+        <div class="label" data-i18n="scar.days">Days</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="number" id="cd-hours">00</div>
+        <div class="label" data-i18n="scar.hours">Hours</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="number" id="cd-minutes">00</div>
+        <div class="label" data-i18n="scar.minutes">Minutes</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="number" id="cd-seconds">00</div>
+        <div class="label" data-i18n="scar.seconds">Seconds</div>
+      </div>
+    </div>
+
+    <a href="#contact" class="btn btn-gold btn-lg reveal" data-i18n="scar.cta">Secure Your Seat Now</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <h2 class="section-title" data-i18n="cont.title">Get in Touch</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="section-subtitle mx-auto" data-i18n="cont.subtitle">Have questions? Send us a message or reach out on Zalo — we respond within 2 hours.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6 reveal">
+        <div class="contact-card">
+          <!-- Contact info -->
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-telephone"></i></div>
+            <span>0975 679 889</span>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-geo-alt"></i></div>
+            <span data-i18n="cont.address">No. 25, Alley 242 Láng Street, Đống Đa District, Hanoi</span>
+          </div>
+          <div class="d-flex gap-2 mb-4">
+            <a class="social-link facebook" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i> Facebook</a>
+            <a class="social-link zalo" href="#" aria-label="Zalo"><i class="bi bi-chat-dots-fill"></i> Zalo</a>
+          </div>
+
+          <!-- Enrollment Form -->
+          <form id="enrollment-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input class="form-control" data-i18n-placeholder="cont.studentName" placeholder="Student name" id="f-student-name">
+              </div>
+              <div class="col-md-6">
+                <input class="form-control" data-i18n-placeholder="cont.grade" placeholder="Grade" id="f-grade">
+              </div>
+              <div class="col-md-6">
+                <input class="form-control" data-i18n-placeholder="cont.parentName" placeholder="Parent name" id="f-parent-name">
+              </div>
+              <div class="col-md-6">
+                <input class="form-control" type="tel" data-i18n-placeholder="cont.phonePlc" placeholder="Phone number *" required id="f-phone">
+              </div>
+              <div class="col-md-6">
+                <input class="form-control" data-i18n-placeholder="cont.zaloPlc" placeholder="Zalo (optional)" id="f-zalo">
+              </div>
+              <div class="col-md-6">
+                <select class="form-select" id="f-program">
+                  <option selected data-i18n="cont.program">Select program</option>
+                  <option>Look Starter – Mars</option>
+                  <option>Look 1 – Venus</option>
+                  <option>Look 2 – Neptune</option>
+                  <option>Discover 1 – Jupiter</option>
+                  <option>Discover 3 – SKY 1</option>
+                  <option>Grammar & Writing – Sanrio G6</option>
+                  <option>Cambridge Math – Mercury</option>
+                  <option>IELTS – Sun Class</option>
+                  <option>Reading Club (Saturday 14:00–16:00)</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="3" data-i18n-placeholder="cont.message" placeholder="Message (optional)" id="f-message"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-gold btn-lg w-100" data-i18n="cont.submit">
+                  <i class="bi bi-send me-2"></i>Submit Enrollment
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-6 reveal reveal-delay-2">
+        <iframe class="rounded-4 border w-100 shadow-sm" height="480" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=21.0216,105.8000&hl=en&z=15&output=embed"
+                title="HEC location map"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 footer-brand">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="brand-badge">HEC</span>
+          <span class="text-white fw-bold" style="font-family:var(--font-display)">Happy English Club</span>
+        </div>
+        <p class="small mb-0" data-i18n="foot.tagline">Small classes. Big confidence.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 data-i18n="foot.quickLinks">Quick Links</h6>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-1"><a href="#programs" data-i18n="nav.programs">Programs</a></li>
+          <li class="mb-1"><a href="#reading-club" data-i18n="nav.readingClub">Reading Club</a></li>
+          <li class="mb-1"><a href="#admissions" data-i18n="nav.admissions">Admissions & Fees</a></li>
+          <li class="mb-1"><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 data-i18n="foot.connect">Connect</h6>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-1"><a href="#"><i class="bi bi-facebook me-1"></i> Facebook</a></li>
+          <li class="mb-1"><a href="#"><i class="bi bi-chat-dots me-1"></i> Zalo</a></li>
+          <li class="mb-1"><a href="tel:0975679889"><i class="bi bi-telephone me-1"></i> 0975 679 889</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6 data-i18n="nav.contact">Contact</h6>
+        <p class="small mb-1"><i class="bi bi-geo-alt me-1"></i> <span data-i18n="cont.address">No. 25, Alley 242 Láng Street, Đống Đa District, Hanoi</span></p>
+        <p class="small mb-0">
+          <a href="https://english.synergylifelineconsulting.com/" class="text-decoration-underline" data-i18n="nav.login">Log in</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      © <span id="year"></span> HEC — Happy English Club Hanoi. <span data-i18n="foot.rights">All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Scripts ──────────────────────────────────────────────────── -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/translations.js"></script>
+<script src="assets/language.js"></script>
+<script src="assets/includes.js"></script>
+
 </body>
 </html>
