@@ -189,7 +189,7 @@ const HEC_TRANSLATIONS = {
   /* ─── Summer Camp NAV & HERO ────────────────────────────────────── */
   "nav.summerCamp":    { en: "Summer Camp",           vi: "Trại Hè" },
   "camp.badgeNew":     { en: "Summer 2026",           vi: "Mùa Hè 2026" },
-  "camp.badgeDates":   { en: "June – August",         vi: "Tháng 6 – 8" },
+  "camp.badgeDates":   { en: "June – July",           vi: "Tháng 6 – 7" },
   "camp.badgeTime":    { en: "08:00 – 16:00",         vi: "08:00 – 16:00" },
   "camp.heroTitle":    { en: "Every Minute Matters.", vi: "Từng Phút Đều Vô Giá." },
   "camp.heroSub":      { en: "Don't let two months of summer erase a year of progress. While others fall behind, your child will step ahead.", 
@@ -203,8 +203,8 @@ const HEC_TRANSLATIONS = {
 
   /* ─── Summer Camp HIGHLIGHTS ──────────────────────────────── */
   "camp.h1Title":      { en: "Full English Immersion", vi: "Đắm chìm trong Tiếng Anh" },
-  "camp.h1Desc":       { en: "Project-based English from 8:30–10:30 every day. Students use English to investigate, debate, and present — not just memorize.",
-                         vi: "Tiếng Anh học qua dự án từ 8:30–10:30 mỗi ngày. Học sinh dùng Tiếng Anh để điều tra, phản biện và thuyết trình — không chỉ học thuộc lòng." },
+  "camp.h1Desc":       { en: "Project-based English from 8:15–10:00 every day. Students use English to investigate, debate, and present — not just memorize.",
+                         vi: "Tiếng Anh học qua dự án từ 8:15–10:00 mỗi ngày. Học sinh dùng Tiếng Anh để điều tra, phản biện và thuyết trình — không chỉ học thuộc lòng." },
   "camp.h2Title":      { en: "STEAM & Engineering",    vi: "Khoa học Kỹ thuật STEAM" },
   "camp.h2Desc":       { en: "Hands-on robotics, coding, and physical prototyping. Students build, test, fail, and iterate — real engineering thinking.",
                          vi: "Thực hành robotics, lập trình và tạo mô hình thực tế. Học sinh xây dựng, thử nghiệm, thất bại và lặp lại — tư duy kỹ sư thực thụ." },

@@ -29,7 +29,8 @@ body { font-family: 'Inter', sans-serif; }
     </div>
 
     <!-- Header -->
-    <div class="bg-purple-800 text-white p-8 md:p-12 text-center relative overflow-hidden">
+    <div class="bg-purple-800 text-white p-8 md:p-12 text-center relative overflow-hidden flex flex-col items-center">
+        <img src="assets/img/logo.png" alt="Happy English Club Logo" class="h-20 md:h-24 object-contain mb-4">
         <h1 class="lang-text text-4xl md:text-5xl font-extrabold mb-4 text-yellow-400 tracking-tight uppercase" 
             data-en="Every Minute Matters." 
             data-vi="Từng Phút Đều Vô Giá.">Every Minute Matters.</h1>
@@ -61,7 +62,7 @@ body { font-family: 'Inter', sans-serif; }
             <tbody class="text-sm">
                 
                 <tr>
-                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">08:00 - 08:30</td>
+                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">08:00 - 08:15</td>
                     <td colspan="5" class="p-3 border-b border-gray-100 bg-emerald-50 cell-hover">
                         <div class="flex items-center justify-center">
                             <span class="text-xl mr-2">🧘</span>
@@ -75,7 +76,7 @@ body { font-family: 'Inter', sans-serif; }
                 </tr>
 
                 <tr>
-                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">08:30 - 10:30</td>
+                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">08:15 - 10:00</td>
                     <td class="p-3 border-b border-gray-100 bg-blue-50 border-r border-white cell-hover lang-text"
                         data-en="<span class='text-lg'>🗣️</span> <span class='font-bold text-blue-800'>Active English (PBL)</span><br><span class='text-xs text-blue-600'>Project Introduction. Using English to ask big questions.</span>"
                         data-vi="<span class='text-lg'>🗣️</span> <span class='font-bold text-blue-800'>Tiếng Anh Chủ động (PBL)</span><br><span class='text-xs text-blue-600'>Giới thiệu Dự án. Dùng Tiếng Anh để đặt câu hỏi lớn.</span>">
@@ -104,7 +105,7 @@ body { font-family: 'Inter', sans-serif; }
                 </tr>
 
                 <tr>
-                    <td class="p-2 border-b border-gray-100 font-bold text-gray-400 text-center text-xs bg-gray-50">10:30 - 10:40</td>
+                    <td class="p-2 border-b border-gray-100 font-bold text-gray-400 text-center text-xs bg-gray-50">10:00 - 10:10</td>
                     <td colspan="5" class="lang-text p-2 border-b border-gray-100 bg-gray-100 text-center text-gray-500 text-xs uppercase font-bold tracking-wider"
                         data-en="Brain Break & Hydration" data-vi="Giải lao & Uống nước">
                         Brain Break & Hydration
@@ -112,7 +113,7 @@ body { font-family: 'Inter', sans-serif; }
                 </tr>
 
                 <tr>
-                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">10:40 - 11:40</td>
+                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">10:10 - 11:00</td>
                     <td class="p-3 border-b border-gray-100 bg-orange-50 border-r border-white cell-hover lang-text"
                         data-en="<span class='text-lg'>📐</span> <span class='font-bold text-orange-800'>Hands-on Engineering</span><br><span class='text-xs text-orange-600'>Blueprinting and designing physical solutions.</span>"
                         data-vi="<span class='text-lg'>📐</span> <span class='font-bold text-orange-800'>Kỹ thuật Thực hành</span><br><span class='text-xs text-orange-600'>Lên bản vẽ và thiết kế giải pháp thực tế.</span>">
@@ -141,32 +142,16 @@ body { font-family: 'Inter', sans-serif; }
                 </tr>
 
                 <tr>
-                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">11:40 - 12:00</td>
-                    <td colspan="5" class="lang-text p-3 border-b border-gray-100 bg-green-50 text-center font-bold text-green-800 cell-hover"
-                        data-en="🍲 Nutritious Lunch (Fueling active minds)" data-vi="🍲 Bữa trưa Dinh dưỡng (Nạp năng lượng cho trí não)">
-                        🍲 Nutritious Lunch (Fueling active minds)
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">12:00 - 13:45</td>
-                    <td colspan="5" class="p-3 border-b border-gray-100 bg-slate-100 cell-hover">
+                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">11:00 - 14:00</td>
+                    <td colspan="5" class="p-3 border-b border-gray-100 bg-emerald-50 cell-hover">
                         <div class="flex items-center justify-center">
                             <span class="text-xl mr-2">🔋</span>
                             <div class="text-center lang-text"
-                                data-en="<span class='font-bold text-slate-700'>Deep Brain Recharge (Supervised Nap Time)</span><br><span class='text-xs text-slate-500'>Crucial for memory consolidation, physical growth, and afternoon focus.</span>"
-                                data-vi="<span class='font-bold text-slate-700'>Nạp năng lượng Trí não (Ngủ trưa)</span><br><span class='text-xs text-slate-500'>Vô cùng quan trọng để củng cố trí nhớ, phát triển thể chất và tập trung.</span>">
-                                <span class="font-bold text-slate-700">Deep Brain Recharge (Supervised Nap Time)</span><br><span class="text-xs text-slate-500">Crucial for memory consolidation, physical growth, and afternoon focus.</span>
+                                data-en="<span class='font-bold text-emerald-800'>Nutritious Lunch, Deep Brain Recharge (Nap) & Wake Up Exercise</span><br><span class='text-xs text-emerald-600'>Fueling active minds, crucial memory consolidation, and physical stretching.</span>"
+                                data-vi="<span class='font-bold text-emerald-800'>Bữa trưa Dinh dưỡng, Ngủ trưa & Thể Dục Thức giấc</span><br><span class='text-xs text-emerald-600'>Nạp năng lượng, củng cố trí nhớ và thư giãn gân cốt.</span>">
+                                <span class="font-bold text-emerald-800">Nutritious Lunch, Deep Brain Recharge (Nap) & Wake Up Exercise</span><br><span class="text-xs text-emerald-600">Fueling active minds, crucial memory consolidation, and physical stretching.</span>
                             </div>
                         </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="p-2 border-b border-gray-100 font-bold text-gray-400 text-center text-xs bg-gray-50">13:45 - 14:00</td>
-                    <td colspan="5" class="lang-text p-2 border-b border-gray-100 bg-gray-100 text-center text-gray-500 text-xs uppercase font-bold tracking-wider"
-                        data-en="Wake Up, Stretch & Afternoon Snack" data-vi="Thức dậy, Vươn vai & Ăn nhẹ">
-                        Wake Up, Stretch & Afternoon Snack
                     </td>
                 </tr>
 
@@ -292,18 +277,32 @@ body { font-family: 'Inter', sans-serif; }
         controls.style.display = 'none';
         
         const element = document.getElementById('timetable-content');
-        const opt = {
-            margin:       0.5,
-            filename:     'HEC_Summer_Camp_Timetable.pdf',
-            image:        { type: 'jpeg', quality: 0.98 },
-            html2canvas:  { scale: 2 },
-            jsPDF:        { unit: 'in', format: 'a4', orientation: 'landscape' }
-        };
         
-        html2pdf().set(opt).from(element).save().then(() => {
-            // Restore controls after generating
-            controls.style.display = 'flex';
-        });
+        // Force dimensions to create a perfectly bounded single page PDF
+        // that is fully rendered without squishing on mobile devices
+        const originalWidth = element.style.width;
+        element.style.width = '1200px'; 
+        
+        // Use timeout to allow DOM to visually update before capture
+        setTimeout(() => {
+            const pxToInches = 96;
+            const widthIn = 1200 / pxToInches;
+            const heightIn = element.scrollHeight / pxToInches;
+
+            const opt = {
+                margin:       0,
+                filename:     'HEC_Summer_Camp_Timetable.pdf',
+                image:        { type: 'jpeg', quality: 1.0 },
+                html2canvas:  { scale: 2, windowWidth: 1200 },
+                jsPDF:        { unit: 'in', format: [widthIn, heightIn], orientation: widthIn > heightIn ? 'landscape' : 'portrait' }
+            };
+            
+            html2pdf().set(opt).from(element).save().then(() => {
+                // Restore original state
+                controls.style.display = 'flex';
+                element.style.width = originalWidth;
+            });
+        }, 100);
     }
 </script>
 
