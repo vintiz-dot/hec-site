@@ -578,11 +578,24 @@
 <!-- ═══════════════════════════════════════════════════════════════
      SUMMER CAMP SPOTLIGHT
      ═══════════════════════════════════════════════════════════════ -->
-<section class="py-5" style="background: linear-gradient(to bottom, #ffffff, #f8fafc);">
+<section id="summer-camp-spotlight" class="py-5" style="background: linear-gradient(to bottom, #ffffff, #f8fafc);">
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // End the summer camp spotlight on July 25, 2026
+    const expirationDate = new Date("2026-07-25T23:59:59");
+    if (new Date() > expirationDate) {
+      const campSpotlight = document.getElementById("summer-camp-spotlight");
+      if (campSpotlight) campSpotlight.style.display = "none";
+    }
+  });
+</script>
   <div class="container">
     <div class="row align-items-center g-5">
       <div class="col-lg-6 reveal">
         <span class="badge-status badge-hot mb-3"><i class="bi bi-fire"></i> <span data-i18n="camp.badgeNew">Summer 2026</span></span>
+        <span class="badge-status mb-3 ms-2" style="background:var(--hec-emerald-soft);color:var(--hec-emerald);border:1px solid rgba(16,185,129,0.2)">
+          <i class="bi bi-people-fill"></i> <span data-i18n="camp.badgeGroups">Grades 1-2 &amp; 3-5</span>
+        </span>
         <h2 class="display-5 fw-bold mb-3" style="color:var(--hec-dark)" data-i18n="camp.heroTitle">Every Minute Matters.</h2>
         <p class="lead mb-4" style="color:var(--hec-text)" data-i18n="camp.heroSub">Don't let two months of summer erase a year of progress. While others fall behind, your child will step ahead.</p>
         

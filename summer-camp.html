@@ -34,6 +34,9 @@
           <span class="badge-status" style="background:var(--hec-blue-soft);color:var(--hec-blue);border:1px solid rgba(37,99,235,0.2)">
             <i class="bi bi-clock"></i> <span data-i18n="camp.badgeTime">08:00 – 16:00</span>
           </span>
+          <span class="badge-status" style="background:var(--hec-emerald-soft);color:var(--hec-emerald);border:1px solid rgba(16,185,129,0.2)">
+            <i class="bi bi-people-fill"></i> <span data-i18n="camp.badgeGroups">Grades 1-2 &amp; 3-5</span>
+          </span>
         </div>
 
         <h1 class="display-4 mb-3" data-i18n="camp.heroTitle">Every Minute Matters.</h1>
@@ -52,6 +55,9 @@
           </a>
           <a href="#timetable" class="btn btn-outline-primary btn-lg" data-i18n="camp.ctaSecondary">
             <i class="bi bi-calendar3 me-1"></i> View Full Timetable
+          </a>
+          <a href="hec-bilingual-timetable.html" target="_blank" download class="btn btn-light btn-lg text-primary fw-bold" style="box-shadow: 0 4px 15px rgba(0,0,0,0.1);" data-i18n="camp.downloadHero">
+            <i class="bi bi-file-earmark-arrow-down me-1"></i> Secure Your Child's Advantage & Download Timetable ⬇️
           </a>
         </div>
       </div>
@@ -102,226 +108,13 @@
      ═══════════════════════════════════════════════════════════════ -->
 <section id="timetable" class="py-5">
   <div class="container">
-    <div class="text-center mb-5 reveal">
-      <h2 class="section-title" data-i18n="camp.ttTitle">Weekly Timetable</h2>
-      <div class="section-divider mx-auto"></div>
-      <p class="section-subtitle mx-auto" data-i18n="camp.ttSub">A purposeful day packed with active learning, creative exploration, and structured play — all in English.</p>
-    </div>
-
-    <div class="camp-table-wrap reveal">
-      <table class="camp-table" id="campTimetable">
-        <thead>
-          <tr>
-            <th class="tt-time" data-i18n="camp.thTime">Time</th>
-            <th class="tt-day" data-i18n="camp.thMon">Monday<br><small>The Hook (Explore)</small></th>
-            <th class="tt-day" data-i18n="camp.thTue">Tuesday<br><small>Research &amp; Build</small></th>
-            <th class="tt-day" data-i18n="camp.thWed">Wednesday<br><small>Global Problem Solving</small></th>
-            <th class="tt-day" data-i18n="camp.thThu">Thursday<br><small>Test &amp; Connect</small></th>
-            <th class="tt-day tt-friday" data-i18n="camp.thFri">Friday<br><small>The Grand Showcase</small></th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Mindfulness -->
-          <tr>
-            <td class="tt-time">08:00–08:30</td>
-            <td colspan="5" class="tt-block tt-mindful">
-              <span class="tt-emoji">🧘</span>
-              <strong data-i18n="camp.mindTitle">Mindfulness &amp; Resilience</strong><br>
-              <small data-i18n="camp.mindDesc">A calm brain learns faster. Daily emotional check-ins to build focus.</small>
-            </td>
-          </tr>
-
-          <!-- Active English PBL -->
-          <tr>
-            <td class="tt-time">08:30–10:30</td>
-            <td class="tt-block tt-english">
-              <span class="tt-emoji">🗣️</span>
-              <strong data-i18n="camp.eng1Title">Active English (PBL)</strong><br>
-              <small data-i18n="camp.eng1Desc">Project Introduction. Using English to ask big questions.</small>
-            </td>
-            <td class="tt-block tt-english">
-              <span class="tt-emoji">🎭</span>
-              <strong data-i18n="camp.eng2Title">Active English (PBL)</strong><br>
-              <small data-i18n="camp.eng2Desc">Role-play and vocabulary building for real-world use.</small>
-            </td>
-            <td class="tt-block tt-english">
-              <span class="tt-emoji">📖</span>
-              <strong data-i18n="camp.eng3Title">Active English (PBL)</strong><br>
-              <small data-i18n="camp.eng3Desc">Interactive read-alouds and reading comprehension.</small>
-            </td>
-            <td class="tt-block tt-english">
-              <span class="tt-emoji">⚖️</span>
-              <strong data-i18n="camp.eng4Title">Active English (PBL)</strong><br>
-              <small data-i18n="camp.eng4Desc">Debates and presentation preparation.</small>
-            </td>
-            <td class="tt-block tt-showcase">
-              <span class="tt-emoji">🏆</span>
-              <strong data-i18n="camp.eng5Title">Active English (PBL)</strong><br>
-              <small data-i18n="camp.eng5Desc">Final project reflections and confident speaking.</small>
-            </td>
-          </tr>
-
-          <!-- Break -->
-          <tr class="tt-break-row">
-            <td class="tt-time-sm">10:30–10:40</td>
-            <td colspan="5" class="tt-break" data-i18n="camp.break1">Brain Break &amp; Hydration</td>
-          </tr>
-
-          <!-- Engineering -->
-          <tr>
-            <td class="tt-time">10:40–11:40</td>
-            <td class="tt-block tt-steam">
-              <span class="tt-emoji">📐</span>
-              <strong data-i18n="camp.st1Title">Hands-on Engineering</strong><br>
-              <small data-i18n="camp.st1Desc">Blueprinting and designing physical solutions.</small>
-            </td>
-            <td class="tt-block tt-steam">
-              <span class="tt-emoji">🤖</span>
-              <strong data-i18n="camp.st2Title">Robotics</strong><br>
-              <small data-i18n="camp.st2Desc">Building functional, moving robots.</small>
-            </td>
-            <td class="tt-block tt-steam">
-              <span class="tt-emoji">🛠️</span>
-              <strong data-i18n="camp.st3Title">Hands-on Engineering</strong><br>
-              <small data-i18n="camp.st3Desc">Creating physical prototypes.</small>
-            </td>
-            <td class="tt-block tt-steam">
-              <span class="tt-emoji">🔧</span>
-              <strong data-i18n="camp.st4Title">Robotics &amp; Testing</strong><br>
-              <small data-i18n="camp.st4Desc">Fixing and improving designs.</small>
-            </td>
-            <td class="tt-block tt-steam">
-              <span class="tt-emoji">🚀</span>
-              <strong data-i18n="camp.st5Title">Engineering Challenge</strong><br>
-              <small data-i18n="camp.st5Desc">Final stress-test of weekly builds.</small>
-            </td>
-          </tr>
-
-          <!-- Lunch -->
-          <tr>
-            <td class="tt-time">11:40–12:00</td>
-            <td colspan="5" class="tt-block tt-lunch">
-              <span class="tt-emoji">🍲</span>
-              <strong data-i18n="camp.lunchTitle">Nutritious Lunch</strong><br>
-              <small data-i18n="camp.lunchDesc">Fueling active minds</small>
-            </td>
-          </tr>
-
-          <!-- Nap -->
-          <tr>
-            <td class="tt-time">12:00–13:45</td>
-            <td colspan="5" class="tt-block tt-rest">
-              <span class="tt-emoji">🔋</span>
-              <strong data-i18n="camp.napTitle">Deep Brain Recharge (Supervised Nap Time)</strong><br>
-              <small data-i18n="camp.napDesc">Crucial for memory consolidation, physical growth, and afternoon focus.</small>
-            </td>
-          </tr>
-
-          <!-- Afternoon Break -->
-          <tr class="tt-break-row">
-            <td class="tt-time-sm">13:45–14:00</td>
-            <td colspan="5" class="tt-break" data-i18n="camp.break2">Wake Up, Stretch &amp; Afternoon Snack</td>
-          </tr>
-
-          <!-- Creative Arts -->
-          <tr>
-            <td class="tt-time">14:00–15:00</td>
-            <td class="tt-block tt-art">
-              <span class="tt-emoji">🎨</span>
-              <strong data-i18n="camp.art1Title">Creative Arts</strong><br>
-              <small data-i18n="camp.art1Desc">Arts &amp; crafts tied to the weekly theme.</small>
-            </td>
-            <td class="tt-block tt-art">
-              <span class="tt-emoji">🖌️</span>
-              <strong data-i18n="camp.art2Title">Creative Arts</strong><br>
-              <small data-i18n="camp.art2Desc">Fine motor skill development through art.</small>
-            </td>
-            <td class="tt-block tt-art">
-              <span class="tt-emoji">✂️</span>
-              <strong data-i18n="camp.art3Title">Creative Arts</strong><br>
-              <small data-i18n="camp.art3Desc">Bringing imagination into reality.</small>
-            </td>
-            <td class="tt-block tt-art">
-              <span class="tt-emoji">🖼️</span>
-              <strong data-i18n="camp.art4Title">Creative Arts</strong><br>
-              <small data-i18n="camp.art4Desc">Finishing touches on physical projects.</small>
-            </td>
-            <td class="tt-block tt-dance">
-              <span class="tt-emoji">💃</span>
-              <strong data-i18n="camp.danceTitle">Dynamic Dance Class</strong><br>
-              <small data-i18n="camp.danceDesc">End of week energy release and coordination.</small>
-            </td>
-          </tr>
-
-          <!-- Afternoon Break 2 -->
-          <tr class="tt-break-row">
-            <td class="tt-time-sm">15:00–15:10</td>
-            <td colspan="5" class="tt-break" data-i18n="camp.break3">Brain Break &amp; Hydration</td>
-          </tr>
-
-          <!-- Afternoon Specials -->
-          <tr>
-            <td class="tt-time">15:10–16:00</td>
-            <td class="tt-block tt-global">
-              <span class="tt-emoji">🌍</span>
-              <strong data-i18n="camp.pm1Title">Global Empathy</strong><br>
-              <small data-i18n="camp.pm1Desc">Social studies &amp; world cultures.</small>
-            </td>
-            <td class="tt-block tt-code">
-              <span class="tt-emoji">⌨️</span>
-              <strong data-i18n="camp.pm2Title">Future Coding</strong><br>
-              <small data-i18n="camp.pm2Desc">Learning the language of the future.</small>
-            </td>
-            <td class="tt-block tt-code">
-              <span class="tt-emoji">🧩</span>
-              <strong data-i18n="camp.pm3Title">Tech &amp; Logic</strong><br>
-              <small data-i18n="camp.pm3Desc">Advanced logic puzzles to sharpen the mind.</small>
-            </td>
-            <td class="tt-block tt-code">
-              <span class="tt-emoji">📱</span>
-              <strong data-i18n="camp.pm4Title">Digital Mastery</strong><br>
-              <small data-i18n="camp.pm4Desc">App logic &amp; finalizing digital portfolios.</small>
-            </td>
-            <td class="tt-block tt-showcase tt-showcase-star">
-              <span class="tt-star">🌟</span>
-              <span class="tt-emoji">🎥</span>
-              <strong data-i18n="camp.pm5Title">Project Showcase</strong><br>
-              <small data-i18n="camp.pm5Desc">Recording video portfolios for parents.</small>
-            </td>
-          </tr>
-
-          <!-- Free play -->
-          <tr>
-            <td class="tt-time" data-i18n="camp.pickup">16:00 – Pickup</td>
-            <td class="tt-block tt-play">
-              <span class="tt-emoji">🎲</span>
-              <strong data-i18n="camp.fp1Title">Strategic Play</strong><br>
-              <small data-i18n="camp.fp1Desc">English Board Games (Scrabble, UNO).</small>
-            </td>
-            <td class="tt-block tt-play">
-              <span class="tt-emoji">🧱</span>
-              <strong data-i18n="camp.fp2Title">Unstructured Maker</strong><br>
-              <small data-i18n="camp.fp2Desc">Free-build LEGO &amp; Magnatiles stations.</small>
-            </td>
-            <td class="tt-block tt-play">
-              <span class="tt-emoji">🎧</span>
-              <strong data-i18n="camp.fp3Title">Audio Immersion</strong><br>
-              <small data-i18n="camp.fp3Desc">English audiobook listening station.</small>
-            </td>
-            <td class="tt-block tt-play">
-              <span class="tt-emoji">🎨</span>
-              <strong data-i18n="camp.fp4Title">Mindful Art</strong><br>
-              <small data-i18n="camp.fp4Desc">Thematic coloring and journaling.</small>
-            </td>
-            <td class="tt-block tt-play">
-              <span class="tt-emoji">🧩</span>
-              <strong data-i18n="camp.fp5Title">Community Puzzles</strong><br>
-              <small data-i18n="camp.fp5Desc">Large group floor puzzles &amp; camp wrap-up.</small>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <iframe id="iframe-timetable" src="summer-camp-timetable.html" width="100%" height="1500px" style="border:none;" scrolling="no" title="HEC Summer Camp Bilingual Timetable"></iframe>
+    <script>
+      // Adjust iframe height seamlessly
+      document.getElementById('iframe-timetable').onload = function() {
+          this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';
+      };
+    </script>
   </div>
 </section>
 
@@ -334,6 +127,7 @@
     <p class="reveal" data-i18n="camp.ctaSub">Spots are limited to 12 per group. Register now to lock in your child's place in Hanoi's most immersive English STEAM camp.</p>
     <div class="d-flex gap-3 justify-content-center flex-wrap reveal">
       <a href="index.html#contact" class="btn btn-gold btn-lg" data-i18n="camp.ctaBtn"><i class="bi bi-send me-1"></i> Register Now</a>
+      <a href="hec-bilingual-timetable.html" target="_blank" download class="btn btn-primary btn-lg" style="box-shadow: 0 4px 15px rgba(37,99,235,0.3);" data-i18n="camp.downloadCTA"><i class="bi bi-file-earmark-pdf me-1"></i> Claim Your Child's Spot & Download Timetable (PDF)</a>
       <a href="tel:0975679889" class="btn btn-outline-light btn-lg"><i class="bi bi-telephone me-1"></i> 0975 679 889</a>
     </div>
   </div>

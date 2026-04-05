@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy English Club - Bilingual Timetable</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- html2pdf library for PDF generation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+body { font-family: 'Inter', sans-serif; }
+.cell-hover:hover { transform: scale(1.02); transition: transform 0.2s ease-in-out; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 10; position: relative; }
+</style>
+</head>
+<body class="bg-gray-100 p-4 md:p-8">
+
+<div id="timetable-content" class="max-w-7xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border-t-8 border-purple-800 relative">
+    
+    <!-- Controls (Not printed in PDF) -->
+    <div id="controls-bar" class="absolute top-4 right-4 z-20 flex gap-2">
+        <button onclick="downloadPDF()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-md transition-colors text-sm flex items-center">
+            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            Download PDF
+        </button>
+        <button id="lang-btn" onclick="toggleLanguage()" class="bg-yellow-400 hover:bg-yellow-500 text-purple-900 font-bold py-2 px-4 rounded-full shadow-md transition-colors text-sm">
+            🇻🇳 Tiếng Việt
+        </button>
+    </div>
+
+    <!-- Header -->
+    <div class="bg-purple-800 text-white p-8 md:p-12 text-center relative overflow-hidden">
+        <h1 class="lang-text text-4xl md:text-5xl font-extrabold mb-4 text-yellow-400 tracking-tight uppercase" 
+            data-en="Every Minute Matters." 
+            data-vi="Từng Phút Đều Vô Giá.">Every Minute Matters.</h1>
+        <p class="lang-text text-xl md:text-2xl font-semibold mb-6 max-w-4xl mx-auto leading-relaxed"
+            data-en="Don't let two months of summer erase a year of progress. While others fall behind, your child will step ahead."
+            data-vi="Đừng để 2 tháng hè xóa sạch 1 năm nỗ lực. Trong khi các bạn khác tụt hậu, con bạn sẽ bứt phá.">
+            Don't let two months of summer erase a year of progress. While others fall behind, your child will step ahead.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 text-sm md:text-base font-medium">
+            <span class="lang-text bg-purple-900 px-4 py-2 rounded-full border border-purple-700" data-en="🚀 Future-Proof Skills" data-vi="🚀 Kỹ năng Tương lai">🚀 Future-Proof Skills</span>
+            <span class="lang-text bg-purple-900 px-4 py-2 rounded-full border border-purple-700" data-en="💡 Critical Thinking" data-vi="💡 Tư duy Phản biện">💡 Critical Thinking</span>
+            <span class="lang-text bg-purple-900 px-4 py-2 rounded-full border border-purple-700" data-en="🌍 Active English Leadership" data-vi="🌍 Lãnh đạo Tiếng Anh Chủ động">🌍 Active English Leadership</span>
+        </div>
+    </div>
+
+    <!-- Table -->
+    <div class="p-4 md:p-8 overflow-x-auto">
+        <table class="w-full text-left border-collapse min-w-[1000px]">
+            <thead>
+                <tr>
+                    <th class="lang-text w-1/12 p-4 bg-gray-50 text-purple-900 font-bold border-b-2 border-purple-200 uppercase tracking-wider text-sm text-center" data-en="Time" data-vi="Thời gian">Time</th>
+                    <th class="lang-text w-1/6 p-4 bg-purple-50 text-purple-900 font-bold border-b-2 border-purple-200 text-center rounded-tl-lg" data-en="Monday<br><span class='text-xs font-normal text-purple-700'>The Hook (Explore)</span>" data-vi="Thứ 2<br><span class='text-xs font-normal text-purple-700'>Gợi mở (Khám phá)</span>">Monday<br><span class="text-xs font-normal text-purple-700">The Hook (Explore)</span></th>
+                    <th class="lang-text w-1/6 p-4 bg-purple-50 text-purple-900 font-bold border-b-2 border-purple-200 text-center" data-en="Tuesday<br><span class='text-xs font-normal text-purple-700'>Research & Build</span>" data-vi="Thứ 3<br><span class='text-xs font-normal text-purple-700'>Nghiên cứu & Chế tạo</span>">Tuesday<br><span class="text-xs font-normal text-purple-700">Research & Build</span></th>
+                    <th class="lang-text w-1/6 p-4 bg-purple-50 text-purple-900 font-bold border-b-2 border-purple-200 text-center" data-en="Wednesday<br><span class='text-xs font-normal text-purple-700'>Global Problem Solving</span>" data-vi="Thứ 4<br><span class='text-xs font-normal text-purple-700'>Giải quyết Vấn đề Toàn cầu</span>">Wednesday<br><span class="text-xs font-normal text-purple-700">Global Problem Solving</span></th>
+                    <th class="lang-text w-1/6 p-4 bg-purple-50 text-purple-900 font-bold border-b-2 border-purple-200 text-center" data-en="Thursday<br><span class='text-xs font-normal text-purple-700'>Test & Connect</span>" data-vi="Thứ 5<br><span class='text-xs font-normal text-purple-700'>Thử nghiệm & Kết nối</span>">Thursday<br><span class="text-xs font-normal text-purple-700">Test & Connect</span></th>
+                    <th class="lang-text w-1/6 p-4 bg-yellow-50 text-purple-900 font-bold border-b-2 border-yellow-300 text-center rounded-tr-lg" data-en="Friday<br><span class='text-xs font-normal text-purple-700'>The Grand Showcase</span>" data-vi="Thứ 6<br><span class='text-xs font-normal text-purple-700'>Triển lãm Dự án</span>">Friday<br><span class="text-xs font-normal text-purple-700">The Grand Showcase</span></th>
+                </tr>
+            </thead>
+            <tbody class="text-sm">
+                
+                <tr>
+                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">08:00 - 08:30</td>
+                    <td colspan="5" class="p-3 border-b border-gray-100 bg-emerald-50 cell-hover">
+                        <div class="flex items-center justify-center">
+                            <span class="text-xl mr-2">🧘</span>
+                            <div class="text-center lang-text" 
+                                data-en="<span class='font-bold text-emerald-800'>Mindfulness & Resilience</span><br><span class='text-xs text-emerald-600'>A calm brain learns faster. Daily emotional check-ins to build focus.</span>"
+                                data-vi="<span class='font-bold text-emerald-800'>Chánh niệm & Sự kiên cường</span><br><span class='text-xs text-emerald-600'>Não bộ bình tĩnh học nhanh hơn. Kiểm tra cảm xúc hàng ngày để tăng tập trung.</span>">
+                                <span class="font-bold text-emerald-800">Mindfulness & Resilience</span><br><span class="text-xs text-emerald-600">A calm brain learns faster. Daily emotional check-ins to build focus.</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">08:30 - 10:30</td>
+                    <td class="p-3 border-b border-gray-100 bg-blue-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>🗣️</span> <span class='font-bold text-blue-800'>Active English (PBL)</span><br><span class='text-xs text-blue-600'>Project Introduction. Using English to ask big questions.</span>"
+                        data-vi="<span class='text-lg'>🗣️</span> <span class='font-bold text-blue-800'>Tiếng Anh Chủ động (PBL)</span><br><span class='text-xs text-blue-600'>Giới thiệu Dự án. Dùng Tiếng Anh để đặt câu hỏi lớn.</span>">
+                        <span class="text-lg">🗣️</span> <span class="font-bold text-blue-800">Active English (PBL)</span><br><span class="text-xs text-blue-600">Project Introduction. Using English to ask big questions.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-blue-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>🎭</span> <span class='font-bold text-blue-800'>Active English (PBL)</span><br><span class='text-xs text-blue-600'>Role-play and vocabulary building for real-world use.</span>"
+                        data-vi="<span class='text-lg'>🎭</span> <span class='font-bold text-blue-800'>Tiếng Anh Chủ động (PBL)</span><br><span class='text-xs text-blue-600'>Đóng vai và xây dựng từ vựng thực tế.</span>">
+                        <span class="text-lg">🎭</span> <span class="font-bold text-blue-800">Active English (PBL)</span><br><span class="text-xs text-blue-600">Role-play and vocabulary building for real-world use.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-blue-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>📖</span> <span class='font-bold text-blue-800'>Active English (PBL)</span><br><span class='text-xs text-blue-600'>Interactive read-alouds and reading comprehension.</span>"
+                        data-vi="<span class='text-lg'>📖</span> <span class='font-bold text-blue-800'>Tiếng Anh Chủ động (PBL)</span><br><span class='text-xs text-blue-600'>Đọc tương tác và rèn luyện đọc hiểu.</span>">
+                        <span class="text-lg">📖</span> <span class="font-bold text-blue-800">Active English (PBL)</span><br><span class="text-xs text-blue-600">Interactive read-alouds and reading comprehension.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-blue-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>⚖️</span> <span class='font-bold text-blue-800'>Active English (PBL)</span><br><span class='text-xs text-blue-600'>Debates and presentation preparation.</span>"
+                        data-vi="<span class='text-lg'>⚖️</span> <span class='font-bold text-blue-800'>Tiếng Anh Chủ động (PBL)</span><br><span class='text-xs text-blue-600'>Tranh biện và chuẩn bị thuyết trình.</span>">
+                        <span class="text-lg">⚖️</span> <span class="font-bold text-blue-800">Active English (PBL)</span><br><span class="text-xs text-blue-600">Debates and presentation preparation.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-yellow-50 cell-hover lang-text"
+                        data-en="<span class='text-lg'>🏆</span> <span class='font-bold text-yellow-800'>Active English (PBL)</span><br><span class='text-xs text-yellow-600'>Final project reflections and confident speaking.</span>"
+                        data-vi="<span class='text-lg'>🏆</span> <span class='font-bold text-yellow-800'>Tiếng Anh Chủ động (PBL)</span><br><span class='text-xs text-yellow-600'>Đúc kết dự án và tự tin thuyết trình.</span>">
+                        <span class="text-lg">🏆</span> <span class="font-bold text-yellow-800">Active English (PBL)</span><br><span class="text-xs text-yellow-600">Final project reflections and confident speaking.</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="p-2 border-b border-gray-100 font-bold text-gray-400 text-center text-xs bg-gray-50">10:30 - 10:40</td>
+                    <td colspan="5" class="lang-text p-2 border-b border-gray-100 bg-gray-100 text-center text-gray-500 text-xs uppercase font-bold tracking-wider"
+                        data-en="Brain Break & Hydration" data-vi="Giải lao & Uống nước">
+                        Brain Break & Hydration
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">10:40 - 11:40</td>
+                    <td class="p-3 border-b border-gray-100 bg-orange-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>📐</span> <span class='font-bold text-orange-800'>Hands-on Engineering</span><br><span class='text-xs text-orange-600'>Blueprinting and designing physical solutions.</span>"
+                        data-vi="<span class='text-lg'>📐</span> <span class='font-bold text-orange-800'>Kỹ thuật Thực hành</span><br><span class='text-xs text-orange-600'>Lên bản vẽ và thiết kế giải pháp thực tế.</span>">
+                        <span class="text-lg">📐</span> <span class="font-bold text-orange-800">Hands-on Engineering</span><br><span class="text-xs text-orange-600">Blueprinting and designing physical solutions.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-orange-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>🤖</span> <span class='font-bold text-orange-800'>Robotics</span><br><span class='text-xs text-orange-600'>Building functional, moving robots.</span>"
+                        data-vi="<span class='text-lg'>🤖</span> <span class='font-bold text-orange-800'>Robot Lắp ráp</span><br><span class='text-xs text-orange-600'>Lắp ráp robot có chức năng chuyển động.</span>">
+                        <span class="text-lg">🤖</span> <span class="font-bold text-orange-800">Robotics</span><br><span class="text-xs text-orange-600">Building functional, moving robots.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-orange-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>🛠️</span> <span class='font-bold text-orange-800'>Hands-on Engineering</span><br><span class='text-xs text-orange-600'>Creating physical prototypes.</span>"
+                        data-vi="<span class='text-lg'>🛠️</span> <span class='font-bold text-orange-800'>Kỹ thuật Thực hành</span><br><span class='text-xs text-orange-600'>Tạo mô hình vật lý.</span>">
+                        <span class="text-lg">🛠️</span> <span class="font-bold text-orange-800">Hands-on Engineering</span><br><span class="text-xs text-orange-600">Creating physical prototypes.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-orange-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>🔧</span> <span class='font-bold text-orange-800'>Robotics & Testing</span><br><span class='text-xs text-orange-600'>Fixing and improving designs.</span>"
+                        data-vi="<span class='text-lg'>🔧</span> <span class='font-bold text-orange-800'>Thử nghiệm Robot</span><br><span class='text-xs text-orange-600'>Sửa chữa và cải tiến thiết kế.</span>">
+                        <span class="text-lg">🔧</span> <span class="font-bold text-orange-800">Robotics & Testing</span><br><span class="text-xs text-orange-600">Fixing and improving designs.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-orange-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>🚀</span> <span class='font-bold text-orange-800'>Engineering Challenge</span><br><span class='text-xs text-orange-600'>Final stress-test of weekly builds.</span>"
+                        data-vi="<span class='text-lg'>🚀</span> <span class='font-bold text-orange-800'>Thử thách Kỹ thuật</span><br><span class='text-xs text-orange-600'>Kiểm tra độ bền dự án cuối tuần.</span>">
+                        <span class="text-lg">🚀</span> <span class="font-bold text-orange-800">Engineering Challenge</span><br><span class="text-xs text-orange-600">Final stress-test of weekly builds.</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">11:40 - 12:00</td>
+                    <td colspan="5" class="lang-text p-3 border-b border-gray-100 bg-green-50 text-center font-bold text-green-800 cell-hover"
+                        data-en="🍲 Nutritious Lunch (Fueling active minds)" data-vi="🍲 Bữa trưa Dinh dưỡng (Nạp năng lượng cho trí não)">
+                        🍲 Nutritious Lunch (Fueling active minds)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">12:00 - 13:45</td>
+                    <td colspan="5" class="p-3 border-b border-gray-100 bg-slate-100 cell-hover">
+                        <div class="flex items-center justify-center">
+                            <span class="text-xl mr-2">🔋</span>
+                            <div class="text-center lang-text"
+                                data-en="<span class='font-bold text-slate-700'>Deep Brain Recharge (Supervised Nap Time)</span><br><span class='text-xs text-slate-500'>Crucial for memory consolidation, physical growth, and afternoon focus.</span>"
+                                data-vi="<span class='font-bold text-slate-700'>Nạp năng lượng Trí não (Ngủ trưa)</span><br><span class='text-xs text-slate-500'>Vô cùng quan trọng để củng cố trí nhớ, phát triển thể chất và tập trung.</span>">
+                                <span class="font-bold text-slate-700">Deep Brain Recharge (Supervised Nap Time)</span><br><span class="text-xs text-slate-500">Crucial for memory consolidation, physical growth, and afternoon focus.</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="p-2 border-b border-gray-100 font-bold text-gray-400 text-center text-xs bg-gray-50">13:45 - 14:00</td>
+                    <td colspan="5" class="lang-text p-2 border-b border-gray-100 bg-gray-100 text-center text-gray-500 text-xs uppercase font-bold tracking-wider"
+                        data-en="Wake Up, Stretch & Afternoon Snack" data-vi="Thức dậy, Vươn vai & Ăn nhẹ">
+                        Wake Up, Stretch & Afternoon Snack
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">14:00 - 15:00</td>
+                    <td class="p-3 border-b border-gray-100 bg-pink-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>🎨</span> <span class='font-bold text-pink-800'>Creative Arts</span><br><span class='text-xs text-pink-600'>Arts & crafts tied to the weekly theme.</span>"
+                        data-vi="<span class='text-lg'>🎨</span> <span class='font-bold text-pink-800'>Nghệ thuật Sáng tạo</span><br><span class='text-xs text-pink-600'>Thủ công gắn liền với chủ đề tuần.</span>">
+                        <span class="text-lg">🎨</span> <span class="font-bold text-pink-800">Creative Arts</span><br><span class="text-xs text-pink-600">Arts & crafts tied to the weekly theme.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-pink-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>🖌️</span> <span class='font-bold text-pink-800'>Creative Arts</span><br><span class='text-xs text-pink-600'>Fine motor skill development through art.</span>"
+                        data-vi="<span class='text-lg'>🖌️</span> <span class='font-bold text-pink-800'>Nghệ thuật Sáng tạo</span><br><span class='text-xs text-pink-600'>Phát triển vận động tinh qua nghệ thuật.</span>">
+                        <span class="text-lg">🖌️</span> <span class="font-bold text-pink-800">Creative Arts</span><br><span class="text-xs text-pink-600">Fine motor skill development through art.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-pink-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>✂️</span> <span class='font-bold text-pink-800'>Creative Arts</span><br><span class='text-xs text-pink-600'>Bringing imagination into reality.</span>"
+                        data-vi="<span class='text-lg'>✂️</span> <span class='font-bold text-pink-800'>Nghệ thuật Sáng tạo</span><br><span class='text-xs text-pink-600'>Biến trí tưởng tượng thành hiện thực.</span>">
+                        <span class="text-lg">✂️</span> <span class="font-bold text-pink-800">Creative Arts</span><br><span class="text-xs text-pink-600">Bringing imagination into reality.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-blue-100 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>🚀</span> <span class='font-bold text-blue-800'>Pitch & Defend</span><br><span class='text-xs text-blue-600'>Evaluating prototypes and preparing the Shark Tank pitch.</span>"
+                        data-vi="<span class='text-lg'>🚀</span> <span class='font-bold text-blue-800'>Thuyết trình & Bảo vệ</span><br><span class='text-xs text-blue-600'>Đánh giá mô hình và chuẩn bị gọi vốn (Shark Tank).</span>">
+                        <span class="text-lg">🚀</span> <span class="font-bold text-blue-800">Pitch & Defend</span><br><span class="text-xs text-blue-600">Evaluating prototypes and preparing the Shark Tank pitch.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-rose-100 cell-hover lang-text"
+                        data-en="<span class='text-lg'>💃</span> <span class='font-bold text-rose-800'>Dynamic Dance Class</span><br><span class='text-xs text-rose-600'>End of week energy release and coordination.</span>"
+                        data-vi="<span class='text-lg'>💃</span> <span class='font-bold text-rose-800'>Lớp Nhảy Năng động</span><br><span class='text-xs text-rose-600'>Giải phóng năng lượng cuối tuần & vận động.</span>">
+                        <span class="text-lg">💃</span> <span class="font-bold text-rose-800">Dynamic Dance Class</span><br><span class="text-xs text-rose-600">End of week energy release and coordination.</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="p-2 border-b border-gray-100 font-bold text-gray-400 text-center text-xs bg-gray-50">15:00 - 15:10</td>
+                    <td colspan="5" class="lang-text p-2 border-b border-gray-100 bg-gray-100 text-center text-gray-500 text-xs uppercase font-bold tracking-wider"
+                        data-en="Brain Break & Hydration" data-vi="Giải lao & Uống nước">
+                        Brain Break & Hydration
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="p-3 border-b border-gray-100 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50">15:10 - 16:00</td>
+                    <td class="p-3 border-b border-gray-100 bg-indigo-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>🌍</span> <span class='font-bold text-indigo-800'>Global Empathy</span><br><span class='text-xs text-indigo-600'>Social studies & world cultures.</span>"
+                        data-vi="<span class='text-lg'>🌍</span> <span class='font-bold text-indigo-800'>Thấu cảm Toàn cầu</span><br><span class='text-xs text-indigo-600'>Kiến thức xã hội & văn hóa thế giới.</span>">
+                        <span class="text-lg">🌍</span> <span class="font-bold text-indigo-800">Global Empathy</span><br><span class="text-xs text-indigo-600">Social studies & world cultures.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-cyan-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>⌨️</span> <span class='font-bold text-cyan-800'>Future Coding</span><br><span class='text-xs text-cyan-600'>Learning the language of the future.</span>"
+                        data-vi="<span class='text-lg'>⌨️</span> <span class='font-bold text-cyan-800'>Lập trình Tương lai</span><br><span class='text-xs text-cyan-600'>Học ngôn ngữ của kỷ nguyên mới.</span>">
+                        <span class="text-lg">⌨️</span> <span class="font-bold text-cyan-800">Future Coding</span><br><span class="text-xs text-cyan-600">Learning the language of the future.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-cyan-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>🧩</span> <span class='font-bold text-cyan-800'>Tech & Logic</span><br><span class='text-xs text-cyan-600'>Advanced logic puzzles to sharpen the mind.</span>"
+                        data-vi="<span class='text-lg'>🧩</span> <span class='font-bold text-cyan-800'>Công nghệ & Logic</span><br><span class='text-xs text-cyan-600'>Câu đố logic nâng cao rèn luyện trí não.</span>">
+                        <span class="text-lg">🧩</span> <span class="font-bold text-cyan-800">Tech & Logic</span><br><span class="text-xs text-cyan-600">Advanced logic puzzles to sharpen the mind.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-cyan-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>📱</span> <span class='font-bold text-cyan-800'>Digital Mastery</span><br><span class='text-xs text-cyan-600'>App logic & finalizing digital portfolios.</span>"
+                        data-vi="<span class='text-lg'>📱</span> <span class='font-bold text-cyan-800'>Làm chủ Kỹ thuật số</span><br><span class='text-xs text-cyan-600'>Logic ứng dụng & hoàn thiện hồ sơ dự án.</span>">
+                        <span class="text-lg">📱</span> <span class="font-bold text-cyan-800">Digital Mastery</span><br><span class="text-xs text-cyan-600">App logic & finalizing digital portfolios.</span>
+                    </td>
+                    <td class="p-3 border-b border-gray-100 bg-yellow-100 border-2 border-yellow-300 cell-hover relative lang-text"
+                        data-en="<span class='absolute top-1 right-1 text-2xl'>🌟</span><span class='text-lg'>🎥</span> <span class='font-bold text-yellow-900'>Project Showcase</span><br><span class='text-xs text-yellow-700 font-medium'>Recording video portfolios for parents.</span>"
+                        data-vi="<span class='absolute top-1 right-1 text-2xl'>🌟</span><span class='text-lg'>🎥</span> <span class='font-bold text-yellow-900'>Triển lãm Dự án</span><br><span class='text-xs text-yellow-700 font-medium'>Quay video dự án gửi phụ huynh.</span>">
+                        <span class="absolute top-1 right-1 text-2xl">🌟</span><span class="text-lg">🎥</span> <span class="font-bold text-yellow-900">Project Showcase</span><br><span class="text-xs text-yellow-700 font-medium">Recording video portfolios for parents.</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="p-3 font-bold text-gray-600 text-center whitespace-nowrap bg-gray-50 rounded-bl-lg lang-text" data-en="16:00 - 17:00" data-vi="16:00 - 17:00">16:00 - 17:00</td>
+                    <td class="p-3 bg-purple-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>🔍</span> <span class='font-bold text-purple-800'>Inventor's Lab</span><br><span class='text-xs text-purple-600'>Taking things apart to figure out how to make them better.</span>"
+                        data-vi="<span class='text-lg'>🔍</span> <span class='font-bold text-purple-800'>Phòng Sáng chế</span><br><span class='text-xs text-purple-600'>Tháo rời đồ vật để tìm cách làm cho chúng tốt hơn.</span>">
+                        <span class="text-lg">🔍</span> <span class="font-bold text-purple-800">Inventor's Lab</span><br><span class="text-xs text-purple-600">Taking things apart to figure out how to make them better.</span>
+                    </td>
+                    <td class="p-3 bg-purple-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>⚖️</span> <span class='font-bold text-purple-800'>Idea Testers</span><br><span class='text-xs text-purple-600'>Testing our projects and sharing friendly feedback to improve.</span>"
+                        data-vi="<span class='text-lg'>⚖️</span> <span class='font-bold text-purple-800'>Thử nghiệm Ý tưởng</span><br><span class='text-xs text-purple-600'>Kiểm tra dự án và góp ý để cùng nhau làm tốt hơn.</span>">
+                        <span class="text-lg">⚖️</span> <span class="font-bold text-purple-800">Idea Testers</span><br><span class="text-xs text-purple-600">Testing our projects and sharing friendly feedback to improve.</span>
+                    </td>
+                    <td class="p-3 bg-purple-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>💡</span> <span class='font-bold text-purple-800'>Future Builders</span><br><span class='text-xs text-purple-600'>Inventing creative solutions for real-world challenges.</span>"
+                        data-vi="<span class='text-lg'>💡</span> <span class='font-bold text-purple-800'>Nhà kiến tạo Tương lai</span><br><span class='text-xs text-purple-600'>Sáng chế các giải pháp mới cho thử thách thực tế.</span>">
+                        <span class="text-lg">💡</span> <span class="font-bold text-purple-800">Future Builders</span><br><span class="text-xs text-purple-600">Inventing creative solutions for real-world challenges.</span>
+                    </td>
+                    <td class="p-3 bg-purple-50 border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>🎯</span> <span class='font-bold text-purple-800'>Speak Up & Defend</span><br><span class='text-xs text-purple-600'>Practicing how to explain and prove why our ideas work.</span>"
+                        data-vi="<span class='text-lg'>🎯</span> <span class='font-bold text-purple-800'>Lên tiếng & Bảo vệ</span><br><span class='text-xs text-purple-600'>Thực hành giải thích và chứng minh tại sao ý tưởng hiệu quả.</span>">
+                        <span class="text-lg">🎯</span> <span class="font-bold text-purple-800">Speak Up & Defend</span><br><span class="text-xs text-purple-600">Practicing how to explain and prove why our ideas work.</span>
+                    </td>
+                    <td class="p-3 bg-purple-50 rounded-br-lg border-r border-white cell-hover lang-text"
+                        data-en="<span class='text-lg'>🎤</span> <span class='font-bold text-purple-800'>The Expert Hot Seat</span><br><span class='text-xs text-purple-600'>Answering fun but tough questions about our final projects!</span>"
+                        data-vi="<span class='text-lg'>🎤</span> <span class='font-bold text-purple-800'>Ghế nóng Chuyên gia</span><br><span class='text-xs text-purple-600'>Trả lời những câu hỏi hóc búa về dự án cuối khóa!</span>">
+                        <span class="text-lg">🎤</span> <span class="font-bold text-purple-800">The Expert Hot Seat</span><br><span class="text-xs text-purple-600">Answering fun but tough questions about our final projects!</span>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    let currentLang = 'en';
+    function toggleLanguage() {
+        currentLang = currentLang === 'en' ? 'vi' : 'en';
+        document.querySelectorAll('.lang-text').forEach(el => {
+            el.innerHTML = el.getAttribute('data-' + currentLang);
+        });
+        document.getElementById('lang-btn').innerText = currentLang === 'en' ? '🇻🇳 Tiếng Việt' : '🇬🇧 English';
+    }
+
+    // Initialize translations on load
+    document.querySelectorAll('.lang-text').forEach(el => {
+        el.innerHTML = el.getAttribute('data-en');
+    });
+
+    // PDF generation using html2pdf
+    function downloadPDF() {
+        // Hide controls before generating PDF
+        const controls = document.getElementById('controls-bar');
+        controls.style.display = 'none';
+        
+        const element = document.getElementById('timetable-content');
+        const opt = {
+            margin:       0.5,
+            filename:     'HEC_Summer_Camp_Timetable.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2 },
+            jsPDF:        { unit: 'in', format: 'a4', orientation: 'landscape' }
+        };
+        
+        html2pdf().set(opt).from(element).save().then(() => {
+            // Restore controls after generating
+            controls.style.display = 'flex';
+        });
+    }
+</script>
+
+</body>
+</html>

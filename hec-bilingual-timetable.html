@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HEC Summer Camp 2026 - Bilingual Timetable</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #1e293b;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+  }
+  .page {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #1e1b4b;
+    padding-bottom: 1rem;
+  }
+  .brand {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1e1b4b;
+    margin-bottom: 0.5rem;
+  }
+  .title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #2563eb;
+    margin: 0 0 0.5rem 0;
+  }
+  .sub {
+    font-size: 1.1rem;
+    color: #475569;
+    margin: 0;
+  }
+  .v-text {
+    color: #64748b;
+    font-size: 0.9em;
+    font-weight: 400;
+    display: block;
+    margin-top: 2px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+  th {
+    background: #1e1b4b;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #334155;
+  }
+  th .v-text { color: #cbd5e1; }
+  td {
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    vertical-align: top;
+  }
+  td.time {
+    background: #f1f5f9;
+    font-weight: 700;
+    text-align: center;
+    width: 100px;
+    vertical-align: middle;
+  }
+  .strong { font-weight: 700; color: #1e293b; display: block; margin-bottom: 2px; }
+  .pbl { background: #e0e7ff; }
+  .steam { background: #dcfce7; }
+  .art { background: #fae8ff; }
+  .break { background: #fffbeb; text-align: center; font-style: italic; }
+  
+  .cta-box {
+    background: linear-gradient(135deg, #1e1b4b, #312e81);
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .cta-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fde047;
+    margin: 0 0 1rem 0;
+  }
+  .cta-text { font-size: 1.1rem; margin-bottom: 1.5rem; }
+  .cta-v-text { color: #cbd5e1; display: block; font-size: 0.95rem; margin-top: 0.5rem; }
+  
+  .btn-print {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.4);
+  }
+  .btn-print:hover { background: #1d4ed8; }
+
+  @media print {
+    body { background: white; }
+    .page { box-shadow: none; margin: 0; padding: 0; max-width: 100%; border-radius: 0; }
+    .btn-print { display: none; }
+    .cta-box { background: #1e1b4b !important; color: white !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    th { background: #1e1b4b !important; color: white !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    td.time { background: #f1f5f9 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<div style="text-align: center; margin-top: 2rem;" class="no-print">
+  <button class="btn-print" onclick="window.print()">🖨️ Print or Save as PDF</button>
+</div>
+
+<div class="page">
+  <div class="header">
+    <div class="brand">HEC – Happy English Club Hanoi</div>
+    <h1 class="title">Summer Camp Timetable 2026</h1>
+    <h2 class="v-text" style="font-size:1.5rem; color:#475569; margin:0 0 1rem 0;">Thời Khóa Biểu Trại Hè 2026</h2>
+    <p class="sub">
+      100% English Immersion • STEAM & Leadership<br>
+      <span style="font-weight: 700; color: #2563eb; display: inline-block; margin-top: 0.3rem;">Two Groups: Grades 1-2 (Ages 6-8) &amp; Grades 3-5 (Ages 9-12)</span><br>
+      <span class="v-text" style="margin-top: 0.5rem;">Môi trường 100% Tiếng Anh • Khoa học STEAM & Lãnh đạo</span>
+      <span class="v-text" style="font-weight: 700; color: #1e40af;">Hai nhóm lớp: Lớp 1-2 (6-8 tuổi) &amp; Lớp 3-5 (9-12 tuổi)</span>
+    </p>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Time<br><span class="v-text">Thời gian</span></th>
+        <th>Monday<br><span class="v-text">Thứ Hai</span></th>
+        <th>Tuesday<br><span class="v-text">Thứ Ba</span></th>
+        <th>Wednesday<br><span class="v-text">Thứ Tư</span></th>
+        <th>Thursday<br><span class="v-text">Thứ Năm</span></th>
+        <th>Friday<br><span class="v-text">Thứ Sáu</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="time">08:00 – 08:30</td>
+        <td colspan="5" class="break">
+          <span class="strong">Mindfulness & Emotional Check-in</span>
+          <span class="v-text">Chánh niệm & Kiểm tra cảm xúc hàng ngày</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="time">08:30 – 10:30</td>
+        <td class="pbl"><span class="strong">Active English PBL</span>Project Intro<br><span class="v-text">Dự án Tiếng Anh: Khởi động</span></td>
+        <td class="pbl"><span class="strong">Active English PBL</span>Role-play<br><span class="v-text">Nhập vai thực tế</span></td>
+        <td class="pbl"><span class="strong">Active English PBL</span>Reading<br><span class="v-text">Đọc hiểu & Tương tác</span></td>
+        <td class="pbl"><span class="strong">Active English PBL</span>Debates<br><span class="v-text">Tranh biện & Thuyết trình</span></td>
+        <td class="pbl" style="background:#fef9c3;"><span class="strong">Weekly Reflection</span>Confident Speaking<br><span class="v-text">Đúc kết & Nói tự tin</span></td>
+      </tr>
+      <tr>
+        <td class="time">10:30 – 10:40</td>
+        <td colspan="5" class="break">Brain Break & Hydration <br><span class="v-text">Giải lao & Uống nước</span></td>
+      </tr>
+      <tr>
+        <td class="time">10:40 – 11:40</td>
+        <td class="steam"><span class="strong">Engineering</span>Blueprinting<br><span class="v-text">Kỹ thuật: Lên bản vẽ</span></td>
+        <td class="steam"><span class="strong">Robotics</span>Building bots<br><span class="v-text">Lắp ráp Robot</span></td>
+        <td class="steam"><span class="strong">Engineering</span>Prototyping<br><span class="v-text">Tạo nguyên mẫu</span></td>
+        <td class="steam"><span class="strong">Robotics</span>Testing<br><span class="v-text">Thử nghiệm & Sửa lỗi</span></td>
+        <td class="steam"><span class="strong">Challenge</span>Stress test<br><span class="v-text">Thử thách Kỹ thuật cuối tuần</span></td>
+      </tr>
+      <tr>
+        <td class="time">11:40 – 13:45</td>
+        <td colspan="5" class="break">
+          <span class="strong">Nutritious Lunch & Deep Brain Recharge (Supervised Nap)</span>
+          <span class="v-text">Bữa trưa dinh dưỡng & Ngủ trưa nạp năng lượng não bộ</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="time">13:45 – 15:00</td>
+        <td class="art"><span class="strong">Creative Arts</span>Thematic crafts<br><span class="v-text">Thủ công theo chủ đề</span></td>
+        <td class="art"><span class="strong">Creative Arts</span>Fine motor skills<br><span class="v-text">Phát triển vận động tinh</span></td>
+        <td class="art"><span class="strong">Creative Arts</span>Imagination<br><span class="v-text">Sáng tạo nghệ thuật</span></td>
+        <td class="art"><span class="strong">Creative Arts</span>Finishing touches<br><span class="v-text">Hoàn thiện dự án</span></td>
+        <td style="background:#ffe4e6;"><span class="strong">Dynamic Dance</span>Energy release<br><span class="v-text">Lớp nhảy năng động</span></td>
+      </tr>
+      <tr>
+        <td class="time">15:00 – 15:10</td>
+        <td colspan="5" class="break">Brain Break & Snack <br><span class="v-text">Giải lao & Ăn nhẹ</span></td>
+      </tr>
+      <tr>
+        <td class="time">15:10 – 16:00</td>
+        <td><span class="strong">Global Empathy</span>World cultures<br><span class="v-text">Văn hóa toàn cầu</span></td>
+        <td style="background:#ccfbf1;"><span class="strong">Future Coding</span>Logic basics<br><span class="v-text">Lập trình cơ bản</span></td>
+        <td style="background:#ccfbf1;"><span class="strong">Tech & Logic</span>Puzzles<br><span class="v-text">Công nghệ & Logic</span></td>
+        <td style="background:#ccfbf1;"><span class="strong">Digital Mastery</span>App logic<br><span class="v-text">Làm chủ kỹ thuật số</span></td>
+        <td style="background:#fef9c3;"><span class="strong">Project Showcase</span>Video portfolios<br><span class="v-text">Triển lãm Video Dự án</span></td>
+      </tr>
+      <tr>
+        <td class="time">16:00+</td>
+        <td colspan="5">
+          <span class="strong">Pickup & Unstructured Play (Board games, LEGO, Audiobook station)</span>
+          <span class="v-text">Đón trẻ & Chơi tự do (Board game, LEGO, Nghe sách nói)</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="cta-box">
+    <h3 class="cta-title">Give Your Child The Hanoi Advantage This Summer</h3>
+    <p class="cta-text">
+      While other children lose an entire academic year of progress to the "Summer Slide", your child will build elite STEAM and English skills. Spots are strictly limited to 12 students per class to guarantee personal attention.
+      <span class="cta-v-text">Trong khi các bạn khác chậm lại trong kỳ nghỉ hè, con bạn sẽ bứt phá với các kỹ năng Tiếng Anh & STEAM xuất sắc. Nhằm đảm bảo chất lượng, sĩ số giới hạn tối đa 12 học viên/lớp.</span>
+    </p>
+    <p style="font-size: 1.2rem; font-weight: 700; margin: 0; color: #fde047;">Secure your spot today: Call <a href="tel:0975679889" style="color: #fff; text-decoration: underline;">0975 679 889</a></p>
+    <p class="cta-v-text">Giữ chỗ ngay hôm nay: Liên hệ Zalo / Hotline 0975 679 889</p>
+  </div>
+</div>
+
+<script>
+  // Hide the print button when actually printing
+  window.addEventListener('beforeprint', () => {
+    document.querySelector('.no-print').style.display = 'none';
+  });
+  window.addEventListener('afterprint', () => {
+    document.querySelector('.no-print').style.display = 'block';
+  });
+</script>
+</body>
+</html>

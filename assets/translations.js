@@ -197,6 +197,7 @@ const HEC_TRANSLATIONS = {
   "camp.pill1":        { en: "Future-Proof Skills",   vi: "Kỹ năng Tương lai" },
   "camp.pill2":        { en: "Critical Thinking",     vi: "Tư duy Phản biện" },
   "camp.pill3":        { en: "Active English Leadership", vi: "Lãnh đạo Tiếng Anh Chủ động" },
+  "camp.badgeGroups":  { en: "Grades 1-2 & 3-5",      vi: "Lớp 1-2 & 3-5" },
   "camp.ctaPrimary":   { en: "Register for Summer Camp", vi: "Đăng ký Trại Hè" },
   "camp.ctaSecondary": { en: "View Full Timetable",   vi: "Xem Thời Khóa Biểu" },
 
@@ -314,6 +315,10 @@ const HEC_TRANSLATIONS = {
   "camp.ctaSub":       { en: "Spots are limited to 12 per group. Register now to lock in your child's place in Hanoi's most immersive English STEAM camp.",
                          vi: "Sĩ số giới hạn 12 học sinh mỗi lớp. Đăng ký ngay để giữ chỗ tại trại hè tiếng Anh STEAM hàng đầu Hà Nội." },
   "camp.ctaBtn":       { en: "Register Now",          vi: "Đăng ký ngay" },
+  "camp.downloadHero": { en: "Secure Your Child's Advantage & Download Timetable", 
+                         vi: "Đảm Bảo Lợi Thế Cho Con & Tải Thời Khóa Biểu" },
+  "camp.downloadCTA":  { en: "Claim Your Child's Spot & Download Timetable (PDF)", 
+                         vi: "Giữ Chỗ Cho Con & Tải Thời Khóa Biểu (PDF)" },
 
   /* ─── Footer ──────────────────────────────────────────────── */
   "foot.tagline":      { en: "Small classes. Big confidence.",
