@@ -106,6 +106,25 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(updateCountdown, 1000);
   }
 
+  /* ── Floating Zalo CTA ───────────────────────────────────── */
+  const floatZalo = document.getElementById('float-zalo');
+  if (floatZalo) {
+    window.addEventListener('scroll', () => {
+      floatZalo.classList.toggle('visible', window.scrollY > 300);
+    }, { passive: true });
+  }
+
+  /* ── Back-to-top button ───────────────────────────────────── */
+  const btt = document.getElementById('back-to-top');
+  if (btt) {
+    window.addEventListener('scroll', () => {
+      btt.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    btt.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   /* ── Seat bar animation ───────────────────────────────────── */
   document.querySelectorAll('.seat-bar-fill').forEach(bar => {
     const pct = bar.getAttribute('data-fill');
@@ -119,6 +138,58 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
+  }
+
+  /* ── Enrollment form validation & submit ─────────────────── */
+  const enrollForm = document.getElementById('enrollment-form');
+  if (enrollForm) {
+    enrollForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const phoneEl  = document.getElementById('f-phone');
+      const hintEl   = document.getElementById('f-phone-hint');
+      const errorBanner = document.getElementById('form-error-banner');
+      const submitBtn   = document.getElementById('f-submit');
+
+      // Reset previous error states
+      phoneEl.classList.remove('is-invalid');
+      hintEl.classList.add('d-none');
+      errorBanner.style.display = 'none';
+
+      const phone = phoneEl.value.trim();
+      const phoneValid = /^[0-9\s\+\-\(\)]{7,15}$/.test(phone);
+
+      if (!phone || !phoneValid) {
+        phoneEl.classList.add('is-invalid');
+        hintEl.classList.remove('d-none');
+        errorBanner.style.display = '';
+        phoneEl.focus();
+        return;
+      }
+
+      // Loading state
+      const originalHTML = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Sending…';
+
+      // Simulate submission (replace with real endpoint if available)
+      try {
+        await new Promise(resolve => setTimeout(resolve, 1200));
+        // On success: hide form, show success card
+        enrollForm.style.display = 'none';
+        const successEl = document.getElementById('form-success');
+        if (successEl) {
+          successEl.style.display = '';
+          if (typeof HEC_I18N !== 'undefined') HEC_I18N.apply();
+        }
+      } catch (err) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalHTML;
+        errorBanner.style.display = '';
+        const alertEl = errorBanner.querySelector('[role="alert"]');
+        if (alertEl) alertEl.textContent = 'Something went wrong. Please call us directly on 0975 679 889.';
+      }
+    });
   }
 
   /* ── Smooth scroll for anchor links ───────────────────────── */

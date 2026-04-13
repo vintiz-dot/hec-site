@@ -190,14 +190,14 @@ const HEC_TRANSLATIONS = {
   "nav.summerCamp":    { en: "Summer Camp",           vi: "Trại Hè" },
   "camp.badgeNew":     { en: "Summer 2026",           vi: "Mùa Hè 2026" },
   "camp.badgeDates":   { en: "June – July",           vi: "Tháng 6 – 7" },
-  "camp.badgeTime":    { en: "08:00 – 16:00",         vi: "08:00 – 16:00" },
+  "camp.badgeTime":    { en: "08:00 – 17:00",         vi: "08:00 – 17:00" },
   "camp.heroTitle":    { en: "Every Minute Matters.", vi: "Từng Phút Đều Vô Giá." },
   "camp.heroSub":      { en: "Don't let two months of summer erase a year of progress. While others fall behind, your child will step ahead.", 
                          vi: "Đừng để 2 tháng hè xóa sạch 1 năm nỗ lực. Trong khi các bạn khác tụt hậu, con bạn sẽ bứt phá." },
   "camp.pill1":        { en: "Future-Proof Skills",   vi: "Kỹ năng Tương lai" },
   "camp.pill2":        { en: "Critical Thinking",     vi: "Tư duy Phản biện" },
   "camp.pill3":        { en: "Active English Leadership", vi: "Lãnh đạo Tiếng Anh Chủ động" },
-  "camp.badgeGroups":  { en: "Grades 1-2 & 3-5",      vi: "Lớp 1-2 & 3-5" },
+  "camp.badgeGroups":  { en: "Grades 1-2, 3-5, & 6-8",      vi: "Lớp 1-2, 3-5 & 6-8" },
   "camp.ctaPrimary":   { en: "Register for Summer Camp", vi: "Đăng ký Trại Hè" },
   "camp.ctaSecondary": { en: "View Full Timetable",   vi: "Xem Thời Khóa Biểu" },
 
@@ -220,11 +220,11 @@ const HEC_TRANSLATIONS = {
   "camp.ttSub":        { en: "A purposeful day packed with active learning, creative exploration, and structured play — all in English.",
                          vi: "Một ngày ý nghĩa ngập tràn học tập chủ động, khám phá sáng tạo và vui chơi có cấu trúc — hoàn toàn bằng Tiếng Anh." },
   "camp.thTime":       { en: "Time",                  vi: "Thời gian" },
-  "camp.thMon":        { en: "Monday<br><small>The Hook (Explore)</small>", vi: "Thứ 2<br><small>Gợi mở (Khám phá)</small>" },
-  "camp.thTue":        { en: "Tuesday<br><small>Research & Build</small>", vi: "Thứ 3<br><small>Nghiên cứu & Chế tạo</small>" },
-  "camp.thWed":        { en: "Wednesday<br><small>Global Problem Solving</small>", vi: "Thứ 4<br><small>Giải quyết Vấn đề Toàn cầu</small>" },
-  "camp.thThu":        { en: "Thursday<br><small>Test & Connect</small>", vi: "Thứ 5<br><small>Thử nghiệm & Kết nối</small>" },
-  "camp.thFri":        { en: "Friday<br><small>The Grand Showcase</small>", vi: "Thứ 6<br><small>Triển lãm Dự án</small>" },
+  "camp.thMon":        { en: "Monday<br><small>The Hook (Explore)</small>", vi: "Thứ 2<br><small>Khơi Nguồn Sáng Tạo</small>" },
+  "camp.thTue":        { en: "Tuesday<br><small>Research & Build</small>", vi: "Thứ 3<br><small>Thực Hành Lắp Ráp</small>" },
+  "camp.thWed":        { en: "Wednesday<br><small>Global Problem Solving</small>", vi: "Thứ 4<br><small>Phát Triển Tư Duy</small>" },
+  "camp.thThu":        { en: "Thursday<br><small>Test & Connect</small>", vi: "Thứ 5<br><small>Làm Việc Nhóm</small>" },
+  "camp.thFri":        { en: "Friday<br><small>The Grand Showcase</small>", vi: "Thứ 6<br><small>Báo Cáo Thành Quả</small>" },
 
   /* 8:00 */
   "camp.mindTitle":    { en: "Mindfulness & Resilience", vi: "Chánh niệm & Kiên cường" },
@@ -293,7 +293,7 @@ const HEC_TRANSLATIONS = {
   "camp.pm3Desc":      { en: "Advanced logic puzzles to sharpen the mind.", vi: "Câu đố logic nâng cao rèn luyện trí não." },
   "camp.pm4Title":     { en: "Digital Mastery",       vi: "Làm chủ Kỹ thuật số" },
   "camp.pm4Desc":      { en: "App logic & finalizing digital portfolios.", vi: "Logic ứng dụng & hoàn thiện hồ sơ dự án." },
-  "camp.pm5Title":     { en: "Project Showcase",      vi: "Triển lãm Dự án" },
+  "camp.pm5Title":     { en: "Project Showcase",      vi: "Báo Cáo Thành Quả" },
   "camp.pm5Desc":      { en: "Recording video portfolios for parents.", vi: "Quay video dự án gửi phụ huynh." },
 
   /* 16:00 */
@@ -326,5 +326,24 @@ const HEC_TRANSLATIONS = {
                          vi: "Lớp nhỏ. Tự tin lớn." },
   "foot.quickLinks":   { en: "Quick Links",           vi: "Liên kết nhanh" },
   "foot.connect":      { en: "Connect",               vi: "Kết nối" },
-  "foot.rights":       { en: "All rights reserved.",   vi: "Bảo lưu mọi quyền." }
+  "foot.rights":       { en: "All rights reserved.",   vi: "Bảo lưu mọi quyền." },
+
+  /* ── 404 page ──────────────────────────────────────────────── */
+  "err.title":         { en: "Oops — we lost this page!",
+                         vi: "Ối — Trang này không tìm thấy!" },
+  "err.sub":           { en: "The page you're looking for has moved, or may never have existed. Let's get you back on track.",
+                         vi: "Trang bạn tìm kiếm đã bị di chuyển hoặc không tồn tại. Hãy để chúng tôi đưa bạn trở lại." },
+  "err.home":          { en: "Back to Home",            vi: "Về Trang Chủ" },
+  "err.contact":       { en: "Contact Us",              vi: "Liên Hệ" },
+  "err.quickLinks":    { en: "Quick links",             vi: "Liên kết nhanh" },
+
+  /* ── Form feedback ─────────────────────────────────────────── */
+  "cont.phoneHint":    { en: "Please enter a valid phone number.",
+                         vi: "Vui lòng nhập số điện thoại hợp lệ." },
+  "cont.formError":    { en: "Please fill in the required fields before submitting.",
+                         vi: "Vui lòng điền đầy đủ thông tin bắt buộc trước khi gửi." },
+  "cont.successTitle": { en: "We received your enquiry!",
+                         vi: "Chúng tôi đã nhận được yêu cầu của bạn!" },
+  "cont.successMsg":   { en: "We'll be in touch within 24 hours. Check your Zalo or phone.",
+                         vi: "Chúng tôi sẽ liên hệ trong vòng 24 giờ. Kiểm tra Zalo hoặc điện thoại nhé." }
 };

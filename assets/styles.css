@@ -1157,6 +1157,130 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
+/* ── Skip navigation link ──────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: 1rem;
+  z-index: 9999;
+  background: var(--hec-navy);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.1s;
+}
+.skip-link:focus {
+  top: 0.75rem;
+  outline: 3px solid var(--hec-gold);
+  outline-offset: 2px;
+}
+
+/* ── Floating Zalo CTA ─────────────────────────────────────────── */
+.float-zalo {
+  position: fixed;
+  bottom: 5.5rem;
+  right: 1.25rem;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s var(--ease-out), transform 0.35s var(--ease-out);
+  transform: translateY(12px);
+}
+.float-zalo.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.float-zalo__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #0068ff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(0, 104, 255, 0.38);
+  transition: background 0.2s, transform 0.2s var(--ease-spring);
+  white-space: nowrap;
+}
+.float-zalo__btn:hover,
+.float-zalo__btn:focus {
+  background: #0055d4;
+  color: #fff;
+  transform: scale(1.05);
+  outline: 3px solid rgba(0,104,255,0.35);
+}
+.float-zalo__pulse {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 12px;
+  height: 12px;
+  background: var(--hec-gold);
+  border-radius: 50%;
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.6); opacity: 0.5; }
+}
+
+/* ── Back-to-top button ────────────────────────────────────────── */
+#back-to-top {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 1050;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background: var(--hec-navy);
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(10,22,40,0.3);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s var(--ease-out), transform 0.3s var(--ease-spring);
+  transform: translateY(10px);
+}
+#back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+#back-to-top:hover,
+#back-to-top:focus {
+  background: var(--hec-blue);
+  outline: 3px solid var(--hec-blue-glow);
+}
+
+/* ── Timetable mobile scroll hint ──────────────────────────────── */
+.timetable-scroll-hint {
+  display: none;
+  text-align: center;
+  font-size: 0.78rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.03em;
+}
+@media (max-width: 767px) {
+  .timetable-scroll-hint { display: block; }
+}
+
 /* ═══════════════════════════════════════════════════════════════
    SUMMER CAMP STYLES
    ═══════════════════════════════════════════════════════════════ */

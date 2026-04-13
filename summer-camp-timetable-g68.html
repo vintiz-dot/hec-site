@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer Camp 2026 Timetable – Grades 6-8 | HEC Hanoi</title>
+<meta name="description" content="HEC Summer Camp 2026 weekly timetable for Grades 6–8. IB MYP & IMYC framework, bilingual EN/VI.">
+<meta name="robots" content="noindex">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+body { font-family: 'Inter', sans-serif; }
+.cell-hover:hover { transform: scale(1.02); transition: transform 0.2s ease-in-out; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 10; position: relative; }
+.print-only { display: none; }
+@media print {
+    #controls-bar { display: none !important; }
+    .print-only { display: block; }
+    body { background-color: white; padding: 0; }
+    #timetable-content { box-shadow: none; border: none; max-width: 100%; }
+}
+</style>
+</head>
+<body class="bg-gray-100 p-4 md:p-8">
+
+<div id="timetable-content" class="max-w-7xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border-t-8 border-blue-900 relative">
+    
+    <div id="controls-bar" class="absolute top-4 right-4 z-20 flex gap-2">
+        <button onclick="downloadPDF()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-md transition-colors text-sm flex items-center">
+            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            Download PDF
+        </button>
+        <button id="lang-btn" onclick="toggleLanguage()" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-2 px-4 rounded-full shadow-md transition-colors text-sm">
+            🇻🇳 Tiếng Việt
+        </button>
+    </div>
+
+    <div class="bg-blue-900 text-white p-8 md:p-12 text-center relative overflow-hidden flex flex-col items-center">
+        <div class="relative z-10 w-full max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="text-left w-full">
+                <h1 class="lang-text text-3xl md:text-5xl font-extrabold mb-2 tracking-tight text-teal-400 drop-shadow-md" data-en="Middle Years Summer Camp" data-vi="Trại Hè Cấp 2">
+                    Middle Years Summer Camp
+                </h1>
+                <h2 class="lang-text text-xl md:text-2xl font-semibold text-blue-100 mb-4" data-en="Grades 6-8 | Student Agency & Inquiry" data-vi="Lớp 6-8 | Rèn Luyện Sự Chủ Động">Grades 6-8 | Student Agency & Inquiry</h2>
+                <div class="flex flex-wrap gap-2 text-xs font-bold mt-2">
+                    <span class="lang-text bg-teal-400 text-blue-900 px-3 py-1 rounded-full uppercase tracking-wide shadow-sm" data-en="IB MYP Framework" data-vi="Theo Chuẩn IB MYP">IB MYP Framework</span>
+                    <span class="lang-text bg-yellow-400 text-blue-900 px-3 py-1 rounded-full uppercase tracking-wide shadow-sm" data-en="IMYC Big Ideas" data-vi="Mở Rộng Tư Duy IMYC">IMYC Big Ideas</span>
+                    <span class="lang-text bg-rose-400 text-blue-900 px-3 py-1 rounded-full uppercase tracking-wide shadow-sm" data-en="EBP & Student Agency" data-vi="Phát Triển Sự Tự Tin">EBP & Student Agency</span>
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-white opacity-10 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-0 left-0 -mb-10 -ml-10 w-32 h-32 bg-teal-400 opacity-20 rounded-full blur-xl"></div>
+    </div>
+
+    <div class="p-4 md:p-6 bg-gray-50">
+        <p class="timetable-scroll-hint">&#8592; Scroll to see full timetable &#8594;</p>
+        <div class="overflow-x-auto rounded-xl shadow-inner border border-gray-200 bg-white">
+            <table class="w-full text-sm text-left border-collapse min-w-[800px]">
+                <thead class="text-xs uppercase bg-blue-100 text-blue-900 font-bold border-b-2 border-blue-200">
+                    <tr>
+                        <th scope="col" class="lang-text px-4 py-4 w-24 text-center border-r border-blue-200" data-en="Time" data-vi="Thời Gian">Time</th>
+                        <th scope="col" class="lang-text px-4 py-4 w-1/5 text-center border-r border-blue-200" data-en="Monday<br><span class='text-[10px] text-blue-600 normal-case font-semibold block mt-1'>Knowledge Harvest</span>" data-vi="Thứ 2<br><span class='text-[10px] text-blue-600 normal-case font-semibold block mt-1'>Khơi Dậy Kiến Thức</span>">Monday<br><span class="text-[10px] text-blue-600 normal-case font-semibold block mt-1">Knowledge Harvest</span></th>
+                        <th scope="col" class="lang-text px-4 py-4 w-1/5 text-center border-r border-blue-200" data-en="Tuesday<br><span class='text-[10px] text-blue-600 normal-case font-semibold block mt-1'>Inquiry & ATL</span>" data-vi="Thứ 3<br><span class='text-[10px] text-blue-600 normal-case font-semibold block mt-1'>Khám Phá & Kỹ Năng</span>">Tuesday<br><span class="text-[10px] text-blue-600 normal-case font-semibold block mt-1">Inquiry & ATL</span></th>
+                        <th scope="col" class="lang-text px-4 py-4 w-1/5 text-center border-r border-blue-200" data-en="Wednesday<br><span class='text-[10px] text-blue-600 normal-case font-semibold block mt-1'>Agency in Action</span>" data-vi="Thứ 4<br><span class='text-[10px] text-blue-600 normal-case font-semibold block mt-1'>Học Sinh Chủ Động</span>">Wednesday<br><span class="text-[10px] text-blue-600 normal-case font-semibold block mt-1">Agency in Action</span></th>
+                        <th scope="col" class="lang-text px-4 py-4 w-1/5 text-center border-r border-blue-200" data-en="Thursday<br><span class='text-[10px] text-blue-600 normal-case font-semibold block mt-1'>Global Contexts</span>" data-vi="Thứ 5<br><span class='text-[10px] text-blue-600 normal-case font-semibold block mt-1'>Góc Nhìn Toàn Cầu</span>">Thursday<br><span class="text-[10px] text-blue-600 normal-case font-semibold block mt-1">Global Contexts</span></th>
+                        <th scope="col" class="lang-text px-4 py-4 w-1/5 text-center" data-en="Friday<br><span class='text-[10px] text-blue-600 normal-case font-semibold block mt-1'>EBP Reflection & Exit</span>" data-vi="Thứ 6<br><span class='text-[10px] text-blue-600 normal-case font-semibold block mt-1'>Đúc Kết & Thuyết Trình</span>">Friday<br><span class="text-[10px] text-blue-600 normal-case font-semibold block mt-1">EBP Reflection & Exit</span></th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-800">
+                    
+                    <tr class="border-b border-gray-100">
+                        <td class="px-2 py-3 text-center font-bold text-blue-900 bg-blue-50 border-r border-gray-100 align-middle">
+                            <div class="flex flex-col items-center justify-center">
+                                <span>08:00</span>
+                                <span class="text-gray-400 text-[10px] my-0.5">to</span>
+                                <span>08:30</span>
+                            </div>
+                        </td>
+                        <td colspan="5" class="px-4 py-3 bg-gradient-to-r from-teal-50 to-emerald-50 text-center font-semibold text-teal-800 border-b border-gray-200 cell-hover">
+                            <div class="flex items-center justify-center gap-2 lang-text" data-en="<svg class='w-5 h-5 text-teal-600' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z'></path></svg> <span>Arrival, Agency Check-in & Daily Goal Setting (ATL: Self-Management)</span>" data-vi="<svg class='w-5 h-5 text-teal-600' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z'></path></svg> <span>Đón Trẻ, Đặt Mục Tiêu Ngày Mới (Rèn Luyện Tính Tự Lập)</span>">
+                                <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                                <span>Arrival, Agency Check-in & Daily Goal Setting (ATL: Self-Management)</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-100">
+                        <td class="px-2 py-3 text-center font-bold text-blue-900 bg-blue-50 border-r border-gray-100 align-middle">
+                            <div class="flex flex-col items-center justify-center">
+                                <span>08:30</span>
+                                <span class="text-gray-400 text-[10px] my-0.5">to</span>
+                                <span>10:00</span>
+                            </div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-sky-50 lang-text" data-en="<div class='font-bold text-sky-900 mb-1'>IMYC Entry Point</div><div class='text-xs text-sky-800'>Introducing the 'Big Idea'. Provocations and student-led questioning.</div>" data-vi="<div class='font-bold text-sky-900 mb-1'>Khởi Đầu Dự Án</div><div class='text-xs text-sky-800'>Giới thiệu chủ đề tuần. Học sinh tự đặt câu hỏi khám phá.</div>">
+                            <div class="font-bold text-sky-900 mb-1">IMYC Entry Point</div>
+                            <div class="text-xs text-sky-800">Introducing the "Big Idea". Provocations and student-led questioning.</div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-indigo-50 lang-text" data-en="<div class='font-bold text-indigo-900 mb-1'>ATL Skill Building</div><div class='text-xs text-indigo-800'>Information Literacy. Formulating robust inquiry questions.</div>" data-vi="<div class='font-bold text-indigo-900 mb-1'>Xây Dựng Kỹ Năng</div><div class='text-xs text-indigo-800'>Học cách tìm và chắt lọc thông tin hữu ích.</div>">
+                            <div class="font-bold text-indigo-900 mb-1">ATL Skill Building</div>
+                            <div class="text-xs text-indigo-800">Information Literacy. Formulating robust inquiry questions.</div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-rose-50 lang-text" data-en="<div class='font-bold text-rose-900 mb-1'>EBP: Voice & Choice</div><div class='text-xs text-rose-800'>Co-constructing rubrics. Choosing assessment/project pathways.</div>" data-vi="<div class='font-bold text-rose-900 mb-1'>Quyền Lựa Chọn Của Trẻ</div><div class='text-xs text-rose-800'>Trẻ tự chọn cách làm và trình bày dự án của mình.</div>">
+                            <div class="font-bold text-rose-900 mb-1">EBP: Voice & Choice</div>
+                            <div class="text-xs text-rose-800">Co-constructing rubrics. Choosing assessment/project pathways.</div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-purple-50 lang-text" data-en="<div class='font-bold text-purple-900 mb-1'>Global Contexts</div><div class='text-xs text-purple-800'>Fairness & Development: Analyzing UN SDGs and diverse perspectives.</div>" data-vi="<div class='font-bold text-purple-900 mb-1'>Góc Nhìn Thế Giới</div><div class='text-xs text-purple-800'>Phân tích các mục tiêu phát triển của Liên Hợp Quốc.</div>">
+                            <div class="font-bold text-purple-900 mb-1">Global Contexts</div>
+                            <div class="text-xs text-purple-800">Fairness & Development: Analyzing UN SDGs and diverse perspectives.</div>
+                        </td>
+                        <td class="px-3 py-3 align-top cell-hover bg-emerald-50 lang-text" data-en="<div class='font-bold text-emerald-900 mb-1'>IMYC Exit Point Prep</div><div class='text-xs text-emerald-800'>Synthesizing the week's Big Idea for the final agency showcase.</div>" data-vi="<div class='font-bold text-emerald-900 mb-1'>Chuẩn Bị Thuyết Trình</div><div class='text-xs text-emerald-800'>Tổng hợp kiến thức để chuẩn bị báo cáo dự án.</div>">
+                            <div class="font-bold text-emerald-900 mb-1">IMYC Exit Point Prep</div>
+                            <div class="text-xs text-emerald-800">Synthesizing the week's Big Idea for the final agency showcase.</div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-100">
+                        <td class="px-2 py-2 text-center font-bold text-blue-900 bg-blue-50 border-r border-gray-100 align-middle">
+                            <div class="flex flex-col items-center justify-center">
+                                <span>10:00</span>
+                                <span class="text-gray-400 text-[10px] my-0.5">to</span>
+                                <span>10:10</span>
+                            </div>
+                        </td>
+                        <td colspan="5" class="px-4 py-2 bg-gray-200 text-center font-semibold text-gray-600 border-b border-gray-200">
+                            <div class="flex items-center justify-center gap-2 lang-text" data-en="<svg class='w-4 h-4' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z'></path></svg> <span>Morning Hydration & Brain Break</span>" data-vi="<svg class='w-4 h-4' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z'></path></svg> <span>Giải Lao & Uống Nước</span>">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path></svg>
+                                <span>Morning Hydration & Brain Break</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-100">
+                        <td class="px-2 py-3 text-center font-bold text-blue-900 bg-blue-50 border-r border-gray-100 align-middle">
+                            <div class="flex flex-col items-center justify-center">
+                                <span>10:10</span>
+                                <span class="text-gray-400 text-[10px] my-0.5">to</span>
+                                <span>11:00</span>
+                            </div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-fuchsia-50 lang-text" data-en="<div class='font-bold text-fuchsia-900 mb-1'>Knowledge Harvest</div><div class='text-xs text-fuchsia-800'>Mapping prior knowledge and charting future inquiry paths.</div>" data-vi="<div class='font-bold text-fuchsia-900 mb-1'>Kết Nối Kiến Thức</div><div class='text-xs text-fuchsia-800'>Lên ý tưởng và vạch hướng nghiên cứu.</div>">
+                            <div class="font-bold text-fuchsia-900 mb-1">Knowledge Harvest</div>
+                            <div class="text-xs text-fuchsia-800">Mapping prior knowledge and charting future inquiry paths.</div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-sky-50 lang-text" data-en="<div class='font-bold text-sky-900 mb-1'>MYP Design Cycle</div><div class='text-xs text-sky-800'>Inquiring and Analyzing: Identifying a real-world problem.</div>" data-vi="<div class='font-bold text-sky-900 mb-1'>Chu Trình Thiết Kế MYP</div><div class='text-xs text-sky-800'>Phân tích và tìm ra vấn đề thực tế cần giải quyết.</div>">
+                            <div class="font-bold text-sky-900 mb-1">MYP Design Cycle</div>
+                            <div class="text-xs text-sky-800">Inquiring and Analyzing: Identifying a real-world problem.</div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-amber-50 lang-text" data-en="<div class='font-bold text-amber-900 mb-1'>Student-Led Seminars</div><div class='text-xs text-amber-800'>Peer teaching: Students design and run mini-workshops.</div>" data-vi="<div class='font-bold text-amber-900 mb-1'>Học Sinh Dẫn Dắt</div><div class='text-xs text-amber-800'>Trẻ tự tổ chức workshop nhóm nhỏ để chia sẻ.</div>">
+                            <div class="font-bold text-amber-900 mb-1">Student-Led Seminars</div>
+                            <div class="text-xs text-amber-800">Peer teaching: Students design and run mini-workshops.</div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-teal-50 lang-text" data-en="<div class='font-bold text-teal-900 mb-1'>Community Project</div><div class='text-xs text-teal-800'>Service as Action: Planning an initiative based on the Big Idea.</div>" data-vi="<div class='font-bold text-teal-900 mb-1'>Dự Án Cộng Đồng</div><div class='text-xs text-teal-800'>Lên kế hoạch hành động giúp ích cho mọi người.</div>">
+                            <div class="font-bold text-teal-900 mb-1">Community Project</div>
+                            <div class="text-xs text-teal-800">Service as Action: Planning an initiative based on the Big Idea.</div>
+                        </td>
+                        <td class="px-3 py-3 align-top cell-hover bg-indigo-50 lang-text" data-en="<div class='font-bold text-indigo-900 mb-1'>The Exit Point (Part 1)</div><div class='text-xs text-indigo-800'>Finalizing presentations and peer-reviewing final products.</div>" data-vi="<div class='font-bold text-indigo-900 mb-1'>Chốt Lại Dự Án</div><div class='text-xs text-indigo-800'>Hoàn thiện cuối cùng và nhận góp ý từ bạn bè.</div>">
+                            <div class="font-bold text-indigo-900 mb-1">The Exit Point (Part 1)</div>
+                            <div class="text-xs text-indigo-800">Finalizing presentations and peer-reviewing final products.</div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-100">
+                        <td class="px-2 py-3 text-center font-bold text-blue-900 bg-blue-50 border-r border-gray-100 align-middle">
+                            <div class="flex flex-col items-center justify-center">
+                                <span>11:00</span>
+                                <span class="text-gray-400 text-[10px] my-0.5">to</span>
+                                <span>14:00</span>
+                            </div>
+                        </td>
+                        <td colspan="5" class="px-4 py-3 bg-gradient-to-r from-blue-100 to-indigo-100 text-center font-semibold text-indigo-900 border-b border-gray-200 cell-hover">
+                            <div class="flex flex-col items-center justify-center gap-1 lang-text" data-en="<div class='flex items-center gap-2 text-lg'><svg class='w-6 h-6 text-indigo-700' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z'></path></svg> <span>Lunch, Sleep & Midday Recharge</span></div><span class='text-xs font-normal text-indigo-700'>(ATL: Self-Management & Well-being)</span>" data-vi="<div class='flex items-center gap-2 text-lg'><svg class='w-6 h-6 text-indigo-700' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z'></path></svg> <span>Ăn Trưa & Ngủ Trưa Nạp Năng Lượng</span></div><span class='text-xs font-normal text-indigo-700'>(Chăm Sóc Sức Khỏe & Tinh Thần Lành Mạnh)</span>">
+                                <div class="flex items-center gap-2 text-lg">
+                                    <svg class="w-6 h-6 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                                    <span>Lunch, Sleep & Midday Recharge</span>
+                                </div>
+                                <span class="text-xs font-normal text-indigo-700">(ATL: Self-Management & Well-being)</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-100">
+                        <td class="px-2 py-3 text-center font-bold text-blue-900 bg-blue-50 border-r border-gray-100 align-middle">
+                            <div class="flex flex-col items-center justify-center">
+                                <span>14:00</span>
+                                <span class="text-gray-400 text-[10px] my-0.5">to</span>
+                                <span>15:00</span>
+                            </div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-yellow-50 lang-text" data-en="<div class='font-bold text-yellow-900 mb-1'>EBP: Collaboration</div><div class='text-xs text-yellow-800'>Establishing group norms, delegating roles, and project mapping.</div>" data-vi="<div class='font-bold text-yellow-900 mb-1'>Hợp Tác Đội Nhóm</div><div class='text-xs text-yellow-800'>Phân công nhiệm vụ và lập kế hoạch đội nhóm.</div>">
+                            <div class="font-bold text-yellow-900 mb-1">EBP: Collaboration</div>
+                            <div class="text-xs text-yellow-800">Establishing group norms, delegating roles, and project mapping.</div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-purple-50 lang-text" data-en="<div class='font-bold text-purple-900 mb-1'>MYP Design Cycle</div><div class='text-xs text-purple-800'>Developing ideas: Prototyping solutions collaboratively.</div>" data-vi="<div class='font-bold text-purple-900 mb-1'>Xây Dựng Ý Tưởng</div><div class='text-xs text-purple-800'>Cùng nhau phác thảo cách giải quyết vấn đề.</div>">
+                            <div class="font-bold text-purple-900 mb-1">MYP Design Cycle</div>
+                            <div class="text-xs text-purple-800">Developing ideas: Prototyping solutions collaboratively.</div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-cyan-50 lang-text" data-en="<div class='font-bold text-cyan-900 mb-1'>Agency: Flex Time</div><div class='text-xs text-cyan-800'>Students negotiate focus (e.g., MakerSpace, UN Debate, Digital Media).</div>" data-vi="<div class='font-bold text-cyan-900 mb-1'>Thời Gian Linh Hoạt</div><div class='text-xs text-cyan-800'>Trẻ chọn theo đam mê (Lắp ráp, Tranh biện, Quay video).</div>">
+                            <div class="font-bold text-cyan-900 mb-1">Agency: Flex Time</div>
+                            <div class="text-xs text-cyan-800">Students negotiate focus (e.g., MakerSpace, UN Debate, Digital Media).</div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-rose-50 lang-text" data-en="<div class='font-bold text-rose-900 mb-1'>EBP: Feedback Loops</div><div class='text-xs text-rose-800'>Structured peer-to-peer formative feedback on ongoing projects.</div>" data-vi="<div class='font-bold text-rose-900 mb-1'>Học Hỏi Lẫn Nhau</div><div class='text-xs text-rose-800'>Chia sẻ và góp ý cho dự án của các nhóm khác.</div>">
+                            <div class="font-bold text-rose-900 mb-1">EBP: Feedback Loops</div>
+                            <div class="text-xs text-rose-800">Structured peer-to-peer formative feedback on ongoing projects.</div>
+                        </td>
+                        <td class="px-3 py-3 align-top cell-hover bg-indigo-50 lang-text" data-en="<div class='font-bold text-indigo-900 mb-1'>The Exit Point (Part 2)</div><div class='text-xs text-indigo-800'>Student agency showcase. Presenting findings & actions to peers.</div>" data-vi="<div class='font-bold text-indigo-900 mb-1'>Diễn Đàn Học Sinh</div><div class='text-xs text-indigo-800'>Học sinh tỏa sáng và tự tin thuyết trình trước lớp.</div>">
+                            <div class="font-bold text-indigo-900 mb-1">The Exit Point (Part 2)</div>
+                            <div class="text-xs text-indigo-800">Student agency showcase. Presenting findings & actions to peers.</div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-100">
+                        <td class="px-2 py-2 text-center font-bold text-blue-900 bg-blue-50 border-r border-gray-100 align-middle">
+                            <div class="flex flex-col items-center justify-center">
+                                <span>15:00</span>
+                                <span class="text-gray-400 text-[10px] my-0.5">to</span>
+                                <span>15:10</span>
+                            </div>
+                        </td>
+                        <td colspan="5" class="px-4 py-2 bg-gray-200 text-center font-semibold text-gray-600 border-b border-gray-200">
+                            <div class="flex items-center justify-center gap-2 lang-text" data-en="<svg class='w-4 h-4' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M13 10V3L4 14h7v7l9-11h-7z'></path></svg> <span>Afternoon Energizer & Snack Break</span>" data-vi="<svg class='w-4 h-4' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M13 10V3L4 14h7v7l9-11h-7z'></path></svg> <span>Ăn Nhẹ Buổi Chiều</span>">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                <span>Afternoon Energizer & Snack Break</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-100">
+                        <td class="px-2 py-3 text-center font-bold text-blue-900 bg-blue-50 border-r border-gray-100 align-middle">
+                            <div class="flex flex-col items-center justify-center">
+                                <span>15:10</span>
+                                <span class="text-gray-400 text-[10px] my-0.5">to</span>
+                                <span>16:30</span>
+                            </div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-teal-50 lang-text" data-en="<div class='font-bold text-teal-900 mb-1'>Action & Expression</div><div class='text-xs text-teal-800'>Physical Activity or Creative Arts linked to the IMYC Big Idea.</div>" data-vi="<div class='font-bold text-teal-900 mb-1'>Hoạt Động Thể Chất</div><div class='text-xs text-teal-800'>Thể thao hoặc nghệ thuật sáng tạo phát triển thể chất.</div>">
+                            <div class="font-bold text-teal-900 mb-1">Action & Expression</div>
+                            <div class="text-xs text-teal-800">Physical Activity or Creative Arts linked to the IMYC Big Idea.</div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-teal-50 lang-text" data-en="<div class='font-bold text-teal-900 mb-1'>Action & Expression</div><div class='text-xs text-teal-800'>Physical Activity or Creative Arts linked to the IMYC Big Idea.</div>" data-vi="<div class='font-bold text-teal-900 mb-1'>Nghệ Thuật Sáng Tạo</div><div class='text-xs text-teal-800'>Vẽ tranh hoặc làm đồ thủ công kích thích sáng tạo.</div>">
+                            <div class="font-bold text-teal-900 mb-1">Action & Expression</div>
+                            <div class="text-xs text-teal-800">Physical Activity or Creative Arts linked to the IMYC Big Idea.</div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-teal-50 lang-text" data-en="<div class='font-bold text-teal-900 mb-1'>Action & Expression</div><div class='text-xs text-teal-800'>Physical Activity or Creative Arts linked to the IMYC Big Idea.</div>" data-vi="<div class='font-bold text-teal-900 mb-1'>Hoạt Động Thể Tho</div><div class='text-xs text-teal-800'>Tăng cường sức khỏe và xả stress sau giờ học.</div>">
+                            <div class="font-bold text-teal-900 mb-1">Action & Expression</div>
+                            <div class="text-xs text-teal-800">Physical Activity or Creative Arts linked to the IMYC Big Idea.</div>
+                        </td>
+                        <td class="px-3 py-3 border-r border-gray-100 align-top cell-hover bg-teal-50 lang-text" data-en="<div class='font-bold text-teal-900 mb-1'>Action & Expression</div><div class='text-xs text-teal-800'>Physical Activity or Creative Arts linked to the IMYC Big Idea.</div>" data-vi="<div class='font-bold text-teal-900 mb-1'>Nghệ Thuật Sáng Tạo</div><div class='text-xs text-teal-800'>Phát triển trí tưởng tượng phong phú của trẻ.</div>">
+                            <div class="font-bold text-teal-900 mb-1">Action & Expression</div>
+                            <div class="text-xs text-teal-800">Physical Activity or Creative Arts linked to the IMYC Big Idea.</div>
+                        </td>
+                        <td class="px-3 py-3 align-top cell-hover bg-yellow-50 lang-text" data-en="<div class='font-bold text-yellow-900 mb-1'>Celebration & Reward</div><div class='text-xs text-yellow-800'>Student-chosen team building activities and camp wrap-up.</div>" data-vi="<div class='font-bold text-yellow-900 mb-1'>Liên Hoan Tổng Kết Tập Thể</div><div class='text-xs text-yellow-800'>Chơi các trò chơi thi đua để nhận phần thưởng tuần.</div>">
+                            <div class="font-bold text-yellow-900 mb-1">Celebration & Reward</div>
+                            <div class="text-xs text-yellow-800">Student-chosen team building activities and camp wrap-up.</div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="px-2 py-3 text-center font-bold text-blue-900 bg-blue-50 border-r border-gray-100 align-middle rounded-bl-xl">
+                            <div class="flex flex-col items-center justify-center">
+                                <span>16:30</span>
+                                <span class="text-gray-400 text-[10px] my-0.5">to</span>
+                                <span>17:00</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-3 bg-gray-800 text-center font-semibold text-white border-b border-r border-gray-200 cell-hover">
+                            <div class="flex flex-col items-center justify-center gap-1 lang-text" data-en="<span>Learning Harvest Reflection (EBP)</span><span class='text-[10px] font-normal text-gray-400'>Pack Belongings & Head Home</span>" data-vi="<span>Nhìn Lại Bài Học (EBP)</span><span class='text-[10px] font-normal text-gray-400'>Thu Dọn & Ra Về</span>">
+                                <span>Learning Harvest Reflection (EBP)</span>
+                                <span class="text-[10px] font-normal text-gray-400">Pack Belongings & Head Home</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-3 bg-gray-800 text-center font-semibold text-white border-b border-r border-gray-200 cell-hover">
+                            <div class="flex flex-col items-center justify-center gap-1 lang-text" data-en="<span>Inquiry Debrief & Insight Capture (EBP)</span><span class='text-[10px] font-normal text-gray-400'>Tidy Workspace & Safe Dismissal</span>" data-vi="<span>Tổng Kết Buổi Khám Phá (EBP)</span><span class='text-[10px] font-normal text-gray-400'>Dọn Chỗ Ngồi & Ra Về An Toàn</span>">
+                                <span>Inquiry Debrief & Insight Capture (EBP)</span>
+                                <span class="text-[10px] font-normal text-gray-400">Tidy Workspace & Safe Dismissal</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-3 bg-gray-800 text-center font-semibold text-white border-b border-r border-gray-200 cell-hover">
+                            <div class="flex flex-col items-center justify-center gap-1 lang-text" data-en="<span>Agency Audit & Growth Mapping (EBP)</span><span class='text-[10px] font-normal text-gray-400'>Clear Desk & Cheerful Send-Off</span>" data-vi="<span>Kiểm Tra Sự Tiến Bộ (EBP)</span><span class='text-[10px] font-normal text-gray-400'>Dọn Đồ & Về Nhà Vui Vẻ</span>">
+                                <span>Agency Audit & Growth Mapping (EBP)</span>
+                                <span class="text-[10px] font-normal text-gray-400">Clear Desk & Cheerful Send-Off</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-3 bg-gray-800 text-center font-semibold text-white border-b border-r border-gray-200 cell-hover">
+                            <div class="flex flex-col items-center justify-center gap-1 lang-text" data-en="<span>Global Thinking Review & Evidence Log (EBP)</span><span class='text-[10px] font-normal text-gray-400'>Gather Belongings & Ready for Friday</span>" data-vi="<span>Ghi Chép Tư Duy Toàn Cầu (EBP)</span><span class='text-[10px] font-normal text-gray-400'>Chuẩn Bị Đồ & Tạm Biệt</span>">
+                                <span>Global Thinking Review & Evidence Log (EBP)</span>
+                                <span class="text-[10px] font-normal text-gray-400">Gather Belongings & Ready for Friday</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-3 bg-gray-800 text-center font-semibold text-white border-b border-gray-200 rounded-br-xl cell-hover">
+                            <div class="flex flex-col items-center justify-center gap-1 lang-text" data-en="<span>Weekly Exit Portfolio & EBP Evidence Review</span><span class='text-[10px] font-normal text-gray-400'>End-of-Week Wrap-Up & Fond Farewell</span>" data-vi="<span>Trình Bày Hồ Sơ Tuần (EBP)</span><span class='text-[10px] font-normal text-gray-400'>Kết Thúc Tuần & Chia Tay</span>">
+                                <span>Weekly Exit Portfolio & EBP Evidence Review</span>
+                                <span class="text-[10px] font-normal text-gray-400">End-of-Week Wrap-Up & Fond Farewell</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    
+</div>
+
+<script>
+    let currentLang = localStorage.getItem('hec_lang') || 'en';
+    function applyLang() {
+        document.querySelectorAll('.lang-text').forEach(el => {
+            el.innerHTML = el.getAttribute('data-' + currentLang) || el.innerHTML;
+        });
+        document.getElementById('lang-btn').innerText = currentLang === 'en' ? '🇻🇳 Tiếng Việt' : '🇬🇧 English';
+    }
+    function toggleLanguage() {
+        currentLang = currentLang === 'en' ? 'vi' : 'en';
+        localStorage.setItem('hec_lang', currentLang);
+        applyLang();
+    }
+
+    // Initialize translations on load
+    applyLang();
+
+    // Logic for downloading PDF using html2pdf (loaded on demand)
+    function downloadPDF() {
+        if (typeof html2pdf === 'undefined') {
+            const s = document.createElement('script');
+            s.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
+            s.onload = runPDF;
+            document.head.appendChild(s);
+        } else {
+            runPDF();
+        }
+    }
+
+    function runPDF() {
+        const controls = document.getElementById('controls-bar');
+        controls.style.display = 'none';
+        const element = document.getElementById('timetable-content');
+        const originalWidth = element.style.width;
+        element.style.width = '1200px';
+        setTimeout(() => {
+            const pxToInches = 96;
+            const widthIn = 1200 / pxToInches;
+            const heightIn = element.scrollHeight / pxToInches;
+            const opt = {
+                margin:       0,
+                filename:     'HEC_Summer_Camp_Grades_6_8_' + currentLang + '.pdf',
+                image:        { type: 'jpeg', quality: 1.0 },
+                html2canvas:  { scale: 2, windowWidth: 1200 },
+                jsPDF:        { unit: 'in', format: [widthIn, heightIn], orientation: widthIn > heightIn ? 'landscape' : 'portrait' }
+            };
+            html2pdf().set(opt).from(element).save().then(() => {
+                controls.style.display = 'flex';
+                element.style.width = originalWidth;
+            });
+        }, 100);
+    }
+</script>
+</body>
+</html>

@@ -9,6 +9,11 @@
   <meta property="og:title" content="HEC – Happy English Club | Hanoi">
   <meta property="og:description" content="Small classes, big confidence. International curriculum, US-licensed teacher, transparent fees.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hanoienglish.vip/">
+  <meta property="og:image" content="https://hanoienglish.vip/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="canonical" href="https://hanoienglish.vip/">
 
   <!-- Bootstrap 5 CSS & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,6 +23,8 @@
   <link href="assets/styles.css" rel="stylesheet">
 </head>
 <body data-page="home">
+
+<a href="#home" class="skip-link">Skip to main content</a>
 
 <!-- ═══════════════════════════════════════════════════════════════
      NAVBAR
@@ -615,7 +622,7 @@
           <div class="position-absolute bottom-0 start-0 translate-middle-y ms-n4 d-none d-md-block">
             <div class="bg-white p-3 rounded-3 shadow-lg text-center" style="border-left: 4px solid var(--hec-gold)">
               <div class="fw-bold fs-4 text-primary" data-i18n="camp.badgeDates">June &ndash; August</div>
-              <div class="small text-muted" data-i18n="camp.badgeTime">08:00 – 16:00</div>
+              <div class="small text-muted" data-i18n="camp.badgeTime">08:00 – 17:00</div>
             </div>
           </div>
         </div>
@@ -679,31 +686,38 @@
             <span data-i18n="cont.address">No. 25, Alley 242 Láng Street, Đống Đa District, Hanoi</span>
           </div>
           <div class="d-flex gap-2 mb-4">
-            <a class="social-link facebook" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i> Facebook</a>
-            <a class="social-link zalo" href="#" aria-label="Zalo"><i class="bi bi-chat-dots-fill"></i> Zalo</a>
+            <a class="social-link facebook" href="https://www.facebook.com/happyenglishclubhanoi" target="_blank" rel="noopener" aria-label="HEC on Facebook"><i class="bi bi-facebook"></i> Facebook</a>
+            <a class="social-link zalo" href="https://zalo.me/0975679889" target="_blank" rel="noopener" aria-label="Chat on Zalo"><i class="bi bi-chat-dots-fill"></i> Zalo</a>
           </div>
 
           <!-- Enrollment Form -->
-          <form id="enrollment-form">
+          <form id="enrollment-form" novalidate>
             <div class="row g-3">
               <div class="col-md-6">
-                <input class="form-control" data-i18n-placeholder="cont.studentName" placeholder="Student name" id="f-student-name">
+                <label for="f-student-name" class="visually-hidden" data-i18n="cont.studentName">Student name</label>
+                <input class="form-control" data-i18n-placeholder="cont.studentName" placeholder="Student name" id="f-student-name" autocomplete="off">
               </div>
               <div class="col-md-6">
-                <input class="form-control" data-i18n-placeholder="cont.grade" placeholder="Grade" id="f-grade">
+                <label for="f-grade" class="visually-hidden" data-i18n="cont.grade">Grade</label>
+                <input class="form-control" data-i18n-placeholder="cont.grade" placeholder="Grade" id="f-grade" autocomplete="off">
               </div>
               <div class="col-md-6">
-                <input class="form-control" data-i18n-placeholder="cont.parentName" placeholder="Parent name" id="f-parent-name">
+                <label for="f-parent-name" class="visually-hidden" data-i18n="cont.parentName">Parent name</label>
+                <input class="form-control" data-i18n-placeholder="cont.parentName" placeholder="Parent name" id="f-parent-name" autocomplete="name">
               </div>
               <div class="col-md-6">
-                <input class="form-control" type="tel" data-i18n-placeholder="cont.phonePlc" placeholder="Phone number *" required id="f-phone">
+                <label for="f-phone" class="visually-hidden" data-i18n="cont.phonePlc">Phone number (required)</label>
+                <input class="form-control" type="tel" data-i18n-placeholder="cont.phonePlc" placeholder="Phone number *" required aria-required="true" aria-describedby="f-phone-hint" id="f-phone" autocomplete="tel">
+                <div id="f-phone-hint" class="form-text text-danger d-none" data-i18n="cont.phoneHint">Please enter a valid phone number.</div>
               </div>
               <div class="col-md-6">
-                <input class="form-control" data-i18n-placeholder="cont.zaloPlc" placeholder="Zalo (optional)" id="f-zalo">
+                <label for="f-zalo" class="visually-hidden" data-i18n="cont.zaloPlc">Zalo (optional)</label>
+                <input class="form-control" data-i18n-placeholder="cont.zaloPlc" placeholder="Zalo (optional)" id="f-zalo" autocomplete="off">
               </div>
               <div class="col-md-6">
+                <label for="f-program" class="visually-hidden" data-i18n="cont.program">Select program</label>
                 <select class="form-select" id="f-program">
-                  <option selected data-i18n="cont.program">Select program</option>
+                  <option value="" selected data-i18n="cont.program">Select program</option>
                   <option>Look Starter – Mars</option>
                   <option>Look 1 – Venus</option>
                   <option>Look 2 – Neptune</option>
@@ -717,15 +731,25 @@
                 </select>
               </div>
               <div class="col-12">
+                <label for="f-message" class="visually-hidden" data-i18n="cont.message">Message (optional)</label>
                 <textarea class="form-control" rows="3" data-i18n-placeholder="cont.message" placeholder="Message (optional)" id="f-message"></textarea>
               </div>
+              <div class="col-12" id="form-error-banner" style="display:none;">
+                <div class="alert alert-danger py-2 mb-0" role="alert" data-i18n="cont.formError">Please fill in the required fields before submitting.</div>
+              </div>
               <div class="col-12">
-                <button type="submit" class="btn btn-gold btn-lg w-100" data-i18n="cont.submit">
+                <button type="submit" class="btn btn-gold btn-lg w-100" id="f-submit" data-i18n="cont.submit">
                   <i class="bi bi-send me-2"></i>Submit Enrollment
                 </button>
               </div>
             </div>
           </form>
+          <!-- Success state (hidden until form submitted) -->
+          <div id="form-success" class="text-center py-4" style="display:none;">
+            <div class="mb-3" style="font-size:3rem;">&#10003;</div>
+            <h4 class="fw-bold text-success mb-2" data-i18n="cont.successTitle">We received your enquiry!</h4>
+            <p class="text-muted" data-i18n="cont.successMsg">We'll be in touch within 24 hours. Check your Zalo or phone.</p>
+          </div>
         </div>
       </div>
 
@@ -743,6 +767,24 @@
      FOOTER
      ═══════════════════════════════════════════════════════════════ -->
 <div id="footer-placeholder"></div>
+
+<!-- ── Floating Zalo CTA ────────────────────────────────────────── -->
+<div class="float-zalo" id="float-zalo" aria-label="Contact via Zalo or phone">
+  <a href="https://zalo.me/0975679889" class="float-zalo__btn" target="_blank" rel="noopener" aria-label="Chat on Zalo">
+    <span class="float-zalo__pulse" aria-hidden="true"></span>
+    <i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
+    <span>Zalo / Call</span>
+  </a>
+  <a href="tel:0975679889" class="float-zalo__btn" style="background:var(--hec-navy);box-shadow:0 4px 14px rgba(10,22,40,0.3);" aria-label="Call 0975 679 889">
+    <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+    <span>0975 679 889</span>
+  </a>
+</div>
+
+<!-- ── Back to top ──────────────────────────────────────────────── -->
+<button id="back-to-top" aria-label="Back to top" title="Back to top">
+  <i class="bi bi-arrow-up" aria-hidden="true"></i>
+</button>
 
 <!-- ── Scripts ──────────────────────────────────────────────────── -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
