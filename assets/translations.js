@@ -345,5 +345,11 @@ const HEC_TRANSLATIONS = {
   "cont.successTitle": { en: "We received your enquiry!",
                          vi: "Chúng tôi đã nhận được yêu cầu của bạn!" },
   "cont.successMsg":   { en: "We'll be in touch within 24 hours. Check your Zalo or phone.",
-                         vi: "Chúng tôi sẽ liên hệ trong vòng 24 giờ. Kiểm tra Zalo hoặc điện thoại nhé." }
+                         vi: "Chúng tôi sẽ liên hệ trong vòng 24 giờ. Kiểm tra Zalo hoặc điện thoại nhé." },
+
+  /* ─── Holiday Banner ────────────────────────────────────────── */
+  "holiday.bannerText": { en: "Holiday Notice: HEC classes paused Apr 25 – May 3 for national holidays.",
+                          vi: "Thông báo nghỉ lễ: HEC tạm nghỉ các lớp từ 25/4 – 3/5 nhân dịp lễ Quốc gia." },
+  "holiday.bannerLink": { en: "View Schedule →",
+                          vi: "Xem lịch nghỉ →" }
 };

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HEC Holiday Notice — Print Flyer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* ── Reset ───────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:    #0a1628;
+      --blue:    #2563eb;
+      --gold:    #f59e0b;
+      --rose:    #f43f5e;
+      --slate:   #64748b;
+      --bg:      #f8fafc;
+      --white:   #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--navy);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Flyer Container ─────────────────────────────────────── */
+    .flyer {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: var(--white);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 25px 80px rgba(0,0,0,0.08);
+    }
+
+    /* ── Header ──────────────────────────────────────────────── */
+    .flyer-header {
+      position: relative;
+      background: linear-gradient(135deg, var(--navy) 0%, #1e293b 60%, #334155 100%);
+      color: var(--white);
+      padding: 2.5rem 2.5rem 2rem;
+      text-align: center;
+      overflow: hidden;
+    }
+    .flyer-header::before {
+      content: '';
+      position: absolute;
+      top: -60%; right: -25%;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(245,158,11,0.15), transparent 70%);
+      border-radius: 50%;
+    }
+    .flyer-header::after {
+      content: '';
+      position: absolute;
+      bottom: -50%; left: -15%;
+      width: 350px; height: 350px;
+      background: radial-gradient(circle, rgba(37,99,235,0.12), transparent 70%);
+      border-radius: 50%;
+    }
+
+    .logo-img {
+      height: 100px;
+      width: auto;
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 4px 20px rgba(245,158,11,0.4));
+      position: relative;
+      z-index: 1;
+    }
+
+    .flyer-header h1 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      font-size: 2.2rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+      position: relative;
+      z-index: 1;
+    }
+    .flyer-header h1 .vi {
+      font-size: 1.4rem;
+      font-weight: 700;
+      opacity: 0.7;
+      display: block;
+      margin-top: 0.25rem;
+    }
+
+    .holiday-names {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    .holiday-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+    }
+    .holiday-pill .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    /* Gold accent bar */
+    .gold-bar {
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold), #fbbf24, var(--gold));
+    }
+
+    /* ── Body ────────────────────────────────────────────────── */
+    .flyer-body {
+      padding: 2rem 2.5rem;
+    }
+
+    .intro-text {
+      font-size: 0.95rem;
+      color: var(--slate);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+      max-width: 620px;
+    }
+
+    .section-label {
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--slate);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #e2e8f0;
+    }
+
+    /* ── Schedule Table ──────────────────────────────────────── */
+    .schedule-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 6px;
+      margin-bottom: 1.5rem;
+    }
+
+    .schedule-table tr {
+      transition: all 0.2s ease;
+    }
+
+    .schedule-table td {
+      padding: 0.75rem 1rem;
+      vertical-align: middle;
+    }
+
+    .schedule-table tr td:first-child {
+      border-radius: 12px 0 0 12px;
+      background: #f1f5f9;
+    }
+    .schedule-table tr td:nth-child(2) {
+      background: #f1f5f9;
+    }
+    .schedule-table tr td:last-child {
+      border-radius: 0 12px 12px 0;
+      background: #f1f5f9;
+    }
+
+    .date-cell {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      white-space: nowrap;
+    }
+
+    .date-box {
+      width: 48px; height: 48px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #fefefe, #f1f5f9);
+      border: 1px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .date-box .m { font-size: 0.55rem; font-weight: 700; color: var(--slate); text-transform: uppercase; line-height: 1; }
+    .date-box .d { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--navy); line-height: 1; }
+
+    .day-name {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--navy);
+    }
+    .day-name-vi {
+      font-size: 0.75rem;
+      color: var(--slate);
+      font-weight: 500;
+    }
+
+    .class-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      background: rgba(244,63,94,0.08);
+      color: var(--rose);
+      border: 1px solid rgba(244,63,94,0.12);
+    }
+    .chip::before {
+      content: '';
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--rose);
+    }
+
+    /* ── Footer callout ──────────────────────────────────────── */
+    .footer-callout {
+      background: linear-gradient(135deg, rgba(37,99,235,0.06), rgba(245,158,11,0.05));
+      border: 1px solid rgba(37,99,235,0.1);
+      border-radius: 16px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+    }
+    .footer-callout .icon-box {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      background: rgba(37,99,235,0.1);
+      color: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1rem;
+    }
+    .footer-callout p {
+      font-size: 0.88rem;
+      color: var(--navy);
+      margin: 0;
+      line-height: 1.6;
+    }
+    .footer-callout .sign {
+      font-size: 0.78rem;
+      color: var(--slate);
+      margin-top: 0.35rem;
+    }
+
+    /* ── Flyer Footer ─────────────────────────────────────────── */
+    .flyer-footer {
+      background: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+      padding: 1.25rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .flyer-footer .contact-info {
+      font-size: 0.82rem;
+      color: var(--slate);
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .flyer-footer .contact-info span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .flyer-footer .brand {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 0.85rem;
+      color: var(--navy);
+    }
+
+    /* ── Print Button (no-print) ─────────────────────────────── */
+    .no-print {
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .btn-print {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      border: none;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .btn-pdf {
+      background: linear-gradient(135deg, var(--navy), #1e293b);
+      color: var(--white);
+      box-shadow: 0 4px 14px rgba(10,22,40,0.25);
+    }
+    .btn-pdf:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(10,22,40,0.35);
+    }
+    .btn-back {
+      background: #f1f5f9;
+      color: var(--navy);
+      margin-left: 0.5rem;
+    }
+    .btn-back:hover {
+      background: #e2e8f0;
+    }
+
+    /* ── Print Styles ────────────────────────────────────────── */
+    @media print {
+      @page {
+        size: A4;
+        margin: 12mm;
+      }
+      body {
+        background: white !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .no-print { display: none !important; }
+      .flyer {
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .flyer-header {
+        border-radius: 0;
+        padding: 1.5rem 2rem;
+      }
+      .flyer-body { padding: 1.5rem 2rem; }
+      .flyer-footer { padding: 1rem 2rem; }
+      .schedule-table tr td:first-child { background: #f1f5f9 !important; }
+      .schedule-table tr td:nth-child(2) { background: #f1f5f9 !important; }
+      .schedule-table tr td:last-child { background: #f1f5f9 !important; }
+      .chip { background: rgba(244,63,94,0.08) !important; }
+      .footer-callout { background: rgba(37,99,235,0.04) !important; }
+    }
+
+    /* ── Responsive ──────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      .flyer-header { padding: 1.75rem 1.25rem 1.5rem; }
+      .flyer-header h1 { font-size: 1.6rem; }
+      .flyer-body { padding: 1.25rem; }
+      .flyer-footer { padding: 1rem 1.25rem; }
+      .logo-img { height: 72px; }
+      .schedule-table td { padding: 0.5rem 0.6rem; }
+      .date-box { width: 40px; height: 40px; }
+      .date-box .d { font-size: 1rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="flyer">
+    <!-- ── HEADER ─────────────────────────────────────────── -->
+    <div class="flyer-header">
+      <img src="assets/img/logo.png" alt="HEC – Happy English Club" class="logo-img">
+      <h1>
+        Holiday Closure Notice
+        <span class="vi">Thông Báo Nghỉ Lễ</span>
+      </h1>
+      <div class="holiday-names">
+        <span class="holiday-pill"><span class="dot"></span> Hung Kings' Day / Giỗ Tổ Hùng Vương</span>
+        <span class="holiday-pill"><span class="dot"></span> Reunification Day / 30/4</span>
+        <span class="holiday-pill"><span class="dot"></span> Labor Day / 1/5</span>
+      </div>
+    </div>
+
+    <div class="gold-bar"></div>
+
+    <!-- ── BODY ──────────────────────────────────────────── -->
+    <div class="flyer-body">
+      <p class="intro-text">
+        Dear Parents and Students — HEC Center will pause classes during the upcoming national holidays.
+        Below is the detailed schedule of affected classes.
+        <br><br>
+        <em>Kính gửi Quý Phụ huynh — Trung tâm HEC xin thông báo lịch nghỉ lễ các lớp như sau:</em>
+      </p>
+
+      <div class="section-label">Affected Classes / Lịch Nghỉ Các Lớp</div>
+
+      <table class="schedule-table">
+        <tr>
+          <td>
+            <div class="date-cell">
+              <div class="date-box"><span class="m">Apr</span><span class="d">25</span></div>
+              <div><div class="day-name">Saturday</div><div class="day-name-vi">Thứ Bảy</div></div>
+            </div>
+          </td>
+          <td></td>
+          <td><div class="class-chips"><span class="chip">SKY 1</span><span class="chip">Stars</span></div></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="date-cell">
+              <div class="date-box"><span class="m">Apr</span><span class="d">26</span></div>
+              <div><div class="day-name">Sunday</div><div class="day-name-vi">Chủ Nhật</div></div>
+            </div>
+          </td>
+          <td></td>
+          <td><div class="class-chips"><span class="chip">Stars</span><span class="chip">Sun Class</span></div></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="date-cell">
+              <div class="date-box"><span class="m">Apr</span><span class="d">30</span></div>
+              <div><div class="day-name">Thursday</div><div class="day-name-vi">Thứ Năm</div></div>
+            </div>
+          </td>
+          <td></td>
+          <td><div class="class-chips"><span class="chip">Venus</span><span class="chip">Jupiter</span><span class="chip">Sanrio G6</span></div></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="date-cell">
+              <div class="date-box"><span class="m">May</span><span class="d">01</span></div>
+              <div><div class="day-name">Friday</div><div class="day-name-vi">Thứ Sáu</div></div>
+            </div>
+          </td>
+          <td></td>
+          <td><div class="class-chips"><span class="chip">Mars</span></div></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="date-cell">
+              <div class="date-box"><span class="m">May</span><span class="d">02</span></div>
+              <div><div class="day-name">Saturday</div><div class="day-name-vi">Thứ Bảy</div></div>
+            </div>
+          </td>
+          <td></td>
+          <td><div class="class-chips"><span class="chip">SKY 1</span><span class="chip">Stars</span></div></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="date-cell">
+              <div class="date-box"><span class="m">May</span><span class="d">03</span></div>
+              <div><div class="day-name">Sunday</div><div class="day-name-vi">Chủ Nhật</div></div>
+            </div>
+          </td>
+          <td></td>
+          <td><div class="class-chips"><span class="chip">Stars</span><span class="chip">Sun Class</span></div></td>
+        </tr>
+      </table>
+
+      <!-- Callout -->
+      <div class="footer-callout">
+        <div class="icon-box">ℹ</div>
+        <div>
+          <p>
+            Classes will resume on their next scheduled day after the holiday.
+            <br><em>Các lớp sẽ học trở lại bình thường sau kỳ nghỉ.</em>
+          </p>
+          <p style="font-weight:700;margin-top:0.5rem;">
+            Wishing you a joyful holiday! 🎉
+            <br><em>Kính chúc Quý Phụ huynh một kỳ nghỉ vui vẻ!</em>
+          </p>
+          <div class="sign">— HEC Center Management / Ban Quản Lý Trung Tâm HEC</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── FOOTER ────────────────────────────────────────── -->
+    <div class="flyer-footer">
+      <span class="brand">HEC — Happy English Club</span>
+      <div class="contact-info">
+        <span>📞 0975 679 889</span>
+        <span>📍 No. 25, Alley 242 Láng, Đống Đa, Hanoi</span>
+        <span>🌐 hanoienglish.vip</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Print / Download Buttons ──────────────────────── -->
+  <div class="no-print">
+    <button class="btn-print btn-pdf" onclick="window.print()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      Save as PDF / Print
+    </button>
+    <button class="btn-print btn-back" onclick="window.location.href='holiday.html'">
+      ← Back to Holiday Page
+    </button>
+  </div>
+
+</body>
+</html>
