@@ -267,7 +267,7 @@ const HEC_TRANSLATIONS = {
                          vi: "Vô cùng quan trọng để củng cố trí nhớ, phát triển thể chất và sự tập trung." },
 
   /* 13:45 */
-  "camp.break2":       { en: "Wake Up, Stretch & Afternoon Snack", vi: "Thức dậy, Vươn vai & Ăn nhẹ" },
+  "camp.break2":       { en: "Wake Up & Stretch", vi: "Thức dậy & Vươn vai" },
 
   /* 14:00 */
   "camp.art1Title":    { en: "Creative Arts",         vi: "Nghệ thuật Sáng tạo" },
@@ -312,8 +312,8 @@ const HEC_TRANSLATIONS = {
   /* CAMP CTA */
   "camp.ctaHeadline":  { en: "Don't Let Summer Slide Steal Your Child's Progress",
                          vi: "Đừng Để Rơi Rụng Kiến Thức Mùa Hè" },
-  "camp.ctaSub":       { en: "Spots are limited to 12 per group. Register now to lock in your child's place in Hanoi's most immersive English STEAM camp.",
-                         vi: "Sĩ số giới hạn 12 học sinh mỗi lớp. Đăng ký ngay để giữ chỗ tại trại hè tiếng Anh STEAM hàng đầu Hà Nội." },
+  "camp.ctaSub":       { en: "Spots are limited to 15 per group. Register now to lock in your child's place in Hanoi's most immersive English STEAM camp.",
+                         vi: "Sĩ số giới hạn 15 học sinh mỗi lớp. Đăng ký ngay để giữ chỗ tại trại hè tiếng Anh STEAM hàng đầu Hà Nội." },
   "camp.ctaBtn":       { en: "Register Now",          vi: "Đăng ký ngay" },
   "camp.selectTimetable": { en: "Select Timetable / Chọn Thời khoá biểu", vi: "Chọn Thời khoá biểu / Select Timetable" },
   "camp.downloadHero": { en: "Secure Your Child's Advantage & Download Timetable", 
