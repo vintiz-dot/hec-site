@@ -31,7 +31,7 @@ const HEC_TRANSLATIONS = {
                          vi: "Đặt lịch học thử miễn phí" },
   "hero.ctaSecondary": { en: "Explore Programs",
                          vi: "Xem chương trình" },
-  "hero.stat1Value":   { en: "≤12",               vi: "≤12" },
+  "hero.stat1Value":   { en: "≤15",               vi: "≤15" },
   "hero.stat1Label":   { en: "students per class", vi: "học sinh / lớp" },
   "hero.stat2Value":   { en: "90′",               vi: "90′" },
   "hero.stat2Label":   { en: "each session",       vi: "mỗi buổi học" },

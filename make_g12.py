@@ -118,8 +118,8 @@ body { font-family: 'Inter', sans-serif; }
                 <tr>
                     <td class="p-2 border-b border-gray-100 font-bold text-gray-400 text-center text-xs bg-gray-50">10:00 - 10:10</td>
                     <td colspan="5" class="lang-text p-2 border-b border-gray-100 bg-gray-100 text-center text-gray-500 text-xs uppercase font-bold tracking-wider"
-                        data-en="🍎 Yummy Snack & Stretch" data-vi="🍎 Ăn nhẹ & Vươn vai">
-                        🍎 Yummy Snack & Stretch
+                        data-en="Break" data-vi="Giải lao">
+                        Break
                     </td>
                 </tr>
 
@@ -159,7 +159,7 @@ body { font-family: 'Inter', sans-serif; }
                             <span class="text-xl mr-2">🔋</span>
                             <div class="text-center lang-text"
                                 data-en="<span class='font-bold text-emerald-800'>🍲 Yummy Lunch, Dream Time (Nap) & Wake Up Stretch</span><br><span class='text-xs text-emerald-600'>Resting our brains and fueling our growing bodies.</span>"
-                                data-vi="<span class='font-bold text-emerald-800'>🍲 Bữa trưa Ngon miệng, Giờ Ngủ trưa & Thể dục Thức giấc</span><br><span class='text-xs text-emerald-600'>Nạp năng lượng và nghỉ ngơi để não bộ sẵn sàng.</span>">
+                                data-vi="<span class='font-bold text-emerald-800'>🍲 Bữa trưa ngon miệng, ngủ trưa và thức dậy, Thể dục</span><br><span class='text-xs text-emerald-600'>Nạp năng lượng và nghỉ ngơi để não bộ sẵn sàng.</span>">
                                 <span class="font-bold text-emerald-800">🍲 Yummy Lunch, Dream Time (Nap) & Wake Up Stretch</span><br><span class="text-xs text-emerald-600">Resting our brains and fueling our growing bodies.</span>
                             </div>
                         </div>

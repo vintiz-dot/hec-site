@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEC Holiday Schedule</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fff9e6;
+            --primary: #1e3a8a;
+            --red: #ef4444;
+            --green: #22c55e;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Fredoka', sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+            /* Disable font smoothing to make screenshot extra crisp if needed */
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            background: var(--card-bg);
+            border-radius: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            max-width: 900px;
+            width: 100%;
+            padding: 40px;
+            position: relative;
+            z-index: 10;
+            border: 4px solid #fde047;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo-text {
+            background: var(--primary);
+            color: white;
+            padding: 10px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 28px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
+        }
+        .greetings {
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--primary);
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+        .greetings .en {
+            font-size: 18px;
+            color: #475569;
+            font-weight: 400;
+        }
+        .title {
+            font-size: 34px;
+            color: var(--red);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 10px;
+            text-shadow: 2px 2px 0px #fca5a5;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .day-card {
+            border-radius: 20px;
+            padding: 15px;
+            text-align: center;
+            border: 3px solid transparent;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .day-card:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+        .day-card .date {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .day-card .weekday {
+            font-size: 16px;
+            font-weight: 600;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+        .day-card .status {
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 8px;
+            border-radius: 12px;
+        }
+        /* Status styling */
+        .status-off {
+            background-color: #fee2e2;
+            color: var(--red);
+            border-color: #fca5a5;
+            border-style: solid;
+            border-width: 2px;
+        }
+        .status-on {
+            background-color: #dcfce7;
+            color: var(--green);
+            border-color: #86efac;
+            border-style: dashed;
+            border-width: 2px;
+        }
+
+        .day-card.off {
+            background-color: #fff5f5;
+            border-color: #fecaca;
+        }
+        .day-card.on {
+            background-color: #f0fdf4;
+            border-color: #bbf7d0;
+        }
+
+        /* Animations for kids */
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .floating-element {
+            position: absolute;
+            z-index: 1;
+            pointer-events: none;
+            animation: float 6s ease-in-out infinite;
+        }
+        .balloon1 { top: 5%; left: 5%; font-size: 60px; animation-duration: 7s; }
+        .balloon2 { top: 10%; right: 5%; font-size: 70px; animation-duration: 5s; }
+        .star1 { bottom: 10%; left: 10%; font-size: 40px; animation-duration: 4s; }
+        .star2 { bottom: 15%; right: 10%; font-size: 50px; animation-duration: 8s; }
+        .kite { top: 40%; left: 2%; font-size: 50px; animation-duration: 6s; }
+        .sun { top: 2%; right: 20%; font-size: 80px; animation-duration: 10s; }
+
+        .resume-text {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--primary);
+            background: #e0f2fe;
+            padding: 15px;
+            border-radius: 15px;
+            border: 2px dashed #7dd3fc;
+        }
+
+        /* Notice banner container */
+        .notice-banner {
+            background: #fee2e2;
+            color: #b91c1c;
+            padding: 12px 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-weight: bold;
+            border: 1px solid #fecaca;
+            display: inline-block;
+        }
+        .notice-banner .en {
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .calendar-grid { grid-template-columns: repeat(2, 1fr); }
+            .container { padding: 20px; }
+            .logo-text { font-size: 20px; padding: 8px 20px; }
+            .greetings { font-size: 18px; }
+            .title { font-size: 28px; }
+        }
+        @media (max-width: 480px) {
+            .calendar-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="floating-element balloon1">🎈</div>
+    <div class="floating-element balloon2">🎊</div>
+    <div class="floating-element sun">☀️</div>
+    <div class="floating-element star1">⭐</div>
+    <div class="floating-element star2">✨</div>
+    <div class="floating-element kite">🪁</div>
+
+    <div class="container" id="screenshot-area">
+        <div class="header">
+            <img src="assets/img/logo.png" alt="HEC Logo" style="height: 110px; width: auto; object-fit: contain; margin-bottom: 15px; filter: drop-shadow(0 4px 12px rgba(30, 58, 138, 0.2));">
+            <br>
+            <div class="logo-text">HAPPY ENGLISH CLUB</div>
+            <div class="greetings">
+                Kính chúc đại gia đình nghỉ lễ vui vẻ, bình an và hạnh phúc!<br>
+                <span class="en">Wishing your family a joyful, safe and happy holiday!</span>
+            </div>
+            <div class="title">LỊCH NGHỈ LỄ & HỌC TẬP T4/T5</div>
+            <div style="font-size:16px; color:#64748b; margin-top:5px; font-weight:600;">
+                (April & May Schedule 2026)
+            </div>
+            <div class="notice-banner">
+                Quý phụ huynh lưu ý ngày học bình thường (MÀU XANH) để đưa các con đi học đầy đủ nhé!
+                <br><span class="en">(Please note the regular class days in GREEN!)</span>
+            </div>
+        </div>
+
+        <div class="calendar-grid">
+            <!-- Apr 25 -->
+            <div class="day-card off">
+                <div class="date">25/04</div>
+                <div class="weekday">Thứ Bảy / Sat</div>
+                <div class="status status-off">
+                    <span>🛑 NGHỈ/OFF</span>
+                </div>
+            </div>
+            <!-- Apr 26 -->
+            <div class="day-card off">
+                <div class="date">26/04</div>
+                <div class="weekday">Chủ Nhật / Sun</div>
+                <div class="status status-off">
+                    <span>🛑 NGHỈ/OFF</span>
+                </div>
+            </div>
+            <!-- Apr 27 -->
+            <div class="day-card on">
+                <div class="date">27/04</div>
+                <div class="weekday">Thứ Hai / Mon</div>
+                <div class="status status-on">
+                    <span>✅ ĐI HỌC/ON</span>
+                </div>
+            </div>
+            <!-- Apr 28 -->
+            <div class="day-card on">
+                <div class="date">28/04</div>
+                <div class="weekday">Thứ Ba / Tue</div>
+                <div class="status status-on">
+                    <span>✅ ĐI HỌC/ON</span>
+                </div>
+            </div>
+            <!-- Apr 29 -->
+            <div class="day-card on">
+                <div class="date">29/04</div>
+                <div class="weekday">Thứ Tư / Wed</div>
+                <div class="status status-on">
+                    <span>✅ ĐI HỌC/ON</span>
+                </div>
+            </div>
+            <!-- Apr 30 -->
+            <div class="day-card off">
+                <div class="date">30/04</div>
+                <div class="weekday">Thứ Năm / Thu</div>
+                <div class="status status-off">
+                    <span>🛑 NGHỈ/OFF</span>
+                </div>
+            </div>
+            <!-- May 01 -->
+            <div class="day-card off">
+                <div class="date">01/05</div>
+                <div class="weekday">Thứ Sáu / Fri</div>
+                <div class="status status-off">
+                    <span>🛑 NGHỈ/OFF</span>
+                </div>
+            </div>
+            <!-- May 02 -->
+            <div class="day-card off">
+                <div class="date">02/05</div>
+                <div class="weekday">Thứ Bảy / Sat</div>
+                <div class="status status-off">
+                    <span>🛑 NGHỈ/OFF</span>
+                </div>
+            </div>
+            <!-- May 03 -->
+            <div class="day-card off">
+                <div class="date">03/05</div>
+                <div class="weekday">Chủ Nhật / Sun</div>
+                <div class="status status-off">
+                    <span>🛑 NGHỈ/OFF</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-text">
+            🌟 Các lớp sẽ hoạt động trở lại bình thường vào buổi học tiếp theo 🌟<br>
+            <span style="font-size: 16px; font-weight: 400; color: #475569;">Classes resume regular schedule on their next corresponding day.</span>
+        </div>
+    </div>
+
+</body>
+</html>
