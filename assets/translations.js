@@ -194,7 +194,7 @@ const HEC_TRANSLATIONS = {
   "camp.heroTitle":    { en: "Every Minute Matters.", vi: "Từng Phút Đều Vô Giá." },
   "camp.heroSub":      { en: "Don't let two months of summer erase a year of progress. While others fall behind, your child will step ahead.", 
                          vi: "Đừng để 2 tháng hè xóa sạch 1 năm nỗ lực. Trong khi các bạn khác tụt hậu, con bạn sẽ bứt phá." },
-  "camp.pill1":        { en: "Future-Proof Skills",   vi: "Kỹ năng Tương lai" },
+  "camp.pill1":        { en: "Future-Proof Skills",   vi: "Kỹ năng sống" },
   "camp.pill2":        { en: "Critical Thinking",     vi: "Tư duy Phản biện" },
   "camp.pill3":        { en: "Active English Leadership", vi: "Lãnh đạo Tiếng Anh Chủ động" },
   "camp.badgeGroups":  { en: "Grades 1-2, 3-5, & 6-8",      vi: "Lớp 1-2, 3-5 & 6-8" },
