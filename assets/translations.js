@@ -16,7 +16,7 @@ const HEC_TRANSLATIONS = {
   /* ─── Navbar ──────────────────────────────────────────────── */
   "nav.home":          { en: "Home",               vi: "Trang chủ" },
   "nav.programs":      { en: "Programs",           vi: "Chương trình" },
-  "nav.readingClub":   { en: "Reading Club",       vi: "CLB Đọc sách" },
+  "nav.readingClub":   { en: "Reading Club",       vi: "CLB đọc sách" },
   "nav.admissions":    { en: "Admissions & Fees",  vi: "Tuyển sinh & Học phí" },
   "nav.contact":       { en: "Contact",            vi: "Liên hệ" },
   "nav.enrollNow":     { en: "Enroll Now",         vi: "Đăng ký ngay" },
@@ -26,7 +26,7 @@ const HEC_TRANSLATIONS = {
   "hero.headline":     { en: "Where Small Classes Build\nBig Confidence",
                          vi: "Lớp nhỏ — Tự tin lớn" },
   "hero.subheadline":  { en: "US-licensed teacher • International curriculum • Transparent per-session fees • Free Saturday Reading Club",
-                         vi: "Giáo viên được cấp phép Hoa Kỳ • Chương trình quốc tế • Học phí minh bạch theo buổi • CLB Đọc miễn phí Thứ Bảy" },
+                         vi: "Giáo viên được cấp phép Hoa Kỳ • Chương trình quốc tế • Học phí minh bạch theo buổi • CLB đọc sách miễn phí Thứ Bảy" },
   "hero.ctaPrimary":   { en: "Book a Free Trial Class",
                          vi: "Đặt lịch học thử miễn phí" },
   "hero.ctaSecondary": { en: "Explore Programs",
@@ -36,7 +36,7 @@ const HEC_TRANSLATIONS = {
   "hero.stat2Value":   { en: "90′",               vi: "90′" },
   "hero.stat2Label":   { en: "each session",       vi: "mỗi buổi học" },
   "hero.stat3Value":   { en: "Free",              vi: "Miễn phí" },
-  "hero.stat3Label":   { en: "Saturday Reading Club", vi: "CLB Đọc Thứ Bảy" },
+  "hero.stat3Label":   { en: "Saturday Reading Club", vi: "CLB đọc sách Thứ Bảy" },
 
   /* ─── Authority ───────────────────────────────────────────── */
   "auth.title":        { en: "Why Parents in Hanoi Trust HEC",
@@ -72,7 +72,7 @@ const HEC_TRANSLATIONS = {
 
   /* ─── Reading Club ────────────────────────────────────────── */
   "rc.title":          { en: "Saturday Reading Club",
-                         vi: "CLB Đọc sách Thứ Bảy" },
+                         vi: "CLB đọc sách Thứ Bảy" },
   "rc.subtitle":       { en: "Every Saturday, 14:00–16:00 • Completely free • All ages welcome",
                          vi: "Thứ Bảy hằng tuần, 14:00–16:00 • Hoàn toàn miễn phí • Mọi lứa tuổi" },
   "rc.free":           { en: "Free",                vi: "Miễn phí" },
@@ -102,15 +102,15 @@ const HEC_TRANSLATIONS = {
   "test.t1Name":       { en: "Ms. Linh",            vi: "Chị Linh" },
   "test.t1Grade":      { en: "Grade 4 Parent",      vi: "Phụ huynh lớp 4" },
   "test.t1Quote":      { en: "\"After just one month, my daughter reads more willingly and explains her ideas with clarity. The free Reading Club made a big difference.\"",
-                         vi: "\"Sau 1 tháng, con chủ động đọc hơn và trình bày ý tưởng rõ ràng. CLB Đọc miễn phí tạo ra sự khác biệt lớn.\"" },
+                         vi: "\"Chỉ sau 1 tháng, con gái mình đã chịu đọc sách hơn hẳn và biết diễn đạt ý tưởng rõ ràng. CLB đọc sách miễn phí thực sự tạo ra khác biệt lớn.\"" },
   "test.t2Name":       { en: "Mr. Minh",            vi: "Anh Minh" },
   "test.t2Grade":      { en: "Grade 6 Parent",      vi: "Phụ huynh lớp 6" },
   "test.t2Quote":      { en: "\"Clear goals, small classes, and coaches who really listen. My son now enjoys non-fiction and presents with confidence.\"",
-                         vi: "\"Mục tiêu rõ ràng, lớp ít học sinh, giáo viên thật sự lắng nghe. Con thích đọc non-fiction và thuyết trình tự tin hơn.\"" },
+                         vi: "\"Mục tiêu rõ ràng, lớp ít học sinh, thầy cô thật sự lắng nghe. Giờ con nhà mình thích đọc sách khoa học và thuyết trình tự tin hơn nhiều.\"" },
   "test.t3Name":       { en: "Ms. Hoa",             vi: "Chị Hoa" },
   "test.t3Grade":      { en: "Grade 2 Parent",      vi: "Phụ huynh lớp 2" },
   "test.t3Quote":      { en: "\"The phonics and fluency routines are simple to practice at home. Saturday Reading Club has become our favorite weekly habit.\"",
-                         vi: "\"Phonics và luyện đọc trôi chảy dễ thực hành ở nhà. Chiều Thứ Bảy tới CLB Đọc thành thói quen yêu thích của con.\"" },
+                         vi: "\"Bài tập phát âm và luyện đọc dễ ôn ở nhà lắm. Chiều Thứ Bảy đưa con đến CLB đọc sách giờ thành thói quen mà cả nhà đều thích.\"" },
 
   /* ─── Methodology ─────────────────────────────────────────── */
   "method.title":      { en: "How We Teach",         vi: "Phương pháp giảng dạy" },
@@ -243,7 +243,7 @@ const HEC_TRANSLATIONS = {
   "camp.eng5Desc":     { en: "Final project reflections and confident speaking.", vi: "Đúc kết dự án và tự tin thuyết trình." },
 
   /* 10:30 */
-  "camp.break1":       { en: "Brain Break & Hydration", vi: "Giải lao & Uống nước" },
+  "camp.break1":       { en: "Break & Afternoon Snack", vi: "Giải lao và bữa quà chiều" },
 
   /* 10:40 */
   "camp.st1Title":     { en: "Hands-on Engineering",  vi: "Kỹ thuật Thực hành" },
@@ -282,7 +282,7 @@ const HEC_TRANSLATIONS = {
   "camp.danceDesc":    { en: "End of week energy release and coordination.", vi: "Giải phóng năng lượng và điều hòa cơ thể cuối tuần." },
 
   /* 15:00 */
-  "camp.break3":       { en: "Brain Break & Hydration", vi: "Giải lao & Uống nước" },
+  "camp.break3":       { en: "Break & Afternoon Snack", vi: "Giải lao và bữa quà chiều" },
 
   /* 15:10 */
   "camp.pm1Title":     { en: "Global Empathy",        vi: "Thấu cảm Toàn cầu" },
