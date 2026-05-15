@@ -31,7 +31,7 @@ const HEC_TRANSLATIONS = {
                          vi: "Đặt lịch học thử miễn phí" },
   "hero.ctaSecondary": { en: "Explore Programs",
                          vi: "Xem chương trình" },
-  "hero.stat1Value":   { en: "≤15",               vi: "≤15" },
+  "hero.stat1Value":   { en: "≤12",               vi: "≤12" },
   "hero.stat1Label":   { en: "students per class", vi: "học sinh / lớp" },
   "hero.stat2Value":   { en: "90′",               vi: "90′" },
   "hero.stat2Label":   { en: "each session",       vi: "mỗi buổi học" },
@@ -243,7 +243,7 @@ const HEC_TRANSLATIONS = {
   "camp.eng5Desc":     { en: "Final project reflections and confident speaking.", vi: "Đúc kết dự án và tự tin thuyết trình." },
 
   /* 10:30 */
-  "camp.break1":       { en: "Break & Afternoon Snack", vi: "Giải lao và bữa quà chiều" },
+  "camp.break1":       { en: "Brain Break", vi: "Giải lao" },
 
   /* 10:40 */
   "camp.st1Title":     { en: "Hands-on Engineering",  vi: "Kỹ thuật Thực hành" },
@@ -312,8 +312,8 @@ const HEC_TRANSLATIONS = {
   /* CAMP CTA */
   "camp.ctaHeadline":  { en: "Don't Let Summer Slide Steal Your Child's Progress",
                          vi: "Đừng Để Rơi Rụng Kiến Thức Mùa Hè" },
-  "camp.ctaSub":       { en: "Spots are limited to 15 per group. Register now to lock in your child's place in Hanoi's most immersive English STEAM camp.",
-                         vi: "Sĩ số giới hạn 15 học sinh mỗi lớp. Đăng ký ngay để giữ chỗ tại trại hè tiếng Anh STEAM hàng đầu Hà Nội." },
+  "camp.ctaSub":       { en: "Spots are limited to 12 per group. Register now to lock in your child's place in Hanoi's most immersive English STEAM camp.",
+                         vi: "Sĩ số giới hạn 12 học sinh mỗi lớp. Đăng ký ngay để giữ chỗ tại trại hè tiếng Anh STEAM hàng đầu Hà Nội." },
   "camp.ctaBtn":       { en: "Register Now",          vi: "Đăng ký ngay" },
   "camp.selectTimetable": { en: "Select Timetable / Chọn Thời khoá biểu", vi: "Chọn Thời khoá biểu / Select Timetable" },
   "camp.downloadHero": { en: "Secure Your Child's Advantage & Download Timetable", 
