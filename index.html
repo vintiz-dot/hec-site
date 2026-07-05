@@ -15,6 +15,10 @@
   <meta property="og:image:height" content="630">
   <link rel="canonical" href="https://hanoienglish.vip/">
 
+  <!-- Performance: connect early to CDN, preload the hero image -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload" as="image" href="assets/pictures/ok/hero-1.webp" fetchpriority="high">
+
   <!-- Bootstrap 5 CSS & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -122,35 +126,35 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="assets/pictures/ok/Wedding photo college (Banner (Landscape)).png" alt="HEC classroom learning">
+              <img class="d-block w-100" src="assets/pictures/ok/hero-1.webp" alt="HEC classroom learning" width="1600" height="800" fetchpriority="high" decoding="async">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Learn with purpose</h5>
                 <p>Clear goals and checkpoints every week.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="assets/pictures/ok/White Photo Collage Bengaluru Banner.png" alt="Student presentation">
+              <img class="d-block w-100" src="assets/pictures/ok/hero-2.webp" alt="Student presentation" width="1600" height="800" loading="lazy" decoding="async">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Present with confidence</h5>
                 <p>Frequent practice with friendly feedback.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="assets/pictures/ok/Beige Vintage Paper Family Photo Collage Video.svg" alt="Student projects">
+              <img class="d-block w-100" src="assets/pictures/ok/hero-3.webp" alt="Students presenting crafts at the HEC English fair" width="1600" height="800" loading="lazy" decoding="async">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Projects that matter</h5>
                 <p>Real topics, real audiences, real progress.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="assets/pictures/ok/Beige Elegant Photo Collage Exclusive Home Decor Etsy Banner.png" alt="Community events">
+              <img class="d-block w-100" src="assets/pictures/ok/hero-4.webp" alt="Community events" width="1600" height="400" loading="lazy" decoding="async">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Community-driven growth</h5>
                 <p>Learning thrives in a supportive environment.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="assets/pictures/Blue and Pink Abstract Modern Welcome Back To School Banner.png" alt="Back to school">
+              <img class="d-block w-100" src="assets/pictures/ok/hero-5.webp" alt="Back to school" width="1600" height="800" loading="lazy" decoding="async">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Welcome to HEC</h5>
                 <p>Where every child finds their voice.</p>
@@ -438,7 +442,7 @@
       </div>
       <div class="col-lg-5 reveal reveal-delay-2">
         <img class="img-fluid rounded-4 shadow" alt="Students reading together at HEC Reading Club"
-             src="assets/pictures/ok/book club.png" loading="lazy">
+             src="assets/pictures/ok/book-club.webp" width="900" height="1125" loading="lazy" decoding="async">
       </div>
     </div>
   </div>
@@ -461,7 +465,7 @@
           </div>
           <blockquote data-i18n="test.t1Quote">"After just one month, my daughter reads more willingly and explains her ideas with clarity. The free Reading Club made a big difference."</blockquote>
           <div class="author">
-            <img src="https://picsum.photos/seed/hecparent1/96/96" alt="Parent photo" class="author-avatar" loading="lazy">
+            <span class="author-avatar author-initials" aria-hidden="true">L</span>
             <div>
               <div class="author-name" data-i18n="test.t1Name">Ms. Linh</div>
               <div class="author-grade" data-i18n="test.t1Grade">Grade 4 Parent</div>
@@ -476,7 +480,7 @@
           </div>
           <blockquote data-i18n="test.t2Quote">"Clear goals, small classes, and coaches who really listen. My son now enjoys non-fiction and presents with confidence."</blockquote>
           <div class="author">
-            <img src="https://picsum.photos/seed/hecparent2/96/96" alt="Parent photo" class="author-avatar" loading="lazy">
+            <span class="author-avatar author-initials" style="background:var(--hec-gold-soft);color:var(--hec-gold)" aria-hidden="true">M</span>
             <div>
               <div class="author-name" data-i18n="test.t2Name">Mr. Minh</div>
               <div class="author-grade" data-i18n="test.t2Grade">Grade 6 Parent</div>
@@ -491,7 +495,7 @@
           </div>
           <blockquote data-i18n="test.t3Quote">"The phonics and fluency routines are simple to practice at home. Saturday Reading Club has become our favorite weekly habit."</blockquote>
           <div class="author">
-            <img src="https://picsum.photos/seed/hecparent3/96/96" alt="Parent photo" class="author-avatar" loading="lazy">
+            <span class="author-avatar author-initials" style="background:var(--hec-emerald-soft);color:var(--hec-emerald)" aria-hidden="true">H</span>
             <div>
               <div class="author-name" data-i18n="test.t3Name">Ms. Hoa</div>
               <div class="author-grade" data-i18n="test.t3Grade">Grade 2 Parent</div>
@@ -502,6 +506,67 @@
     </div>
   </div>
 </section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     GALLERY — Life at HEC
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="gallery" class="py-5" style="background:#f8fafc;">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <h2 class="section-title" data-i18n="gal.title">Life at HEC</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="section-subtitle mx-auto" data-i18n="gal.subtitle">Real moments from our classrooms — projects, presentations, and plenty of smiles.</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <a href="#" class="gallery-item" data-full="assets/pictures/gallery/gallery-01.webp">
+        <img src="assets/pictures/gallery/gallery-01.webp" alt="Student proudly showing his finished artwork" width="675" height="900" loading="lazy" decoding="async">
+      </a>
+      <a href="#" class="gallery-item" data-full="assets/pictures/gallery/gallery-02.webp">
+        <img src="assets/pictures/gallery/gallery-02.webp" alt="Student presenting her volcano art project" width="675" height="900" loading="lazy" decoding="async">
+      </a>
+      <a href="#" class="gallery-item" data-full="assets/pictures/gallery/gallery-03.webp">
+        <img src="assets/pictures/gallery/gallery-03.webp" alt="Student presenting her craft stall to a teacher at the HEC English fair" width="675" height="900" loading="lazy" decoding="async">
+      </a>
+      <a href="#" class="gallery-item gallery-item-wide" data-full="assets/pictures/gallery/gallery-04.webp">
+        <img src="assets/pictures/gallery/gallery-04.webp" alt="Teachers and students together at an HEC community event" width="900" height="352" loading="lazy" decoding="async">
+      </a>
+      <a href="#" class="gallery-item" data-full="assets/pictures/gallery/gallery-05.webp">
+        <img src="assets/pictures/gallery/gallery-05.webp" alt="Students building a STEM project outdoors" width="900" height="675" loading="lazy" decoding="async">
+      </a>
+      <a href="#" class="gallery-item" data-full="assets/pictures/gallery/gallery-06.webp">
+        <img src="assets/pictures/gallery/gallery-06.webp" alt="Model city built by students during STEM class" width="900" height="675" loading="lazy" decoding="async">
+      </a>
+      <a href="#" class="gallery-item" data-full="assets/pictures/gallery/gallery-07.webp">
+        <img src="assets/pictures/gallery/gallery-07.webp" alt="Students celebrating together in the HEC classroom" width="900" height="674" loading="lazy" decoding="async">
+      </a>
+      <a href="#" class="gallery-item" data-full="assets/pictures/gallery/gallery-08.webp">
+        <img src="assets/pictures/gallery/gallery-08.webp" alt="Happy student with balloons at a class celebration" width="900" height="675" loading="lazy" decoding="async">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery lightbox modal -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-transparent border-0 shadow-none">
+      <img id="galleryModalImg" src="" alt="Gallery photo enlarged" class="img-fluid rounded-4 shadow-lg" loading="lazy" decoding="async">
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var modalEl = document.getElementById('galleryModal');
+    var modalImg = document.getElementById('galleryModalImg');
+    document.querySelectorAll('.gallery-item').forEach(function (item) {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        modalImg.src = item.getAttribute('data-full');
+        bootstrap.Modal.getOrCreateInstance(modalEl).show();
+      });
+    });
+  });
+</script>
 
 <!-- ═══════════════════════════════════════════════════════════════
      METHODOLOGY — "How We Teach"
@@ -647,7 +712,7 @@
       </div>
       <div class="col-lg-6 reveal reveal-delay-2">
         <div class="position-relative">
-          <img src="assets/pictures/ok/summer.jpg" alt="Summer Camp" class="img-fluid rounded-4 shadow-lg" style="border: 4px solid white;">
+          <img src="assets/pictures/ok/summer.webp" alt="Summer Camp" class="img-fluid rounded-4 shadow-lg" style="border: 4px solid white;" width="900" height="1273" loading="lazy" decoding="async">
           <div class="position-absolute bottom-0 start-0 translate-middle-y ms-n4 d-none d-md-block">
             <div class="bg-white p-3 rounded-3 shadow-lg text-center" style="border-left: 4px solid var(--hec-gold)">
               <div class="fw-bold fs-4 text-primary" data-i18n="camp.badgeDates">June &ndash; August</div>

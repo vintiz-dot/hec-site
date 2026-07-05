@@ -351,5 +351,11 @@ const HEC_TRANSLATIONS = {
   "holiday.bannerText": { en: "Holiday Notice: HEC classes paused Apr 25 – May 3 for national holidays.",
                           vi: "Thông báo nghỉ lễ: HEC tạm nghỉ các lớp từ 25/4 – 3/5 nhân dịp lễ Quốc gia." },
   "holiday.bannerLink": { en: "View Schedule →",
-                          vi: "Xem lịch nghỉ →" }
+                          vi: "Xem lịch nghỉ →" },
+
+  /* ─── Gallery ───────────────────────────────────────────────── */
+  "nav.gallery":  { en: "Gallery",     vi: "Thư viện ảnh" },
+  "gal.title":    { en: "Life at HEC", vi: "Khoảnh khắc tại HEC" },
+  "gal.subtitle": { en: "Real moments from our classrooms — projects, presentations, and plenty of smiles.",
+                    vi: "Những khoảnh khắc thật từ lớp học — dự án, thuyết trình và thật nhiều nụ cười." }
 };
