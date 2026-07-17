@@ -116,6 +116,42 @@
  },
  "gallery": [
   {
+   "type": "video",
+   "src": "media/ronaldo/extra_clip_01.mp4",
+   "poster": "media/ronaldo/extra_clip_01.jpg",
+   "landscape": false
+  },
+  {
+   "type": "video",
+   "src": "media/ronaldo/extra_clip_02.mp4",
+   "poster": "media/ronaldo/extra_clip_02.jpg",
+   "landscape": false
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/extra_photo_01.jpg",
+   "w": 1200,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/extra_photo_02.jpg",
+   "w": 1200,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/extra_photo_03.jpg",
+   "w": 1200,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/extra_photo_04.jpg",
+   "w": 1200,
+   "h": 1600
+  },
+  {
    "type": "image",
    "src": "media/ronaldo/photo_01.jpg",
    "w": 1280,

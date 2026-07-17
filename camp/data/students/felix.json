@@ -112,6 +112,30 @@
  "gallery": [
   {
    "type": "image",
+   "src": "media/felix/extra_photo_01.jpg",
+   "w": 1200,
+   "h": 1600
+  },
+  {
+   "type": "video",
+   "src": "media/felix/extra_clip_01.mp4",
+   "poster": "media/felix/extra_clip_01.jpg",
+   "landscape": false
+  },
+  {
+   "type": "video",
+   "src": "media/felix/extra_clip_02.mp4",
+   "poster": "media/felix/extra_clip_02.jpg",
+   "landscape": false
+  },
+  {
+   "type": "video",
+   "src": "media/felix/extra_clip_03.mp4",
+   "poster": "media/felix/extra_clip_03.jpg",
+   "landscape": false
+  },
+  {
+   "type": "image",
    "src": "media/felix/photo_01.jpg",
    "w": 1280,
    "h": 1600

@@ -116,6 +116,12 @@
  },
  "gallery": [
   {
+   "type": "video",
+   "src": "media/pizza/extra_clip_01.mp4",
+   "poster": "media/pizza/extra_clip_01.jpg",
+   "landscape": false
+  },
+  {
    "type": "image",
    "src": "media/pizza/photo_01.jpg",
    "w": 1280,

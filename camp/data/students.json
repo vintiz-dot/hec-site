@@ -35,6 +35,12 @@
    "thumb": "media/elina/hero.jpg"
   },
   {
+   "slug": "elsa",
+   "name": "Elsa",
+   "class": "",
+   "thumb": "media/elsa/hero_poster.jpg"
+  },
+  {
    "slug": "emma",
    "name": "Emma",
    "class": "",
@@ -63,6 +69,12 @@
    "name": "Kuromi",
    "class": "",
    "thumb": "media/kuromi/hero.jpg"
+  },
+  {
+   "slug": "luka",
+   "name": "Luka",
+   "class": "",
+   "thumb": "media/luka/hero_poster.jpg"
   },
   {
    "slug": "moon",
