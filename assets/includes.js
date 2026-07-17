@@ -80,7 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const countdownEl = document.getElementById('countdown');
   if (countdownEl) {
     // Target: May 15, 2026 (configurable)
-    const target = new Date('2026-05-15T23:59:59+07:00').getTime();
+    // Summer Camp 2027 opens June 1, 08:00 Vietnam time
+    const target = new Date('2027-06-01T08:00:00+07:00').getTime();
 
     function updateCountdown() {
       const now = Date.now();
