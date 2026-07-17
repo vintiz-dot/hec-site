@@ -1,0 +1,213 @@
+{
+ "slug": "bon",
+ "name": "Bon",
+ "displayName": "Bon",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/bon/clip_01.mp4",
+  "poster": "media/bon/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "A bright mind, an immaculate memory — and a will that does not bend.",
+   "narrative": [
+    "Bon pairs a naturally bright mind with something much rarer: an immaculate memory. Ideas that pass through his hands tend to stay with him, ready to be drawn upon with an ease that consistently impresses us. He is extremely hard-working and deeply devoted to whatever task is in front of him — difficulty, for Bon, is simply not a deterrent.",
+    "Our work with Bon now centres on channelling that formidable energy. When his attention locks in, his output is outstanding; the next stage of his journey is learning to summon that focus on demand. With a little more of it, the sky will not be his limit — it will be his stepping stone."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Knowledgeable",
+     "title": "A memory that compounds",
+     "body": "What Bon learns, he keeps. Each week's knowledge builds visibly on the last, giving him an unusually strong foundation for deeper inquiry."
+    },
+    {
+     "attribute": "Committed",
+     "title": "Devoted to the task",
+     "body": "He brings a work ethic well beyond his years, staying with a problem until it yields."
+    },
+    {
+     "attribute": "Risk-taker",
+     "title": "Undeterred by difficulty",
+     "body": "Hard tasks do not intimidate Bon; he treats them as puzzles that simply have not been solved yet."
+    }
+   ],
+   "nextSteps": [
+    "We will help Bon build focus rituals — one line of inquiry at a time, depth celebrated over speed. As that habit settles, his bright mind and remarkable memory will carry him as far as he chooses to go."
+   ]
+  },
+  "vi": {
+   "headline": "Trí tuệ sáng, trí nhớ tuyệt vời — và một ý chí không lùi bước.",
+   "narrative": [
+    "Bon sở hữu một trí tuệ sáng cùng điều hiếm có hơn nhiều: một trí nhớ tuyệt vời. Những gì đã học qua, con đều ghi nhớ và vận dụng lại một cách dễ dàng đến mức khiến thầy cô liên tục ấn tượng. Con cực kỳ chăm chỉ và tận tâm với mọi nhiệm vụ — với Bon, khó khăn đơn giản không phải là rào cản.",
+    "Điều thầy cô đang cùng Bon rèn luyện là cách điều khiển nguồn năng lượng dồi dào ấy. Khi con thật sự tập trung, kết quả luôn xuất sắc; chặng tiếp theo của hành trình là học cách gọi sự tập trung ấy đến bất cứ lúc nào mình cần. Chỉ cần thêm một chút tập trung nữa, bầu trời sẽ không phải là giới hạn — mà là bàn đạp của con."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người hiểu biết",
+     "title": "Trí nhớ tích lũy",
+     "body": "Điều gì Bon đã học, con giữ được. Kiến thức mỗi tuần xây chắc trên nền tuần trước, cho con một nền tảng vững chắc hiếm thấy."
+    },
+    {
+     "attribute": "Người tận tâm",
+     "title": "Hết mình với nhiệm vụ",
+     "body": "Con làm việc với tinh thần vượt xa lứa tuổi, kiên trì với bài toán cho đến khi tìm ra lời giải."
+    },
+    {
+     "attribute": "Người dám thử thách",
+     "title": "Không nao núng trước khó khăn",
+     "body": "Nhiệm vụ khó không làm Bon chùn bước; với con, đó chỉ là những câu đố chưa được giải."
+    }
+   ],
+   "nextSteps": [
+    "Thầy cô sẽ giúp Bon xây dựng thói quen tập trung — mỗi lần một mạch tìm tòi, đề cao chiều sâu hơn tốc độ. Khi thói quen ấy vững vàng, trí tuệ và trí nhớ đáng nể sẽ đưa con đi xa đến bất cứ đâu con muốn."
+   ]
+  }
+ },
+ "interviews": [],
+ "stats": {
+  "en": [
+   {
+    "value": "40",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "30",
+    "label": "Photographs"
+   },
+   {
+    "value": "27",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "40",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "30",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "27",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/bon/photo_01.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/bon/photo_02.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "video",
+   "src": "media/bon/clip_03.mp4",
+   "poster": "media/bon/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/bon/clip_02.mp4",
+   "poster": "media/bon/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/bon/clip_01.mp4",
+   "poster": "media/bon/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/bon/photo_03.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/bon/photo_04.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/bon/photo_05.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/bon/photo_06.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/bon/photo_07.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/bon/photo_08.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/bon/photo_09.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/bon/photo_10.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/bon/photo_11.jpg",
+   "w": 960,
+   "h": 1200
+  },
+  {
+   "type": "image",
+   "src": "media/bon/photo_12.jpg",
+   "w": 718,
+   "h": 478
+  },
+  {
+   "type": "image",
+   "src": "media/bon/photo_13.jpg",
+   "w": 726,
+   "h": 484
+  },
+  {
+   "type": "image",
+   "src": "media/bon/photo_14.jpg",
+   "w": 733,
+   "h": 489
+  }
+ ]
+}

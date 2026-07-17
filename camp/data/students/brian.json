@@ -1,0 +1,213 @@
+{
+ "slug": "brian",
+ "name": "Brian",
+ "displayName": "Brian",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/brian/clip_01.mp4",
+  "poster": "media/brian/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "A true scholar — first to finish, first to ask for more.",
+   "narrative": [
+    "Brian is an exemplary student and a true definition of a scholar. Across the camp he was consistently the first to complete his academic tasks — not by rushing, but because he works with a focus and hunger that few students his age possess.",
+    "No project fazed him, no matter how daunting it first appeared. And the moment he finished, he was always the first to ask for extra work. That attitude — treating learning as something you go looking for — is the single best predictor of the excellence we believe is ahead of him. We hope he keeps it up."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Knowledgeable",
+     "title": "A scholar's appetite",
+     "body": "Brian consumes academic work eagerly and accurately, finishing first without sacrificing quality."
+    },
+    {
+     "attribute": "Self-driven",
+     "title": "Asks for more",
+     "body": "He requests extra work as soon as he finishes — ownership of learning that no teacher can assign."
+    },
+    {
+     "attribute": "Resilient",
+     "title": "Unfazed by scale",
+     "body": "Daunting projects do not slow him; he starts, persists, and finishes."
+    }
+   ],
+   "nextSteps": [
+    "Brian is ready for extension work with genuine depth — multi-week inquiries, harder texts, and chances to mentor classmates. Keeping his appetite fed, rather than merely occupied, is our commitment to him."
+   ]
+  },
+  "vi": {
+   "headline": "Một học giả thực thụ — hoàn thành đầu tiên, xin thêm bài đầu tiên.",
+   "narrative": [
+    "Brian là một học sinh mẫu mực và là định nghĩa chân thực của một học giả. Suốt trại hè, con luôn là người đầu tiên hoàn thành các nhiệm vụ học thuật — không phải vì vội, mà vì con học với sự tập trung và niềm khao khát hiếm thấy ở lứa tuổi này.",
+    "Không dự án nào làm con nao núng, dù ban đầu trông có vẻ khó đến đâu. Và ngay khi hoàn thành, con luôn là người đầu tiên xin thêm bài. Thái độ ấy — xem việc học là thứ mình chủ động đi tìm — là chỉ dấu đáng tin nhất của sự xuất sắc đang chờ con phía trước. Thầy cô mong con giữ vững tinh thần này."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người hiểu biết",
+     "title": "Khao khát của một học giả",
+     "body": "Brian đón nhận bài vở một cách hào hứng và chính xác, hoàn thành đầu tiên mà không đánh đổi chất lượng."
+    },
+    {
+     "attribute": "Người tự thân vận động",
+     "title": "Chủ động xin thêm",
+     "body": "Con xin thêm bài ngay khi vừa làm xong — quyền sở hữu việc học mà không giáo viên nào có thể giao được."
+    },
+    {
+     "attribute": "Người kiên cường",
+     "title": "Không nao núng trước quy mô",
+     "body": "Dự án đồ sộ không làm con chậm lại; con bắt đầu, bền bỉ, và hoàn thành."
+    }
+   ],
+   "nextSteps": [
+    "Brian đã sẵn sàng cho những phần học mở rộng thực sự có chiều sâu — dự án nhiều tuần, văn bản khó hơn, và cơ hội hướng dẫn bạn học. Cam kết của thầy cô là nuôi dưỡng niềm khao khát ấy, chứ không chỉ lấp đầy thời gian của con."
+   ]
+  }
+ },
+ "interviews": [],
+ "stats": {
+  "en": [
+   {
+    "value": "40",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "42",
+    "label": "Photographs"
+   },
+   {
+    "value": "39",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "40",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "42",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "39",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/brian/photo_01.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/brian/photo_02.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "video",
+   "src": "media/brian/clip_03.mp4",
+   "poster": "media/brian/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/brian/clip_02.mp4",
+   "poster": "media/brian/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/brian/clip_01.mp4",
+   "poster": "media/brian/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/brian/photo_03.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/brian/photo_04.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/brian/photo_05.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/brian/photo_06.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/brian/photo_07.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/brian/photo_08.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/brian/photo_09.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/brian/photo_10.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/brian/photo_11.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/brian/photo_12.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/brian/photo_13.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/brian/photo_14.jpg",
+   "w": 1131,
+   "h": 754
+  }
+ ]
+}

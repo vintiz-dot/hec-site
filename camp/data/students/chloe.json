@@ -1,0 +1,156 @@
+{
+ "slug": "chloe",
+ "name": "Chloe",
+ "displayName": "Chloe",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/chloe/clip_01.mp4",
+  "poster": "media/chloe/hero.jpg"
+ },
+ "remarks": {},
+ "interviews": [],
+ "stats": {
+  "en": [
+   {
+    "value": "40",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "49",
+    "label": "Photographs"
+   },
+   {
+    "value": "37",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "40",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "49",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "37",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/chloe/photo_01.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/chloe/photo_02.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "video",
+   "src": "media/chloe/clip_03.mp4",
+   "poster": "media/chloe/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/chloe/clip_02.mp4",
+   "poster": "media/chloe/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/chloe/clip_01.mp4",
+   "poster": "media/chloe/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/chloe/photo_03.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/chloe/photo_04.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/chloe/photo_05.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/chloe/photo_06.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/chloe/photo_07.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/chloe/photo_08.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/chloe/photo_09.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/chloe/photo_10.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/chloe/photo_11.jpg",
+   "w": 1085,
+   "h": 722
+  },
+  {
+   "type": "image",
+   "src": "media/chloe/photo_12.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/chloe/photo_13.jpg",
+   "w": 1077,
+   "h": 717
+  },
+  {
+   "type": "image",
+   "src": "media/chloe/photo_14.jpg",
+   "w": 1280,
+   "h": 854
+  }
+ ]
+}

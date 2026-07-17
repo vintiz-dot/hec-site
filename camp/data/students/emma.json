@@ -1,0 +1,213 @@
+{
+ "slug": "emma",
+ "name": "Emma",
+ "displayName": "Emma",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/emma/clip_01.mp4",
+  "poster": "media/emma/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "Emma sees the whole picture — and helps everyone around her see it too.",
+   "narrative": [
+    "Over the past four months, Emma has grown into one of the quiet engines of our learning community. Hand her a demanding academic task and she does not hesitate: she takes it apart, studies the pieces, and reassembles them until a bigger picture emerges. This gift for synthesis — for connecting what others treat as separate — is the mark of a genuinely inquiring mind.",
+    "What sets Emma apart is that her strength never stays her own. Whether she is contributing as a teammate or stepping forward to lead, she raises the standard of every group she joins, and her classmates have drawn visible inspiration from her determination and work ethic. Working alongside her has been deeply fulfilling for us as educators."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Thinker",
+     "title": "Synthesis before answers",
+     "body": "Emma connects ideas across sources and tasks, assembling scattered pieces of information into one coherent picture — the foundation of real critical thinking."
+    },
+    {
+     "attribute": "Risk-taker",
+     "title": "Difficulty as invitation",
+     "body": "She is unafraid of demanding academic work, meeting each challenge with a determination that steadies the students around her."
+    },
+    {
+     "attribute": "Collaborator",
+     "title": "Leading from within the team",
+     "body": "Equally at home as team member or leader, Emma models the rare balance between contributing quietly and guiding confidently."
+    }
+   ],
+   "nextSteps": [
+    "Emma is ready for inquiries with more layers: longer projects, richer sources, and regular opportunities to present her synthesis to an audience. We will keep placing her in roles where she can lead by thinking aloud — the place where she most naturally shines."
+   ]
+  },
+  "vi": {
+   "headline": "Emma nhìn thấy bức tranh toàn cảnh — và giúp các bạn xung quanh cùng nhìn thấy.",
+   "narrative": [
+    "Trong bốn tháng qua, Emma đã trở thành một trong những \"động cơ thầm lặng\" của lớp học. Khi nhận một nhiệm vụ học thuật khó, con không hề do dự: con tách vấn đề thành từng phần, nghiên cứu kỹ lưỡng, rồi ghép lại cho đến khi bức tranh lớn hiện ra. Khả năng tổng hợp thông tin — kết nối những điều tưởng chừng rời rạc — chính là dấu hiệu của một tư duy ham học hỏi thực thụ.",
+    "Điều khiến Emma đặc biệt là sức mạnh của con không bao giờ chỉ dành riêng cho mình. Dù đóng vai trò thành viên hay người dẫn dắt, con đều nâng chuẩn mực của cả nhóm, và các bạn cùng lớp đã thực sự được truyền cảm hứng từ sự quyết tâm và chăm chỉ của con. Được đồng hành cùng Emma là một niềm vui lớn của các thầy cô."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người tư duy",
+     "title": "Tổng hợp trước khi kết luận",
+     "body": "Emma kết nối ý tưởng từ nhiều nguồn và nhiều bài học, ghép những mảnh thông tin rời rạc thành một bức tranh mạch lạc — nền tảng của tư duy phản biện thực thụ."
+    },
+    {
+     "attribute": "Người dám thử thách",
+     "title": "Khó khăn là lời mời",
+     "body": "Con không ngại những nhiệm vụ học thuật đòi hỏi cao, đón nhận từng thử thách với sự quyết tâm khiến các bạn xung quanh vững tâm hơn."
+    },
+    {
+     "attribute": "Người cộng tác",
+     "title": "Dẫn dắt từ bên trong đội",
+     "body": "Thoải mái ở cả vai trò thành viên lẫn trưởng nhóm, Emma là hình mẫu của sự cân bằng hiếm có giữa đóng góp lặng lẽ và dẫn dắt tự tin."
+    }
+   ],
+   "nextSteps": [
+    "Emma đã sẵn sàng cho những dự án nhiều tầng lớp hơn: thời gian dài hơn, tài liệu phong phú hơn, và cơ hội thường xuyên trình bày kết quả tổng hợp của mình trước lớp. Chúng tôi sẽ tiếp tục trao cho con những vai trò mà con tỏa sáng nhất — dẫn dắt bằng cách tư duy thành lời."
+   ]
+  }
+ },
+ "interviews": [],
+ "stats": {
+  "en": [
+   {
+    "value": "40",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "40",
+    "label": "Photographs"
+   },
+   {
+    "value": "36",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "40",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "40",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "36",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/emma/photo_01.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/emma/photo_02.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "video",
+   "src": "media/emma/clip_03.mp4",
+   "poster": "media/emma/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/emma/clip_02.mp4",
+   "poster": "media/emma/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/emma/clip_01.mp4",
+   "poster": "media/emma/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/emma/photo_03.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/emma/photo_04.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/emma/photo_05.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/emma/photo_06.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/emma/photo_07.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/emma/photo_08.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/emma/photo_09.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/emma/photo_10.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/emma/photo_11.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/emma/photo_12.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/emma/photo_13.jpg",
+   "w": 1077,
+   "h": 1347
+  },
+  {
+   "type": "image",
+   "src": "media/emma/photo_14.jpg",
+   "w": 1276,
+   "h": 850
+  }
+ ]
+}

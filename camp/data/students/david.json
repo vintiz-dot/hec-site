@@ -1,0 +1,218 @@
+{
+ "slug": "david",
+ "name": "David",
+ "displayName": "David",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/david/clip_01.mp4",
+  "poster": "media/david/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "David's confidence is growing — and football is his language of learning.",
+   "narrative": [
+    "David is a hard-working student with a very bright mind — and a deep love of football. When learning connects to the game, he shines: he championed our World Cup posters project and carries an immaculate memory for footballers that he deploys with real pride. His language development is steady; he reads very well, with a high level of comprehension.",
+    "The change we are proudest of is his confidence. Instead of staying quiet, David now says 'I don't understand' or 'I don't know this' — and verbally communicates what he needs. That is a big improvement, and a brave one. He is good with hands-on projects, a solid team member, and a natural leader in sports activities. Playing football alongside him has been one of the camp's genuine pleasures."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Knowledgeable",
+     "title": "Expert in his passion",
+     "body": "David's recall of footballers and the game is immaculate — proof of the memory and focus he can bring to any subject that captures him."
+    },
+    {
+     "attribute": "Courageous communicator",
+     "title": "Says when he doesn't know",
+     "body": "Choosing to ask instead of staying silent is one of the hardest habits for a learner to build. David built it this summer."
+    },
+    {
+     "attribute": "Team player",
+     "title": "A leader in the game",
+     "body": "On the pitch and in group projects, he contributes reliably and leads naturally in sports settings."
+    }
+   ],
+   "nextSteps": [
+    "We will keep routing academic work through his passion — reading, writing, and projects built around football — while his new habit of asking questions carries his comprehension steadily upward."
+   ]
+  },
+  "vi": {
+   "headline": "Sự tự tin của David đang lớn lên — và bóng đá là ngôn ngữ học tập của con.",
+   "narrative": [
+    "David là một học sinh chăm chỉ với trí tuệ rất sáng — và một tình yêu sâu đậm dành cho bóng đá. Khi việc học gắn với trái bóng, con tỏa sáng: con là \"nhà vô địch\" của dự án áp phích World Cup và sở hữu trí nhớ tuyệt vời về các cầu thủ mà con vận dụng đầy tự hào. Sự phát triển ngôn ngữ của con rất vững: con đọc tốt và có mức độ đọc hiểu cao.",
+    "Thay đổi khiến thầy cô tự hào nhất là sự tự tin. Thay vì im lặng, David giờ đây nói \"Con chưa hiểu\" hoặc \"Con chưa biết cái này\" — và chủ động nói ra điều mình cần. Đó là một bước tiến lớn, và rất dũng cảm. Con giỏi các dự án thực hành, là một thành viên vững chắc và một thủ lĩnh tự nhiên trong các hoạt động thể thao. Được chơi bóng cùng con là một trong những niềm vui thật sự của trại hè."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người hiểu biết",
+     "title": "Chuyên gia trong đam mê",
+     "body": "Trí nhớ của David về các cầu thủ và trận đấu là tuyệt đối — bằng chứng về sự tập trung và ghi nhớ mà con có thể mang vào bất kỳ môn học nào chạm được vào con."
+    },
+    {
+     "attribute": "Giao tiếp dũng cảm",
+     "title": "Dám nói \"con chưa biết\"",
+     "body": "Chọn cách hỏi thay vì im lặng là một trong những thói quen khó xây dựng nhất với người học. David đã xây được nó trong mùa hè này."
+    },
+    {
+     "attribute": "Người đồng đội",
+     "title": "Thủ lĩnh trên sân",
+     "body": "Trên sân bóng và trong dự án nhóm, con đóng góp đều đặn và dẫn dắt tự nhiên trong các hoạt động thể thao."
+    }
+   ],
+   "nextSteps": [
+    "Thầy cô sẽ tiếp tục dẫn việc học đi qua đam mê của con — đọc, viết và các dự án xoay quanh bóng đá — trong khi thói quen đặt câu hỏi mới hình thành sẽ đưa khả năng đọc hiểu của con tiến đều lên phía trước."
+   ]
+  }
+ },
+ "interviews": [
+  {
+   "youtubeId": "F_NG1XgoIY8",
+   "title": "David's Reflection"
+  }
+ ],
+ "stats": {
+  "en": [
+   {
+    "value": "20",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "180+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "28",
+    "label": "Photographs"
+   },
+   {
+    "value": "48",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "20",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "180+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "28",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "48",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/david/photo_01.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/david/photo_02.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "video",
+   "src": "media/david/clip_03.mp4",
+   "poster": "media/david/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/david/clip_02.mp4",
+   "poster": "media/david/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/david/clip_01.mp4",
+   "poster": "media/david/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/david/photo_03.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/david/photo_04.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/david/photo_05.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/david/photo_06.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/david/photo_07.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/david/photo_08.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/david/photo_09.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/david/photo_10.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/david/photo_11.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/david/photo_12.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/david/photo_13.jpg",
+   "w": 1280,
+   "h": 854
+  },
+  {
+   "type": "image",
+   "src": "media/david/photo_14.jpg",
+   "w": 1600,
+   "h": 1066
+  }
+ ]
+}

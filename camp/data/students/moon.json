@@ -1,0 +1,213 @@
+{
+ "slug": "moon",
+ "name": "Moon",
+ "displayName": "Moon",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/moon/clip_02.mp4",
+  "poster": "media/moon/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "A creative mind with a rare feel for the delicate dynamics of the world around her.",
+   "narrative": [
+    "Moon has a beautiful mind. Her creativity is not decoration — it is how she thinks, and it comes paired with an astute, intuitive understanding of the delicate dynamics of the environment around her. She notices what others miss, and her work carries that perceptiveness.",
+    "She is also an exemplary student in the older sense of the word: committed and dedicated to achieving the very best she is capable of. Across the camp's projects we watched her push through her own barriers with genuine strength and perseverance, treating each obstacle not as a stop sign but as part of the process of finishing well."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Creative thinker",
+     "title": "Imagination with intent",
+     "body": "Moon's creative ability shapes how she approaches every project, giving her work a voice that is unmistakably her own."
+    },
+    {
+     "attribute": "Reflective",
+     "title": "Attuned to her surroundings",
+     "body": "She reads the dynamics of the world around her with unusual sensitivity — an early form of the perceptiveness great thinkers rely on."
+    },
+    {
+     "attribute": "Perseverant",
+     "title": "Through her own barriers",
+     "body": "Moon completed project after project by pushing through difficulties, including the ones she set herself by aiming high."
+    }
+   ],
+   "nextSteps": [
+    "Moon is ready for bigger canvases: open-ended projects where her creativity and perceptiveness can set the direction, and structured moments to share her perspective with the group. Aiming high comes naturally to her — our role is to keep widening the space she aims within."
+   ]
+  },
+  "vi": {
+   "headline": "Một tâm hồn sáng tạo với sự nhạy cảm hiếm có trước thế giới xung quanh.",
+   "narrative": [
+    "Moon có một tâm hồn đẹp. Với con, sáng tạo không phải là trang trí — đó là cách con tư duy, đi cùng một sự thấu hiểu tinh tế về những chuyển động của thế giới quanh mình. Con nhận ra những điều người khác bỏ lỡ, và các sản phẩm của con luôn mang theo sự tinh nhạy ấy.",
+    "Moon còn là một học sinh mẫu mực theo đúng nghĩa: cam kết và tận tâm để đạt được điều tốt nhất trong khả năng của mình. Qua các dự án của trại hè, thầy cô đã chứng kiến con bền bỉ vượt qua những rào cản của chính mình, xem mỗi trở ngại không phải là điểm dừng mà là một phần của việc hoàn thành trọn vẹn."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người sáng tạo",
+     "title": "Trí tưởng tượng có chủ đích",
+     "body": "Khả năng sáng tạo định hình cách Moon tiếp cận mọi dự án, cho sản phẩm của con một dấu ấn không thể lẫn."
+    },
+    {
+     "attribute": "Người biết suy ngẫm",
+     "title": "Nhạy cảm với xung quanh",
+     "body": "Con cảm nhận những chuyển động tinh tế của thế giới quanh mình một cách khác thường — hình hài đầu tiên của sự tinh nhạy mà những nhà tư tưởng lớn đều cần."
+    },
+    {
+     "attribute": "Người bền bỉ",
+     "title": "Vượt qua rào cản của chính mình",
+     "body": "Moon hoàn thành hết dự án này đến dự án khác bằng cách kiên trì vượt khó — kể cả những thử thách con tự đặt ra khi dám nhắm cao."
+    }
+   ],
+   "nextSteps": [
+    "Moon đã sẵn sàng cho những \"khung tranh\" lớn hơn: các dự án mở nơi sự sáng tạo và tinh nhạy của con được dẫn đường, cùng những khoảnh khắc chia sẻ góc nhìn của mình với cả lớp. Nhắm cao là bản năng của con — việc của thầy cô là tiếp tục mở rộng khoảng trời để con nhắm tới."
+   ]
+  }
+ },
+ "interviews": [],
+ "stats": {
+  "en": [
+   {
+    "value": "40",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "45",
+    "label": "Photographs"
+   },
+   {
+    "value": "40",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "40",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "45",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "40",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/moon/photo_01.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/moon/photo_02.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "video",
+   "src": "media/moon/clip_03.mp4",
+   "poster": "media/moon/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/moon/clip_02.mp4",
+   "poster": "media/moon/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/moon/clip_01.mp4",
+   "poster": "media/moon/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/moon/photo_03.jpg",
+   "w": 1281,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/moon/photo_04.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/moon/photo_05.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/moon/photo_06.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/moon/photo_07.jpg",
+   "w": 960,
+   "h": 1200
+  },
+  {
+   "type": "image",
+   "src": "media/moon/photo_08.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/moon/photo_09.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/moon/photo_10.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/moon/photo_11.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/moon/photo_12.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/moon/photo_13.jpg",
+   "w": 1276,
+   "h": 850
+  },
+  {
+   "type": "image",
+   "src": "media/moon/photo_14.jpg",
+   "w": 998,
+   "h": 665
+  }
+ ]
+}

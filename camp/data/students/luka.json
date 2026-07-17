@@ -1,0 +1,73 @@
+{
+ "slug": "luka",
+ "name": "Luka",
+ "displayName": "Luka",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/luka/extra_clip_01.mp4",
+  "poster": "media/luka/hero_poster.jpg"
+ },
+ "remarks": {},
+ "interviews": [],
+ "stats": {
+  "en": [
+   {
+    "value": "0",
+    "label": "Photographs"
+   },
+   {
+    "value": "4",
+    "label": "Film moments"
+   },
+   {
+    "value": "1",
+    "label": "Unforgettable summer"
+   }
+  ],
+  "vi": [
+   {
+    "value": "0",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "4",
+    "label": "Thước phim"
+   },
+   {
+    "value": "1",
+    "label": "Mùa hè đáng nhớ"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "video",
+   "src": "media/luka/extra_clip_01.mp4",
+   "poster": "media/luka/extra_clip_01.jpg",
+   "landscape": false
+  },
+  {
+   "type": "video",
+   "src": "media/luka/extra_clip_02.mp4",
+   "poster": "media/luka/extra_clip_02.jpg",
+   "landscape": false
+  },
+  {
+   "type": "video",
+   "src": "media/luka/extra_clip_03.mp4",
+   "poster": "media/luka/extra_clip_03.jpg",
+   "landscape": true
+  },
+  {
+   "type": "video",
+   "src": "media/luka/extra_clip_04.mp4",
+   "poster": "media/luka/extra_clip_04.jpg",
+   "landscape": false
+  }
+ ]
+}

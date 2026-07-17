@@ -1,0 +1,213 @@
+{
+ "slug": "kuromi",
+ "name": "Kuromi",
+ "displayName": "Kuromi",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/kuromi/clip_01.mp4",
+  "poster": "media/kuromi/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "Grounded, generous, and the glue of every team she joins.",
+   "narrative": [
+    "Few qualities serve a learner better than being genuinely down to earth, and she has it in abundance. Warm and super friendly, she moves through the camp making the people around her comfortable — and teams around her work.",
+    "She is a natural team player: reliable in group projects, generous with her attention, and easy for every classmate to work with. It is the kind of steady, social intelligence that turns groups of students into actual teams."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Open-minded",
+     "title": "Easy with everyone",
+     "body": "Her friendliness is not selective — she works comfortably with every camper, whatever the grouping."
+    },
+    {
+     "attribute": "Collaborator",
+     "title": "A team player by instinct",
+     "body": "Group work runs smoother with her in it; she contributes, shares, and keeps the team moving."
+    },
+    {
+     "attribute": "Balanced",
+     "title": "Down to earth",
+     "body": "She brings a grounded, unpretentious presence that steadies the students around her."
+    }
+   ],
+   "nextSteps": [
+    "We will keep giving her group roles with gradually growing responsibility, letting her natural warmth mature into confident collaborative leadership."
+   ]
+  },
+  "vi": {
+   "headline": "Chân thành, rộng lượng — chất keo gắn kết của mọi đội nhóm.",
+   "narrative": [
+    "Ít phẩm chất nào giúp người học nhiều hơn sự chân thành, giản dị — và con có điều đó dồi dào. Ấm áp và cực kỳ thân thiện, con đi qua trại hè khiến mọi người xung quanh thoải mái — và khiến các đội nhóm quanh mình vận hành trơn tru.",
+    "Con là một đồng đội bẩm sinh: đáng tin cậy trong dự án nhóm, rộng lượng với sự quan tâm của mình, và bạn nào cũng dễ dàng làm việc cùng. Đó chính là trí thông minh xã hội bền bỉ biến những nhóm học sinh thành những đội thực thụ."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người cởi mở",
+     "title": "Hòa hợp với tất cả",
+     "body": "Sự thân thiện của con không chọn lọc — con làm việc thoải mái với mọi trại sinh, dù được xếp nhóm thế nào."
+    },
+    {
+     "attribute": "Người cộng tác",
+     "title": "Đồng đội bẩm sinh",
+     "body": "Có con trong nhóm, công việc trôi chảy hơn; con đóng góp, sẻ chia và giữ nhịp cho cả đội."
+    },
+    {
+     "attribute": "Người cân bằng",
+     "title": "Giản dị, chân thành",
+     "body": "Con mang đến sự hiện diện mộc mạc, không phô trương, giúp các bạn xung quanh vững vàng hơn."
+    }
+   ],
+   "nextSteps": [
+    "Thầy cô sẽ tiếp tục trao cho con những vai trò nhóm với trách nhiệm lớn dần, để sự ấm áp tự nhiên trưởng thành thành năng lực dẫn dắt tập thể đầy tự tin."
+   ]
+  }
+ },
+ "interviews": [],
+ "stats": {
+  "en": [
+   {
+    "value": "40",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "43",
+    "label": "Photographs"
+   },
+   {
+    "value": "34",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "40",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "43",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "34",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/kuromi/photo_01.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/kuromi/photo_02.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "video",
+   "src": "media/kuromi/clip_03.mp4",
+   "poster": "media/kuromi/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/kuromi/clip_02.mp4",
+   "poster": "media/kuromi/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/kuromi/clip_01.mp4",
+   "poster": "media/kuromi/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/kuromi/photo_03.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/kuromi/photo_04.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/kuromi/photo_05.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/kuromi/photo_06.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/kuromi/photo_07.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/kuromi/photo_08.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/kuromi/photo_09.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/kuromi/photo_10.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/kuromi/photo_11.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/kuromi/photo_12.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/kuromi/photo_13.jpg",
+   "w": 1232,
+   "h": 821
+  },
+  {
+   "type": "image",
+   "src": "media/kuromi/photo_14.jpg",
+   "w": 1591,
+   "h": 1061
+  }
+ ]
+}

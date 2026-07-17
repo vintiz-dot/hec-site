@@ -1,0 +1,218 @@
+{
+ "slug": "robot",
+ "name": "Robot",
+ "displayName": "Robot",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/robot/clip_01.mp4",
+  "poster": "media/robot/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "Facts stay with Robot — and return with startling clarity.",
+   "narrative": [
+    "Robot has one of the brightest minds we have ever taught. He remembers and articulates facts with a level of clarity that is genuinely rare for a child his age — ideas come back organised, precise, and ready to use.",
+    "He is, in every sense, a star of this camp. Our ambition for him is simple: to keep placing ever-larger questions in front of that remarkable mind, so that his gift for knowing becomes a gift for inquiring."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Knowledgeable",
+     "title": "Total recall",
+     "body": "Robot retains facts effortlessly and accurately — a foundation most learners spend years building."
+    },
+    {
+     "attribute": "Communicator",
+     "title": "Clarity beyond his years",
+     "body": "He doesn't just remember; he articulates what he knows with rare organisation and precision."
+    },
+    {
+     "attribute": "Thinker",
+     "title": "A mind that wants more",
+     "body": "His quickness is an invitation: give him a bigger question and watch him rise to it."
+    }
+   ],
+   "nextSteps": [
+    "The next stage for Robot is moving from knowing to investigating: research-style projects, open questions without single answers, and chances to teach others what he discovers."
+   ]
+  },
+  "vi": {
+   "headline": "Kiến thức ở lại với Robot — và trở lại với độ sắc nét đáng kinh ngạc.",
+   "narrative": [
+    "Robot sở hữu một trong những trí tuệ sáng nhất mà thầy cô từng dạy. Con ghi nhớ và diễn đạt lại kiến thức với độ rõ ràng thực sự hiếm gặp ở lứa tuổi này — các ý tưởng trở lại có tổ chức, chính xác và sẵn sàng để dùng.",
+    "Con là một ngôi sao đúng nghĩa của trại hè. Khát vọng của thầy cô dành cho con rất giản dị: tiếp tục đặt trước trí tuệ đáng nể ấy những câu hỏi ngày càng lớn, để năng khiếu ghi nhớ trở thành năng lực tìm tòi."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người hiểu biết",
+     "title": "Ghi nhớ trọn vẹn",
+     "body": "Robot lưu giữ kiến thức nhẹ nhàng và chính xác — nền tảng mà hầu hết người học phải mất nhiều năm xây dựng."
+    },
+    {
+     "attribute": "Người giao tiếp",
+     "title": "Rõ ràng vượt tuổi",
+     "body": "Con không chỉ nhớ; con diễn đạt điều mình biết với sự mạch lạc và chính xác hiếm có."
+    },
+    {
+     "attribute": "Người tư duy",
+     "title": "Một trí tuệ muốn nhiều hơn",
+     "body": "Sự nhanh nhạy của con là một lời mời: hãy đưa con một câu hỏi lớn hơn và xem con vươn tới."
+    }
+   ],
+   "nextSteps": [
+    "Chặng tiếp theo của Robot là đi từ \"biết\" sang \"tìm tòi\": các dự án kiểu nghiên cứu, những câu hỏi mở không có đáp án duy nhất, và cơ hội dạy lại cho bạn bè điều con khám phá được."
+   ]
+  }
+ },
+ "interviews": [
+  {
+   "youtubeId": "ruqrCPYxxdA",
+   "title": "Robot's Reflection"
+  }
+ ],
+ "stats": {
+  "en": [
+   {
+    "value": "40",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "49",
+    "label": "Photographs"
+   },
+   {
+    "value": "70",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "40",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "49",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "70",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/robot/photo_01.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/robot/photo_02.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "video",
+   "src": "media/robot/clip_03.mp4",
+   "poster": "media/robot/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/robot/clip_02.mp4",
+   "poster": "media/robot/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/robot/clip_01.mp4",
+   "poster": "media/robot/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/robot/photo_03.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/robot/photo_04.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/robot/photo_05.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/robot/photo_06.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/robot/photo_07.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/robot/photo_08.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/robot/photo_09.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/robot/photo_10.jpg",
+   "w": 1281,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/robot/photo_11.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/robot/photo_12.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/robot/photo_13.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/robot/photo_14.jpg",
+   "w": 1280,
+   "h": 1600
+  }
+ ]
+}

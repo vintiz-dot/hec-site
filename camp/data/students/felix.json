@@ -1,0 +1,213 @@
+{
+ "slug": "felix",
+ "name": "Felix",
+ "displayName": "Felix",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/felix/clip_01.mp4",
+  "poster": "media/felix/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "Felix joined mid-session — and belonged by the end of the day.",
+   "narrative": [
+    "When Felix joined the camp mid-session, we privately wondered whether integrating with an established group might be a challenge. He proved us completely wrong. He introduced himself solidly, made friends easily, and settled in as though he had been with us from day one — working comfortably with every camper regardless of age or grouping.",
+    "In his work, Felix is always eager to be the first to complete his tasks, however challenging they are, and he shows the perseverance that genuine excellence is built on. We would love to remain part of his learning journey — we believe there are great things to achieve together."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Open-minded",
+     "title": "Instant belonging",
+     "body": "Felix walked into an established group mid-session and made it his own within a day — social courage of a high order."
+    },
+    {
+     "attribute": "Perseverant",
+     "title": "Built for the long task",
+     "body": "He pushes through challenging work to the finish, showing the stamina that separates excellence from mere ability."
+    },
+    {
+     "attribute": "Self-starter",
+     "title": "First out of the blocks",
+     "body": "He races to be first to complete each task — driven by an engine that is entirely his own."
+    }
+   ],
+   "nextSteps": [
+    "Felix has the social ease and perseverance to take on bigger roles: team leadership, longer projects, and challenges that reward his staying power. We hope this is the beginning of a long learning partnership."
+   ]
+  },
+  "vi": {
+   "headline": "Felix vào trại giữa khóa — và thuộc về nơi này ngay cuối ngày đầu tiên.",
+   "narrative": [
+    "Khi Felix tham gia giữa khóa, thầy cô từng thầm lo việc hòa nhập với một tập thể đã quen nhau có thể là thử thách. Con đã chứng minh điều ngược lại một cách trọn vẹn: con tự giới thiệu mình đầy vững vàng, kết bạn dễ dàng, và hòa vào nhịp trại như thể đã ở đây từ ngày đầu — làm việc thoải mái với mọi trại sinh, không phân biệt tuổi hay nhóm.",
+    "Trong học tập, Felix luôn háo hức là người đầu tiên hoàn thành nhiệm vụ, dù khó đến đâu, và con cho thấy sự bền bỉ mà mọi sự xuất sắc đích thực đều được xây từ đó. Thầy cô mong được tiếp tục là một phần trong hành trình học tập của con — chúng ta còn nhiều điều lớn lao để cùng đạt được."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người cởi mở",
+     "title": "Thuộc về ngay lập tức",
+     "body": "Felix bước vào một tập thể đã gắn kết giữa khóa và biến nơi ấy thành của mình chỉ trong một ngày — bản lĩnh xã hội hạng cao."
+    },
+    {
+     "attribute": "Người bền bỉ",
+     "title": "Sinh ra cho chặng dài",
+     "body": "Con đi xuyên qua những nhiệm vụ khó đến tận vạch đích, cho thấy sức bền phân biệt sự xuất sắc với năng khiếu đơn thuần."
+    },
+    {
+     "attribute": "Người chủ động",
+     "title": "Xuất phát đầu tiên",
+     "body": "Con luôn muốn là người đầu tiên hoàn thành mỗi nhiệm vụ — với một động cơ hoàn toàn của riêng mình."
+    }
+   ],
+   "nextSteps": [
+    "Felix có sự hoạt bát xã hội và sức bền để nhận những vai trò lớn hơn: dẫn dắt nhóm, dự án dài hơi, và các thử thách xứng với sức bền của con. Thầy cô mong đây là khởi đầu của một hành trình học tập dài lâu cùng nhau."
+   ]
+  }
+ },
+ "interviews": [],
+ "stats": {
+  "en": [
+   {
+    "value": "17",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "153+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "23",
+    "label": "Photographs"
+   },
+   {
+    "value": "37",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "17",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "153+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "23",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "37",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/felix/photo_01.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/felix/photo_02.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "video",
+   "src": "media/felix/clip_03.mp4",
+   "poster": "media/felix/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/felix/clip_02.mp4",
+   "poster": "media/felix/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/felix/clip_01.mp4",
+   "poster": "media/felix/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/felix/photo_03.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/felix/photo_04.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/felix/photo_05.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/felix/photo_06.jpg",
+   "w": 1279,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/felix/photo_07.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/felix/photo_08.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/felix/photo_09.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/felix/photo_10.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/felix/photo_11.jpg",
+   "w": 1388,
+   "h": 925
+  },
+  {
+   "type": "image",
+   "src": "media/felix/photo_12.jpg",
+   "w": 1276,
+   "h": 850
+  },
+  {
+   "type": "image",
+   "src": "media/felix/photo_13.jpg",
+   "w": 1240,
+   "h": 826
+  },
+  {
+   "type": "image",
+   "src": "media/felix/photo_14.jpg",
+   "w": 600,
+   "h": 400
+  }
+ ]
+}

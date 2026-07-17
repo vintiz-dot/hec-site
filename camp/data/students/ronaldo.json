@@ -1,0 +1,218 @@
+{
+ "slug": "ronaldo",
+ "name": "Ronaldo",
+ "displayName": "Ronaldo",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/ronaldo/clip_03.mp4",
+  "poster": "media/ronaldo/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "The most improved camper of the summer — immersion unlocked him.",
+   "narrative": [
+    "Ronaldo is, without hesitation, the most improved student in this summer camp. Immersing him in an environment that asked him to communicate mainly in English unlocked something remarkable: he now puts sentences together and clearly articulates what he wants — in English, unprompted.",
+    "He is very hard-working, writes a great deal, and understands considerably more than his initial assessment suggested. His progress has been a personal joy to witness, not least because he is such a charming student to teach."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Communicator",
+     "title": "Finding his English voice",
+     "body": "From hesitation to clear articulation in one camp: Ronaldo now expresses his own wants and ideas in full English sentences."
+    },
+    {
+     "attribute": "Hard-working",
+     "title": "Volume builds fluency",
+     "body": "He writes prolifically, and that steady output is exactly what is driving his acceleration."
+    },
+    {
+     "attribute": "Open-minded",
+     "title": "Embraced the deep end",
+     "body": "Dropped into an English-first environment, he adapted rather than retreated — the bravest thing a young learner can do."
+    }
+   ],
+   "nextSteps": [
+    "The formula is working: sustained immersion, plenty of writing, and low-pressure speaking opportunities. We will keep extending his sentence range and celebrate the confidence that is visibly compounding."
+   ]
+  },
+  "vi": {
+   "headline": "Trại sinh tiến bộ nhất mùa hè — môi trường hòa nhập đã \"mở khóa\" con.",
+   "narrative": [
+    "Ronaldo, không chút do dự, là học sinh tiến bộ nhất của trại hè này. Việc hòa mình vào một môi trường đòi hỏi giao tiếp chủ yếu bằng tiếng Anh đã mở khóa một điều kỳ diệu: giờ đây con tự ghép câu và diễn đạt rõ ràng điều mình muốn — bằng tiếng Anh, không cần ai nhắc.",
+    "Con rất chăm chỉ, viết rất nhiều, và hiểu nhiều hơn đáng kể so với đánh giá ban đầu. Chứng kiến sự tiến bộ của con là một niềm vui cá nhân của thầy — nhất là khi con lại là một học sinh duyên dáng và đáng yêu đến vậy."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người giao tiếp",
+     "title": "Tìm thấy giọng nói tiếng Anh của mình",
+     "body": "Từ ngập ngừng đến diễn đạt rõ ràng chỉ trong một mùa trại: Ronaldo giờ nói được điều mình muốn bằng những câu tiếng Anh hoàn chỉnh."
+    },
+    {
+     "attribute": "Người chăm chỉ",
+     "title": "Viết nhiều, tiến nhanh",
+     "body": "Con viết rất đều đặn, và chính khối lượng bền bỉ ấy đang tăng tốc sự tiến bộ của con."
+    },
+    {
+     "attribute": "Người cởi mở",
+     "title": "Dám bơi ra chỗ sâu",
+     "body": "Được đặt vào môi trường tiếng Anh toàn phần, con thích nghi thay vì thu mình — điều dũng cảm nhất một người học nhỏ tuổi có thể làm."
+    }
+   ],
+   "nextSteps": [
+    "Công thức đang hiệu quả: duy trì môi trường hòa nhập, viết thật nhiều, và những cơ hội nói không áp lực. Thầy cô sẽ tiếp tục mở rộng vốn câu của con và cùng con vun đắp sự tự tin đang lớn lên từng ngày."
+   ]
+  }
+ },
+ "interviews": [
+  {
+   "youtubeId": "G3ZjYQe7gEw",
+   "title": "Ronaldo's Reflection"
+  }
+ ],
+ "stats": {
+  "en": [
+   {
+    "value": "40",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "80",
+    "label": "Photographs"
+   },
+   {
+    "value": "80",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "40",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "80",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "80",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/ronaldo/photo_01.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/photo_02.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "video",
+   "src": "media/ronaldo/clip_03.mp4",
+   "poster": "media/ronaldo/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/ronaldo/clip_02.mp4",
+   "poster": "media/ronaldo/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/ronaldo/clip_01.mp4",
+   "poster": "media/ronaldo/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/photo_03.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/photo_04.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/photo_05.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/photo_06.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/photo_07.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/photo_08.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/photo_09.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/photo_10.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/photo_11.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/photo_12.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/photo_13.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/ronaldo/photo_14.jpg",
+   "w": 1600,
+   "h": 1067
+  }
+ ]
+}

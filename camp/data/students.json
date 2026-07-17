@@ -1,0 +1,122 @@
+{
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026"
+ },
+ "students": [
+  {
+   "slug": "bon",
+   "name": "Bon",
+   "class": "",
+   "thumb": "media/bon/hero.jpg"
+  },
+  {
+   "slug": "brian",
+   "name": "Brian",
+   "class": "",
+   "thumb": "media/brian/hero.jpg"
+  },
+  {
+   "slug": "chloe",
+   "name": "Chloe",
+   "class": "",
+   "thumb": "media/chloe/hero.jpg"
+  },
+  {
+   "slug": "david",
+   "name": "David",
+   "class": "",
+   "thumb": "media/david/hero.jpg"
+  },
+  {
+   "slug": "elina",
+   "name": "Elina",
+   "class": "",
+   "thumb": "media/elina/hero.jpg"
+  },
+  {
+   "slug": "emma",
+   "name": "Emma",
+   "class": "",
+   "thumb": "media/emma/hero.jpg"
+  },
+  {
+   "slug": "felix",
+   "name": "Felix",
+   "class": "",
+   "thumb": "media/felix/hero.jpg"
+  },
+  {
+   "slug": "gia-minh",
+   "name": "Gia Minh",
+   "class": "",
+   "thumb": "media/gia-minh/hero.jpg"
+  },
+  {
+   "slug": "jessica",
+   "name": "Jessica",
+   "class": "",
+   "thumb": "media/jessica/hero.jpg"
+  },
+  {
+   "slug": "kuromi",
+   "name": "Kuromi",
+   "class": "",
+   "thumb": "media/kuromi/hero.jpg"
+  },
+  {
+   "slug": "moon",
+   "name": "Moon",
+   "class": "",
+   "thumb": "media/moon/hero.jpg"
+  },
+  {
+   "slug": "panda",
+   "name": "Panda",
+   "class": "",
+   "thumb": "media/panda/hero.jpg"
+  },
+  {
+   "slug": "pizza",
+   "name": "Pizza",
+   "class": "",
+   "thumb": "media/pizza/hero.jpg"
+  },
+  {
+   "slug": "rainbow",
+   "name": "Rainbow",
+   "class": "",
+   "thumb": "media/rainbow/hero.jpg"
+  },
+  {
+   "slug": "robot",
+   "name": "Robot",
+   "class": "",
+   "thumb": "media/robot/hero.jpg"
+  },
+  {
+   "slug": "ronaldo",
+   "name": "Ronaldo",
+   "class": "",
+   "thumb": "media/ronaldo/hero.jpg"
+  },
+  {
+   "slug": "sam",
+   "name": "Sam",
+   "class": "",
+   "thumb": "media/sam/photo_01.jpg"
+  },
+  {
+   "slug": "sammy",
+   "name": "Sammy",
+   "class": "",
+   "thumb": "media/sammy/photo_01.jpg"
+  },
+  {
+   "slug": "william",
+   "name": "William",
+   "class": "",
+   "thumb": "media/william/hero.jpg"
+  }
+ ]
+}

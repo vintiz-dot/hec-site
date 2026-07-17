@@ -1,0 +1,218 @@
+{
+ "slug": "pizza",
+ "name": "Pizza",
+ "displayName": "Pizza",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/pizza/clip_01.mp4",
+  "poster": "media/pizza/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "\"Teacher, can I build this one?\" — Pizza and the art of the impossible.",
+   "narrative": [
+    "Pizza is a champion. As an engineer turned educator, I confess to being envious of the dedication, patience, and dexterity with which he completes his tasks. If ambitious projects had a personification, it would be Pizza: no matter how difficult, how challenging, or how outright absurd a build appears, he is always the first to ask, 'Teacher, can I build this one?'",
+    "To him, impossible is nothing. Being his teacher this camp was a genuinely humbling experience, and we owe him thanks for the spirit he brought to every session. Our one hope for Pizza: stay exactly this curious and this inquisitive."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Builder",
+     "title": "An engineer's hands",
+     "body": "Dedication, patience, and dexterity — Pizza's builds are completed with a discipline that impressed even an engineer."
+    },
+    {
+     "attribute": "Ambitious inquirer",
+     "title": "First to volunteer for the impossible",
+     "body": "The harder the project, the faster his hand goes up. Ambition like this is the raw material of innovation."
+    },
+    {
+     "attribute": "Determined",
+     "title": "Impossible is nothing",
+     "body": "He finishes what he starts, however daunting — a champion's habit already formed."
+    }
+   ],
+   "nextSteps": [
+    "We will keep feeding Pizza's ambition with progressively harder builds and introduce an engineer's notebook, so the projects he attempts become discoveries he can document, explain, and teach."
+   ]
+  },
+  "vi": {
+   "headline": "\"Thầy ơi, con làm cái này được không?\" — Pizza và nghệ thuật của điều không thể.",
+   "narrative": [
+    "Pizza là một nhà vô địch. Là một kỹ sư chuyển sang làm giáo dục, thầy thú thật có phần \"ghen tị\" với sự tận tâm, kiên nhẫn và khéo léo mà con dùng để hoàn thành các nhiệm vụ. Nếu những dự án tham vọng có một hiện thân, đó chính là Pizza: dù khó đến đâu, thách thức đến đâu, hay thậm chí \"điên rồ\" đến đâu, con luôn là người đầu tiên hỏi: \"Thầy ơi, con làm cái này được không?\"",
+    "Với con, không gì là không thể. Được làm thầy của con trong trại hè này là một trải nghiệm thực sự khiêm nhường, và thầy cô biết ơn tinh thần con mang đến từng buổi học. Một mong ước duy nhất dành cho Pizza: hãy giữ nguyên sự tò mò và ham tìm tòi này."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người kiến tạo",
+     "title": "Đôi tay của một kỹ sư",
+     "body": "Tận tâm, kiên nhẫn, khéo léo — các sản phẩm của Pizza được hoàn thành với một kỷ luật khiến cả một kỹ sư phải ấn tượng."
+    },
+    {
+     "attribute": "Người tìm tòi tham vọng",
+     "title": "Xung phong trước điều không thể",
+     "body": "Dự án càng khó, tay con giơ lên càng nhanh. Tham vọng như thế là nguyên liệu thô của sự sáng tạo."
+    },
+    {
+     "attribute": "Người quyết tâm",
+     "title": "Không gì là không thể",
+     "body": "Con hoàn thành điều mình bắt đầu, dù đồ sộ đến đâu — thói quen của một nhà vô địch đã thành hình."
+    }
+   ],
+   "nextSteps": [
+    "Thầy cô sẽ tiếp tục nuôi tham vọng của Pizza bằng những dự án khó dần, và giới thiệu cuốn \"sổ tay kỹ sư\" — để những công trình con dám thử trở thành những khám phá con có thể ghi lại, giải thích và dạy lại cho bạn bè."
+   ]
+  }
+ },
+ "interviews": [
+  {
+   "youtubeId": "HvydZGzI32k",
+   "title": "Pizza's Reflection"
+  }
+ ],
+ "stats": {
+  "en": [
+   {
+    "value": "40",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "66",
+    "label": "Photographs"
+   },
+   {
+    "value": "86",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "40",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "66",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "86",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/pizza/photo_01.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/pizza/photo_02.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "video",
+   "src": "media/pizza/clip_03.mp4",
+   "poster": "media/pizza/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/pizza/clip_02.mp4",
+   "poster": "media/pizza/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/pizza/clip_01.mp4",
+   "poster": "media/pizza/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/pizza/photo_03.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/pizza/photo_04.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/pizza/photo_05.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/pizza/photo_06.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/pizza/photo_07.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/pizza/photo_08.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/pizza/photo_09.jpg",
+   "w": 1281,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/pizza/photo_10.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/pizza/photo_11.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/pizza/photo_12.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/pizza/photo_13.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/pizza/photo_14.jpg",
+   "w": 1600,
+   "h": 1067
+  }
+ ]
+}

@@ -1,0 +1,132 @@
+{
+ "slug": "sam",
+ "name": "Sam",
+ "displayName": "Sam",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "image",
+  "src": "media/sam/photo_01.jpg",
+  "w": 1280,
+  "h": 1600
+ },
+ "remarks": {},
+ "interviews": [
+  {
+   "youtubeId": "4PaAuyh4t9k",
+   "title": "Sam's Reflection"
+  }
+ ],
+ "stats": {
+  "en": [
+   {
+    "value": "7",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "63+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "9",
+    "label": "Photographs"
+   },
+   {
+    "value": "29",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "7",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "63+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "9",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "29",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/sam/photo_01.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/sam/photo_02.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "video",
+   "src": "media/sam/clip_03.mp4",
+   "poster": "media/sam/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/sam/clip_02.mp4",
+   "poster": "media/sam/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/sam/clip_01.mp4",
+   "poster": "media/sam/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/sam/photo_03.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/sam/photo_04.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/sam/photo_05.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/sam/photo_06.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/sam/photo_07.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/sam/photo_08.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/sam/photo_09.jpg",
+   "w": 1123,
+   "h": 749
+  }
+ ]
+}

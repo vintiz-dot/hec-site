@@ -1,0 +1,84 @@
+{
+ "slug": "elsa",
+ "name": "Elsa",
+ "displayName": "Elsa",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/elsa/extra_clip_02.mp4",
+  "poster": "media/elsa/hero_poster.jpg"
+ },
+ "remarks": {},
+ "interviews": [
+  {
+   "youtubeId": "FLwcYgen6ro",
+   "title": "Elsa's Video"
+  }
+ ],
+ "stats": {
+  "en": [
+   {
+    "value": "2",
+    "label": "Photographs"
+   },
+   {
+    "value": "3",
+    "label": "Film moments"
+   },
+   {
+    "value": "1",
+    "label": "Unforgettable summer"
+   }
+  ],
+  "vi": [
+   {
+    "value": "2",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "3",
+    "label": "Thước phim"
+   },
+   {
+    "value": "1",
+    "label": "Mùa hè đáng nhớ"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "video",
+   "src": "media/elsa/extra_clip_01.mp4",
+   "poster": "media/elsa/extra_clip_01.jpg",
+   "landscape": true
+  },
+  {
+   "type": "video",
+   "src": "media/elsa/extra_clip_02.mp4",
+   "poster": "media/elsa/extra_clip_02.jpg",
+   "landscape": false
+  },
+  {
+   "type": "video",
+   "src": "media/elsa/extra_clip_03.mp4",
+   "poster": "media/elsa/extra_clip_03.jpg",
+   "landscape": true
+  },
+  {
+   "type": "image",
+   "src": "media/elsa/extra_photo_01.jpg",
+   "w": 1600,
+   "h": 1200
+  },
+  {
+   "type": "image",
+   "src": "media/elsa/extra_photo_02.jpg",
+   "w": 1600,
+   "h": 1200
+  }
+ ]
+}

@@ -1,0 +1,190 @@
+{
+ "slug": "sammy",
+ "name": "Sammy",
+ "displayName": "Sammy",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "image",
+  "src": "media/sammy/photo_01.jpg",
+  "w": 1600,
+  "h": 1067
+ },
+ "remarks": {
+  "en": {
+   "headline": "The teammate every team would cherish.",
+   "narrative": [
+    "Sammy has been an outstanding team player all camp long — often quietly setting aside her own comfort for the happiness of her team. That kind of generosity cannot be taught; it can only be recognised, and we want her family to know how clearly we saw it.",
+    "Behind that warmth sits real capability. Sammy is highly self-motivated and remarkably independent, needing little or no assistance to get her work done. Her emotional intelligence shapes every group she joins, and she has been an incredible joy to work with."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Caring",
+     "title": "The team before herself",
+     "body": "Sammy repeatedly sacrificed her own comfort for her teammates' happiness — the signature of a truly generous collaborator."
+    },
+    {
+     "attribute": "Self-managed",
+     "title": "Independent by default",
+     "body": "She organises her own work and sees it through with little or no assistance, a skill many students take years longer to develop."
+    },
+    {
+     "attribute": "Emotionally intelligent",
+     "title": "Reading the room",
+     "body": "Sammy senses what her group needs — encouragement, patience, or a helping hand — and provides it without being asked."
+    }
+   ],
+   "nextSteps": [
+    "Sammy's empathy and independence make her a natural candidate for leadership roles. We will look for opportunities where caring for a team and directing a team become the same job — that is where she will flourish next."
+   ]
+  },
+  "vi": {
+   "headline": "Người đồng đội mà mọi đội nhóm đều trân quý.",
+   "narrative": [
+    "Suốt trại hè, Sammy là một thành viên nhóm xuất sắc — thường lặng lẽ gác lại sự thoải mái của bản thân vì niềm vui của cả đội. Sự rộng lượng ấy không thể dạy được; chỉ có thể nhận ra và trân trọng, và thầy cô muốn gia đình biết rằng chúng tôi đã nhìn thấy điều đó rất rõ.",
+    "Đằng sau sự ấm áp là năng lực thực sự. Sammy có động lực tự thân rất cao và cực kỳ tự lập, gần như không cần hỗ trợ để hoàn thành công việc. Trí tuệ cảm xúc của con lan tỏa trong mọi nhóm con tham gia, và được làm việc cùng con là một niềm vui lớn."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người biết quan tâm",
+     "title": "Đội nhóm trước bản thân",
+     "body": "Sammy nhiều lần nhường sự thoải mái của mình vì niềm vui của đồng đội — dấu ấn của một người cộng tác thực sự rộng lượng."
+    },
+    {
+     "attribute": "Người tự chủ",
+     "title": "Tự lập là bản năng",
+     "body": "Con tự sắp xếp công việc và hoàn thành trọn vẹn mà gần như không cần hỗ trợ — kỹ năng mà nhiều học sinh phải mất thêm nhiều năm mới có."
+    },
+    {
+     "attribute": "Trí tuệ cảm xúc",
+     "title": "Đọc được không khí của nhóm",
+     "body": "Sammy cảm nhận được nhóm mình đang cần gì — một lời động viên, sự kiên nhẫn hay một bàn tay giúp đỡ — và trao đi mà không cần ai nhờ."
+    }
+   ],
+   "nextSteps": [
+    "Sự thấu cảm và tự lập khiến Sammy là ứng viên tự nhiên cho vai trò dẫn dắt. Thầy cô sẽ tìm những cơ hội nơi việc chăm lo cho đội và điều hành đội trở thành một — đó là nơi con sẽ tỏa sáng tiếp theo."
+   ]
+  }
+ },
+ "interviews": [],
+ "stats": {
+  "en": [
+   {
+    "value": "40",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "21",
+    "label": "Photographs"
+   },
+   {
+    "value": "12",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "40",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "21",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "12",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/sammy/photo_01.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/sammy/photo_02.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "video",
+   "src": "media/sammy/clip_03.mp4",
+   "poster": "media/sammy/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/sammy/clip_02.mp4",
+   "poster": "media/sammy/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/sammy/clip_01.mp4",
+   "poster": "media/sammy/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/sammy/photo_03.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/sammy/photo_04.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/sammy/photo_05.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/sammy/photo_06.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/sammy/photo_07.jpg",
+   "w": 1599,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/sammy/photo_08.jpg",
+   "w": 858,
+   "h": 572
+  },
+  {
+   "type": "image",
+   "src": "media/sammy/photo_09.jpg",
+   "w": 678,
+   "h": 452
+  },
+  {
+   "type": "image",
+   "src": "media/sammy/photo_10.jpg",
+   "w": 577,
+   "h": 385
+  }
+ ]
+}

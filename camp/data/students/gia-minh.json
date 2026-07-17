@@ -1,0 +1,195 @@
+{
+ "slug": "gia-minh",
+ "name": "Gia Minh",
+ "displayName": "Gia Minh",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/gia-minh/clip_02.mp4",
+  "poster": "media/gia-minh/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "Everything Gia Minh builds carries a craftsman's signature.",
+   "narrative": [
+    "Gia Minh is very good with his hands — but that description undersells him. He is a perfectionist in the finest sense, and he brings that standard with him into class every day: everything he touches and everything he builds carries the signature of someone who cares about getting it exactly right.",
+    "He pairs that craftsmanship with deep dedication and a genuinely lovely presence in the classroom. It has been a pleasure to work with him, and to watch classmates begin to measure their own work against the bar he quietly sets."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Craftsman",
+     "title": "Precision by choice",
+     "body": "Gia Minh's builds are finished to a standard most students don't yet know exists — detail, alignment, care."
+    },
+    {
+     "attribute": "Committed",
+     "title": "Dedication that shows",
+     "body": "He stays with his work well past 'good enough', and the results speak for themselves."
+    },
+    {
+     "attribute": "Principled",
+     "title": "A personal standard",
+     "body": "His perfectionism is really a value system: work worth doing is worth doing properly."
+    }
+   ],
+   "nextSteps": [
+    "Our next step with Gia Minh is helping him aim his perfectionism: deciding which details deserve his full standard and when a work is genuinely finished. Timed challenges and iterative 'version one, version two' projects will let his craftsmanship grow without slowing his ideas down."
+   ]
+  },
+  "vi": {
+   "headline": "Mọi thứ Gia Minh làm ra đều mang chữ ký của một người thợ tài hoa.",
+   "narrative": [
+    "Gia Minh rất khéo tay — nhưng nói vậy vẫn chưa đủ về con. Con là một người cầu toàn theo nghĩa đẹp nhất, và mang chuẩn mực ấy vào lớp mỗi ngày: mọi thứ con chạm vào, mọi thứ con lắp ráp đều mang dấu ấn của một người muốn làm đúng đến từng chi tiết.",
+    "Đi cùng sự tài hoa ấy là sự tận tâm sâu sắc và một sự hiện diện rất đáng yêu trong lớp học. Được làm việc cùng con là một niềm vui, và thật đẹp khi thấy các bạn bắt đầu lấy chuẩn mực thầm lặng của con làm thước đo cho chính mình."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người thợ tài hoa",
+     "title": "Chính xác là lựa chọn",
+     "body": "Sản phẩm của Gia Minh được hoàn thiện ở mức mà nhiều bạn còn chưa biết là có tồn tại — từng chi tiết, từng đường nét, từng sự chăm chút."
+    },
+    {
+     "attribute": "Người tận tâm",
+     "title": "Tận tụy thấy rõ",
+     "body": "Con ở lại với sản phẩm của mình lâu hơn mức \"tạm được\" rất xa, và kết quả tự nói lên điều đó."
+    },
+    {
+     "attribute": "Người có nguyên tắc",
+     "title": "Một chuẩn mực cá nhân",
+     "body": "Sự cầu toàn của con thực chất là một hệ giá trị: việc đáng làm là việc đáng làm cho thật tốt."
+    }
+   ],
+   "nextSteps": [
+    "Bước tiếp theo của thầy cô với Gia Minh là giúp con \"nhắm\" sự cầu toàn đúng chỗ: quyết định chi tiết nào xứng đáng với chuẩn mực cao nhất và khi nào một sản phẩm thực sự hoàn thành. Các thử thách có giới hạn thời gian và dự án kiểu \"phiên bản 1, phiên bản 2\" sẽ giúp sự tài hoa lớn lên mà không kìm bước các ý tưởng."
+   ]
+  }
+ },
+ "interviews": [],
+ "stats": {
+  "en": [
+   {
+    "value": "40",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "22",
+    "label": "Photographs"
+   },
+   {
+    "value": "23",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "40",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "22",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "23",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/gia-minh/photo_01.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/gia-minh/photo_02.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "video",
+   "src": "media/gia-minh/clip_03.mp4",
+   "poster": "media/gia-minh/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/gia-minh/clip_02.mp4",
+   "poster": "media/gia-minh/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/gia-minh/clip_01.mp4",
+   "poster": "media/gia-minh/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/gia-minh/photo_03.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/gia-minh/photo_04.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/gia-minh/photo_05.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/gia-minh/photo_06.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/gia-minh/photo_07.jpg",
+   "w": 936,
+   "h": 1170
+  },
+  {
+   "type": "image",
+   "src": "media/gia-minh/photo_08.jpg",
+   "w": 530,
+   "h": 354
+  },
+  {
+   "type": "image",
+   "src": "media/gia-minh/photo_09.jpg",
+   "w": 897,
+   "h": 598
+  },
+  {
+   "type": "image",
+   "src": "media/gia-minh/photo_10.jpg",
+   "w": 749,
+   "h": 499
+  },
+  {
+   "type": "image",
+   "src": "media/gia-minh/photo_11.jpg",
+   "w": 436,
+   "h": 546
+  }
+ ]
+}

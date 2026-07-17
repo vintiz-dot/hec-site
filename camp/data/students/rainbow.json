@@ -1,0 +1,218 @@
+{
+ "slug": "rainbow",
+ "name": "Rainbow",
+ "displayName": "Rainbow",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/rainbow/clip_01.mp4",
+  "poster": "media/rainbow/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "Young in years — complete in nearly every other way.",
+   "narrative": [
+    "Rainbow is exceptionally bright at maths, very hard-working, and her English is sound beyond her age. But what truly distinguishes her is maturity: though she is young, she carries the composure of a much older student and the self-awareness of a well-rounded, still-growing learner.",
+    "Pairing her with peers polished her abilities further, because Rainbow shines brightest from a leading position — she has been a genuine leader and an inspiration in this camp. Hands-on activities, creative projects, daunting writing tasks: none of them faze her. She is, in the fullest sense, a complete student, and teaching her has been a great joy."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Mathematical mind",
+     "title": "Numbers come naturally",
+     "body": "Rainbow's mathematical brightness stands out even in a strong group, and she works hard enough to deserve her talent."
+    },
+    {
+     "attribute": "Reflective",
+     "title": "Self-awareness beyond her age",
+     "body": "She understands her own strengths and gaps with a maturity that lets her grow deliberately, not accidentally."
+    },
+    {
+     "attribute": "Leader",
+     "title": "Shines from the front",
+     "body": "Given a leading position, she lifts both her own performance and her team's — leadership polished her, and she polished her team."
+    }
+   ],
+   "nextSteps": [
+    "We will keep placing Rainbow in leadership roles and stretching her mathematically, while her writing and creative range continue to broaden. Her ceiling is set by ambition alone."
+   ]
+  },
+  "vi": {
+   "headline": "Nhỏ tuổi nhất về năm sinh — hoàn thiện về gần như mọi mặt khác.",
+   "narrative": [
+    "Rainbow đặc biệt sáng dạ với toán, rất chăm chỉ, và tiếng Anh của con vững vàng hơn tuổi. Nhưng điều thực sự khiến con khác biệt là sự chín chắn: tuy còn nhỏ, con mang phong thái điềm tĩnh của một học sinh lớn hơn nhiều, cùng sự tự nhận thức của một người học toàn diện đang không ngừng lớn lên.",
+    "Việc học cùng các bạn đồng trang lứa càng mài giũa thêm khả năng của con, bởi Rainbow tỏa sáng nhất từ vị trí dẫn dắt — con đã là một thủ lĩnh và nguồn cảm hứng thực thụ của trại hè. Hoạt động thực hành, dự án sáng tạo, bài viết dài hơi: không điều gì làm con nao núng. Con là, theo nghĩa đầy đủ nhất, một học sinh toàn diện, và được dạy con là một niềm vui lớn."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Tư duy toán học",
+     "title": "Những con số đến tự nhiên",
+     "body": "Sự sáng dạ về toán của Rainbow nổi bật ngay cả trong một tập thể giỏi, và con chăm chỉ đủ để xứng đáng với tài năng của mình."
+    },
+    {
+     "attribute": "Người biết suy ngẫm",
+     "title": "Tự nhận thức vượt tuổi",
+     "body": "Con hiểu điểm mạnh và khoảng trống của chính mình với sự chín chắn giúp con lớn lên một cách có chủ đích, không phải ngẫu nhiên."
+    },
+    {
+     "attribute": "Người dẫn dắt",
+     "title": "Tỏa sáng từ phía trước",
+     "body": "Ở vị trí dẫn dắt, con nâng cả phong độ của mình lẫn của đội — vai trò thủ lĩnh mài giũa con, và con mài giũa đội mình."
+    }
+   ],
+   "nextSteps": [
+    "Thầy cô sẽ tiếp tục đặt Rainbow vào các vai trò dẫn dắt và thử thách con về toán, trong khi khả năng viết và sáng tạo tiếp tục mở rộng. Trần cao của con chỉ do khát vọng quyết định."
+   ]
+  }
+ },
+ "interviews": [
+  {
+   "youtubeId": "usTj0gSyug0",
+   "title": "Rainbow's Reflection"
+  }
+ ],
+ "stats": {
+  "en": [
+   {
+    "value": "40",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "42",
+    "label": "Photographs"
+   },
+   {
+    "value": "51",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "40",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "42",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "51",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/rainbow/photo_01.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/rainbow/photo_02.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "video",
+   "src": "media/rainbow/clip_03.mp4",
+   "poster": "media/rainbow/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/rainbow/clip_02.mp4",
+   "poster": "media/rainbow/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/rainbow/clip_01.mp4",
+   "poster": "media/rainbow/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/rainbow/photo_03.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/rainbow/photo_04.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/rainbow/photo_05.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/rainbow/photo_06.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/rainbow/photo_07.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/rainbow/photo_08.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/rainbow/photo_09.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/rainbow/photo_10.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/rainbow/photo_11.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/rainbow/photo_12.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/rainbow/photo_13.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/rainbow/photo_14.jpg",
+   "w": 1600,
+   "h": 1066
+  }
+ ]
+}

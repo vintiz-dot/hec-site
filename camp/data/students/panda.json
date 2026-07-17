@@ -1,0 +1,213 @@
+{
+ "slug": "panda",
+ "name": "Panda",
+ "displayName": "Panda",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/panda/clip_03.mp4",
+  "poster": "media/panda/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "Curiosity first, hands ready, heart open.",
+   "narrative": [
+    "Panda is one of those students every teacher hopes to find on their class list. She has been a source of joy throughout the camp: always curious, never afraid of a challenge, and never daunted by any task we placed in front of her.",
+    "She is exceptionally good with her hands, and her craftsmanship showed across our hands-on projects. Just as striking is her instinct for community — Panda is reliably the first to volunteer when someone needs help, and her friendliness sets the tone for the whole room."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Inquirer",
+     "title": "Curiosity as a habit",
+     "body": "Panda approaches every new topic with genuine questions of her own — the engine of lifelong learning."
+    },
+    {
+     "attribute": "Skilled maker",
+     "title": "Thinking with her hands",
+     "body": "In hands-on projects her dexterity and care stand out; making things is where her understanding becomes visible."
+    },
+    {
+     "attribute": "Caring",
+     "title": "First to offer help",
+     "body": "She is consistently the first to volunteer when a classmate or teacher needs a hand — quiet leadership in its earliest form."
+    }
+   ],
+   "nextSteps": [
+    "We will keep pairing Panda's curiosity with sustained, multi-step projects, so that her love of the new grows into the patience of deep inquiry. Given her instinct to help, peer-mentoring roles would suit her beautifully."
+   ]
+  },
+  "vi": {
+   "headline": "Tò mò đi trước, đôi tay sẵn sàng, tấm lòng rộng mở.",
+   "narrative": [
+    "Panda là kiểu học sinh mà giáo viên nào cũng mong có trong danh sách lớp mình. Con là nguồn niềm vui suốt cả trại hè: luôn tò mò, không bao giờ sợ thử thách, và chưa từng nao núng trước bất kỳ nhiệm vụ nào được giao.",
+    "Con đặc biệt khéo tay, và sự khéo léo ấy thể hiện rõ qua các dự án thực hành. Ấn tượng không kém là bản năng vì tập thể — Panda luôn là người đầu tiên xung phong khi ai đó cần giúp đỡ, và sự thân thiện của con định hình bầu không khí của cả lớp."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người tìm tòi",
+     "title": "Tò mò thành thói quen",
+     "body": "Panda đến với mỗi chủ đề mới bằng những câu hỏi của riêng mình — động cơ của việc học suốt đời."
+    },
+    {
+     "attribute": "Đôi tay khéo léo",
+     "title": "Tư duy bằng đôi tay",
+     "body": "Trong các dự án thực hành, sự khéo léo và tỉ mỉ của con nổi bật; khi làm ra sản phẩm, sự hiểu bài của con trở nên hữu hình."
+    },
+    {
+     "attribute": "Người biết quan tâm",
+     "title": "Đầu tiên xung phong giúp đỡ",
+     "body": "Con luôn là người đầu tiên đưa tay khi bạn bè hay thầy cô cần — hình hài sớm nhất của sự lãnh đạo thầm lặng."
+    }
+   ],
+   "nextSteps": [
+    "Thầy cô sẽ tiếp tục ghép sự tò mò của Panda với những dự án nhiều bước, dài hơi, để tình yêu cái mới lớn lên thành sự kiên nhẫn của việc tìm tòi sâu. Với bản năng thích giúp đỡ, vai trò hướng dẫn bạn học sẽ rất hợp với con."
+   ]
+  }
+ },
+ "interviews": [],
+ "stats": {
+  "en": [
+   {
+    "value": "40",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "55",
+    "label": "Photographs"
+   },
+   {
+    "value": "37",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "40",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "55",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "37",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/panda/photo_01.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/panda/photo_02.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "video",
+   "src": "media/panda/clip_03.mp4",
+   "poster": "media/panda/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/panda/clip_02.mp4",
+   "poster": "media/panda/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/panda/clip_01.mp4",
+   "poster": "media/panda/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/panda/photo_03.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/panda/photo_04.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/panda/photo_05.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/panda/photo_06.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/panda/photo_07.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/panda/photo_08.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/panda/photo_09.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/panda/photo_10.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/panda/photo_11.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/panda/photo_12.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/panda/photo_13.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/panda/photo_14.jpg",
+   "w": 1600,
+   "h": 1066
+  }
+ ]
+}

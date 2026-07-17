@@ -1,0 +1,222 @@
+{
+ "slug": "jessica",
+ "name": "Jessica",
+ "displayName": "Jessica",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/jessica/clip_02.mp4",
+  "poster": "media/jessica/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "Jessica debates, refines, and grows in leaps and bounds.",
+   "narrative": [
+    "Jessica has been an exemplary student who is never fazed by the complexity or difficulty of a challenge — in fact, she loves one. She enjoys debating ideas and ironing out their rough edges, which tells us she isn't just absorbing knowledge; she is testing it, the way strong thinkers do.",
+    "Her development this camp has been remarkable — she has grown in leaps and bounds, at a rate that surprised even us. With a mind this bright and a willingness to work this steady, the sky is not her limit; it is just her starting point."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Communicator",
+     "title": "Sharpened by debate",
+     "body": "Jessica argues ideas openly and constructively, refining her position as she speaks — a skill most adults are still learning."
+    },
+    {
+     "attribute": "Critical thinker",
+     "title": "Ironing out rough edges",
+     "body": "She instinctively probes weak points in an idea and reworks them, turning drafts into finished thinking."
+    },
+    {
+     "attribute": "Growth-minded",
+     "title": "Leaps and bounds",
+     "body": "Her rate of development across the camp was visible week to week — the compounding return of loving a challenge."
+    }
+   ],
+   "nextSteps": [
+    "We will give Jessica structured arenas for her strengths: formal debate, persuasive writing, and projects with positions to defend. The more her ideas meet resistance, the faster she grows."
+   ]
+  },
+  "vi": {
+   "headline": "Jessica tranh luận, mài giũa, và tiến bộ vượt bậc.",
+   "narrative": [
+    "Jessica là một học sinh mẫu mực, không bao giờ nao núng trước độ phức tạp hay khó khăn của thử thách — thật ra, con yêu thử thách. Con thích tranh luận về các ý tưởng và \"mài\" cho chúng hết những góc cạnh thô ráp; điều đó cho thầy cô biết con không chỉ tiếp thu kiến thức mà đang kiểm chứng nó, như cách những người tư duy giỏi vẫn làm.",
+    "Sự phát triển của con trong trại hè này thật đáng kinh ngạc — con tiến bộ vượt bậc, với tốc độ khiến chính thầy cô cũng bất ngờ. Với một trí tuệ sáng như vậy và một sự chăm chỉ bền bỉ như vậy, bầu trời không phải là giới hạn của con; đó chỉ là điểm xuất phát."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người giao tiếp",
+     "title": "Sắc bén nhờ tranh luận",
+     "body": "Jessica tranh luận cởi mở và xây dựng, tự điều chỉnh quan điểm ngay khi nói — kỹ năng mà nhiều người lớn vẫn đang học."
+    },
+    {
+     "attribute": "Tư duy phản biện",
+     "title": "Mài giũa từng góc cạnh",
+     "body": "Con có bản năng tìm ra điểm yếu của một ý tưởng và làm lại cho tốt hơn, biến bản nháp thành tư duy hoàn chỉnh."
+    },
+    {
+     "attribute": "Tư duy phát triển",
+     "title": "Tiến bộ vượt bậc",
+     "body": "Sự phát triển của con nhìn thấy được qua từng tuần — lãi kép của việc yêu thử thách."
+    }
+   ],
+   "nextSteps": [
+    "Thầy cô sẽ trao cho Jessica những \"đấu trường\" xứng tầm: tranh biện chính thức, viết thuyết phục, và các dự án có lập trường để bảo vệ. Ý tưởng của con càng gặp phản biện, con càng lớn nhanh."
+   ]
+  }
+ },
+ "interviews": [
+  {
+   "youtubeId": "WIzYsa_DkNk",
+   "title": "Jessica's Summer Reflection — Part 1"
+  },
+  {
+   "youtubeId": "xkGgr6pTjYA",
+   "title": "Jessica's Reflections — Part 2"
+  }
+ ],
+ "stats": {
+  "en": [
+   {
+    "value": "40",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "34",
+    "label": "Photographs"
+   },
+   {
+    "value": "47",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "40",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "360+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "34",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "47",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/jessica/photo_01.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/jessica/photo_02.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "video",
+   "src": "media/jessica/clip_03.mp4",
+   "poster": "media/jessica/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/jessica/clip_02.mp4",
+   "poster": "media/jessica/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/jessica/clip_01.mp4",
+   "poster": "media/jessica/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/jessica/photo_03.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/jessica/photo_04.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/jessica/photo_05.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/jessica/photo_06.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/jessica/photo_07.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/jessica/photo_08.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/jessica/photo_09.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/jessica/photo_10.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/jessica/photo_11.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/jessica/photo_12.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/jessica/photo_13.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/jessica/photo_14.jpg",
+   "w": 1600,
+   "h": 1067
+  }
+ ]
+}

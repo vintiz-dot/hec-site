@@ -1,0 +1,218 @@
+{
+ "slug": "william",
+ "name": "William",
+ "displayName": "William",
+ "camp": {
+  "name": "HEC Summer Camp 2026",
+  "dates": "June — July 2026",
+  "class": ""
+ },
+ "hero": {
+  "type": "video",
+  "src": "media/william/clip_01.mp4",
+  "poster": "media/william/hero.jpg"
+ },
+ "remarks": {
+  "en": {
+   "headline": "\"Give me a minute — I need to think.\" Maturity we're deeply proud of.",
+   "narrative": [
+    "William has always been a hard-working and compassionate student, and this camp confirmed it once more. He is remarkably emotionally mature, highly focused, and unfazed by challenge — accomplishments that come as no surprise to us, having worked with him for a long time.",
+    "What we treasure most is his self-command. When William feels overwhelmed, he pauses, considers the challenge, and is never afraid to say: 'Teacher, give me a minute. I need to think.' That sentence — humorous, open-minded, compassionate William in miniature — is a level of self-regulation many adults are still working toward. We feel humbled and lucky to work with him, and we are really proud of him."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Reflective",
+     "title": "Pauses on purpose",
+     "body": "William manages overwhelm by stopping to think — self-regulation that most learners take a decade longer to find."
+    },
+    {
+     "attribute": "Caring",
+     "title": "Compassion as character",
+     "body": "His kindness toward classmates is constant, quiet, and entirely genuine."
+    },
+    {
+     "attribute": "Balanced",
+     "title": "Humour and focus together",
+     "body": "He pairs high focus with open-minded humour, making him both a serious student and a joyful presence."
+    }
+   ],
+   "nextSteps": [
+    "William is ready to lead with the same empathy he learns with: peer-support roles, reflective projects, and challenges that reward his patience. We will keep honouring his rhythm — he has shown us it works."
+   ]
+  },
+  "vi": {
+   "headline": "\"Cho con một phút — con cần suy nghĩ.\" Sự chín chắn khiến chúng tôi tự hào.",
+   "narrative": [
+    "William từ trước đến nay luôn là một học sinh chăm chỉ và giàu lòng trắc ẩn, và trại hè này một lần nữa khẳng định điều đó. Con chín chắn về cảm xúc một cách đáng kinh ngạc, tập trung cao độ, và không nao núng trước thử thách — những thành quả không làm thầy cô bất ngờ, bởi chúng tôi đã đồng hành cùng con từ lâu.",
+    "Điều thầy cô trân quý nhất là khả năng tự làm chủ của con. Khi cảm thấy quá tải, William dừng lại, ngẫm về thử thách, và không bao giờ ngại nói: \"Thầy ơi, cho con một phút. Con cần suy nghĩ.\" Câu nói ấy — hài hước, cởi mở, trắc ẩn, đúng chất William thu nhỏ — là mức độ tự điều chỉnh mà nhiều người lớn vẫn đang rèn luyện. Chúng tôi thấy mình may mắn được làm việc cùng con, và thực sự tự hào về con."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người biết suy ngẫm",
+     "title": "Dừng lại có chủ đích",
+     "body": "William xử lý sự quá tải bằng cách dừng lại để suy nghĩ — khả năng tự điều chỉnh mà phần lớn người học phải mất thêm cả thập kỷ mới tìm thấy."
+    },
+    {
+     "attribute": "Người biết quan tâm",
+     "title": "Trắc ẩn là bản chất",
+     "body": "Sự tử tế của con với bạn bè luôn hiện diện, lặng lẽ và hoàn toàn chân thành."
+    },
+    {
+     "attribute": "Người cân bằng",
+     "title": "Hài hước đi cùng tập trung",
+     "body": "Con kết hợp sự tập trung cao với óc hài hước cởi mở — vừa là một học sinh nghiêm túc, vừa là một niềm vui của lớp học."
+    }
+   ],
+   "nextSteps": [
+    "William đã sẵn sàng dẫn dắt bằng chính sự thấu cảm mà con dùng để học: các vai trò hỗ trợ bạn bè, dự án giàu tính suy ngẫm, và những thử thách xứng đáng với sự kiên nhẫn của con. Thầy cô sẽ tiếp tục tôn trọng nhịp điệu riêng ấy — con đã cho chúng tôi thấy nó hiệu quả."
+   ]
+  }
+ },
+ "interviews": [
+  {
+   "youtubeId": "XLKBOWDRHLA",
+   "title": "William's Reflection"
+  }
+ ],
+ "stats": {
+  "en": [
+   {
+    "value": "20",
+    "label": "Days at camp, 8:00–17:00"
+   },
+   {
+    "value": "180+",
+    "label": "Hours of English immersion"
+   },
+   {
+    "value": "39",
+    "label": "Photographs"
+   },
+   {
+    "value": "49",
+    "label": "Film moments"
+   }
+  ],
+  "vi": [
+   {
+    "value": "20",
+    "label": "Ngày ở trại, 8:00–17:00"
+   },
+   {
+    "value": "180+",
+    "label": "Giờ hòa mình cùng tiếng Anh"
+   },
+   {
+    "value": "39",
+    "label": "Bức ảnh"
+   },
+   {
+    "value": "49",
+    "label": "Thước phim"
+   }
+  ]
+ },
+ "gallery": [
+  {
+   "type": "image",
+   "src": "media/william/photo_01.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/william/photo_02.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "video",
+   "src": "media/william/clip_03.mp4",
+   "poster": "media/william/clip_03.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/william/clip_02.mp4",
+   "poster": "media/william/clip_02.jpg"
+  },
+  {
+   "type": "video",
+   "src": "media/william/clip_01.mp4",
+   "poster": "media/william/clip_01.jpg"
+  },
+  {
+   "type": "image",
+   "src": "media/william/photo_03.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/william/photo_04.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/william/photo_05.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/william/photo_06.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/william/photo_07.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/william/photo_08.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/william/photo_09.jpg",
+   "w": 1280,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/william/photo_10.jpg",
+   "w": 1279,
+   "h": 1600
+  },
+  {
+   "type": "image",
+   "src": "media/william/photo_11.jpg",
+   "w": 1600,
+   "h": 1067
+  },
+  {
+   "type": "image",
+   "src": "media/william/photo_12.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/william/photo_13.jpg",
+   "w": 1600,
+   "h": 1066
+  },
+  {
+   "type": "image",
+   "src": "media/william/photo_14.jpg",
+   "w": 1280,
+   "h": 1600
+  }
+ ]
+}
