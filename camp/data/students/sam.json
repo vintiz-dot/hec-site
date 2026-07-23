@@ -9,7 +9,7 @@
  },
  "hero": {
   "type": "image",
-  "src": "media/sam/photo_01.jpg",
+  "src": "media/sam/hero.jpg",
   "w": 1280,
   "h": 1600
  },

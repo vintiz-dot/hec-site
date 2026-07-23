@@ -8,9 +8,10 @@
   "class": ""
  },
  "hero": {
-  "type": "video",
-  "src": "media/elina/clip_01.mp4",
-  "poster": "media/elina/hero.jpg"
+  "type": "image",
+  "src": "media/elina/hero.jpg",
+  "w": 1280,
+  "h": 1600
  },
  "remarks": {
   "en": {
