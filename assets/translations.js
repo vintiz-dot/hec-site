@@ -284,6 +284,12 @@ const HEC_TRANSLATIONS = {
   "method.m4Title":    { en: "Parent Partnership",    vi: "Đồng hành phụ huynh" },
   "method.m4Desc":     { en: "Monthly progress reports, Zalo updates, and open-door classroom visits.",
                          vi: "Báo cáo tiến bộ hằng tháng, cập nhật qua Zalo và mời phụ huynh dự giờ." },
+  "method.proofTitle": { en: "See it for yourself: a Grade 4 debate",
+                         vi: "Xem tận mắt: một buổi tranh biện lớp 4" },
+  "method.proofDesc":  { en: "Not a rehearsed performance — an ordinary lesson. Grade 4 students holding a debate in English: forming a position, listening to the other side, and answering back. This is what \"students talk more than the teacher\" actually looks like.",
+                         vi: "Không phải màn trình diễn tập trước — chỉ là một buổi học bình thường. Học sinh lớp 4 tranh biện bằng tiếng Anh: nêu quan điểm, lắng nghe phía bên kia và phản biện lại. Đây chính là hình hài thật của việc \"học sinh nói nhiều hơn giáo viên\"." },
+  "method.proofCap":   { en: "Grade 4 students debate — recorded in class, unscripted",
+                         vi: "Học sinh lớp 4 tranh biện — quay tại lớp, không kịch bản" },
 
   /* ─── Admissions ──────────────────────────────────────────── */
   "adm.title":         { en: "Simple Enrollment Process",

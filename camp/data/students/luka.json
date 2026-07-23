@@ -12,7 +12,64 @@
   "src": "media/luka/extra_clip_01.mp4",
   "poster": "media/luka/hero_poster.jpg"
  },
- "remarks": {},
+ "remarks": {
+  "en": {
+   "headline": "Luka knows his own strengths — and exactly who to build with.",
+   "narrative": [
+    "Luka is a great student: agile, active, and very good with his hands. Hands-on projects are where he comes fully alive, and he is a strong footballer besides — but what makes him valuable to a team is neither of those things on its own. He is a good friend and a reliable ally, and he knows how to work inside a team rather than merely alongside one.",
+    "Most impressive is his self-knowledge. Luka is clearly aware of what his strengths are and of how he can improve, and he extends that awareness to everyone around him: for each different task he knows exactly which teammate to pair with — the right partner for football, the right partner for writing, the right partner for the makerspace. That is a high EQ working alongside a high IQ, and it is rare at any age."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Skilled maker",
+     "title": "Hands that think",
+     "body": "Luka's dexterity shows in every hands-on project; making things is where his understanding becomes visible."
+    },
+    {
+     "attribute": "Reflective",
+     "title": "Knows his own strengths",
+     "body": "He can name what he is good at and what he wants to improve — the self-knowledge that turns effort into progress."
+    },
+    {
+     "attribute": "Collaborator",
+     "title": "The right partner for the task",
+     "body": "Luka chooses teammates deliberately, matching the person to the task. High EQ and high IQ, working together."
+    }
+   ],
+   "nextSteps": [
+    "We will give Luka roles that use his read of a team: forming groups, assigning tasks, and reflecting afterwards on what worked. Paired with hands-on builds that grow steadily harder, that instinct will mature into genuine leadership."
+   ]
+  },
+  "vi": {
+   "headline": "Luka biết rõ điểm mạnh của mình — và biết chính xác nên cùng ai xây dựng.",
+   "narrative": [
+    "Luka là một học trò giỏi: nhanh nhẹn, năng động và rất khéo tay. Các dự án thực hành là nơi con sống trọn vẹn nhất, và con còn chơi bóng đá rất tốt — nhưng điều làm con quý giá với một đội nhóm lại không nằm ở riêng điều nào trong hai điều ấy. Con là một người bạn tốt và một đồng đội đáng tin, và con biết cách làm việc bên trong một đội chứ không chỉ đứng cạnh đội.",
+    "Ấn tượng nhất là khả năng tự hiểu mình. Luka ý thức rất rõ đâu là điểm mạnh của con và con có thể cải thiện ra sao, và con mở rộng sự tinh ý ấy sang tất cả những người quanh mình: với mỗi nhiệm vụ khác nhau, con biết chính xác nên ghép cặp với ai — đúng người cho bóng đá, đúng người cho bài viết, đúng người cho khu sáng chế. Đó là một EQ cao song hành cùng một IQ cao, và điều đó hiếm gặp ở bất kỳ lứa tuổi nào."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người khéo tay",
+     "title": "Đôi tay biết tư duy",
+     "body": "Sự khéo léo của Luka hiện ra trong mọi dự án thực hành; làm ra sản phẩm là lúc hiểu biết của con trở nên nhìn thấy được."
+    },
+    {
+     "attribute": "Người biết suy ngẫm",
+     "title": "Biết rõ điểm mạnh của mình",
+     "body": "Con gọi tên được điều mình giỏi và điều mình muốn cải thiện — sự tự hiểu biến nỗ lực thành tiến bộ."
+    },
+    {
+     "attribute": "Người cộng tác",
+     "title": "Đúng người cho đúng việc",
+     "body": "Luka chọn đồng đội một cách có chủ đích, ghép đúng người với đúng nhiệm vụ. EQ cao và IQ cao cùng làm việc."
+    }
+   ],
+   "nextSteps": [
+    "Thầy cô sẽ giao cho Luka những vai trò tận dụng khả năng đọc đội nhóm của con: lập nhóm, phân việc, và cùng nhìn lại sau đó xem điều gì đã hiệu quả. Kết hợp với những dự án thực hành khó dần lên, bản năng ấy sẽ trưởng thành thành năng lực dẫn dắt thực sự."
+   ]
+  }
+ },
  "interviews": [],
  "stats": {
   "en": [

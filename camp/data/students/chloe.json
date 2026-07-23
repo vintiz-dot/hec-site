@@ -12,8 +12,70 @@
   "src": "media/chloe/clip_01.mp4",
   "poster": "media/chloe/hero.jpg"
  },
- "remarks": {},
- "interviews": [],
+ "remarks": {
+  "en": {
+   "headline": "Chloe carries every lesson out of the classroom — and brings the world back in.",
+   "narrative": [
+    "Chloe has one of the brightest minds in this camp, and she uses it in the way we most hope to see. She is the personification of cross-cutting concepts: whatever she learns, she carries out of the classroom and into the real world — and just as reliably, she brings her own experience of that world back into the room, where it enriches everyone's thinking.",
+    "She is never scared of using a new word, never scared of trying, never scared of committing. A hands-on challenge — no problem. Difficult maths — no problem. A demanding writing task — no problem. Her progress across this camp has been immense, and we are genuinely humbled to have been her teachers. Chloe is the student you want to teach every day, every time, and everywhere: she makes teaching easy. We were very happy to have you at camp, Chloe."
+   ],
+   "signature": "The HEC Teaching Team",
+   "strengths": [
+    {
+     "attribute": "Connector",
+     "title": "Learning that travels",
+     "body": "Chloe moves ideas across boundaries — what she learns in class she applies outside it, and what she meets outside she brings back in. Transfer of this kind is the truest evidence of understanding."
+    },
+    {
+     "attribute": "Risk-taker",
+     "title": "Never scared to commit",
+     "body": "New words, new tasks, new challenges: Chloe tries, and she commits. She has removed the fear of being wrong from her own learning."
+    },
+    {
+     "attribute": "Versatile",
+     "title": "Strong in every mode",
+     "body": "Hands-on, mathematical, or written — she meets each kind of challenge with the same steady confidence."
+    }
+   ],
+   "nextSteps": [
+    "Chloe is ready for inquiry that crosses subjects on purpose: projects that begin with a real-world question and end in front of a real-world audience. We will keep widening the bridge she already walks between the classroom and the world."
+   ]
+  },
+  "vi": {
+   "headline": "Chloe mang mỗi bài học ra khỏi lớp — và mang cả thế giới trở lại vào lớp.",
+   "narrative": [
+    "Chloe sở hữu một trong những trí tuệ sáng nhất của trại hè này, và con dùng nó theo đúng cách thầy cô mong đợi nhất. Con là hiện thân của những khái niệm xuyên suốt: điều gì học được, con mang ra khỏi lớp và đưa vào đời thực — và cũng đều đặn như thế, con mang chính trải nghiệm đời thực của mình trở lại lớp học, làm giàu thêm tư duy của cả nhóm.",
+    "Con không bao giờ sợ dùng một từ mới, không bao giờ sợ thử, không bao giờ sợ dấn thân đến cùng. Thử thách thực hành — không vấn đề gì. Bài toán khó — không vấn đề gì. Bài viết đòi hỏi — không vấn đề gì. Tiến bộ của con suốt trại hè này là rất lớn, và thầy cô thực sự thấy mình may mắn khi được dạy con. Chloe là kiểu học trò mà người thầy nào cũng muốn được dạy mỗi ngày, mọi lúc, mọi nơi: con làm cho việc dạy học trở nên nhẹ nhàng. Thầy cô đã rất hạnh phúc khi có con ở trại hè này, Chloe."
+   ],
+   "signature": "Đội ngũ giáo viên HEC",
+   "strengths": [
+    {
+     "attribute": "Người kết nối",
+     "title": "Tri thức biết đi xa",
+     "body": "Chloe đưa ý tưởng vượt qua mọi ranh giới — điều học trong lớp con áp dụng ngoài đời, điều gặp ngoài đời con mang trở lại lớp. Sự chuyển giao ấy là bằng chứng thật nhất của việc thực sự hiểu."
+    },
+    {
+     "attribute": "Người dám thử",
+     "title": "Không bao giờ sợ dấn thân",
+     "body": "Từ mới, việc mới, thử thách mới: Chloe thử, và con theo đến cùng. Con đã gỡ bỏ nỗi sợ sai khỏi hành trình học của chính mình."
+    },
+    {
+     "attribute": "Người toàn diện",
+     "title": "Mạnh ở mọi dạng thức",
+     "body": "Thực hành, toán học hay viết lách — con đón nhận mỗi loại thử thách với cùng một sự tự tin điềm tĩnh."
+    }
+   ],
+   "nextSteps": [
+    "Chloe đã sẵn sàng cho những dự án khám phá cố ý bắc cầu giữa các môn học: bắt đầu từ một câu hỏi đời thực và kết thúc trước một người nghe đời thực. Thầy cô sẽ tiếp tục mở rộng cây cầu mà con vốn đã đi trên đó, giữa lớp học và thế giới."
+   ]
+  }
+ },
+ "interviews": [
+  {
+   "youtubeId": "HzAugWK7I5U",
+   "title": "Chloe's Reflection"
+  }
+ ],
  "stats": {
   "en": [
    {
