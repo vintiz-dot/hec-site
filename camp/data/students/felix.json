@@ -86,7 +86,7 @@
     "label": "Photographs"
    },
    {
-    "value": "37",
+    "value": "7",
     "label": "Film moments"
    }
   ],
@@ -104,12 +104,18 @@
     "label": "Bức ảnh"
    },
    {
-    "value": "37",
+    "value": "7",
     "label": "Thước phim"
    }
   ]
  },
  "gallery": [
+  {
+   "type": "video",
+   "src": "media/felix/extra_clip_04.mp4",
+   "poster": "media/felix/extra_clip_04.jpg",
+   "landscape": false
+  },
   {
    "type": "image",
    "src": "media/felix/extra_photo_01.jpg",

@@ -91,7 +91,7 @@
     "label": "Photographs"
    },
    {
-    "value": "51",
+    "value": "5",
     "label": "Film moments"
    }
   ],
@@ -109,12 +109,18 @@
     "label": "Bức ảnh"
    },
    {
-    "value": "51",
+    "value": "5",
     "label": "Thước phim"
    }
   ]
  },
  "gallery": [
+  {
+   "type": "video",
+   "src": "media/rainbow/extra_clip_02.mp4",
+   "poster": "media/rainbow/extra_clip_02.jpg",
+   "landscape": false
+  },
   {
    "type": "video",
    "src": "media/rainbow/extra_clip_01.mp4",

@@ -8,9 +8,10 @@
   "class": ""
  },
  "hero": {
-  "type": "video",
-  "src": "media/robot/clip_01.mp4",
-  "poster": "media/robot/hero.jpg"
+  "type": "image",
+  "src": "media/robot/hero.jpg",
+  "w": 1200,
+  "h": 1600
  },
  "remarks": {
   "en": {

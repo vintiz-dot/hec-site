@@ -74,7 +74,7 @@
  "stats": {
   "en": [
    {
-    "value": "0",
+    "value": "3",
     "label": "Photographs"
    },
    {
@@ -88,7 +88,7 @@
   ],
   "vi": [
    {
-    "value": "0",
+    "value": "3",
     "label": "Bức ảnh"
    },
    {
@@ -102,6 +102,24 @@
   ]
  },
  "gallery": [
+  {
+   "type": "image",
+   "src": "media/luka/photo_01.jpg",
+   "w": 960,
+   "h": 1280
+  },
+  {
+   "type": "image",
+   "src": "media/luka/photo_02.jpg",
+   "w": 960,
+   "h": 1280
+  },
+  {
+   "type": "image",
+   "src": "media/luka/photo_03.jpg",
+   "w": 720,
+   "h": 1600
+  },
   {
    "type": "video",
    "src": "media/luka/extra_clip_01.mp4",
