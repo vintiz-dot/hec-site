@@ -9,9 +9,9 @@
  },
  "hero": {
   "type": "image",
-  "src": "media/sammy/photo_01.jpg",
-  "w": 1600,
-  "h": 1067
+  "src": "media/sammy/hero.jpg",
+  "w": 1280,
+  "h": 1600
  },
  "remarks": {
   "en": {
