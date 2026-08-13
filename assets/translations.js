@@ -488,6 +488,7 @@ const HEC_TRANSLATIONS = {
                          vi: "Lớp nhỏ. Tự tin lớn." },
   "foot.quickLinks":   { en: "Quick Links",           vi: "Liên kết nhanh" },
   "foot.connect":      { en: "Connect",               vi: "Kết nối" },
+  "foot.sitemap":      { en: "Sitemap",               vi: "Sơ đồ trang web" },
   "foot.rights":       { en: "All rights reserved.",   vi: "Bảo lưu mọi quyền." },
 
   /* ── 404 page ──────────────────────────────────────────────── */
