@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://hanoienglish.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/index-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/" />
+  </url>
+  <url>
+    <loc>https://hanoienglish.com/index-vn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/index-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/" />
+  </url>
+
+  <url>
+    <loc>https://hanoienglish.com/admissions.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/admissions.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/admissions-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/admissions.html" />
+  </url>
+  <url>
+    <loc>https://hanoienglish.com/admissions-vn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/admissions.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/admissions-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/admissions.html" />
+  </url>
+
+  <url>
+    <loc>https://hanoienglish.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/contact-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/contact.html" />
+  </url>
+  <url>
+    <loc>https://hanoienglish.com/contact-vn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/contact-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/contact.html" />
+  </url>
+
+  <url>
+    <loc>https://hanoienglish.com/reading-club.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/reading-club.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/reading-club-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/reading-club.html" />
+  </url>
+  <url>
+    <loc>https://hanoienglish.com/reading-club-vn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/reading-club.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/reading-club-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/reading-club.html" />
+  </url>
+
+  <url>
+    <loc>https://hanoienglish.com/robotics.html</loc>
+  </url>
+  <url>
+    <loc>https://hanoienglish.com/summer-camp.html</loc>
+  </url>
+  <url>
+    <loc>https://hanoienglish.com/holiday.html</loc>
+  </url>
+
+  <url>
+    <loc>https://hanoienglish.com/courses/mars.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/mars.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/mars-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/mars.html" />
+  </url>
+  <url>
+    <loc>https://hanoienglish.com/courses/mars-vn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/mars.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/mars-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/mars.html" />
+  </url>
+
+  <url>
+    <loc>https://hanoienglish.com/courses/venus.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/venus.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/venus-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/venus.html" />
+  </url>
+  <url>
+    <loc>https://hanoienglish.com/courses/venus-vn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/venus.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/venus-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/venus.html" />
+  </url>
+
+  <url>
+    <loc>https://hanoienglish.com/courses/neptune.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/neptune.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/neptune-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/neptune.html" />
+  </url>
+  <url>
+    <loc>https://hanoienglish.com/courses/neptune-vn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/neptune.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/neptune-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/neptune.html" />
+  </url>
+
+  <url>
+    <loc>https://hanoienglish.com/courses/jupiter.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/jupiter.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/jupiter-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/jupiter.html" />
+  </url>
+  <url>
+    <loc>https://hanoienglish.com/courses/jupiter-vn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/jupiter.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/jupiter-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/jupiter.html" />
+  </url>
+
+  <url>
+    <loc>https://hanoienglish.com/courses/sky1.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/sky1.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/sky1-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/sky1.html" />
+  </url>
+  <url>
+    <loc>https://hanoienglish.com/courses/sky1-vn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/sky1.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/sky1-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/sky1.html" />
+  </url>
+
+  <url>
+    <loc>https://hanoienglish.com/courses/sanrio.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/sanrio.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/sanrio-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/sanrio.html" />
+  </url>
+  <url>
+    <loc>https://hanoienglish.com/courses/sanrio-vn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/sanrio.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/sanrio-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/sanrio.html" />
+  </url>
+
+  <url>
+    <loc>https://hanoienglish.com/courses/mercury.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/mercury.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/mercury-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/mercury.html" />
+  </url>
+  <url>
+    <loc>https://hanoienglish.com/courses/mercury-vn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/mercury.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/mercury-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/mercury.html" />
+  </url>
+
+  <url>
+    <loc>https://hanoienglish.com/courses/sun.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/sun.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/sun-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/sun.html" />
+  </url>
+  <url>
+    <loc>https://hanoienglish.com/courses/sun-vn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/courses/sun.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/courses/sun-vn.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/courses/sun.html" />
+  </url>
+</urlset>
