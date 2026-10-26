@@ -3,54 +3,17 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://hanoienglish.com/</loc>
+    <lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/" />
     <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/index-vn.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/" />
   </url>
   <url>
     <loc>https://hanoienglish.com/index-vn.html</loc>
+    <lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/" />
     <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/index-vn.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/" />
-  </url>
-
-  <url>
-    <loc>https://hanoienglish.com/admissions.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/admissions.html" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/admissions-vn.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/admissions.html" />
-  </url>
-  <url>
-    <loc>https://hanoienglish.com/admissions-vn.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/admissions.html" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/admissions-vn.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/admissions.html" />
-  </url>
-
-  <url>
-    <loc>https://hanoienglish.com/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/contact.html" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/contact-vn.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/contact.html" />
-  </url>
-  <url>
-    <loc>https://hanoienglish.com/contact-vn.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/contact.html" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/contact-vn.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/contact.html" />
-  </url>
-
-  <url>
-    <loc>https://hanoienglish.com/reading-club.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/reading-club.html" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/reading-club-vn.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/reading-club.html" />
-  </url>
-  <url>
-    <loc>https://hanoienglish.com/reading-club-vn.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hanoienglish.com/reading-club.html" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://hanoienglish.com/reading-club-vn.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/reading-club.html" />
   </url>
 
   <url>

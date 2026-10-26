@@ -1,18 +1,954 @@
 <!doctype html>
+<!-- GENERATED FILE, do not edit: index.html rendered in Vietnamese by
+     tools/build-vi.mjs. Edit index.html or assets/translations.js instead,
+     then run: node tools/build-vi.mjs -->
 <html lang="vi">
 <head>
   <meta charset="utf-8">
-  <title>HEC – Happy English Club</title>
+  <title data-i18n="meta.title">Trung tâm tiếng Anh lớp nhỏ tại Đống Đa, Hà Nội | HEC – Happy English Club</title>
+  <meta name="description" data-i18n-content="meta.description" content="Trung tâm tiếng Anh lớp nhỏ tại Đống Đa, Hà Nội: từ 4 tuổi đến lớp 12 và IELTS, do giáo viên được cấp phép Hoa Kỳ giảng dạy. Tối đa 12 học sinh mỗi lớp. CLB đọc sách miễn phí Thứ Bảy.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-    // Redirect stub: set language to Vietnamese and forward to unified index.html
-    localStorage.setItem('hec_lang', 'vi');
-    localStorage.setItem('language', 'vn');
-    window.location.replace(window.location.pathname.replace('index-vn.html', 'index.html'));
-  </script>
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" data-i18n-content="meta.ogTitle" content="HEC – Happy English Club | Hà Nội">
+  <meta property="og:description" data-i18n-content="meta.ogDescription" content="Lớp nhỏ, tự tin lớn. Chương trình quốc tế, giáo viên được cấp phép Hoa Kỳ, học phí minh bạch.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hanoienglish.com/index-vn.html">
+  <meta property="og:image" content="https://hanoienglish.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="canonical" href="https://hanoienglish.com/index-vn.html">
+  <!-- Language versions (index-vn.html is generated from index.html by tools/build-vi.mjs) -->
+  <link rel="alternate" hreflang="en" href="https://hanoienglish.com/">
+  <link rel="alternate" hreflang="vi" href="https://hanoienglish.com/index-vn.html">
+  <link rel="alternate" hreflang="x-default" href="https://hanoienglish.com/">
+
+  <!-- Performance: connect early to CDN, preload the hero image -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload" as="image" href="assets/pictures/ok/hero-1.webp" fetchpriority="high">
+
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom Design System -->
+  <link href="assets/styles.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/logo.png">
 </head>
-<body>
-  <p>Redirecting…</p>
+<body data-page="home">
+
+<a href="#home" class="skip-link" data-i18n="a11y.skip">Chuyển đến nội dung chính</a>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     NAVBAR
+     ═══════════════════════════════════════════════════════════════ -->
+<div id="nav-placeholder"></div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     HOLIDAY NOTICE BANNER (auto-expires after May 3, 2026)
+     ═══════════════════════════════════════════════════════════════ -->
+<div id="holiday-banner" style="display:none;">
+  <div style="background:linear-gradient(135deg, rgba(244,63,94,0.06), rgba(245,158,11,0.10)); border-bottom:1px solid rgba(245,158,11,0.18); padding:0.75rem 0;">
+    <div class="container d-flex align-items-center justify-content-center flex-wrap gap-2 text-center" style="font-size:0.92rem;">
+      <span style="font-size:1.1rem;">🏮</span>
+      <span class="fw-bold" style="color:var(--hec-navy);" data-i18n="holiday.bannerText">Thông báo nghỉ lễ: HEC tạm nghỉ các lớp từ 25/4 – 3/5 nhân dịp lễ Quốc gia.</span>
+      <a href="holiday.html" class="fw-bold text-decoration-none" style="color:var(--hec-blue);white-space:nowrap;" data-i18n="holiday.bannerLink">Xem lịch nghỉ →</a>
+      <button onclick="document.getElementById('holiday-banner').style.display='none'" style="background:none;border:none;cursor:pointer;padding:0.25rem;color:var(--hec-slate);font-size:1.1rem;line-height:1;" aria-label="Dismiss holiday notice">&times;</button>
+    </div>
+  </div>
+</div>
+<script>
+  // Show the holiday banner only until end of May 3, 2026 (Vietnam time)
+  (function() {
+    var expiry = new Date("2026-05-03T23:59:59+07:00");
+    if (new Date() <= expiry) {
+      var banner = document.getElementById("holiday-banner");
+      if (banner) banner.style.display = "";
+    }
+  })();
+</script>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════════════════════════ -->
+<header id="home" class="hero">
+  <div class="container">
+    <div class="row align-items-center g-4 g-lg-5">
+      <!-- Left: Copy -->
+      <div class="col-lg-6">
+        <div class="tag-row mb-3">
+          <span class="badge-status badge-free"><i class="bi bi-patch-check-fill"></i> <span data-i18n="auth.badge1">Giáo viên được cấp phép Hoa Kỳ</span></span>
+          <span class="badge-status badge-open"><i class="bi bi-book"></i> Cambridge & Oxford</span>
+        </div>
+
+        <h1 class="display-4 mb-3" data-i18n="hero.headline">Lớp nhỏ — Tự tin lớn</h1>
+
+        <p class="lead mb-4" data-i18n="hero.subheadline">Giáo viên được cấp phép Hoa Kỳ • Chương trình quốc tế • Học phí minh bạch theo buổi • CLB đọc sách miễn phí Thứ Bảy</p>
+
+        <div class="d-flex gap-3 flex-wrap mb-4">
+          <a href="#contact" class="btn btn-gold btn-lg" data-i18n="hero.ctaPrimary">Đặt lịch học thử miễn phí</a>
+          <a href="#programs" class="btn btn-outline-primary btn-lg" data-i18n="hero.ctaSecondary">Xem chương trình</a>
+        </div>
+
+        <!-- Stat pills -->
+        <div class="row g-3">
+          <div class="col-4">
+            <div class="hero-stat">
+              <div class="stat-value" data-i18n="hero.stat1Value">≤12</div>
+              <div class="stat-label" data-i18n="hero.stat1Label">học sinh / lớp</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="hero-stat">
+              <div class="stat-value" data-i18n="hero.stat2Value">90′</div>
+              <div class="stat-label" data-i18n="hero.stat2Label">mỗi buổi học</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="hero-stat">
+              <div class="stat-value" data-i18n="hero.stat3Value">Miễn phí</div>
+              <div class="stat-label" data-i18n="hero.stat3Label">CLB đọc sách Thứ Bảy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Carousel -->
+      <div class="col-lg-6">
+        <div id="homeCarousel" class="carousel slide rounded-4 overflow-hidden shadow"
+             data-bs-ride="carousel" data-bs-interval="8000" aria-label="HEC highlights">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="assets/pictures/ok/hero-1.webp" alt="HEC classroom learning" width="1600" height="800" fetchpriority="high" decoding="async">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 data-i18n="hero.slide1Title">Học có mục tiêu</h5>
+                <p data-i18n="hero.slide1Text">Mục tiêu và mốc kiểm tra rõ ràng mỗi tuần.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/pictures/ok/hero-2.webp" alt="Student presentation" width="1600" height="800" loading="lazy" decoding="async">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 data-i18n="hero.slide2Title">Tự tin thuyết trình</h5>
+                <p data-i18n="hero.slide2Text">Luyện tập thường xuyên, nhận xét thân thiện.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/pictures/ok/hero-3.webp" alt="Students presenting crafts at the HEC English fair" width="1600" height="800" loading="lazy" decoding="async">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 data-i18n="hero.slide3Title">Dự án có ý nghĩa</h5>
+                <p data-i18n="hero.slide3Text">Chủ đề thật, người nghe thật, tiến bộ thật.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/pictures/ok/hero-4.webp" alt="Community events" width="1600" height="400" loading="lazy" decoding="async">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 data-i18n="hero.slide4Title">Cùng nhau tiến bộ</h5>
+                <p data-i18n="hero.slide4Text">Việc học phát triển mạnh trong một môi trường hỗ trợ.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/pictures/ok/hero-5.webp" alt="Back to school" width="1600" height="800" loading="lazy" decoding="async">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 data-i18n="hero.slide5Title">Chào mừng đến với HEC</h5>
+                <p data-i18n="hero.slide5Text">Nơi mỗi đứa trẻ tìm thấy tiếng nói của mình.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev" aria-label="Previous">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next" aria-label="Next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="about" class="py-5" style="background:#f8fafc;">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <h2 class="section-title" data-i18n="about.title">Nơi mỗi đứa trẻ tìm thấy tiếng nói của mình</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+    <div class="row justify-content-center reveal">
+      <div class="col-lg-8" style="font-size: 1.1rem; line-height: 1.8;">
+        <p data-i18n="about.p1"><strong>HEC – Happy English Club</strong> là trung tâm tiếng Anh lớp nhỏ tại quận Đống Đa, Hà Nội, được xây dựng trên một niềm tin: trẻ sẽ nói được tiếng Anh khi đủ tự tin để thử.</p>
+        
+        <p data-i18n="about.p2">Mỗi buổi học bắt đầu bằng một Câu hỏi lớn. Từ mẫu giáo (4 tuổi) đến lớp 12, học sinh học qua dự án và khám phá trên nền giáo trình <strong>Oxford Discover, National Geographic Look và Cambridge Math</strong>, cùng lớp luyện thi IELTS cho các bạn lớn hơn — do giáo viên được cấp phép Hoa Kỳ, có chứng nhận của Cambridge và Oxford, trực tiếp giảng dạy. Mỗi lớp tối đa 12 học sinh, nên buổi nào con cũng được lắng nghe.</p>
+        
+        <p data-i18n="about.p3">Ngoài giờ học, <strong>CLB đọc sách Thứ Bảy</strong> miễn phí chào đón mọi lứa tuổi, còn <strong>Trại hè</strong> giúp con hòa mình hoàn toàn trong tiếng Anh. Phụ huynh theo dõi việc học của con qua cổng thông tin học sinh của trung tâm — bài tập, điểm danh, điểm thưởng và tiến bộ, tất cả ở một nơi.</p>
+        
+        <p data-i18n="about.p4">Học phí minh bạch, tính theo buổi: <strong>210.000₫</strong> cho buổi học 90 phút, <strong>260.000₫</strong> cho buổi IELTS 120 phút. Phụ huynh chỉ đóng phí cho các buổi thực học, được giảm 5% cho anh/chị em ruột và không có phí ẩn.</p>
+        
+        <p class="text-center mt-4 p-3 rounded-3 shadow-sm" style="background: white; border: 1px solid #e5e7eb;">
+          <i class="bi bi-geo-alt-fill text-primary"></i> <span data-i18n="about.visit">Địa chỉ: Số 25, ngõ 242 Láng, Đống Đa, Hà Nội</span><br class="d-md-none">
+          <span class="d-none d-md-inline"> &middot; </span>
+          <i class="bi bi-telephone-fill text-primary ms-md-2 mt-2 mt-md-0"></i> <span data-i18n="about.call">Gọi hoặc nhắn Zalo: 0975 679 889</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     AUTHORITY — "Why Parents Trust HEC"
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="authority" class="authority-section">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <h2 class="section-title" data-i18n="auth.title">Vì sao phụ huynh Hà Nội tin tưởng HEC</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+        <div class="authority-card">
+          <div class="authority-icon blue"><i class="bi bi-award"></i></div>
+          <h4 data-i18n="auth.badge1">Giáo viên được cấp phép Hoa Kỳ</h4>
+          <p data-i18n="auth.badge1Desc">Được chứng nhận bởi Bang New Jersey, Hoa Kỳ — mang phương pháp tiên tiến nhất vào từng bài học.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+        <div class="authority-card">
+          <div class="authority-icon gold"><i class="bi bi-book"></i></div>
+          <h4 data-i18n="auth.badge2">Chương trình Cambridge &amp; Oxford</h4>
+          <p data-i18n="auth.badge2Desc">Oxford Discover, National Geographic Look và Cambridge Math — tài liệu đẳng cấp quốc tế cho mọi trình độ.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+        <div class="authority-card">
+          <div class="authority-icon green"><i class="bi bi-diagram-3"></i></div>
+          <h4 data-i18n="auth.badge3">Học qua dự án (PBL)</h4>
+          <p data-i18n="auth.badge3Desc">Học sinh giải quyết vấn đề thực tế, thuyết trình ý tưởng và xây dựng portfolio — không chỉ học vẹt.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-4">
+        <div class="authority-card">
+          <div class="authority-icon rose"><i class="bi bi-lightbulb"></i></div>
+          <h4 data-i18n="auth.badge4">Phương pháp khám phá</h4>
+          <p data-i18n="auth.badge4Desc">Mỗi buổi học bắt đầu bằng Câu hỏi lớn. Học sinh tìm hiểu, thảo luận và khám phá câu trả lời cùng nhau.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PROGRAMS
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="programs" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <h2 class="section-title" data-i18n="prog.title">Chương trình học</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="section-subtitle mx-auto" data-i18n="prog.subtitle">Lớp nhỏ, kết quả lớn. Chương trình sử dụng giáo trình quốc tế với mục tiêu học tập rõ ràng.</p>
+    </div>
+
+    <div class="grid-cards" id="programGrid">
+      <!-- Mars -->
+      <div class="program-card reveal reveal-delay-1">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>Mars</h3>
+          <span class="badge-status badge-hot" data-i18n="prog.fillingFast">Sắp đầy</span>
+        </div>
+        <div class="curriculum mb-2">Nat Geo Look Starter</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i><span data-i18n="day.wed">Thứ Tư</span> &amp; <span data-i18n="day.fri">Thứ Sáu</span></div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i>19:30–21:00 • 90′</div>
+        <div class="seat-bar"><div class="seat-bar-fill hot" data-fill="92" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>11</strong>/12 <span data-i18n="prog.enrolled">đã đăng ký</span></span>
+          <span class="text-danger fw-semibold">1 <span data-i18n="prog.seatsLeft">chỗ còn</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price"><span data-i18n="prog.price">210.000₫</span><span class="small text-muted" data-i18n="prog.perSession">/buổi</span></div>
+          <a href="courses/mars-vn.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <!-- Venus -->
+      <div class="program-card reveal reveal-delay-2">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>Venus</h3>
+          <span class="badge-status badge-open" data-i18n="prog.open">Mở đăng ký</span>
+        </div>
+        <div class="curriculum mb-2">Nat Geo Look 1</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i><span data-i18n="day.mon">Thứ Hai</span> &amp; <span data-i18n="day.thu">Thứ Năm</span></div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i>17:30–19:00 • 90′</div>
+        <div class="seat-bar"><div class="seat-bar-fill open" data-fill="42" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>5</strong>/12 <span data-i18n="prog.enrolled">đã đăng ký</span></span>
+          <span class="text-success fw-semibold">7 <span data-i18n="prog.seatsLeft">chỗ còn</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price"><span data-i18n="prog.price">210.000₫</span><span class="small text-muted" data-i18n="prog.perSession">/buổi</span></div>
+          <a href="courses/venus-vn.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <!-- Neptune -->
+      <div class="program-card reveal reveal-delay-3">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>Neptune</h3>
+          <span class="badge-status badge-open" data-i18n="prog.open">Mở đăng ký</span>
+        </div>
+        <div class="curriculum mb-2">Nat Geo Look 2</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i><span data-i18n="day.wed">Thứ Tư</span> &amp; <span data-i18n="day.fri">Thứ Sáu</span></div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i>17:30–19:00 • 90′</div>
+        <div class="seat-bar"><div class="seat-bar-fill open" data-fill="42" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>5</strong>/12 <span data-i18n="prog.enrolled">đã đăng ký</span></span>
+          <span class="text-success fw-semibold">7 <span data-i18n="prog.seatsLeft">chỗ còn</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price"><span data-i18n="prog.price">210.000₫</span><span class="small text-muted" data-i18n="prog.perSession">/buổi</span></div>
+          <a href="courses/neptune-vn.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <!-- Jupiter -->
+      <div class="program-card reveal reveal-delay-4">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>Jupiter</h3>
+          <span class="badge-status badge-limited" data-i18n="prog.limited">Có hạn</span>
+        </div>
+        <div class="curriculum mb-2">Oxford Discover 1</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i><span data-i18n="day.tue">Thứ Ba</span> &amp; <span data-i18n="day.thu">Thứ Năm</span></div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i>19:30–21:00 • 90′</div>
+        <div class="seat-bar"><div class="seat-bar-fill limited" data-fill="58" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>7</strong>/12 <span data-i18n="prog.enrolled">đã đăng ký</span></span>
+          <span class="text-warning fw-semibold">5 <span data-i18n="prog.seatsLeft">chỗ còn</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price"><span data-i18n="prog.price">210.000₫</span><span class="small text-muted" data-i18n="prog.perSession">/buổi</span></div>
+          <a href="courses/jupiter-vn.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <!-- SKY 1 -->
+      <div class="program-card reveal reveal-delay-1">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>SKY 1</h3>
+          <span class="badge-status badge-hot" data-i18n="prog.fillingFast">Sắp đầy</span>
+        </div>
+        <div class="curriculum mb-2">Oxford Discover 3</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i><span data-i18n="day.tue">Thứ Ba</span> • <span data-i18n="day.sat">Thứ Bảy</span></div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i><span data-i18n="day.tue">Thứ Ba</span> 17:30–19:00 • <span data-i18n="day.sat">Thứ Bảy</span> 16:15–17:45</div>
+        <div class="seat-bar"><div class="seat-bar-fill hot" data-fill="83" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>10</strong>/12 <span data-i18n="prog.enrolled">đã đăng ký</span></span>
+          <span class="text-danger fw-semibold">2 <span data-i18n="prog.seatsLeft">chỗ còn</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price"><span data-i18n="prog.price">210.000₫</span><span class="small text-muted" data-i18n="prog.perSession">/buổi</span></div>
+          <a href="courses/sky1-vn.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <!-- Sanrio Grade 6 -->
+      <div class="program-card reveal reveal-delay-2">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>Sanrio G6</h3>
+          <span class="badge-status badge-open" data-i18n="prog.open">Mở đăng ký</span>
+        </div>
+        <div class="curriculum mb-2">Grammar &amp; Writing G6</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i><span data-i18n="day.mon">Thứ Hai</span> • <span data-i18n="day.thu">Thứ Năm</span></div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i><span data-i18n="day.mon">Thứ Hai</span> 19:00–21:00 • <span data-i18n="day.thu">Thứ Năm</span> 19:30–21:00</div>
+        <div class="seat-bar"><div class="seat-bar-fill open" data-fill="50" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>6</strong>/12 <span data-i18n="prog.enrolled">đã đăng ký</span></span>
+          <span class="text-success fw-semibold">6 <span data-i18n="prog.seatsLeft">chỗ còn</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price"><span data-i18n="prog.price">210.000₫</span><span class="small text-muted" data-i18n="prog.perSession">/buổi</span></div>
+          <a href="courses/sanrio-vn.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <!-- Mercury (Math) -->
+      <div class="program-card reveal reveal-delay-3">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>Mercury</h3>
+          <span class="badge-status badge-open" data-i18n="prog.open">Mở đăng ký</span>
+        </div>
+        <div class="curriculum mb-2">Cambridge Math</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i><span data-i18n="day.sunday">Chủ nhật</span></div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i>16:30–18:00 • 90′</div>
+        <div class="seat-bar"><div class="seat-bar-fill open" data-fill="42" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>5</strong>/12 <span data-i18n="prog.enrolled">đã đăng ký</span></span>
+          <span class="text-success fw-semibold">7 <span data-i18n="prog.seatsLeft">chỗ còn</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price"><span data-i18n="prog.price">210.000₫</span><span class="small text-muted" data-i18n="prog.perSession">/buổi</span></div>
+          <a href="courses/mercury-vn.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <!-- Sun (IELTS) -->
+      <div class="program-card reveal reveal-delay-4">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3>Sun <span class="small text-muted">(IELTS)</span></h3>
+          <span class="badge-status badge-limited" data-i18n="prog.limited">Có hạn</span>
+        </div>
+        <div class="curriculum mb-2">Cambridge + British Council blend</div>
+        <div class="meta mb-1"><i class="bi bi-calendar-week me-1"></i><span data-i18n="day.sunday">Chủ nhật</span></div>
+        <div class="meta mb-2"><i class="bi bi-clock me-1"></i>19:15–21:15 • 120′</div>
+        <div class="seat-bar"><div class="seat-bar-fill limited" data-fill="67" style="width:0%"></div></div>
+        <div class="d-flex justify-content-between align-items-center small mb-2">
+          <span><strong>8</strong>/12 <span data-i18n="prog.enrolled">đã đăng ký</span></span>
+          <span class="text-warning fw-semibold">4 <span data-i18n="prog.seatsLeft">chỗ còn</span></span>
+        </div>
+        <div class="mt-auto d-flex justify-content-between align-items-center">
+          <div class="price"><span data-i18n="prog.priceIelts">260.000₫</span><span class="small text-muted" data-i18n="prog.perSession">/buổi</span></div>
+          <a href="courses/sun-vn.html" class="btn btn-sm btn-primary" data-i18n="prog.viewDetails">Xem chi tiết</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     READING CLUB
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="reading-club" class="reading-club-section">
+  <div class="container">
+    <div class="row g-4 g-lg-5 align-items-center">
+      <div class="col-lg-7 reveal">
+        <div class="tag-row">
+          <span class="badge-status badge-free" data-i18n="rc.free">Miễn phí</span>
+          <span class="badge-status badge-open" data-i18n="rc.badge2">Phù hợp gia đình</span>
+          <span class="badge-status" style="background:var(--hec-blue-soft);color:var(--hec-blue);border:1px solid rgba(37,99,235,0.2)" data-i18n="rc.badge3">Tự do tham gia</span>
+        </div>
+        <h2 class="section-title mt-2" data-i18n="rc.title">CLB đọc sách Thứ Bảy</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle mb-4" data-i18n="rc.subtitle">Thứ Bảy hằng tuần, 14:00–16:00 • Hoàn toàn miễn phí • Mọi lứa tuổi</p>
+
+        <div class="mb-2">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-geo-alt"></i></div>
+            <span data-i18n="rc.location">Số 25, ngõ 242 Láng, Đống Đa, Hà Nội</span>
+          </div>
+        </div>
+
+        <div class="rc-feature">
+          <div class="rc-feature-icon"><i class="bi bi-book-half"></i></div>
+          <div>
+            <h5 data-i18n="rc.point1Title">Hình thành thói quen đọc</h5>
+            <p data-i18n="rc.point1Desc">Tự chọn sách hoặc mang theo. Không khí nhẹ nhàng, khích lệ tích cực.</p>
+          </div>
+        </div>
+        <div class="rc-feature">
+          <div class="rc-feature-icon" style="background:var(--hec-gold-soft);color:var(--hec-gold)"><i class="bi bi-chat-square-text"></i></div>
+          <div>
+            <h5 data-i18n="rc.point2Title">Phát triển ngôn ngữ</h5>
+            <p data-i18n="rc.point2Desc">Trò chơi từ vựng, thảo luận nhóm và thuyết trình ngắn mỗi tuần.</p>
+          </div>
+        </div>
+        <div class="rc-feature">
+          <div class="rc-feature-icon" style="background:var(--hec-emerald-soft);color:var(--hec-emerald)"><i class="bi bi-people"></i></div>
+          <div>
+            <h5 data-i18n="rc.point3Title">Tự tin &amp; cộng đồng</h5>
+            <p data-i18n="rc.point3Desc">Chia sẻ thoải mái cùng bạn bè và giáo viên trong môi trường hỗ trợ.</p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2 mt-3">
+          <a class="btn btn-gold btn-lg" href="#contact" data-i18n="rc.cta">Giữ chỗ miễn phí</a>
+        </div>
+        <div class="small-muted mt-2" data-i18n="rc.note">Số chỗ có hạn — RSVP giúp chúng tôi chuẩn bị sách và nhóm phù hợp.</div>
+      </div>
+      <div class="col-lg-5 reveal reveal-delay-2">
+        <img class="img-fluid rounded-4 shadow" alt="Students reading together at HEC Reading Club"
+             src="assets/pictures/ok/book-club.webp" width="900" height="1125" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     TESTIMONIALS
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <h2 class="section-title" data-i18n="test.title">Phụ huynh nói gì?</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="section-subtitle mx-auto" data-i18n="test.videoIntro">Và tuyệt hơn nữa — hãy nghe chính các con kể. Không kịch bản, bằng chính tiếng Anh của các con.</p>
+    </div>
+
+    <!-- Real student voices: strongest social proof we have -->
+    <div class="row g-4 mb-5">
+      <div class="col-md-4 reveal reveal-delay-1">
+        <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+          <iframe src="https://www.youtube-nocookie.com/embed/WIzYsa_DkNk?rel=0" title="Jessica — HEC student reflection" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="text-center small fw-bold mt-2" style="color:var(--hec-navy)" data-i18n="test.v1">Jessica — về niềm yêu thích thử thách</div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-2">
+        <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+          <iframe src="https://www.youtube-nocookie.com/embed/XLKBOWDRHLA?rel=0" title="William — HEC student reflection" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="text-center small fw-bold mt-2" style="color:var(--hec-navy)" data-i18n="test.v2">William — về việc học cách dừng lại để suy nghĩ</div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-3">
+        <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+          <iframe src="https://www.youtube-nocookie.com/embed/HvydZGzI32k?rel=0" title="Pizza — HEC student reflection" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="text-center small fw-bold mt-2" style="color:var(--hec-navy)" data-i18n="test.v3">Pizza — nhà kiến tạo dám thử điều không thể</div>
+      </div>
+    </div>
+
+    <!-- Real parent reviews, excerpted from HEC's KiddiHub listing (5.0, 47 verified reviews) -->
+    <div class="row g-4">
+      <div class="col-md-4 reveal reveal-delay-1">
+        <div class="testimonial-card">
+          <div class="stars" aria-label="5/5">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <blockquote data-i18n="test.t1Quote">"Sau 2 tháng … học lớp thầy Victor con đã tiến bộ rất rõ rệt 1 cách bất ngờ. Chương trình trên lớp lại thành dễ dàng với con, bố mẹ về không phải kèm học."</blockquote>
+          <div class="author">
+            <span class="author-avatar author-initials" aria-hidden="true">T</span>
+            <div>
+              <div class="author-name" data-i18n="test.t1Name">Thai Td</div>
+              <div class="author-grade" data-i18n="test.t1Grade">Phụ huynh · đánh giá trên KiddiHub</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-2">
+        <div class="testimonial-card">
+          <div class="stars" aria-label="5/5">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <blockquote data-i18n="test.t2Quote">"Con mình rất quý thầy cô ở đây, mỗi lần đi qua ngõ là lại gọi to ‘Teacher’"</blockquote>
+          <div class="author">
+            <span class="author-avatar author-initials" style="background:var(--hec-gold-soft);color:var(--hec-gold)" aria-hidden="true">N</span>
+            <div>
+              <div class="author-name" data-i18n="test.t2Name">Thu Nguyệt</div>
+              <div class="author-grade" data-i18n="test.t2Grade">Phụ huynh · đánh giá trên KiddiHub</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-3">
+        <div class="testimonial-card">
+          <div class="stars" aria-label="5/5">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <blockquote data-i18n="test.t3Quote">"Rất hài lòng với đội ngũ Giáo viên và phương pháp giảng dạy, tuy Trung tâm bé nhưng chất lượng rất tốt"</blockquote>
+          <div class="author">
+            <span class="author-avatar author-initials" style="background:var(--hec-emerald-soft);color:var(--hec-emerald)" aria-hidden="true">U</span>
+            <div>
+              <div class="author-name" data-i18n="test.t3Name">Uyên</div>
+              <div class="author-grade" data-i18n="test.t3Grade">Phụ huynh · đánh giá trên KiddiHub</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center mt-4 mb-0">
+      <a href="https://kiddihub.com/hanoihappyenglish" target="_blank" rel="noopener" class="fw-semibold" data-i18n="test.kiddihub">★ 5.0 từ 47 đánh giá xác thực trên KiddiHub — xem tất cả</a>
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     GALLERY — Life at HEC
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="gallery" class="py-5" style="background:#f8fafc;">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <h2 class="section-title" data-i18n="gal.title">Khoảnh khắc tại HEC</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="section-subtitle mx-auto" data-i18n="gal.subtitle">Những khoảnh khắc thật từ lớp học — dự án, thuyết trình và thật nhiều nụ cười.</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <a href="#" class="gallery-item" data-full="assets/pictures/gallery/gallery-01.webp">
+        <img src="assets/pictures/gallery/gallery-01.webp" alt="Student proudly showing his finished artwork" width="675" height="900" loading="lazy" decoding="async">
+      </a>
+      <a href="#" class="gallery-item" data-full="assets/pictures/gallery/gallery-02.webp">
+        <img src="assets/pictures/gallery/gallery-02.webp" alt="Student presenting her volcano art project" width="675" height="900" loading="lazy" decoding="async">
+      </a>
+      <a href="#" class="gallery-item" data-full="assets/pictures/gallery/gallery-03.webp">
+        <img src="assets/pictures/gallery/gallery-03.webp" alt="Student presenting her craft stall to a teacher at the HEC English fair" width="675" height="900" loading="lazy" decoding="async">
+      </a>
+      <a href="#" class="gallery-item gallery-item-wide" data-full="assets/pictures/gallery/gallery-04.webp">
+        <img src="assets/pictures/gallery/gallery-04.webp" alt="Teachers and students together at an HEC community event" width="900" height="352" loading="lazy" decoding="async">
+      </a>
+      <a href="#" class="gallery-item" data-full="assets/pictures/gallery/gallery-05.webp">
+        <img src="assets/pictures/gallery/gallery-05.webp" alt="Students building a STEM project outdoors" width="900" height="675" loading="lazy" decoding="async">
+      </a>
+      <a href="#" class="gallery-item" data-full="assets/pictures/gallery/gallery-06.webp">
+        <img src="assets/pictures/gallery/gallery-06.webp" alt="Model city built by students during STEM class" width="900" height="675" loading="lazy" decoding="async">
+      </a>
+      <a href="#" class="gallery-item" data-full="assets/pictures/gallery/gallery-07.webp">
+        <img src="assets/pictures/gallery/gallery-07.webp" alt="Students celebrating together in the HEC classroom" width="900" height="674" loading="lazy" decoding="async">
+      </a>
+      <a href="#" class="gallery-item" data-full="assets/pictures/gallery/gallery-08.webp">
+        <img src="assets/pictures/gallery/gallery-08.webp" alt="Happy student with balloons at a class celebration" width="900" height="675" loading="lazy" decoding="async">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery lightbox modal -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-transparent border-0 shadow-none">
+      <img id="galleryModalImg" src="" alt="Gallery photo enlarged" class="img-fluid rounded-4 shadow-lg" loading="lazy" decoding="async">
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var modalEl = document.getElementById('galleryModal');
+    var modalImg = document.getElementById('galleryModalImg');
+    document.querySelectorAll('.gallery-item').forEach(function (item) {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        modalImg.src = item.getAttribute('data-full');
+        bootstrap.Modal.getOrCreateInstance(modalEl).show();
+      });
+    });
+  });
+</script>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     METHODOLOGY — "How We Teach"
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="methodology" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <h2 class="section-title" data-i18n="method.title">Phương pháp giảng dạy</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="section-subtitle mx-auto" data-i18n="method.subtitle">Mỗi bài học đều được thiết kế có mục đích — không chỉ dạy hết, mà dạy sâu.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-1">
+        <div class="method-card">
+          <div class="method-icon"><i class="bi bi-bullseye"></i></div>
+          <h4 data-i18n="method.m1Title">Mục tiêu rõ ràng</h4>
+          <p data-i18n="method.m1Desc">Mục tiêu hằng tuần với các mốc tiến bộ rõ ràng cho phụ huynh và học sinh.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-2">
+        <div class="method-card">
+          <div class="method-icon" style="background:var(--hec-gold-soft);color:var(--hec-gold)"><i class="bi bi-megaphone"></i></div>
+          <h4 data-i18n="method.m2Title">Học chủ động</h4>
+          <p data-i18n="method.m2Desc">Thảo luận, thuyết trình và dự án nhóm — học sinh nói nhiều hơn giáo viên.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-3">
+        <div class="method-card">
+          <div class="method-icon" style="background:var(--hec-emerald-soft);color:var(--hec-emerald)"><i class="bi bi-clipboard-data"></i></div>
+          <h4 data-i18n="method.m3Title">Đánh giá quá trình</h4>
+          <p data-i18n="method.m3Desc">Phản hồi liên tục, không chỉ kiểm tra cuối kỳ. Chúng tôi phát hiện lỗ hổng sớm.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-4">
+        <div class="method-card">
+          <div class="method-icon" style="background:var(--hec-rose-soft);color:var(--hec-rose)"><i class="bi bi-person-hearts"></i></div>
+          <h4 data-i18n="method.m4Title">Đồng hành phụ huynh</h4>
+          <p data-i18n="method.m4Desc">Báo cáo tiến bộ hằng tháng, cập nhật qua Zalo và mời phụ huynh dự giờ.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proof for the "Active Learning" claim above: a real, unscripted lesson -->
+    <div class="row g-4 align-items-center mt-4 pt-4 border-top">
+      <div class="col-lg-6 reveal reveal-delay-1">
+        <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+          <iframe src="https://www.youtube-nocookie.com/embed/m5CjfPfaZRQ?rel=0" title="Grade 4 students debate — HEC classroom" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="text-center small fw-bold mt-2" style="color:var(--hec-navy)" data-i18n="method.proofCap">Học sinh lớp 4 tranh biện — quay tại lớp, không kịch bản</div>
+      </div>
+      <div class="col-lg-6 reveal reveal-delay-2">
+        <h3 class="h4 fw-bold" style="color:var(--hec-navy)" data-i18n="method.proofTitle">Xem tận mắt: một buổi tranh biện lớp 4</h3>
+        <div class="section-divider"></div>
+        <p class="mb-0" data-i18n="method.proofDesc">Không phải màn trình diễn tập trước — chỉ là một buổi học bình thường. Học sinh lớp 4 tranh biện bằng tiếng Anh: nêu quan điểm, lắng nghe phía bên kia và phản biện lại. Đây chính là hình hài thật của việc "học sinh nói nhiều hơn giáo viên".</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     ADMISSIONS & FEES
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="admissions" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4 reveal">
+      <h2 class="section-title" data-i18n="adm.title">Quy trình đăng ký đơn giản</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="admission-timeline reveal">
+      <div class="timeline-step">
+        <div class="step-number">1</div>
+        <h5 data-i18n="adm.step1">Gửi đăng ký</h5>
+        <p data-i18n="adm.step1Desc">Điền thông tin cơ bản dưới đây — chỉ mất 30 giây.</p>
+      </div>
+      <div class="timeline-step">
+        <div class="step-number">2</div>
+        <h5 data-i18n="adm.step2">Xếp lớp miễn phí</h5>
+        <p data-i18n="adm.step2Desc">Bài kiểm tra ngắn để tìm lớp phù hợp nhất.</p>
+      </div>
+      <div class="timeline-step">
+        <div class="step-number">3</div>
+        <h5 data-i18n="adm.step3">Bắt đầu học</h5>
+        <p data-i18n="adm.step3Desc">Vào lớp với buổi kiểm tra tuần đầu từ giáo viên.</p>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="row g-4 reveal">
+      <div class="col-lg-6">
+        <div class="pricing-card">
+          <h5><i class="bi bi-tag me-2" style="color:var(--hec-blue)"></i> <span data-i18n="adm.pricingTitle">Học phí minh bạch</span></h5>
+          <div class="pricing-item">
+            <span class="label" data-i18n="adm.price1">Lớp tiêu chuẩn</span>
+            <span class="amount" data-i18n="adm.price1Detail">210.000₫ / buổi (90 phút)</span>
+          </div>
+          <div class="pricing-item">
+            <span class="label" data-i18n="adm.price2">Lớp IELTS Sun</span>
+            <span class="amount" data-i18n="adm.price2Detail">260.000₫ / buổi (120 phút)</span>
+          </div>
+          <div class="mt-3 small-muted">
+            <i class="bi bi-check-circle me-1 text-success"></i> <span data-i18n="adm.price3">Thu phí theo số buổi thực tế. Không phí ẩn.</span><br>
+            <i class="bi bi-check-circle me-1 text-success"></i> <span data-i18n="adm.noBookFee">Hiện không thu phí giáo trình.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="pricing-card">
+          <h5><i class="bi bi-gift me-2" style="color:var(--hec-gold)"></i> <span data-i18n="adm.discountTitle">Ưu đãi</span></h5>
+          <div class="d-flex align-items-start gap-2 mb-3">
+            <i class="bi bi-people-fill text-primary mt-1"></i>
+            <span data-i18n="adm.discount1">Giảm 5% cho anh/chị em ruột.</span>
+          </div>
+          <div class="d-flex align-items-start gap-2">
+            <i class="bi bi-megaphone-fill text-primary mt-1"></i>
+            <span data-i18n="adm.discount2">Thưởng giới thiệu: Tích lũy đến 95% khi gia đình được giới thiệu đăng ký.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SUMMER CAMP — 2026 PROOF + 2027 PRE-REGISTRATION
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="summer-camp-spotlight" class="py-5" style="background: linear-gradient(to bottom, #ffffff, #f8fafc);">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="badge-status badge-free mb-3"><i class="bi bi-patch-check-fill"></i> <span data-i18n="proof.badge">Trại hè 2026 — được ghi lại, không chỉ hứa hẹn</span></span>
+      <h2 class="section-title" data-i18n="proof.title">Kết quả nằm ở chính các con</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="section-subtitle mx-auto" data-i18n="proof.subtitle">Chúng tôi ghi lại từng ngày của Trại hè 2026. Dự án thật, phỏng vấn thật, và một cuốn nhật ký số riêng cho mỗi con — hãy tự mình xem 40 ngày tại HEC làm được điều gì.</p>
+    </div>
+
+    <div class="row g-3 text-center mb-5 reveal">
+      <div class="col-6 col-md-3"><div class="hero-stat"><div class="stat-value">21</div><div class="stat-label" data-i18n="proof.stat1">trại sinh 2026</div></div></div>
+      <div class="col-6 col-md-3"><div class="hero-stat"><div class="stat-value">360+</div><div class="stat-label" data-i18n="proof.stat2">giờ hòa mình mỗi con</div></div></div>
+      <div class="col-6 col-md-3"><div class="hero-stat"><div class="stat-value">1,400+</div><div class="stat-label" data-i18n="proof.stat3">khoảnh khắc ghi lại</div></div></div>
+      <div class="col-6 col-md-3"><div class="hero-stat"><div class="stat-value">9</div><div class="stat-label" data-i18n="proof.stat4">video các con tự kể</div></div></div>
+    </div>
+
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 reveal">
+        <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg" style="border:4px solid #fff;">
+          <iframe src="https://www.youtube-nocookie.com/embed/G3ZjYQe7gEw?rel=0" title="HEC camper reflection" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <p class="small text-muted mt-2 mb-0" data-i18n="proof.videoCaption">Ronaldo — trại sinh tiến bộ nhất — tự kể câu chuyện của mình. Không kịch bản.</p>
+      </div>
+      <div class="col-lg-6 reveal reveal-delay-2">
+        <span class="badge-status badge-hot mb-3"><i class="bi bi-fire"></i> <span data-i18n="camp27.badge">Trại hè 2027 · khai mạc 1/6</span></span>
+        <h3 class="fw-bold mb-3" style="color:var(--hec-dark);font-size:1.9rem;" data-i18n="camp27.title">Mùa hè tới, trại sinh ấy có thể là con của bạn.</h3>
+        <p class="mb-4" style="color:var(--hec-text)" data-i18n="camp27.sub">Hòa mình toàn tiếng Anh, 08:00–17:00 · Tiếng Anh dự án, kỹ thuật & robot, nghệ thuật sáng tạo, chánh niệm — và một cuốn nhật ký số riêng cho mỗi gia đình khi kết thúc.</p>
+        <ul class="list-unstyled mb-4">
+          <li class="mb-2"><i class="bi bi-people-fill text-primary me-2"></i> <strong data-i18n="camp27.point1">12 chỗ mỗi lớp — hết là hết</strong></li>
+          <li class="mb-2"><i class="bi bi-journal-richtext text-success me-2"></i> <strong data-i18n="camp27.point2">Mỗi con tốt nghiệp với một nhật ký số song ngữ</strong></li>
+          <li class="mb-2"><i class="bi bi-cash-coin text-warning me-2"></i> <strong data-i18n="camp27.point3">Học phí minh bạch — biết trước từng đồng</strong></li>
+        </ul>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="summer-camp.html" class="btn btn-gold" data-i18n="camp27.ctaPrimary">Giữ chỗ trại hè 2027</a>
+          <a href="camp/" target="_blank" rel="noopener" class="btn btn-outline-primary" data-i18n="camp27.ctaSecondary">Xem thành quả 2026</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCARCITY CTA — Urgency Driver
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="scarcity-section" aria-label="Enrollment urgency">
+  <div class="container position-relative">
+    <h2 class="mb-3 reveal" data-i18n="scar.headline">Trại hè 2027 khai mạc ngày 1/6</h2>
+    <p class="reveal" data-i18n="scar.subline">Mỗi lớp chỉ 12 chỗ, và gia đình 2026 được giữ chỗ trước. Đăng ký giữ chỗ ngay — hoặc tham gia lớp học trong năm ngay hôm nay, không cần đợi đến hè.</p>
+
+    <div class="countdown reveal" id="countdown">
+      <div class="countdown-unit">
+        <div class="number" id="cd-days">00</div>
+        <div class="label" data-i18n="scar.days">Ngày</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="number" id="cd-hours">00</div>
+        <div class="label" data-i18n="scar.hours">Giờ</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="number" id="cd-minutes">00</div>
+        <div class="label" data-i18n="scar.minutes">Phút</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="number" id="cd-seconds">00</div>
+        <div class="label" data-i18n="scar.seconds">Giây</div>
+      </div>
+    </div>
+
+    <a href="#contact" class="btn btn-gold btn-lg reveal" data-i18n="scar.cta">Giữ chỗ ngay</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <h2 class="section-title" data-i18n="cont.title">Liên hệ với chúng tôi</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="section-subtitle mx-auto" data-i18n="cont.subtitle">Có câu hỏi? Gửi tin nhắn hoặc liên hệ qua Zalo — chúng tôi phản hồi trong 2 giờ.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6 reveal">
+        <div class="contact-card">
+          <!-- Contact info -->
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-telephone"></i></div>
+            <span>0975 679 889</span>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-geo-alt"></i></div>
+            <span data-i18n="cont.address">Số 25, ngõ 242 Láng, quận Đống Đa, Hà Nội</span>
+          </div>
+          <div class="d-flex gap-2 mb-4">
+            <a class="social-link facebook" href="https://www.facebook.com/happyenglishclubhanoi" target="_blank" rel="noopener" aria-label="HEC on Facebook"><i class="bi bi-facebook"></i> Facebook</a>
+            <a class="social-link zalo" href="https://zalo.me/0975679889" target="_blank" rel="noopener" aria-label="Chat on Zalo"><i class="bi bi-chat-dots-fill"></i> Zalo</a>
+          </div>
+
+          <!-- Enrollment Form -->
+          <form id="enrollment-form" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="f-student-name" class="visually-hidden" data-i18n="cont.studentName">Tên học sinh</label>
+                <input class="form-control" data-i18n-placeholder="cont.studentName" placeholder="Tên học sinh" id="f-student-name" autocomplete="off">
+              </div>
+              <div class="col-md-6">
+                <label for="f-grade" class="visually-hidden" data-i18n="cont.grade">Khối lớp</label>
+                <input class="form-control" data-i18n-placeholder="cont.grade" placeholder="Khối lớp" id="f-grade" autocomplete="off">
+              </div>
+              <div class="col-md-6">
+                <label for="f-parent-name" class="visually-hidden" data-i18n="cont.parentName">Tên phụ huynh</label>
+                <input class="form-control" data-i18n-placeholder="cont.parentName" placeholder="Tên phụ huynh" id="f-parent-name" autocomplete="name">
+              </div>
+              <div class="col-md-6">
+                <label for="f-phone" class="visually-hidden" data-i18n="cont.phonePlc">Số điện thoại *</label>
+                <input class="form-control" type="tel" data-i18n-placeholder="cont.phonePlc" placeholder="Số điện thoại *" required aria-required="true" aria-describedby="f-phone-hint" id="f-phone" autocomplete="tel">
+                <div id="f-phone-hint" class="form-text text-danger d-none" data-i18n="cont.phoneHint">Vui lòng nhập số điện thoại hợp lệ.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="f-zalo" class="visually-hidden" data-i18n="cont.zaloPlc">Zalo (tuỳ chọn)</label>
+                <input class="form-control" data-i18n-placeholder="cont.zaloPlc" placeholder="Zalo (tuỳ chọn)" id="f-zalo" autocomplete="off">
+              </div>
+              <div class="col-md-6">
+                <label for="f-program" class="visually-hidden" data-i18n="cont.program">Chọn chương trình</label>
+                <select class="form-select" id="f-program">
+                  <option value="" selected data-i18n="cont.program">Chọn chương trình</option>
+                  <option>Look Starter – Mars</option>
+                  <option>Look 1 – Venus</option>
+                  <option>Look 2 – Neptune</option>
+                  <option>Discover 1 – Jupiter</option>
+                  <option>Discover 3 – SKY 1</option>
+                  <option>Grammar & Writing – Sanrio G6</option>
+                  <option>Cambridge Math – Mercury</option>
+                  <option>IELTS – Sun Class</option>
+                  <option data-i18n="cont.optReadingClub">CLB đọc sách (Thứ Bảy 14:00–16:00)</option>
+                  <option data-i18n="cont.optSummerCamp">Trại hè 2026</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="f-message" class="visually-hidden" data-i18n="cont.message">Lời nhắn (tuỳ chọn)</label>
+                <textarea class="form-control" rows="3" data-i18n-placeholder="cont.message" placeholder="Lời nhắn (tuỳ chọn)" id="f-message"></textarea>
+              </div>
+              <div class="col-12" id="form-error-banner" style="display:none;">
+                <div class="alert alert-danger py-2 mb-0" role="alert" data-i18n="cont.formError">Vui lòng điền đầy đủ thông tin bắt buộc trước khi gửi.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-gold btn-lg w-100" id="f-submit" data-i18n="cont.submit">Gửi đăng ký</button>
+              </div>
+            </div>
+          </form>
+          <!-- Success state (hidden until form submitted) -->
+          <div id="form-success" class="text-center py-4" style="display:none;">
+            <div class="mb-3" style="font-size:3rem;">&#10003;</div>
+            <h4 class="fw-bold text-success mb-2" data-i18n="cont.successTitle">Chúng tôi đã nhận được yêu cầu của bạn!</h4>
+            <p class="text-muted" data-i18n="cont.successMsg">Chúng tôi sẽ liên hệ trong vòng 24 giờ. Kiểm tra Zalo hoặc điện thoại nhé.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 reveal reveal-delay-2">
+        <iframe class="rounded-4 border w-100 shadow-sm" height="480" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=21.0216,105.8000&hl=en&z=15&output=embed"
+                title="HEC location map"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════════════ -->
+<div id="footer-placeholder"></div>
+
+<!-- ── Floating Zalo CTA ────────────────────────────────────────── -->
+<div class="float-zalo" id="float-zalo" aria-label="Contact via Zalo or phone">
+  <a href="https://zalo.me/0975679889" class="float-zalo__btn" target="_blank" rel="noopener" aria-label="Chat on Zalo">
+    <span class="float-zalo__pulse" aria-hidden="true"></span>
+    <i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
+    <span data-i18n="float.zaloCall">Zalo / Gọi</span>
+  </a>
+  <a href="tel:0975679889" class="float-zalo__btn" style="background:var(--hec-navy);box-shadow:0 4px 14px rgba(10,22,40,0.3);" aria-label="Call 0975 679 889">
+    <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+    <span>0975 679 889</span>
+  </a>
+</div>
+
+<!-- ── Back to top ──────────────────────────────────────────────── -->
+<button id="back-to-top" aria-label="Back to top" title="Back to top">
+  <i class="bi bi-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- ── Scripts ──────────────────────────────────────────────────── -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/translations.js"></script>
+<script src="assets/language.js"></script>
+<script src="assets/includes.js"></script>
+
 </body>
 </html>

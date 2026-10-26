@@ -169,6 +169,18 @@ const HEC_TRANSLATIONS = {
   "robo.finalNote":  { en: "Questions? Zalo 0975 679 889 — we reply within 2 hours.",
                        vi: "Có câu hỏi? Zalo 0975 679 889 — phản hồi trong 2 giờ." },
 
+  /* ─── Homepage <head> & page chrome ───────────────────────── */
+  "meta.title":        { en: "HEC – Happy English Club | Small Classes, Big Confidence | Hanoi",
+                         vi: "Trung tâm tiếng Anh lớp nhỏ tại Đống Đa, Hà Nội | HEC – Happy English Club" },
+  "meta.description":  { en: "Small-class English center in Đống Đa, Hanoi: age 4 to Grade 12 and IELTS, taught by a US-licensed teacher. Max 12 students. Free Saturday Reading Club.",
+                         vi: "Trung tâm tiếng Anh lớp nhỏ tại Đống Đa, Hà Nội: từ 4 tuổi đến lớp 12 và IELTS, do giáo viên được cấp phép Hoa Kỳ giảng dạy. Tối đa 12 học sinh mỗi lớp. CLB đọc sách miễn phí Thứ Bảy." },
+  "meta.ogTitle":      { en: "HEC – Happy English Club | Hanoi",
+                         vi: "HEC – Happy English Club | Hà Nội" },
+  "meta.ogDescription":{ en: "Small classes, big confidence. International curriculum, US-licensed teacher, transparent fees.",
+                         vi: "Lớp nhỏ, tự tin lớn. Chương trình quốc tế, giáo viên được cấp phép Hoa Kỳ, học phí minh bạch." },
+  "a11y.skip":         { en: "Skip to main content", vi: "Chuyển đến nội dung chính" },
+  "float.zaloCall":    { en: "Zalo / Call",        vi: "Zalo / Gọi" },
+
   /* ─── Navbar ──────────────────────────────────────────────── */
   "nav.home":          { en: "Home",               vi: "Trang chủ" },
   "nav.programs":      { en: "Programs",           vi: "Chương trình" },
@@ -194,6 +206,37 @@ const HEC_TRANSLATIONS = {
   "hero.stat2Label":   { en: "each session",       vi: "mỗi buổi học" },
   "hero.stat3Value":   { en: "Free",              vi: "Miễn phí" },
   "hero.stat3Label":   { en: "Saturday Reading Club", vi: "CLB đọc sách Thứ Bảy" },
+  "hero.slide1Title":  { en: "Learn with purpose",        vi: "Học có mục tiêu" },
+  "hero.slide1Text":   { en: "Clear goals and checkpoints every week.",
+                         vi: "Mục tiêu và mốc kiểm tra rõ ràng mỗi tuần." },
+  "hero.slide2Title":  { en: "Present with confidence",   vi: "Tự tin thuyết trình" },
+  "hero.slide2Text":   { en: "Frequent practice with friendly feedback.",
+                         vi: "Luyện tập thường xuyên, nhận xét thân thiện." },
+  "hero.slide3Title":  { en: "Projects that matter",      vi: "Dự án có ý nghĩa" },
+  "hero.slide3Text":   { en: "Real topics, real audiences, real progress.",
+                         vi: "Chủ đề thật, người nghe thật, tiến bộ thật." },
+  "hero.slide4Title":  { en: "Community-driven growth",   vi: "Cùng nhau tiến bộ" },
+  "hero.slide4Text":   { en: "Learning thrives in a supportive environment.",
+                         vi: "Việc học phát triển mạnh trong một môi trường hỗ trợ." },
+  "hero.slide5Title":  { en: "Welcome to HEC",            vi: "Chào mừng đến với HEC" },
+  "hero.slide5Text":   { en: "Where every child finds their voice.",
+                         vi: "Nơi mỗi đứa trẻ tìm thấy tiếng nói của mình." },
+
+  /* ─── About ───────────────────────────────────────────────── */
+  "about.title":       { en: "Where every child finds their voice",
+                         vi: "Nơi mỗi đứa trẻ tìm thấy tiếng nói của mình" },
+  "about.p1":          { en: "<strong>HEC – Happy English Club</strong> is a small-class English center in Đống Đa District, Hanoi, built around one belief: children learn to speak English when they're confident enough to try.",
+                         vi: "<strong>HEC – Happy English Club</strong> là trung tâm tiếng Anh lớp nhỏ tại quận Đống Đa, Hà Nội, được xây dựng trên một niềm tin: trẻ sẽ nói được tiếng Anh khi đủ tự tin để thử." },
+  "about.p2":          { en: "Every class starts with a Big Question. From kindergarten (age 4) to Grade 12, our students learn through project-based, inquiry-driven lessons built on <strong>Oxford Discover, National Geographic Look, and Cambridge Math</strong>, with IELTS preparation for older students — taught by a US-licensed teacher certified by Cambridge and Oxford. With a maximum of 12 students per class, every child gets heard, every lesson.",
+                         vi: "Mỗi buổi học bắt đầu bằng một Câu hỏi lớn. Từ mẫu giáo (4 tuổi) đến lớp 12, học sinh học qua dự án và khám phá trên nền giáo trình <strong>Oxford Discover, National Geographic Look và Cambridge Math</strong>, cùng lớp luyện thi IELTS cho các bạn lớn hơn — do giáo viên được cấp phép Hoa Kỳ, có chứng nhận của Cambridge và Oxford, trực tiếp giảng dạy. Mỗi lớp tối đa 12 học sinh, nên buổi nào con cũng được lắng nghe." },
+  "about.p3":          { en: "Beyond the classroom, our free <strong>Saturday Reading Club</strong> is open to all ages, and our <strong>Summer Camp</strong> offers full-English immersion. Families follow along through our own student portal — homework, attendance, points, and progress, all in one place.",
+                         vi: "Ngoài giờ học, <strong>CLB đọc sách Thứ Bảy</strong> miễn phí chào đón mọi lứa tuổi, còn <strong>Trại hè</strong> giúp con hòa mình hoàn toàn trong tiếng Anh. Phụ huynh theo dõi việc học của con qua cổng thông tin học sinh của trung tâm — bài tập, điểm danh, điểm thưởng và tiến bộ, tất cả ở một nơi." },
+  "about.p4":          { en: "Fees are transparent and per-session: <strong>210,000₫</strong> for a 90-minute class, <strong>260,000₫</strong> for 120-minute IELTS. You're billed only for sessions actually held, with a 5% sibling discount and no hidden fees.",
+                         vi: "Học phí minh bạch, tính theo buổi: <strong>210.000₫</strong> cho buổi học 90 phút, <strong>260.000₫</strong> cho buổi IELTS 120 phút. Phụ huynh chỉ đóng phí cho các buổi thực học, được giảm 5% cho anh/chị em ruột và không có phí ẩn." },
+  "about.visit":       { en: "Visit us: No. 25, Alley 242 Láng Street, Đống Đa, Hanoi",
+                         vi: "Địa chỉ: Số 25, ngõ 242 Láng, Đống Đa, Hà Nội" },
+  "about.call":        { en: "Call or Zalo: 0975 679 889",
+                         vi: "Gọi hoặc nhắn Zalo: 0975 679 889" },
 
   /* ─── Authority ───────────────────────────────────────────── */
   "auth.title":        { en: "Why Parents in Hanoi Trust HEC",
@@ -226,6 +269,16 @@ const HEC_TRANSLATIONS = {
   "prog.open":         { en: "Open",                vi: "Mở đăng ký" },
   "prog.limited":      { en: "Limited",             vi: "Có hạn" },
   "prog.full":         { en: "Waitlist",             vi: "Đã đầy" },
+  "prog.enrolled":     { en: "enrolled",             vi: "đã đăng ký" },
+  "prog.price":        { en: "210,000₫",             vi: "210.000₫" },
+  "prog.priceIelts":   { en: "260,000₫",             vi: "260.000₫" },
+  "day.mon":           { en: "Mon",                  vi: "Thứ Hai" },
+  "day.tue":           { en: "Tue",                  vi: "Thứ Ba" },
+  "day.wed":           { en: "Wed",                  vi: "Thứ Tư" },
+  "day.thu":           { en: "Thu",                  vi: "Thứ Năm" },
+  "day.fri":           { en: "Fri",                  vi: "Thứ Sáu" },
+  "day.sat":           { en: "Sat",                  vi: "Thứ Bảy" },
+  "day.sunday":        { en: "Sunday",               vi: "Chủ nhật" },
 
   /* ─── Reading Club ────────────────────────────────────────── */
   "rc.title":          { en: "Saturday Reading Club",
@@ -353,6 +406,8 @@ const HEC_TRANSLATIONS = {
   "cont.program":      { en: "Select program",        vi: "Chọn chương trình" },
   "cont.message":      { en: "Message (optional)",    vi: "Lời nhắn (tuỳ chọn)" },
   "cont.submit":       { en: "Submit Enrollment",     vi: "Gửi đăng ký" },
+  "cont.optReadingClub": { en: "Reading Club (Saturday 14:00–16:00)", vi: "CLB đọc sách (Thứ Bảy 14:00–16:00)" },
+  "cont.optSummerCamp":  { en: "Summer Camp 2026",    vi: "Trại hè 2026" },
 
   /* ─── Summer Camp NAV & HERO ────────────────────────────────────── */
   "nav.summerCamp":    { en: "Summer Camp",           vi: "Trại Hè" },
