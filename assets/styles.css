@@ -1144,9 +1144,18 @@ h1, h2, h3, h4, h5, h6 {
   .timeline-step::after { display: none; }
   .countdown-unit { min-width: 65px; padding: 0.75rem 1rem; }
   .countdown-unit .number { font-size: 1.5rem; }
+  /* g-5's -1.5rem row margins overrun the container's 0.75rem padding */
+  .row.g-5 { --bs-gutter-x: 1.5rem; }
 }
 
 @media (max-width: 767px) {
+  /* Long (esp. Vietnamese) uppercase badges must wrap, not widen the page */
+  .badge-status {
+    white-space: normal;
+    max-width: 100%;
+  }
+  .badge-status::before,
+  .badge-status > i { flex-shrink: 0; }
   .grid-cards {
     grid-template-columns: 1fr;
   }
