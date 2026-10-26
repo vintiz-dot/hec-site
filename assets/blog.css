@@ -98,6 +98,7 @@
 .blog-table tbody tr:nth-child(even) td { background: #f8fafc; }
 .blog-table tbody th { font-weight: 700; color: var(--hec-navy); background: #fff; position: sticky; left: 0; min-width: 9.5rem; }
 .blog-table tr.is-hec td, .blog-table tr.is-hec th { background: #fffbeb !important; }
+.blog-wide .blog-table { min-width: 860px; }
 .blog-table.compact { min-width: 0; }
 .blog-table.compact td:first-child { min-width: 7.5rem; }
 .table-note { font-size: .84rem; color: var(--blog-muted); margin-bottom: 1.5rem; }
@@ -111,12 +112,19 @@
 .profile .fit { font-size: .95rem; background: #f1f5f9; border-radius: var(--radius-sm); padding: .55rem .75rem; margin: .6rem 0 0; }
 .profile.is-hec { border: 2px solid var(--hec-gold); }
 
+/* ── HEC answers and the highlighted HEC column ───────────────── */
+.hec-answer { background: #fffbeb; border-left: 4px solid var(--hec-gold); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: .55rem .85rem; font-size: .97rem; margin: -.35rem 0 1.5rem; }
+.blog-table td.is-hec-cell { background: #fffbeb !important; font-weight: 500; }
+.profile ul { padding-left: 1.2rem; margin: .5rem 0 .6rem; }
+
 /* ── Level ladder ─────────────────────────────────────────────── */
 .ladder { list-style: none; padding: 0; margin: 1.5rem 0; counter-reset: lvl; }
 .ladder li { position: relative; padding: 0 0 1.1rem 3.2rem; margin: 0; }
 .ladder li::before { counter-increment: lvl; content: counter(lvl); position: absolute; left: 0; top: .1rem; width: 2.2rem; height: 2.2rem; border-radius: 50%; background: var(--hec-blue); color: #fff; font-weight: 700; display: grid; place-items: center; font-size: .95rem; }
 .ladder li::after { content: ''; position: absolute; left: 1.05rem; top: 2.5rem; bottom: .2rem; width: 2px; background: var(--blog-line); }
 .ladder li:last-child::after { display: none; }
+.ladder li.is-current::before { background: var(--hec-gold); color: var(--hec-navy); }
+.ladder li.is-current .lvl-name { color: var(--hec-blue); }
 .ladder .lvl-name { font-weight: 700; color: var(--hec-navy); }
 .ladder .lvl-book { font-size: .88rem; color: var(--blog-muted); }
 
@@ -176,6 +184,12 @@
 .post-card .body { padding: 1.15rem 1.25rem 1.35rem; }
 .post-card h2 { font-size: 1.25rem; margin: .4rem 0 .5rem; }
 .post-card p { color: #475569; font-size: .97rem; margin: 0; }
+
+.post-card.is-featured { flex-direction: row; }
+.post-card.is-featured img { width: 46%; aspect-ratio: auto; object-fit: cover; }
+.post-card.is-featured .body { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 1.5rem 1.75rem; }
+.post-card.is-featured h2 { font-size: 1.5rem; }
+@media (max-width: 767.98px) { .post-card.is-featured { flex-direction: column; } .post-card.is-featured img { width: 100%; aspect-ratio: 16/9; } }
 
 /* ── Footer tweak ─────────────────────────────────────────────── */
 .blog-footer a { color: rgba(255,255,255,.8); }

@@ -1617,3 +1617,11 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 992px) {
   .ela-course .course-cta { position: sticky; top: 96px; }
 }
+
+/* Homepage "Explore" links block */
+.explore-h { font-family: var(--font-display); font-size: 1rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--hec-blue); margin-bottom: .75rem; }
+.explore-list { list-style: none; padding: 0; margin: 0; }
+.explore-list li { margin-bottom: .45rem; }
+.explore-list a { font-weight: 600; text-decoration: none; }
+.explore-list a:hover { text-decoration: underline; }
+.explore-list span { color: var(--hec-slate); font-size: .92rem; }
