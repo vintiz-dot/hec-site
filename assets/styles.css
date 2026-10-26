@@ -1543,3 +1543,23 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
   object-position: center 30%;
 }
+
+/* ── Young-learner video showcase (Mars class + kindergarten) ──────
+   Two 16:9 YouTube reflections on top, a portrait camp clip beside the
+   pitch below. YouTube loads only on click (see .yt-lite). */
+.kids-showcase { background: linear-gradient(180deg, #fffbeb 0%, rgba(255, 251, 235, 0) 100%); }
+.kids-showcase__kicker { display: inline-block; font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #b45309; background: var(--hec-gold-soft); border-radius: 999px; padding: .3rem .8rem; }
+.kids-showcase h2 { font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif; font-weight: 800; letter-spacing: -.02em; }
+.kids-showcase figure { margin: 0; }
+.kids-showcase figcaption { font-size: .92rem; color: #334155; margin-top: .55rem; }
+.yt-lite { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius-lg); overflow: hidden; background: #0a1628; box-shadow: 0 12px 32px rgba(10, 22, 40, .18); }
+.yt-lite button { all: unset; cursor: pointer; position: absolute; inset: 0; display: block; }
+.yt-lite img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.yt-lite button:hover img, .yt-lite button:focus-visible img { transform: scale(1.03); }
+.yt-lite button:focus-visible { outline: 3px solid var(--hec-gold); outline-offset: -3px; }
+.yt-lite .yt-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 68px; height: 48px; border-radius: 14px; background: #ff0033; box-shadow: 0 6px 20px rgba(0, 0, 0, .35); }
+.yt-lite .yt-play::before { content: ''; position: absolute; left: 27px; top: 13px; border-style: solid; border-width: 11px 0 11px 19px; border-color: transparent transparent transparent #fff; }
+.yt-lite iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.kids-reel video { width: 100%; max-width: 340px; aspect-ratio: 9 / 16; height: auto; object-fit: cover; border-radius: var(--radius-lg); background: #0a1628; box-shadow: 0 12px 32px rgba(10, 22, 40, .18); display: block; margin: 0 auto; }
+.kids-reel figcaption { text-align: center; }
+.kids-pitch li { margin-bottom: .5rem; }
