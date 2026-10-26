@@ -174,6 +174,7 @@ const HEC_TRANSLATIONS = {
   "nav.programs":      { en: "Programs",           vi: "Chương trình" },
   "nav.readingClub":   { en: "Reading Club",       vi: "CLB đọc sách" },
   "nav.admissions":    { en: "Admissions & Fees",  vi: "Tuyển sinh & Học phí" },
+  "nav.blog":          { en: "Blog",               vi: "Cẩm nang" },
   "nav.contact":       { en: "Contact",            vi: "Liên hệ" },
   "nav.enrollNow":     { en: "Enroll Now",         vi: "Đăng ký ngay" },
   "nav.login":         { en: "Log in",             vi: "Đăng nhập" },
