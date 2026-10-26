@@ -27,6 +27,13 @@ import vm from 'node:vm';
 const SITE = 'https://hanoienglish.com/';
 const ROOT = new URL('..', import.meta.url);
 
+// Blog posts written twice, English → Vietnamese (the names differ, unlike courses/x-vn.html)
+const BLOG_TWINS = {
+  'blog/what-is-ela-vs-esl.html': 'blog/ela-la-gi.html',
+  'blog/english-classes-for-kids-dong-da-hanoi.html': 'blog/trung-tam-tieng-anh-cho-tre-em-dong-da.html',
+  'blog/ielts-classes-dong-da-hanoi.html': 'blog/hoc-ielts-o-dong-da-ha-noi.html',
+};
+
 const BANNER = `<!-- GENERATED FILE, do not edit: index.html rendered in Vietnamese by
      tools/build-vi.mjs. Edit index.html or assets/translations.js instead,
      then run: node tools/build-vi.mjs -->`;
@@ -161,6 +168,8 @@ export function buildVietnamese(indexHtml, translations) {
   // Links to bilingual pages (program cards, …) open their Vietnamese version
   html = html.replace(/(<a\b[^>]*?\shref=")(index|courses\/[\w-]+?)(\.html[^"]*")/g,
     (link, before, page, after) => page.endsWith('-vn') ? link : before + page + '-vn' + after);
+  html = html.replace(/(<a\b[^>]*?\shref=")(blog\/[\w-]+\.html)/g,
+    (link, before, page) => before + (BLOG_TWINS[page] || page));
   const eol = html.includes('\r\n') ? '\r\n' : '\n';
   html = html.replace(/^<!doctype html>\r?\n/i, doctype => doctype + BANNER.replace(/\n/g, eol) + eol);
   if (!html.includes(BANNER.slice(0, 20))) throw new Error('index.html must start with <!doctype html>');
