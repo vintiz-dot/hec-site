@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="vi" data-lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>My Clothes Story | Happy English Club</title>
+<script src="lang.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Nunito:wght@500;700;800&family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="shared.css">
+<style>
+.page{padding:32px max(16px,env(safe-area-inset-right,0px)) 32px max(16px,env(safe-area-inset-left,0px))}
+.book{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:32px}
+.sheet{background:var(--paper);border-radius:4px;box-shadow:0 1px 2px rgba(22,34,74,.08),0 12px 40px rgba(22,34,74,.10);overflow:hidden;position:relative}
+.inner{padding:44px clamp(20px,6vw,64px) 40px;display:flex;flex-direction:column;gap:28px}
+h2{font-size:clamp(28px,5vw,38px)}
+h3{font-size:22px}
+.eyebrow{font-family:var(--body);font-weight:800;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.goldrule{height:1px;background:linear-gradient(90deg,transparent,var(--gold) 15%,var(--gold) 85%,transparent);opacity:.55;border:0;margin:0}
+.lead{margin-top:10px;font-size:19px}
+.folio{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px clamp(20px,6vw,64px);border-top:1px solid var(--rule);font-size:12px;color:var(--ink-soft);letter-spacing:.06em}
+.folio img{height:26px;width:auto;background:var(--ink);border-radius:50%;padding:3px 4px}
+.folio b{color:var(--ink)}
+
+.crest{background:var(--ink);color:var(--paper);position:relative;padding-block:40px 36px;padding-inline:clamp(20px,6vw,64px);display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+.crest::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:repeating-linear-gradient(90deg,var(--sun) 0 40px,transparent 40px 48px)}
+.crest img{width:clamp(110px,20vw,150px);height:auto}
+.crest .eyebrow{color:var(--sun)}
+.crest h1{color:var(--paper);font-size:clamp(40px,8vw,64px);margin-top:8px}
+.crest h1 em{font-style:italic;font-weight:500;color:var(--sun)}
+.crest .motto{font-family:"Bodoni Moda",Georgia,serif;font-style:italic;font-size:16px;color:#C9CEE0;margin-top:10px}
+.crest .subtitle{font-size:17px;font-weight:600;color:#fff;margin-top:6px}
+@media (max-width:520px){.crest{grid-template-columns:1fr;text-align:center;justify-items:center}}
+
+.owner{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 18px;padding:20px 24px;border:1.5px solid var(--gold);border-radius:3px;position:relative}
+.owner::before{content:"";position:absolute;inset:5px;border:1px solid var(--rule);border-radius:2px;pointer-events:none}
+.owner .label{font-family:var(--display);font-style:italic;font-size:22px;white-space:nowrap}
+html[data-lang="vi"] .owner .label{font-style:normal;font-weight:600}
+.line{flex:1;min-width:160px;border-bottom:2px dotted var(--ink-soft);height:34px}
+
+.question{text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center;padding-block:8px}
+.question h2{font-size:clamp(30px,6vw,46px);max-width:18ch}
+.question h2 mark{background:linear-gradient(transparent 62%,rgba(255,229,0,.55) 62%);color:inherit}
+
+.think{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.think .card{background:var(--wash);border-radius:3px;padding:20px;display:flex;flex-direction:column;gap:10px}
+.think .card b{font-family:var(--display);font-size:24px;line-height:1.2}
+.think .ask{grid-column:1/-1;display:flex;flex-direction:column;gap:8px;padding:20px 24px;background:var(--ink);color:var(--paper);border-radius:3px}
+.think .ask p{font-size:19px;font-weight:700}
+.think .ask .eyebrow{color:var(--sun)}
+.draw{border:1.5px dashed #AEB5CB;border-radius:3px;height:130px;display:grid;place-items:center;color:var(--ink-soft);font-size:14px}
+@media (max-width:560px){.think{grid-template-columns:1fr}}
+
+.steps{display:grid;gap:22px}
+.step{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:start}
+.num{width:64px;height:64px;border-radius:50%;background:var(--ink);color:var(--sun);font-family:var(--display);font-size:32px;font-weight:700;display:grid;place-items:center;box-shadow:inset 0 0 0 3px var(--ink),inset 0 0 0 4px var(--sun)}
+.step-body{display:flex;flex-direction:column;gap:10px;min-width:0}
+.step-body h3{font-size:26px}
+ul.ticks{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+ul.ticks li{display:flex;gap:12px;align-items:baseline}
+ul.ticks li::before{content:"";flex:none;width:18px;height:18px;border:2px solid var(--ink);border-radius:3px;transform:translateY(3px)}
+.chips{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.chip{background:var(--wash);border-radius:3px;padding:12px;text-align:center;font-weight:800;font-size:15px;display:flex;flex-direction:column;gap:4px}
+.chip i{font-style:normal;font-family:var(--display);font-size:26px;color:var(--gold)}
+@media (max-width:560px){.chips{grid-template-columns:1fr 1fr}.step{grid-template-columns:48px 1fr}.num{width:48px;height:48px;font-size:24px}}
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:10px 22px}
+.rules div{display:flex;flex-direction:column}
+.rules b{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+@media (max-width:480px){.rules{grid-template-columns:1fr}}
+.timeline{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-weight:800}
+.timeline .node{padding:8px 14px;border:1.5px solid var(--ink);border-radius:999px}
+.timeline .node.fill{background:var(--ink);color:var(--paper)}
+.timeline small{font-weight:700;color:var(--ink-soft)}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+
+.script{display:grid;gap:0}
+.part{display:grid;grid-template-columns:150px 1fr;gap:20px;padding-block:18px;border-top:1px solid var(--rule)}
+.part:first-child{border-top:0}
+.part .tag{display:flex;flex-direction:column;gap:2px}
+.part .tag small{font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--gold)}
+.part .tag strong{font-family:var(--display);font-size:22px;line-height:1.15}
+.say{display:flex;flex-direction:column;gap:10px;min-width:0}
+/* The speech is always English, in the English font, even in Vietnamese mode. */
+.say .speak{font-family:"Nunito","Trebuchet MS",system-ui,sans-serif;font-size:19px;font-weight:700}
+.say .hint{font-size:14px;font-weight:600;color:var(--ink-soft)}
+.say .gloss{font-family:var(--viet);font-size:14.5px;font-weight:400;color:var(--ink-soft)}
+.blank{display:inline-block;min-width:110px;border-bottom:2px dotted var(--ink-soft);height:1.1em;vertical-align:baseline}
+.part.star{background:var(--wash);margin-inline:-20px;padding-inline:20px;border-radius:3px;border-top:0}
+.superstar{display:flex;gap:12px;align-items:center;background:var(--ink);color:var(--paper);padding:12px 16px;border-radius:3px}
+.superstar p{font-size:17px}
+.superstar svg{flex:none}
+.superstar .sub{color:#C9CEE0;font-size:14px;font-weight:400}
+@media (max-width:560px){.part{grid-template-columns:1fr;gap:8px}}
+
+.wordtable{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:17px}
+th{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);text-align:left;padding:8px 12px;border-bottom:1.5px solid var(--ink)}
+td{padding:10px 12px;border-bottom:1px solid var(--rule)}
+td:first-child{font-size:24px;width:64px;text-align:center}
+td:nth-child(2){font-weight:800;font-family:"Nunito","Trebuchet MS",system-ui,sans-serif}
+td:nth-child(3){font-family:var(--viet)}
+tr.key td:nth-child(2)::after{content:"key word";margin-left:10px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:800}
+html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-family:var(--viet)}
+
+.badge-wrap{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center;padding:26px;border:1.5px solid var(--gold);border-radius:3px}
+.badge{width:100%;max-width:200px;aspect-ratio:1;margin:0 auto}
+.badge-wrap h3{font-size:28px}
+.badge-wrap ul.ticks li::before{border-color:var(--gold)}
+.badge-copy{display:flex;flex-direction:column;gap:12px}
+@media (max-width:560px){.badge-wrap{grid-template-columns:1fr}}
+
+.parents{background:var(--ink);color:var(--paper);border-radius:3px;padding:28px clamp(20px,4vw,36px);display:flex;flex-direction:column;gap:14px;font-family:var(--viet);font-size:15.5px;line-height:1.65}
+.parents h3{color:var(--paper);font-size:26px}
+.parents .eyebrow{color:var(--sun)}
+.parents ol{margin:0;padding-left:22px;display:grid;gap:6px}
+.parents .sign{display:flex;flex-wrap:wrap;gap:18px;margin-top:6px}
+.parents .sign div{flex:1;min-width:200px;display:flex;flex-direction:column;gap:6px;font-size:13px;color:#C9CEE0}
+.parents .sign span.write{border-bottom:1.5px dotted #8D95B3;height:30px}
+.parents .path{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-weight:800}
+.parents .path .node{padding:6px 12px;border:1px solid #5A6488;border-radius:999px}
+.parents .path .node.now{background:var(--sun);color:var(--ink);border-color:var(--sun)}
+.printurl{display:none}
+
+.contact{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;font-size:14px;color:var(--ink-soft)}
+.contact b{color:var(--ink)}
+
+@media print{
+  body{background:#fff}
+  .page{padding:0}
+  .book{gap:0;max-width:none}
+  .sheet{box-shadow:none;border-radius:0;break-after:page;min-height:297mm}
+  .printurl{display:block;font-weight:800}
+  @page{size:A4;margin:0}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sheet{animation:rise .5s ease-out both}
+  .sheet:nth-child(2){animation-delay:.06s}.sheet:nth-child(3){animation-delay:.12s}.sheet:nth-child(4){animation-delay:.18s}
+  @keyframes rise{from{transform:translateY(8px)}to{transform:none}}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="./"><img src="../assets/img/logo.png" alt=""><span>My Clothes Story</span></a>
+  <div class="langs" role="group" aria-label="Language / Ngôn ngữ">
+    <button type="button" data-set-lang="vi" aria-pressed="true">Tiếng Việt</button>
+    <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+  </div>
+  <a class="btn sun" href="record.html"><span class="en">Record my video</span><span class="vi">Quay video</span></a>
+</header>
+
+<div class="page">
+<main class="book">
+
+<!-- SHEET 1: cover -->
+<section class="sheet" aria-label="Cover">
+  <header class="crest">
+    <img src="../assets/img/logo.png" alt="Happy English Club logo">
+    <div>
+      <div class="eyebrow">HEC Young Speakers · <span class="en">Grade 1</span><span class="vi">Lớp 1</span></div>
+      <h1>My Clothes <em>Story</em></h1>
+      <p class="subtitle vi">Câu chuyện quần áo của em</p>
+      <p class="motto">Learning, an endless journey to perfection</p>
+    </div>
+  </header>
+  <div class="inner">
+    <div class="owner">
+      <span class="label"><span class="en">This story belongs to</span><span class="vi">Câu chuyện này là của</span></span>
+      <div class="line"></div>
+    </div>
+
+    <div class="question">
+      <div class="eyebrow"><span class="en">Our Big Question</span><span class="vi">Câu hỏi lớn của chúng ta</span></div>
+      <h2 class="en">Why do we wear <mark>different clothes</mark> in different places?</h2>
+      <h2 class="vi">Vì sao chúng ta mặc <mark>quần áo khác nhau</mark> ở những nơi khác nhau?</h2>
+    </div>
+
+    <hr class="goldrule">
+
+    <div class="eyebrow"><span class="en">Think about it</span><span class="vi">Hãy suy nghĩ</span></div>
+    <div class="think">
+      <div class="card">
+        <b><span class="en">My school uniform</span><span class="vi">Đồng phục đi học của em</span></b>
+        <div class="draw"><span class="en">Draw it here</span><span class="vi">Vẽ vào đây</span></div>
+      </div>
+      <div class="card">
+        <b><span class="en">My weekend clothes</span><span class="vi">Quần áo cuối tuần của em</span></b>
+        <div class="draw"><span class="en">Draw it here</span><span class="vi">Vẽ vào đây</span></div>
+      </div>
+      <div class="ask">
+        <div class="eyebrow"><span class="en">Big thinkers ask</span><span class="vi">Những người biết suy nghĩ sẽ hỏi</span></div>
+        <p class="en">How are they different?</p>
+        <p class="vi">Chúng khác nhau như thế nào?</p>
+        <p class="en">Why do we wear different clothes for school and for play?</p>
+        <p class="vi">Vì sao chúng ta mặc quần áo khác nhau khi đi học và khi đi chơi?</p>
+      </div>
+    </div>
+  </div>
+  <footer class="folio"><img src="../assets/img/logo.png" alt=""><span><b>Happy English Club</b> · hanoienglish.com</span><span>1 / 4</span></footer>
+</section>
+
+<!-- SHEET 2: making the video -->
+<section class="sheet" aria-label="Make your video">
+  <div class="inner">
+    <div>
+      <div class="eyebrow"><span class="en">Your mission</span><span class="vi">Nhiệm vụ của em</span></div>
+      <h2><span class="en">Make your video</span><span class="vi">Quay video của em</span></h2>
+      <p class="lead en">Show your <b>Clothes Poster</b> and talk about it, like a real HEC speaker.</p>
+      <p class="lead vi">Giới thiệu <b>áp phích về quần áo</b> của em và nói về áp phích đó, như một diễn giả HEC thực thụ.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <div class="step-body">
+          <h3><span class="en">Get ready</span><span class="vi">Chuẩn bị</span></h3>
+          <ul class="ticks">
+            <li><span class="en">Get your Clothes Poster.</span><span class="vi">Lấy áp phích về quần áo của em.</span></li>
+            <li><span class="en">Remember your 4 parts:</span><span class="vi">Nhớ 4 phần em cần nói:</span></li>
+          </ul>
+          <div class="chips">
+            <div class="chip"><i>1</i><span class="en">My clothes now</span><span class="vi">Quần áo em đang mặc</span></div>
+            <div class="chip"><i>2</i><span class="en">My favorite clothes</span><span class="vi">Quần áo em thích nhất</span></div>
+            <div class="chip"><i>3</i><span class="en">My school uniform</span><span class="vi">Đồng phục đi học</span></div>
+            <div class="chip"><i>4</i><span class="en">My weekend clothes</span><span class="vi">Quần áo cuối tuần</span></div>
+          </div>
+          <ul class="ticks"><li><span class="en">Say your speech <b>2 times</b> before you record.</span><span class="vi">Tập nói <b>2 lần</b> trước khi quay.</span></li></ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="num">2</div>
+        <div class="step-body">
+          <h3><span class="en">Video rules</span><span class="vi">Quy tắc quay video</span></h3>
+          <div class="rules">
+            <div><b><span class="en">Light</span><span class="vi">Ánh sáng</span></b><span class="en">Face the window.</span><span class="vi">Quay mặt về phía cửa sổ.</span></div>
+            <div><b><span class="en">Camera</span><span class="vi">Máy quay</span></b><span class="en">Put it at your eyes. Hold your poster still.</span><span class="vi">Đặt ngang tầm mắt. Giữ yên áp phích.</span></div>
+            <div><b><span class="en">Voice</span><span class="vi">Giọng nói</span></b><span class="en">Talk slowly and loudly.</span><span class="vi">Nói chậm và to.</span></div>
+            <div><b><span class="en">Point</span><span class="vi">Chỉ tay</span></b><span class="en">Point to each picture when you talk about it.</span><span class="vi">Chỉ vào từng hình khi nói về hình đó.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="num">3</div>
+        <div class="step-body">
+          <h3><span class="en">Record</span><span class="vi">Quay video</span></h3>
+          <p class="en">Make <b>1 video</b>, about <b>1 minute</b> long. Say it in this order:</p>
+          <p class="vi">Quay <b>1 video</b>, dài khoảng <b>1 phút</b>. Nói theo thứ tự này:</p>
+          <div class="timeline">
+            <span class="node fill"><span class="en">Hello</span><span class="vi">Chào</span></span><small aria-hidden="true">→</small>
+            <span class="node"><span class="en">4 clothes parts</span><span class="vi">4 phần về quần áo</span></span><small aria-hidden="true">→</small>
+            <span class="node fill"><span class="en">Thinking answer</span><span class="vi">Câu trả lời suy nghĩ</span></span><small aria-hidden="true">→</small>
+            <span class="node"><span class="en">Goodbye</span><span class="vi">Tạm biệt</span></span>
+          </div>
+          <div class="cta noprint" style="margin-top:8px">
+            <a class="btn" href="record.html"><span class="en">Record my video</span><span class="vi">Quay video của em</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="folio"><img src="../assets/img/logo.png" alt=""><span><b>Happy English Club</b> · hanoienglish.com</span><span>2 / 4</span></footer>
+</section>
+
+<!-- SHEET 3: what to say. The speech stays in English in both languages. -->
+<section class="sheet" aria-label="What to say">
+  <div class="inner">
+    <div>
+      <div class="eyebrow"><span class="en">Speaker's script</span><span class="vi">Bài nói của em</span></div>
+      <h2><span class="en">What to say</span><span class="vi">Em sẽ nói gì?</span></h2>
+      <p class="en" style="margin-top:10px">Fill in the blanks. Then say it out loud.</p>
+      <p class="vi" style="margin-top:10px">Điền vào chỗ trống. Sau đó nói thật to <b>bằng tiếng Anh</b>. Dòng tiếng Việt chỉ để giúp em hiểu nghĩa.</p>
+    </div>
+
+    <div class="script">
+      <div class="part">
+        <div class="tag"><small><span class="en">PART 1</span><span class="vi">PHẦN 1</span></small><strong><span class="en">Hello</span><span class="vi">Chào</span></strong></div>
+        <div class="say">
+          <p class="speak">“Hello everyone! My name is <span class="blank"></span>. This is my clothes poster.”</p>
+          <p class="gloss vi">Xin chào mọi người! Tên em là … Đây là áp phích về quần áo của em.</p>
+        </div>
+      </div>
+      <div class="part">
+        <div class="tag"><small><span class="en">PART 2</span><span class="vi">PHẦN 2</span></small><strong><span class="en">My clothes now</span><span class="vi">Quần áo em đang mặc</span></strong></div>
+        <div class="say">
+          <p class="speak">“Today, I am wearing a <span class="blank"></span> <span class="blank"></span>.”</p>
+          <p class="gloss vi">Hôm nay, em đang mặc một … (màu sắc + quần áo).</p>
+          <p class="hint"><span class="en">color + clothes · </span><span class="vi">Ví dụ: </span><span class="en">Example: </span>“Today, I am wearing a blue T-shirt.”</p>
+        </div>
+      </div>
+      <div class="part">
+        <div class="tag"><small><span class="en">PART 3</span><span class="vi">PHẦN 3</span></small><strong><span class="en">My favorite clothes</span><span class="vi">Quần áo em thích nhất</span></strong></div>
+        <div class="say">
+          <p class="speak">“My favorite clothes are my <span class="blank"></span>.”</p>
+          <p class="gloss vi">Quần áo em thích nhất là …</p>
+          <p class="speak">“I like them because they are <span class="blank"></span>.”</p>
+          <p class="gloss vi">Em thích chúng vì chúng …</p>
+          <p class="hint">soft · colorful · comfortable · cool<span class="vi"> (mềm · nhiều màu sắc · thoải mái · đẹp, ngầu)</span></p>
+        </div>
+      </div>
+      <div class="part">
+        <div class="tag"><small><span class="en">PART 4</span><span class="vi">PHẦN 4</span></small><strong><span class="en">My school uniform</span><span class="vi">Đồng phục đi học</span></strong></div>
+        <div class="say">
+          <p class="speak">“At school, I wear my uniform.”</p>
+          <p class="gloss vi">Ở trường, em mặc đồng phục.</p>
+          <p class="speak">“My uniform has a <span class="blank"></span> shirt and <span class="blank"></span> shorts / skirt.”</p>
+          <p class="gloss vi">Đồng phục của em có áo sơ mi màu … và quần đùi / váy màu …</p>
+          <p class="speak">“My uniform helps me feel ready to learn.”</p>
+          <p class="gloss vi">Đồng phục giúp em cảm thấy sẵn sàng học tập.</p>
+        </div>
+      </div>
+      <div class="part">
+        <div class="tag"><small><span class="en">PART 5</span><span class="vi">PHẦN 5</span></small><strong><span class="en">My weekend clothes</span><span class="vi">Quần áo cuối tuần</span></strong></div>
+        <div class="say">
+          <p class="speak">“On the weekend, I wear <span class="blank"></span>.”</p>
+          <p class="gloss vi">Vào cuối tuần, em mặc …</p>
+          <p class="speak">“I wear them because I like to <span class="blank"></span>.”</p>
+          <p class="gloss vi">Em mặc chúng vì em thích …</p>
+          <p class="hint">run · play · relax<span class="vi"> (chạy · chơi · thư giãn)</span></p>
+        </div>
+      </div>
+      <div class="part star">
+        <div class="tag"><small><span class="en">PART 6 · THINK</span><span class="vi">PHẦN 6 · SUY NGHĨ</span></small><strong><span class="en">My thinking answer</span><span class="vi">Câu trả lời suy nghĩ của em</span></strong></div>
+        <div class="say">
+          <p class="speak">“My uniform and my weekend clothes are <u>different</u>. My uniform is <span class="blank"></span>, but my weekend clothes are <span class="blank"></span>.”</p>
+          <p class="gloss vi">Đồng phục và quần áo cuối tuần của em khác nhau. Đồng phục thì …, nhưng quần áo cuối tuần thì …</p>
+          <p class="speak">“I wear different clothes because at school I <span class="blank"></span>, and at home I <span class="blank"></span>.”</p>
+          <p class="gloss vi">Em mặc quần áo khác nhau vì ở trường em …, còn ở nhà em …</p>
+          <div class="superstar">
+            <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFE500" d="M12 1.8l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.3 5.6 21l1.6-7.1L1.8 9.1 9 8.4z"/></svg>
+            <p><b><span class="en">Super Star Challenge:</span><span class="vi">Thử thách Siêu sao:</span></b> “My clothes tell you that I am <span class="blank" style="border-color:#8D95B3"></span>.”<br>
+            <span class="sub">a student · sporty · happy · …</span><br>
+            <span class="sub vi">Quần áo cho mọi người biết rằng em là … (học sinh · thích thể thao · vui vẻ · …)</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="part">
+        <div class="tag"><small><span class="en">PART 7</span><span class="vi">PHẦN 7</span></small><strong><span class="en">Goodbye</span><span class="vi">Tạm biệt</span></strong></div>
+        <div class="say">
+          <p class="speak">“Thank you for watching my video! Goodbye!”</p>
+          <p class="gloss vi">Cảm ơn mọi người đã xem video của em! Tạm biệt!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="folio"><img src="../assets/img/logo.png" alt=""><span><b>Happy English Club</b> · hanoienglish.com</span><span>3 / 4</span></footer>
+</section>
+
+<!-- SHEET 4: words, badge, parents -->
+<section class="sheet" aria-label="Word bank and parent note">
+  <div class="inner">
+    <div>
+      <div class="eyebrow">Từ vựng · Word bank</div>
+      <h2><span class="en">Words I can use</span><span class="vi">Từ em có thể dùng</span></h2>
+    </div>
+    <div class="wordtable">
+      <table>
+        <thead><tr><th><span class="en">Picture</span><span class="vi">Hình</span></th><th>English</th><th>Tiếng Việt</th></tr></thead>
+        <tbody>
+          <tr><td>👕</td><td>clothes</td><td>quần áo</td></tr>
+          <tr><td>🏫</td><td>school uniform</td><td>đồng phục đi học</td></tr>
+          <tr><td>🎈</td><td>weekend clothes</td><td>quần áo cuối tuần</td></tr>
+          <tr><td>❤️</td><td>favorite</td><td>yêu thích nhất</td></tr>
+          <tr><td>🧥</td><td>wear</td><td>mặc</td></tr>
+          <tr><td>😊</td><td>comfortable</td><td>thoải mái</td></tr>
+          <tr class="key"><td>↔️</td><td>different</td><td>khác nhau</td></tr>
+          <tr class="key"><td>🟰</td><td>same</td><td>giống nhau</td></tr>
+          <tr class="key"><td>❓</td><td>because</td><td>bởi vì</td></tr>
+          <tr><td>🖼️</td><td>poster</td><td>tranh / áp phích</td></tr>
+          <tr><td>🎥</td><td>record a video</td><td>quay video</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="badge-wrap">
+      <svg class="badge" viewBox="0 0 200 200" role="img" aria-label="HEC Star Speaker badge">
+        <defs><path id="arc" d="M30,100 a70,70 0 1,1 140,0"/></defs>
+        <circle cx="100" cy="100" r="96" fill="#16224A"/>
+        <circle cx="100" cy="100" r="88" fill="none" stroke="#FFE500" stroke-width="2"/>
+        <circle cx="100" cy="100" r="82" fill="none" stroke="#FFE500" stroke-width="1" stroke-dasharray="2 5"/>
+        <text font-family="Nunito, sans-serif" font-weight="800" font-size="14" letter-spacing="4" fill="#FFE500"><textPath href="#arc" startOffset="50%" text-anchor="middle">HEC STAR SPEAKER</textPath></text>
+        <path fill="#FFE500" d="M100 62l10.5 23 25 2.4-18.9 16.7 5.6 24.6L100 116l-22.2 12.7 5.6-24.6-18.9-16.7 25-2.4z"/>
+        <text x="100" y="158" text-anchor="middle" font-family="Bodoni Moda, Georgia, serif" font-style="italic" font-size="15" fill="#FFFEFB">Grade 1 · 2026</text>
+      </svg>
+      <div class="badge-copy">
+        <div class="eyebrow"><span class="en">Earn your badge</span><span class="vi">Nhận huy hiệu của em</span></div>
+        <h3><span class="en">I am an HEC Star Speaker when I…</span><span class="vi">Em là Ngôi sao Diễn thuyết HEC khi em…</span></h3>
+        <ul class="ticks">
+          <li><span class="en">look at the camera</span><span class="vi">nhìn vào máy quay</span></li>
+          <li><span class="en">speak slowly and loudly</span><span class="vi">nói chậm và to</span></li>
+          <li><span class="en">point to my pictures</span><span class="vi">chỉ vào các hình của em</span></li>
+          <li><span class="en">say <b>different</b> and <b>because</b></span><span class="vi">nói được từ <b>different</b> và <b>because</b></span></li>
+          <li><span class="en">try the Super Star Challenge</span><span class="vi">thử sức với Thử thách Siêu sao</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="parents">
+      <div class="eyebrow"><span class="en">Parents' corner</span><span class="vi">Góc Phụ huynh</span></div>
+      <h3><span class="en">A letter to parents</span><span class="vi">Thư gửi Quý Phụ huynh</span></h3>
+      <div class="path">
+        <span class="node now">ESL · <span class="en">This year</span><span class="vi">Năm nay</span></span><span aria-hidden="true">→</span>
+        <span class="node">ELA · <span class="en">Next year</span><span class="vi">Năm sau</span></span>
+      </div>
+      <p class="vi">Năm sau, con sẽ học chương trình Ngữ văn tiếng Anh (ELA). Ở đó, con không chỉ kể <b>“cái gì”</b>, mà còn phải <b>so sánh</b> và giải thích <b>“vì sao”</b>. Dự án <b>My Clothes Story</b> giúp con luyện đúng kỹ năng ấy ngay từ hôm nay.</p>
+      <p class="en">Next year, your child will study English Language Arts (ELA). There, children do not only tell <b>“what”</b>. They also <b>compare</b> and explain <b>“why”</b>. The <b>My Clothes Story</b> project helps your child practise exactly those skills, starting today.</p>
+      <p><span class="en">You can help your child:</span><span class="vi">Bố mẹ có thể đồng hành cùng con:</span></p>
+      <ol>
+        <li><span class="en">Listen to your child practise 2 times before recording.</span><span class="vi">Nghe con tập nói 2 lần trước khi quay.</span></li>
+        <li><span class="en">Ask: <i>“Why do you wear a uniform?”</i> and wait for an answer with the word <b>because</b>.</span><span class="vi">Hỏi con: <i>“Why do you wear a uniform?”</i> và chờ con trả lời có từ <b>because</b>.</span></li>
+        <li><span class="en">Film somewhere bright, and keep the phone at your child's eye level.</span><span class="vi">Quay ở nơi có ánh sáng, giữ điện thoại ngang tầm mắt con.</span></li>
+        <li><span class="en">Praise the effort, not only the result.</span><span class="vi">Khen con vì sự cố gắng, không chỉ vì kết quả.</span></li>
+      </ol>
+      <p><span class="en">Please record and send the video on this website before the next lesson.</span><span class="vi">Vui lòng quay và gửi video cho thầy cô ngay trên trang web này trước buổi học tiếp theo.</span></p>
+      <div class="cta noprint"><a class="btn sun" href="record.html"><span class="en">Record and send the video</span><span class="vi">Quay và gửi video</span></a></div>
+      <p class="printurl">hanoienglish.com/clothes-story/record.html</p>
+      <div class="sign">
+        <div><span class="en">Parent's signature</span><span class="vi">Chữ ký Phụ huynh</span><span class="write"></span></div>
+        <div><span class="en">Date sent</span><span class="vi">Ngày nộp</span><span class="write"></span></div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <span><b>Happy English Club</b> · Số 25, ngõ 242 Láng, Đống Đa, Hà Nội</span>
+      <span><b>0975 679 889</b> · hanoienglish.com</span>
+    </div>
+  </div>
+  <footer class="folio"><img src="../assets/img/logo.png" alt=""><span><b>Happy English Club</b> · Learning, an endless journey to perfection</span><span>4 / 4</span></footer>
+</section>
+
+</main>
+</div>
+</body>
+</html>

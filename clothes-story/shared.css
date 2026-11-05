@@ -1,0 +1,58 @@
+/* Shared by the My Clothes Story pages: tokens, language switch, top bar, buttons.
+   Single light theme by choice: the packet is a print document. */
+:root{
+  color-scheme:light;
+  --desk:#E7EAF1;
+  --paper:#FFFEFB;
+  --ink:#16224A;
+  --ink-soft:#4F5878;
+  --gold:#8A6A0E;
+  --sun:#FFE500;
+  --rule:#D8DCE7;
+  --wash:#F3F5FA;
+  --danger:#A32A1C;
+  --ok:#1C6B45;
+  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --body:"Nunito","Trebuchet MS",system-ui,sans-serif;
+  --viet:"Be Vietnam Pro","Segoe UI",system-ui,sans-serif;
+}
+/* Bodoni and Nunito are not safe for every Vietnamese diacritic, so Vietnamese mode swaps both. */
+html[data-lang="vi"]{--display:var(--viet);--body:var(--viet)}
+
+html[data-lang="vi"] .en{display:none!important}
+html[data-lang="en"] .vi{display:none!important}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--desk);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
+h1,h2,h3{font-family:var(--display);font-weight:700;color:var(--ink);margin:0;text-wrap:balance;line-height:1.15}
+p{margin:0}
+img{max-width:100%}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+.topbar{position:sticky;top:0;z-index:20;background:var(--ink);color:var(--paper);display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;
+  padding:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px))}
+.topbar .brand{display:flex;align-items:center;gap:10px;color:inherit;text-decoration:none;font-weight:700;font-size:15px;margin-right:auto;min-height:44px}
+.topbar .brand img{height:32px;width:auto}
+.langs{display:inline-flex;border:1px solid #5A6488;border-radius:999px;overflow:hidden}
+.langs button{background:none;border:0;color:var(--paper);font:inherit;font-size:14px;font-weight:700;padding:0 14px;min-height:44px;cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--sun);color:var(--ink)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:10px 22px;border-radius:999px;border:2px solid var(--ink);
+  background:var(--ink);color:var(--paper);font:inherit;font-weight:800;font-size:17px;text-decoration:none;cursor:pointer;text-align:center}
+.btn:hover{background:#22316A}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--wash)}
+.btn.sun{background:var(--sun);border-color:var(--sun);color:var(--ink)}
+.btn.sun:hover{background:#FFEE4D}
+.btn.stop{background:var(--danger);border-color:var(--danger);color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+
+.msg{font-size:15px;font-weight:700;border-radius:4px;padding:12px 14px;background:var(--wash)}
+.msg.bad{background:#FBE9E6;color:var(--danger)}
+.msg.good{background:#E4F4EB;color:var(--ok)}
+.msg:empty{display:none}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media print{.topbar,.noprint{display:none!important}}
