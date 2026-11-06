@@ -1,0 +1,180 @@
+/* paper.css: fixed A4 geometry for Studio. Everything is scoped under html.paper, so loading this file changes nothing in reading view.
+   Rule: every block that precedes a contract target (.draw .blank .line .write ul.ticks li) has an authored px height. Never measure and lock at runtime. */
+@font-face{font-family:"Nunito Paper";font-weight:700;font-style:normal;font-display:block;src:url(vendor/fonts/nunito-latin-700.woff2) format("woff2")}
+@font-face{font-family:"Playpen Hand";font-weight:500;font-style:normal;font-display:swap;src:url(vendor/fonts/playpen-sans-vietnamese-500.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}
+@font-face{font-family:"Playpen Hand";font-weight:500;font-style:normal;font-display:swap;src:url(vendor/fonts/playpen-sans-latin-500.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+/* ---- ROOT ---- */
+html.paper{--wash:rgba(22,34,74,.05);--sp:18px;--splh:31px}
+html.paper,html.paper body{height:100%;margin:0;overflow:hidden;overscroll-behavior:none;background:var(--desk)}
+html.paper .topbar{display:none}
+html.paper .page{position:fixed;left:var(--ins-l,0px);top:var(--ins-t,0px);right:var(--ins-r,0px);bottom:var(--ins-b,0px);padding:0;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+html.paper .book{position:absolute;left:0;top:0;width:794px;max-width:none;margin:0;display:block;gap:0;transform-origin:0 0}
+html.paper .book *{pointer-events:none}
+html.paper .sheet{display:none;width:794px;height:1122px;min-height:0;position:relative;isolation:isolate;overflow:hidden;animation:none;border-radius:0;box-shadow:0 1px 2px rgba(22,34,74,.08),0 12px 40px rgba(22,34,74,.10);break-after:page;break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact;background:var(--paper)}
+html.paper .sheet.on,html.paper .book.measure .sheet{display:block}
+html.paper .sheet:last-child{break-after:auto}
+html.paper h1,html.paper h2,html.paper h3{text-wrap:wrap}
+html.paper .inner{padding:0 44px;gap:0;display:block;position:absolute;left:0;right:0}
+html.paper .folio{position:absolute;left:0;right:0;bottom:0;height:40px;padding:0 44px;font-size:12px}
+html.paper .folio img{height:22px}
+html.paper .eyebrow{font-size:11px;line-height:16px;height:16px;white-space:nowrap}
+html.paper .cta{display:none!important}
+html.paper .printurl{display:block}
+
+/* ---- INK AND ANSWER LAYERS ---- */
+html.paper .sheet>img.ink{position:absolute;left:0;top:0;width:794px;height:1122px;z-index:-4}
+html.paper .sheet>canvas{position:absolute;left:0;top:0;width:794px;height:1122px;z-index:-1}
+html.paper .sheet>canvas#st-paint{z-index:-3}
+html.paper .sheet>img.st-obj{position:absolute;left:0;top:0;z-index:-2;max-width:none;transform-origin:50% 50%;pointer-events:none;user-select:none}
+html:not(.paper) .sheet>img.st-obj{display:none}
+html.paper .draw[data-box="p1-uniform"]{position:relative}
+html.paper .draw.st-split>.en,html.paper .draw.st-split>.vi{visibility:hidden}
+html:not(.paper) .st-cells{display:none}
+.st-cells{position:absolute;inset:0;pointer-events:none}
+.st-cell{position:absolute;box-sizing:border-box;border:1.5px dashed #8A6A0E66;font-family:"Playpen Hand",Nunito,sans-serif}
+.st-cell>b{position:absolute;left:4px;top:4px;width:20px;height:20px;border-radius:50%;background:#16224A;color:#FFE500;font:800 12px/20px Nunito,sans-serif;text-align:center}
+.st-cell>span{position:absolute;left:3px;right:3px;bottom:3px;padding:1px 4px;border-radius:5px;background:#FFFEFBD9;color:#16224A;font-size:10.5px;line-height:1.2;text-align:center}
+html.paper .sheet.on>img.ink{visibility:hidden}
+html.paper .draw.has-ink>span{visibility:hidden}
+html.paper .blank,html.paper .line,html.paper .write{position:relative}
+html.paper .ans{position:absolute;left:0;right:0;bottom:2px;top:0;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;font-family:"Playpen Hand","Nunito Paper","Be Vietnam Pro",system-ui,sans-serif;font-weight:500;font-size:22px;line-height:1.05;color:#1F3FA8;white-space:nowrap}
+html.paper .ans img{display:block;max-width:100%;max-height:100%;object-fit:contain}
+html.paper ul.ticks li.on::before{background:var(--sun) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 13l5 5 9-11' fill='none' stroke='%2316224A' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat}
+
+/* ---- SHEET 1 ---- */
+html.paper [data-sheet="1"] .crest{height:150px;padding:0 44px;grid-template-columns:112px 1fr;gap:22px;text-align:left;justify-items:start}
+html.paper [data-sheet="1"] .crest img{width:112px}
+html.paper [data-sheet="1"] .crest h1{font-size:48px;margin-top:0;line-height:56px;height:56px;white-space:nowrap}
+html.paper [data-sheet="1"] .crest .subtitle{margin-top:0;font-size:14px;line-height:20px;height:20px}
+html.paper [data-sheet="1"] .crest .motto{margin-top:0;font-size:13px;line-height:18px;height:18px}
+html.paper[data-lang="en"] [data-sheet="1"] .crest .subtitle.vi{display:block!important;visibility:hidden}
+html.paper [data-sheet="1"] .inner{top:150px;height:932px}
+html.paper [data-sheet="1"] .owner{height:62px;margin-top:14px;padding:0 18px 10px;flex-wrap:nowrap;align-items:flex-end}
+html.paper [data-sheet="1"] .owner .label{font-size:19px;line-height:30px;width:236px;flex:none;white-space:nowrap}
+html.paper [data-sheet="1"] .line{height:32px;min-width:0}
+html.paper [data-sheet="1"] .question{height:108px;margin-top:10px;gap:4px;padding:0;justify-content:center}
+html.paper [data-sheet="1"] .question h2{font-size:27px;line-height:34px;max-width:none}
+html.paper [data-sheet="1"] .goldrule{margin:4px 0 6px}
+html.paper [data-sheet="1"] .inner>.eyebrow{margin-bottom:6px}
+html.paper [data-sheet="1"] .think{gap:10px;grid-template-columns:348px 348px;grid-template-rows:auto auto}
+html.paper [data-sheet="1"] .card{height:490px;padding:10px;gap:6px;display:block}
+html.paper [data-sheet="1"] .card b{display:block;font-size:17px;line-height:24px;height:24px;white-space:nowrap;margin-bottom:6px}
+html.paper [data-sheet="1"] .draw{width:328px;height:440px;font-size:14px}
+html.paper [data-sheet="1"] .ask{height:96px;padding:10px 16px;gap:2px;justify-content:center}
+html.paper [data-sheet="1"] .ask p{font-size:15px;line-height:22px}
+html.paper [data-sheet="1"] .ask .eyebrow{color:var(--sun)}
+
+/* ---- SHEET 2 ---- */
+html.paper [data-sheet="2"] .inner{top:0;height:1082px;padding-top:44px}
+html.paper [data-sheet="2"] h2{font-size:38px;line-height:46px;height:46px}
+html.paper [data-sheet="2"] .lead{font-size:18px;line-height:27px;height:54px;margin-top:8px}
+html.paper [data-sheet="2"] .steps{margin-top:30px;gap:0;display:block}
+html.paper [data-sheet="2"] .step{grid-template-columns:64px 1fr;gap:20px}
+html.paper [data-sheet="2"] .step:nth-child(1){height:360px}
+html.paper [data-sheet="2"] .step:nth-child(2){height:262px}
+html.paper [data-sheet="2"] .step:nth-child(3){height:210px}
+html.paper [data-sheet="2"] .num{width:64px;height:64px;font-size:32px}
+html.paper [data-sheet="2"] .step-body{gap:10px;display:flex}
+html.paper [data-sheet="2"] .step-body h3{font-size:25px;line-height:32px;height:32px}
+html.paper ul.ticks li{height:32px;line-height:28px;align-items:center;white-space:nowrap}
+html.paper ul.ticks li::before{width:22px;height:22px;transform:none}
+html.paper ul.ticks{gap:4px}
+html.paper [data-sheet="2"] .chips{grid-template-columns:repeat(4,1fr);gap:10px}
+html.paper [data-sheet="2"] .chip{height:112px;padding:10px;font-size:15.5px;line-height:21px;gap:4px}
+html.paper [data-sheet="2"] .rules{grid-template-columns:1fr 1fr;grid-auto-rows:84px;gap:8px 22px}
+html.paper [data-sheet="2"] .rules div{font-size:17px;line-height:25px}
+html.paper [data-sheet="2"] .timeline{flex-wrap:wrap;gap:8px;font-size:15px;height:96px;align-content:flex-start}
+html.paper [data-sheet="2"] .step-body>p{font-size:17px;line-height:26px;height:26px;white-space:nowrap}
+
+/* ---- SHEET 3 ---- */
+html.paper [data-sheet="3"] .inner{top:0;height:1082px;padding-top:12px}
+html.paper [data-sheet="3"] .inner>div:first-child{height:72px}
+html.paper [data-sheet="3"] h2{font-size:27px;line-height:32px;height:32px}
+html.paper [data-sheet="3"] .inner>div:first-child>p{font-size:13.5px;line-height:18px;margin-top:2px!important;height:18px;white-space:nowrap}
+html.paper [data-sheet="3"] .script{display:block}
+html.paper [data-sheet="3"] .part{display:block;padding:4px 0 5px;border-top:1px solid var(--rule)}
+html.paper [data-sheet="3"] .part .tag{display:flex;flex-direction:row;gap:8px;align-items:baseline;height:16px;line-height:16px;white-space:nowrap}
+html.paper [data-sheet="3"] .part .tag small{font-size:10px;letter-spacing:.14em}
+html.paper [data-sheet="3"] .part .tag strong{font-size:13px;line-height:16px;font-family:var(--body);font-weight:800}
+html.paper [data-sheet="3"] .say{gap:0;display:block}
+html.paper [data-sheet="3"] .say .speak{font-family:"Nunito Paper","Nunito","Trebuchet MS",system-ui,sans-serif;font-size:var(--sp);line-height:var(--splh)}
+html.paper [data-sheet="3"] .say .gloss{font-size:12.5px;line-height:16px;height:16px;white-space:nowrap;overflow:hidden}
+html.paper[data-lang="en"] [data-sheet="3"] .say .gloss.vi{display:block!important;visibility:hidden}
+html.paper [data-sheet="3"] .say .hint{font-size:12.5px;line-height:16px;height:16px;white-space:nowrap;overflow:hidden}
+html.paper [data-sheet="3"] .blank{display:inline-block;height:30px;vertical-align:-7px;min-width:0;width:var(--bw,132px);position:relative;border-color:var(--ink-soft)!important}
+html.paper [data-f="p3-name"]{--bw:180px}
+html.paper [data-f="p3-now-color"]{--bw:130px}
+html.paper [data-f="p3-now-clothes"]{--bw:170px}
+html.paper [data-f="p3-fav-clothes"]{--bw:220px}
+html.paper [data-f="p3-fav-why"]{--bw:190px}
+html.paper [data-f="p3-shirt-color"],html.paper [data-f="p3-bottom-color"]{--bw:140px}
+html.paper [data-f="p3-weekend-wear"]{--bw:240px}
+html.paper [data-f="p3-weekend-like"]{--bw:190px}
+html.paper [data-f="p3-uniform-is"]{--bw:150px}
+html.paper [data-f="p3-weekend-are"]{--bw:190px}
+html.paper [data-f="p3-at-school"]{--bw:190px}
+html.paper [data-f="p3-at-home"]{--bw:190px}
+html.paper [data-f="p3-superstar"]{--bw:170px}
+html.paper [data-sheet="3"] .part.star{margin:0 -10px;padding:5px 10px 6px;border-radius:3px}
+html.paper [data-sheet="3"] .superstar{background:transparent;color:var(--ink);border:1.5px solid var(--ink);padding:3px 10px;margin-top:3px;gap:8px;height:72px}
+html.paper [data-sheet="3"] .superstar br{display:none}
+html.paper [data-sheet="3"] .superstar svg path{fill:var(--gold)}
+html.paper [data-sheet="3"] .superstar p{font-family:"Nunito Paper","Nunito","Trebuchet MS",system-ui,sans-serif;font-size:16px;line-height:31px;height:63px;font-weight:700}
+html.paper [data-sheet="3"] .superstar p b{display:inline-block;width:178px;white-space:nowrap}
+html.paper [data-sheet="3"] .superstar p b .vi{font-family:var(--viet)}
+html.paper [data-sheet="3"] .superstar .sub{display:block;color:var(--ink-soft);font-size:12px;line-height:16px;height:16px;white-space:nowrap;font-weight:400}
+html.paper [data-sheet="3"] .superstar .sub.vi{font-family:var(--viet)}
+html.paper[data-lang="en"] [data-sheet="3"] .superstar .sub.vi{display:block!important;visibility:hidden}
+
+/* ---- SHEET 4 ---- */
+html.paper [data-sheet="4"] .inner{top:0;height:1082px;padding-top:18px}
+html.paper [data-sheet="4"] .inner>div:first-child{height:54px}
+html.paper [data-sheet="4"] h2{font-size:26px;line-height:34px;height:34px}
+html.paper [data-sheet="4"] .wordtable{overflow:visible;height:146px;margin-top:2px}
+html.paper [data-sheet="4"] table{display:block;font-size:13.5px}
+html.paper [data-sheet="4"] thead{display:none}
+html.paper [data-sheet="4"] tbody{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(6,24px);grid-auto-flow:column;column-gap:18px}
+html.paper [data-sheet="4"] tbody tr{display:grid;grid-template-columns:28px 124px 1fr;align-items:center;border-bottom:1px solid var(--rule);height:24px}
+html.paper [data-sheet="4"] tbody td{padding:0 4px;font-size:13.5px;width:auto;line-height:23px;border:0;white-space:nowrap;overflow:hidden}
+html.paper [data-sheet="4"] td:first-child{font-size:15px}
+html.paper [data-sheet="4"] tr.key td:nth-child(2)::after{display:none}
+html.paper [data-sheet="4"] tr.key td:nth-child(2){color:var(--gold)}
+html.paper [data-sheet="4"] .badge-wrap{height:206px;margin-top:10px;padding:10px 16px;grid-template-columns:128px 1fr;gap:16px}
+html.paper [data-sheet="4"] .badge{max-width:128px}
+html.paper [data-sheet="4"] .badge-copy{gap:2px}
+html.paper [data-sheet="4"] .badge-wrap h3{font-size:18px;line-height:23px;height:23px;white-space:nowrap}
+html.paper [data-sheet="4"] .badge-wrap ul.ticks{gap:0;font-size:14.5px}
+html.paper [data-sheet="4"] .badge-wrap ul.ticks li{height:27px;line-height:25px}
+html.paper [data-sheet="4"] .parents{height:574px;margin-top:10px;padding:12px 20px;gap:6px;font-size:14px;line-height:20px;background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+html.paper [data-sheet="4"] .parents h3{color:var(--ink);font-size:19px;line-height:24px;height:24px}
+html.paper [data-sheet="4"] .parents .eyebrow{color:var(--gold)}
+html.paper [data-sheet="4"] .parents .path{height:26px;font-size:13px;flex-wrap:nowrap}
+html.paper [data-sheet="4"] .parents .path .node{padding:1px 10px;border-color:var(--ink)}
+html.paper [data-sheet="4"] .parents .path .node.now{background:var(--sun);border-color:var(--ink)}
+html.paper [data-sheet="4"] .parents>p{min-height:0}
+html.paper [data-sheet="4"] .parents>p.vi,html.paper [data-sheet="4"] .parents>p.en{height:60px}
+html.paper [data-sheet="4"] .parents ol{gap:2px;height:112px}
+html.paper [data-sheet="4"] .parents .printurl{height:20px;line-height:20px;font-size:13px}
+html.paper [data-sheet="4"] .parents .sign{position:absolute;left:20px;right:20px;bottom:10px;margin:0;flex-wrap:nowrap;gap:24px;height:92px}
+html.paper [data-sheet="4"] .parents .sign div{min-width:0;font-size:12px;gap:0;color:var(--ink-soft);line-height:16px}
+html.paper [data-sheet="4"] .parents .sign span.write{height:60px;border-bottom:1.5px dotted var(--ink-soft)}
+html.paper [data-sheet="4"] .parents{position:relative}
+html.paper [data-sheet="4"] .contact{position:absolute;left:44px;right:44px;bottom:6px;font-size:11.5px;line-height:16px;flex-wrap:nowrap;gap:12px;white-space:nowrap}
+
+html.paper .badge-wrap ul.ticks li::before{width:20px;height:20px}
+
+/* ---- PRINT: same geometry, all four sheets, ink from <img> ---- */
+@media print{
+  html.paper,html.paper body{height:auto;overflow:visible;background:#fff}
+  html.paper .page{position:static;overflow:visible}
+  html.paper .book{position:static;transform:none!important}
+  html.paper .sheet{display:block;box-shadow:none}
+  html.paper .sheet>canvas{display:none}
+  html.paper .sheet>img.ink{visibility:visible!important}
+  #studio-ui,#studio-fx,#studio-reading-cta{display:none!important}
+}
+
+/* ---- READING VIEW (amendment A2): saved ink and answers exist in the DOM but only appear in html.paper, which reading-view print adds on beforeprint ---- */
+html:not(.paper) .sheet>img.ink{display:none}
+html:not(.paper) .ans{display:none}

@@ -10,6 +10,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Nunito:wght@500;700;800&family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap">
 <link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="paper.css?v=1">
+<link rel="stylesheet" href="studio.css?v=1">
 <style>
 .page{padding:32px max(16px,env(safe-area-inset-right,0px)) 32px max(16px,env(safe-area-inset-left,0px))}
 .book{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:32px}
@@ -156,7 +158,7 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
 <main class="book">
 
 <!-- SHEET 1: cover -->
-<section class="sheet" aria-label="Cover">
+<section class="sheet" data-sheet="1" aria-label="Cover">
   <header class="crest">
     <img src="../assets/img/logo.png" alt="Happy English Club logo">
     <div>
@@ -169,7 +171,7 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
   <div class="inner">
     <div class="owner">
       <span class="label"><span class="en">This story belongs to</span><span class="vi">Câu chuyện này là của</span></span>
-      <div class="line"></div>
+      <div class="line" data-f="p1-name"></div>
     </div>
 
     <div class="question">
@@ -184,11 +186,11 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
     <div class="think">
       <div class="card">
         <b><span class="en">My school uniform</span><span class="vi">Đồng phục đi học của em</span></b>
-        <div class="draw"><span class="en">Draw it here</span><span class="vi">Vẽ vào đây</span></div>
+        <div class="draw" data-box="p1-uniform"><span class="en">Draw it here</span><span class="vi">Vẽ vào đây</span></div>
       </div>
       <div class="card">
         <b><span class="en">My weekend clothes</span><span class="vi">Quần áo cuối tuần của em</span></b>
-        <div class="draw"><span class="en">Draw it here</span><span class="vi">Vẽ vào đây</span></div>
+        <div class="draw" data-box="p1-weekend"><span class="en">Draw it here</span><span class="vi">Vẽ vào đây</span></div>
       </div>
       <div class="ask">
         <div class="eyebrow"><span class="en">Big thinkers ask</span><span class="vi">Những người biết suy nghĩ sẽ hỏi</span></div>
@@ -203,7 +205,7 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
 </section>
 
 <!-- SHEET 2: making the video -->
-<section class="sheet" aria-label="Make your video">
+<section class="sheet" data-sheet="2" aria-label="Make your video">
   <div class="inner">
     <div>
       <div class="eyebrow"><span class="en">Your mission</span><span class="vi">Nhiệm vụ của em</span></div>
@@ -218,8 +220,8 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
         <div class="step-body">
           <h3><span class="en">Get ready</span><span class="vi">Chuẩn bị</span></h3>
           <ul class="ticks">
-            <li><span class="en">Get your Clothes Poster.</span><span class="vi">Lấy áp phích về quần áo của em.</span></li>
-            <li><span class="en">Remember your 4 parts:</span><span class="vi">Nhớ 4 phần em cần nói:</span></li>
+            <li data-f="p2-t1"><span class="en">Get your Clothes Poster.</span><span class="vi">Lấy áp phích về quần áo của em.</span></li>
+            <li data-f="p2-t2"><span class="en">Remember your 4 parts:</span><span class="vi">Nhớ 4 phần em cần nói:</span></li>
           </ul>
           <div class="chips">
             <div class="chip"><i>1</i><span class="en">My clothes now</span><span class="vi">Quần áo em đang mặc</span></div>
@@ -227,7 +229,7 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
             <div class="chip"><i>3</i><span class="en">My school uniform</span><span class="vi">Đồng phục đi học</span></div>
             <div class="chip"><i>4</i><span class="en">My weekend clothes</span><span class="vi">Quần áo cuối tuần</span></div>
           </div>
-          <ul class="ticks"><li><span class="en">Say your speech <b>2 times</b> before you record.</span><span class="vi">Tập nói <b>2 lần</b> trước khi quay.</span></li></ul>
+          <ul class="ticks"><li data-f="p2-t3"><span class="en">Say your speech <b>2 times</b> before you record.</span><span class="vi">Tập nói <b>2 lần</b> trước khi quay.</span></li></ul>
         </div>
       </div>
 
@@ -267,7 +269,7 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
 </section>
 
 <!-- SHEET 3: what to say. The speech stays in English in both languages. -->
-<section class="sheet" aria-label="What to say">
+<section class="sheet" data-sheet="3" aria-label="What to say">
   <div class="inner">
     <div>
       <div class="eyebrow"><span class="en">Speaker's script</span><span class="vi">Bài nói của em</span></div>
@@ -280,14 +282,14 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
       <div class="part">
         <div class="tag"><small><span class="en">PART 1</span><span class="vi">PHẦN 1</span></small><strong><span class="en">Hello</span><span class="vi">Chào</span></strong></div>
         <div class="say">
-          <p class="speak">“Hello everyone! My name is <span class="blank"></span>. This is my clothes poster.”</p>
+          <p class="speak">“Hello everyone! My name is <span class="blank" data-f="p3-name"></span>. This is my clothes poster.”</p>
           <p class="gloss vi">Xin chào mọi người! Tên em là … Đây là áp phích về quần áo của em.</p>
         </div>
       </div>
       <div class="part">
         <div class="tag"><small><span class="en">PART 2</span><span class="vi">PHẦN 2</span></small><strong><span class="en">My clothes now</span><span class="vi">Quần áo em đang mặc</span></strong></div>
         <div class="say">
-          <p class="speak">“Today, I am wearing a <span class="blank"></span> <span class="blank"></span>.”</p>
+          <p class="speak">“Today, I am wearing a <span class="blank" data-f="p3-now-color"></span> <span class="blank" data-f="p3-now-clothes"></span>.”</p>
           <p class="gloss vi">Hôm nay, em đang mặc một … (màu sắc + quần áo).</p>
           <p class="hint"><span class="en">color + clothes · </span><span class="vi">Ví dụ: </span><span class="en">Example: </span>“Today, I am wearing a blue T-shirt.”</p>
         </div>
@@ -295,9 +297,9 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
       <div class="part">
         <div class="tag"><small><span class="en">PART 3</span><span class="vi">PHẦN 3</span></small><strong><span class="en">My favorite clothes</span><span class="vi">Quần áo em thích nhất</span></strong></div>
         <div class="say">
-          <p class="speak">“My favorite clothes are my <span class="blank"></span>.”</p>
+          <p class="speak">“My favorite clothes are my <span class="blank" data-f="p3-fav-clothes"></span>.”</p>
           <p class="gloss vi">Quần áo em thích nhất là …</p>
-          <p class="speak">“I like them because they are <span class="blank"></span>.”</p>
+          <p class="speak">“I like them because they are <span class="blank" data-f="p3-fav-why"></span>.”</p>
           <p class="gloss vi">Em thích chúng vì chúng …</p>
           <p class="hint">soft · colorful · comfortable · cool<span class="vi"> (mềm · nhiều màu sắc · thoải mái · đẹp, ngầu)</span></p>
         </div>
@@ -307,7 +309,7 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
         <div class="say">
           <p class="speak">“At school, I wear my uniform.”</p>
           <p class="gloss vi">Ở trường, em mặc đồng phục.</p>
-          <p class="speak">“My uniform has a <span class="blank"></span> shirt and <span class="blank"></span> shorts / skirt.”</p>
+          <p class="speak">“My uniform has a <span class="blank" data-f="p3-shirt-color"></span> shirt and <span class="blank" data-f="p3-bottom-color"></span> shorts / skirt.”</p>
           <p class="gloss vi">Đồng phục của em có áo sơ mi màu … và quần đùi / váy màu …</p>
           <p class="speak">“My uniform helps me feel ready to learn.”</p>
           <p class="gloss vi">Đồng phục giúp em cảm thấy sẵn sàng học tập.</p>
@@ -316,9 +318,9 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
       <div class="part">
         <div class="tag"><small><span class="en">PART 5</span><span class="vi">PHẦN 5</span></small><strong><span class="en">My weekend clothes</span><span class="vi">Quần áo cuối tuần</span></strong></div>
         <div class="say">
-          <p class="speak">“On the weekend, I wear <span class="blank"></span>.”</p>
+          <p class="speak">“On the weekend, I wear <span class="blank" data-f="p3-weekend-wear"></span>.”</p>
           <p class="gloss vi">Vào cuối tuần, em mặc …</p>
-          <p class="speak">“I wear them because I like to <span class="blank"></span>.”</p>
+          <p class="speak">“I wear them because I like to <span class="blank" data-f="p3-weekend-like"></span>.”</p>
           <p class="gloss vi">Em mặc chúng vì em thích …</p>
           <p class="hint">run · play · relax<span class="vi"> (chạy · chơi · thư giãn)</span></p>
         </div>
@@ -326,13 +328,13 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
       <div class="part star">
         <div class="tag"><small><span class="en">PART 6 · THINK</span><span class="vi">PHẦN 6 · SUY NGHĨ</span></small><strong><span class="en">My thinking answer</span><span class="vi">Câu trả lời suy nghĩ của em</span></strong></div>
         <div class="say">
-          <p class="speak">“My uniform and my weekend clothes are <u>different</u>. My uniform is <span class="blank"></span>, but my weekend clothes are <span class="blank"></span>.”</p>
+          <p class="speak">“My uniform and my weekend clothes are <u>different</u>. My uniform is <span class="blank" data-f="p3-uniform-is"></span>, but my weekend clothes are <span class="blank" data-f="p3-weekend-are"></span>.”</p>
           <p class="gloss vi">Đồng phục và quần áo cuối tuần của em khác nhau. Đồng phục thì …, nhưng quần áo cuối tuần thì …</p>
-          <p class="speak">“I wear different clothes because at school I <span class="blank"></span>, and at home I <span class="blank"></span>.”</p>
+          <p class="speak">“I wear different clothes because at school I <span class="blank" data-f="p3-at-school"></span>, and at home I <span class="blank" data-f="p3-at-home"></span>.”</p>
           <p class="gloss vi">Em mặc quần áo khác nhau vì ở trường em …, còn ở nhà em …</p>
           <div class="superstar">
             <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFE500" d="M12 1.8l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.3 5.6 21l1.6-7.1L1.8 9.1 9 8.4z"/></svg>
-            <p><b><span class="en">Super Star Challenge:</span><span class="vi">Thử thách Siêu sao:</span></b> “My clothes tell you that I am <span class="blank" style="border-color:#8D95B3"></span>.”<br>
+            <p><b><span class="en">Super Star Challenge:</span><span class="vi">Thử thách Siêu sao:</span></b> “My clothes tell you that I am <span class="blank" data-f="p3-superstar" style="border-color:#8D95B3"></span>.”<br>
             <span class="sub">a student · sporty · happy · …</span><br>
             <span class="sub vi">Quần áo cho mọi người biết rằng em là … (học sinh · thích thể thao · vui vẻ · …)</span></p>
           </div>
@@ -351,7 +353,7 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
 </section>
 
 <!-- SHEET 4: words, badge, parents -->
-<section class="sheet" aria-label="Word bank and parent note">
+<section class="sheet" data-sheet="4" aria-label="Word bank and parent note">
   <div class="inner">
     <div>
       <div class="eyebrow">Từ vựng · Word bank</div>
@@ -390,11 +392,11 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
         <div class="eyebrow"><span class="en">Earn your badge</span><span class="vi">Nhận huy hiệu của em</span></div>
         <h3><span class="en">I am an HEC Star Speaker when I…</span><span class="vi">Em là Ngôi sao Diễn thuyết HEC khi em…</span></h3>
         <ul class="ticks">
-          <li><span class="en">look at the camera</span><span class="vi">nhìn vào máy quay</span></li>
-          <li><span class="en">speak slowly and loudly</span><span class="vi">nói chậm và to</span></li>
-          <li><span class="en">point to my pictures</span><span class="vi">chỉ vào các hình của em</span></li>
-          <li><span class="en">say <b>different</b> and <b>because</b></span><span class="vi">nói được từ <b>different</b> và <b>because</b></span></li>
-          <li><span class="en">try the Super Star Challenge</span><span class="vi">thử sức với Thử thách Siêu sao</span></li>
+          <li data-f="p4-t1"><span class="en">look at the camera</span><span class="vi">nhìn vào máy quay</span></li>
+          <li data-f="p4-t2"><span class="en">speak slowly and loudly</span><span class="vi">nói chậm và to</span></li>
+          <li data-f="p4-t3"><span class="en">point to my pictures</span><span class="vi">chỉ vào các hình của em</span></li>
+          <li data-f="p4-t4"><span class="en">say <b>different</b> and <b>because</b></span><span class="vi">nói được từ <b>different</b> và <b>because</b></span></li>
+          <li data-f="p4-t5"><span class="en">try the Super Star Challenge</span><span class="vi">thử sức với Thử thách Siêu sao</span></li>
         </ul>
       </div>
     </div>
@@ -419,8 +421,8 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
       <div class="cta noprint"><a class="btn sun" href="record.html"><span class="en">Record and send the video</span><span class="vi">Quay và gửi video</span></a></div>
       <p class="printurl">hanoienglish.com/clothes-story/record.html</p>
       <div class="sign">
-        <div><span class="en">Parent's signature</span><span class="vi">Chữ ký Phụ huynh</span><span class="write"></span></div>
-        <div><span class="en">Date sent</span><span class="vi">Ngày nộp</span><span class="write"></span></div>
+        <div><span class="en">Parent's signature</span><span class="vi">Chữ ký Phụ huynh</span><span class="write" data-f="p4-sign"></span></div>
+        <div><span class="en">Date sent</span><span class="vi">Ngày nộp</span><span class="write" data-f="p4-date"></span></div>
       </div>
     </div>
 
@@ -434,5 +436,6 @@ html[data-lang="vi"] tr.key td:nth-child(2)::after{content:"từ khóa";font-fam
 
 </main>
 </div>
+<script type="module" src="studio/boot.js?v=1"></script>
 </body>
 </html>
